@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dusty-to-M7 Interface &mdash; C7C.Atamo.Dusty  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
+        <link rel="up" title="Sensor Host" href="../main.html"/>
+        <link rel="next" title="Dusty API UART" href="../uart/dustyAvrIF.html"/>
+        <link rel="prev" title="Sensor Host Configurations" href="../sh_configurations.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing and Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Sensor Host</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sh_mainRoutine.html">Sensor Host Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sleep/sleep.html">Sleep Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_configurations.html">Sensor Host Configurations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dusty-to-M7 Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gpio-pinout">GPIO Pinout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#external-i-o-pinout">External I/O Pinout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#serial-pinout">Serial Pinout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-module-pinout">Common Module Pinout</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/dustyAvrIF.html">Dusty API UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/dp_conf.html">dp_conf.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/usart-ISerial.html">usart/ISerial.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">C7C.Atamo.Dusty</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../main.html">Sensor Host</a> &raquo;</li>
+        
+      <li>Dusty-to-M7 Interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/implement_sh/hardware/hardware_dustyDuinoProMap.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dusty-to-m7-interface">
+<h1>Dusty-to-M7 Interface<a class="headerlink" href="#dusty-to-m7-interface" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the physical I/F between the Dusty module and the M7 space
+on the DuinoPro.</p>
+<p>The <code class="docutils literal"><span class="pre">Pin</span> <span class="pre">Name</span></code> and <code class="docutils literal"><span class="pre">Pin</span> <span class="pre">No.</span></code> in the following tables refer to the references
+used in the module (see UNO DuinoPro Schematic).</p>
+<p><code class="docutils literal"><span class="pre">Net</span></code> refers to anything immediately connected to those pins (<code class="docutils literal"><span class="pre">N/C</span></code> indicates no connection).</p>
+<div class="section" id="gpio-pinout">
+<h2>GPIO Pinout<a class="headerlink" href="#gpio-pinout" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="15%" />
+<col width="32%" />
+<col width="15%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin Name</th>
+<th class="head">Pin No.</th>
+<th class="head">Net</th>
+<th class="head">Purpose</th>
+<th class="head">Drive</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>GPIO1/INT</td>
+<td>25</td>
+<td>Dusty/UART_TX_RTSn</td>
+<td>&#160;</td>
+<td>Dusty</td>
+</tr>
+<tr class="row-odd"><td>GPIO2/USART_CTS</td>
+<td>7</td>
+<td>Dusty/UART_RX_CTSn</td>
+<td>&#160;</td>
+<td>Dusty</td>
+</tr>
+<tr class="row-even"><td>GPIO3/USART_RTS</td>
+<td>8</td>
+<td>Dusty/UART_RX_RTSn</td>
+<td>&#160;</td>
+<td>AVR</td>
+</tr>
+<tr class="row-odd"><td>GPIO4/USART_RX</td>
+<td>9</td>
+<td>Dusty/UART_TX</td>
+<td>&#160;</td>
+<td>Dusty</td>
+</tr>
+<tr class="row-even"><td>GPIO5/USART_TX</td>
+<td>10</td>
+<td>Dusty/UART_RX</td>
+<td>&#160;</td>
+<td>AVR</td>
+</tr>
+<tr class="row-odd"><td>GPIO6/USART_SCK</td>
+<td>11</td>
+<td>Dusty/UART_TX_CTSn</td>
+<td>&#160;</td>
+<td>AVR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="external-i-o-pinout">
+<h2>External I/O Pinout<a class="headerlink" href="#external-i-o-pinout" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="24%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin Name</th>
+<th class="head">Pin No.</th>
+<th class="head">Net</th>
+<th class="head">Purpose</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>EXTIO1</td>
+<td>1</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>EXTIO2</td>
+<td>27</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>EXTIO3</td>
+<td>28</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>EXTIO4</td>
+<td>29</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="serial-pinout">
+<h2>Serial Pinout<a class="headerlink" href="#serial-pinout" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="24%" />
+<col width="24%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin Name</th>
+<th class="head">Pin No.</th>
+<th class="head">Net</th>
+<th class="head">Purpose</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>SDA1</td>
+<td>12</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>SCL1</td>
+<td>13</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>SDA2</td>
+<td>20</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>SCL2</td>
+<td>21</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>MOSI</td>
+<td>17</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>MISO</td>
+<td>18</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>SCK</td>
+<td>14</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>SPI_CS</td>
+<td>24</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="common-module-pinout">
+<h2>Common Module Pinout<a class="headerlink" href="#common-module-pinout" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="14%" />
+<col width="13%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pin Name</th>
+<th class="head">Pin No.</th>
+<th class="head">Net</th>
+<th class="head">Purpose</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>VBAT</td>
+<td>19</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>External power source for device</td>
+</tr>
+<tr class="row-odd"><td>3v3</td>
+<td>16</td>
+<td>3v3</td>
+<td>Power to module</td>
+</tr>
+<tr class="row-even"><td>GND&#64;1</td>
+<td>2</td>
+<td>Ground</td>
+<td>Grounding</td>
+</tr>
+<tr class="row-odd"><td>GND&#64;2</td>
+<td>15</td>
+<td>Ground</td>
+<td>Grounding</td>
+</tr>
+<tr class="row-even"><td>GND&#64;3</td>
+<td>26</td>
+<td>Ground</td>
+<td>Grounding</td>
+</tr>
+<tr class="row-odd"><td>MCU_RESET_N</td>
+<td>22</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>To externally reset devices</td>
+</tr>
+<tr class="row-even"><td>RESERVED</td>
+<td>23</td>
+<td><code class="docutils literal"><span class="pre">N/C</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>ADDRESSn</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>I2C slave addressing (<code class="docutils literal"><span class="pre">0111</span></code>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../uart/dustyAvrIF.html" class="btn btn-neutral float-right" title="Dusty API UART" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../sh_configurations.html" class="btn btn-neutral" title="Sensor Host Configurations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

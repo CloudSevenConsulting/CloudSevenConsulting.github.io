@@ -1,0 +1,24 @@
+.. _idx-tech-testing:
+
+**********************
+Testing and Deployment
+**********************
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Testing:
+
+   testing/firmwareTesting_overview
+   testing/firmwareTesting_makingTests
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Design Test Procedures
+
+   test0003/test0003
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Unit Tests
+
+   Unit/TU_SH_Dusty_AfterFlash_Op
