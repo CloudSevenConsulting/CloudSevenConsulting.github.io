@@ -62,5 +62,4 @@ computer and run the tests
 
    $ cd NetworkManager/DustyPyManager
 
-   $ py -2 -m DustyPyManager.tests.wsn.install
-   $ py -2 -m DustyPyManager.tests.stream.Dynamo
+   $ py -2 -m DustyPyManager.tests.runner
