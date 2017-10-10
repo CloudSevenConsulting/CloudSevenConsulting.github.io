@@ -1,8 +1,8 @@
 .. _idx-tech-testing:
 
-**********************
-Testing and Deployment
-**********************
+*******
+Testing
+*******
 
 .. toctree::
    :maxdepth: 2

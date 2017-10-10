@@ -97,11 +97,11 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing and Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../main.html">System Deployment</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Deploying the Network Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#required-items">Required Items</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installations">Installations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#required-software">Required Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#test">Test</a></li>
 </ul>
 </li>
@@ -182,8 +182,8 @@
             
   <div class="section" id="deploying-the-network-manager">
 <h1>Deploying the Network Manager<a class="headerlink" href="#deploying-the-network-manager" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="required-items">
-<h2>Required Items<a class="headerlink" href="#required-items" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required-software">
+<h2>Required Software<a class="headerlink" href="#required-software" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">Python 2.7.x</p>
 <blockquote>
@@ -194,14 +194,12 @@
 </li>
 <li><p class="first">Git</p>
 </li>
-<li><p class="first">SmartMesh SDK</p>
-</li>
 <li><p class="first">AWS CLI</p>
 </li>
 </ul>
 </div>
-<div class="section" id="installations">
-<h2>Installations<a class="headerlink" href="#installations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Install the required Python packages with your <code class="docutils literal"><span class="pre">pip</span></code> utility;</p>
 <blockquote>
@@ -210,21 +208,35 @@
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Install the SmartMesh SDK</p>
+<li><p class="first">We will store all our Network Manager related software in a <code class="docutils literal"><span class="pre">NetworkManager/</span></code> directory</p>
 <blockquote>
-<div><p>Download the <code class="docutils literal"><span class="pre">smartmesh-sdk</span></code> from <a class="reference external" href="https://github.com/dustcloud/smartmeshsdk">DustCloud Github</a> and extract it to a known
-location.</p>
-<p>Do</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> smartmeshsdk-master    <span class="c1"># I.e. to the parent folder of the downloaded item</span>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads        <span class="c1">#temporary storage</span>
+$ mkdir NetworkManager
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Install the SmartMesh SDK for Python</p>
+<blockquote>
+<div><p>Download the <code class="docutils literal"><span class="pre">smartmesh-sdk</span></code> from <a class="reference external" href="https://github.com/dustcloud/smartmeshsdk">DustCloud Github</a> and extract it into <code class="docutils literal"><span class="pre">NetworkManager/</span></code></p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/NetworkManager/smartmeshsdk-master    <span class="c1"># I.e. to the parent folder of the downloaded item</span>
 $ py -2 setup.py install
 $ py -2 -m pip install -r requirements.txt
 </pre></div>
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Clone the DustyPyManager repository</p>
+<li><p class="first">Clone the DustyPyManager repository with Git</p>
 <blockquote>
-<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/CloudSevenConsulting/DustyPyManager.git
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads/NetworkManager/
+$ git clone https://github.com/CloudSevenConsulting/DustyPyManager.git
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Configure your AWS CLI environment</p>
+<blockquote>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ aws configure
 </pre></div>
 </div>
 </div></blockquote>
@@ -235,7 +247,10 @@ $ py -2 -m pip install -r requirements.txt
 <h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
 <p>To test that everything is functional, connect the <code class="docutils literal"><span class="pre">DC2274A-A</span></code> device to your
 computer and run the tests</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ py -2 -m DustyPyManager.tests.wsn.install
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> NetworkManager/DustyPyManager
+
+$ py -2 -m DustyPyManager.tests.wsn.install
+$ py -2 -m DustyPyManager.tests.stream.Dynamo
 </pre></div>
 </div>
 </div>

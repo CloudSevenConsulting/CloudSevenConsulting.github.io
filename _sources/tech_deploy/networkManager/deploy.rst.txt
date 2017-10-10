@@ -2,19 +2,18 @@
 Deploying the Network Manager
 *****************************
 
-Required Items
-==============
+Required Software
+=================
 
 - Python 2.7.x
 
     + Python ``pip`` utility
 
 - Git
-- SmartMesh SDK
 - AWS CLI
 
-Installations
-=============
+Setup
+=====
 
 1. Install the required Python packages with your ``pip`` utility;
 
@@ -22,25 +21,36 @@ Installations
 
         $ python -m pip install boto3
 
-2. Install the SmartMesh SDK
-
-    Download the ``smartmesh-sdk`` from `DustCloud Github`_ and extract it to a known
-    location.
-
-    Do
+2. We will store all our Network Manager related software in a ``NetworkManager/`` directory
 
     .. code-block:: bash
 
-       $ cd smartmeshsdk-master    # I.e. to the parent folder of the downloaded item
+        $ cd ~/Downloads        #temporary storage
+        $ mkdir NetworkManager
+
+3. Install the SmartMesh SDK for Python
+
+    Download the ``smartmesh-sdk`` from `DustCloud Github`_ and extract it into ``NetworkManager/``
+
+    .. code-block:: bash
+
+       $ cd ~/NetworkManager/smartmeshsdk-master    # I.e. to the parent folder of the downloaded item
        $ py -2 setup.py install
        $ py -2 -m pip install -r requirements.txt
     .. _DustCloud Github: https://github.com/dustcloud/smartmeshsdk
 
-3. Clone the DustyPyManager repository
+4. Clone the DustyPyManager repository with Git
 
     .. code-block:: bash
 
+        $ cd ~/Downloads/NetworkManager/
         $ git clone https://github.com/CloudSevenConsulting/DustyPyManager.git
+
+5. Configure your AWS CLI environment
+
+    .. code-block:: bash
+
+        $ aws configure
 
 Test
 ====
@@ -50,4 +60,7 @@ computer and run the tests
 
 .. code-block:: bash
 
+   $ cd NetworkManager/DustyPyManager
+
    $ py -2 -m DustyPyManager.tests.wsn.install
+   $ py -2 -m DustyPyManager.tests.stream.Dynamo
