@@ -1,0 +1,53 @@
+*****************************
+Deploying the Network Manager
+*****************************
+
+Required Items
+==============
+
+- Python 2.7.x
+
+    + Python ``pip`` utility
+
+- Git
+- SmartMesh SDK
+- AWS CLI
+
+Installations
+=============
+
+1. Install the required Python packages with your ``pip`` utility;
+
+    .. code-block:: bash
+
+        $ python -m pip install boto3
+
+2. Install the SmartMesh SDK
+
+    Download the ``smartmesh-sdk`` from `DustCloud Github`_ and extract it to a known
+    location.
+
+    Do
+
+    .. code-block:: bash
+
+       $ cd smartmeshsdk-master    # I.e. to the parent folder of the downloaded item
+       $ py -2 setup.py install
+       $ py -2 -m pip install -r requirements.txt
+    .. _DustCloud Github: https://github.com/dustcloud/smartmeshsdk
+
+3. Clone the DustyPyManager repository
+
+    .. code-block:: bash
+
+        $ git clone https://github.com/CloudSevenConsulting/DustyPyManager.git
+
+Test
+====
+
+To test that everything is functional, connect the ``DC2274A-A`` device to your
+computer and run the tests
+
+.. code-block:: bash
+
+   $ py -2 -m DustyPyManager.tests.wsn.install

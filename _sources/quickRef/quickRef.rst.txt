@@ -39,6 +39,7 @@ External Documentation
 |              |        | | [IPR02]: `SMIP Easy Start Guide for the Embedded Manager`_                       |
 |              |        | | [IPR03]: `SMIP Embedded Manager API Guide`_                                      |
 |              |        | | [IPR04]: `SMIP Embedded Manager CLI Guide`_                                      |
+|              |        | | [IPR05]: `SmartMesh SDK`_                                                        |
 +--------------+--------+------------------------------------------------------------------------------------+
 
 .. _DuinoPro Brochure: https://www.duinopro.cc/
@@ -66,3 +67,4 @@ External Documentation
 .. _SMIP Easy Start Guide for the Embedded Manager: https://cds.linear.com/docs/en/application-note/SmartMesh_IP_Easy_Start_Guide_for_the_Embedded_Manager.pdf
 .. _SMIP Embedded Manager API Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Embedded_Manager_API_Guide.pdf
 .. _SMIP Embedded Manager CLI Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Embedded_Manager_CLI_Guide.pdf
+.. _SmartMesh SDK: https://dustcloud.atlassian.net/wiki/spaces/SMSDK/overview
