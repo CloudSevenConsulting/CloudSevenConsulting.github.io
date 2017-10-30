@@ -1,0 +1,70 @@
+.. _idx-quickref:
+
+***************
+Quick Reference
+***************
+
+External Documentation
+======================
+
++--------------+--------+------------------------------------------------------------------------------------+
+| Source       | Ref.   | Documentation                                                                      |
++==============+========+====================================================================================+
+| UNO DuinoPro | Duino  | | `DuinoPro Brochure`_                                                             |
+|              |        | | `DuinoPro Github`_                                                               |
+|              |        | | :download:`UNO DuinoPro Schematic <files/duinoPro_schematic.pdf>`                |
+|              |        | | :download:`DuinoPro User Guide <files/duinoPro_GettingStartedGuide.pdf>`         |
++--------------+--------+------------------------------------------------------------------------------------+
+| ATmega328P   | AVR    | | `ATmega328P Datasheet`_                                                          |
+|              |        | | :download:`Pinout 32-TQFP <files/ATmega328P_32TQFP_pinout.png>`                  |
+|              |        | | :download:`Pintout 32-TQFP/Arduino <files/ATmega328P_32TQFP_pinout_arduino.png>` |
++--------------+--------+------------------------------------------------------------------------------------+
+| IoTeam Dusty | Dusty  | | `Dusty User Guide`_                                                              |
++--------------+--------+------------------------------------------------------------------------------------+
+| SmartMesh-IP | SMIP   | | `Dust QSL`_                                                                      |
+|              |        | | [SMIP01]: `SMIP AN Index`_                                                       |
+|              |        | | [SMIP02]: `SMIP User Guide`_                                                     |
+|              |        | | [SMIP03]: `SMIP Tools Guide`_                                                    |
++--------------+--------+------------------------------------------------------------------------------------+
+| Eterna       |        | | [ETERNA01]: `Eterna Serial Programming Guide`_                                   |
+|              |        | | [ETERNA02]: `Eterna Serial Programming Utility`_ (QSL)                           |
+|              |        | | [ETERNA03]: `Eterna Board Specific Configuration Guide`_ (Fuse tables)           |
+|              |        | | [ETERNA04]: `Eterna Serial Programmer`_ (Linear Tech, Downloads)                 |
++--------------+--------+------------------------------------------------------------------------------------+
+| LTC5800-IPM  | Mote   | | [IPM01]: `LTC5800-IPM`_                                                          |
+|              |        | | [IPM02]: `SMIP Mote Serial API Guide`_                                           |
+|              |        | | [IPM03]: `SMIP Mote CLI Guide`_                                                  |
++--------------+--------+------------------------------------------------------------------------------------+
+| LTC5800-IPR  | NM     | | [IPR01]: `LTC5800-IPR`_                                                          |
+|              |        | | [IPR02]: `SMIP Easy Start Guide for the Embedded Manager`_                       |
+|              |        | | [IPR03]: `SMIP Embedded Manager API Guide`_                                      |
+|              |        | | [IPR04]: `SMIP Embedded Manager CLI Guide`_                                      |
+|              |        | | [IPR05]: `SmartMesh SDK`_                                                        |
++--------------+--------+------------------------------------------------------------------------------------+
+
+.. _DuinoPro Brochure: https://www.duinopro.cc/
+.. _DuinoPro Github: https://github.com/duinoPRO/install
+
+.. _Atmega328P Datasheet: http://www.atmel.com/Images/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf
+
+.. _Dusty User Guide: https://uploads.strikinglycdn.com/files/e6892882-b38a-49a0-b5a2-e78d664c8600/User%20Guide%20Dusty%20Rev%201.4.pdf?id=78523
+
+.. _Dust QSL: https://dustcloud.atlassian.net/wiki/spaces/QSL/pages/80609284/QuickStart+Library+Overview
+.. _SMIP AN Index: https://cds.linear.com/docs/en/application-note/SmartMesh_IP_Application_Notes.pdf
+.. _SMIP User Guide: https://cds.linear.com/docs/en/user-guide/SmartMesh_IP_User_s_Guide.pdf
+.. _SMIP Tools Guide: https://cds.linear.com/docs/en/software-and-simulation/SmartMesh_IP_Tools_Guide.pdf
+
+.. _Eterna Serial Programming Guide: https://cds.linear.com/docs/en/software-and-simulation/Eterna_Serial_Programmer_Guide.pdf
+.. _Eterna Serial Programming Utility: https://dustcloud.atlassian.net/wiki/spaces/OCSDK/pages/1638425/Programming+Eterna+Devices
+.. _Eterna Board Specific Configuration Guide: https://cds.linear.com/docs/en/design-note/Board_Specific_Configuration_Guide.pdf
+.. _Eterna Serial Programmer: http://www.linear.com/solutions/4260
+
+.. _LTC5800-IPM: https://cds.linear.com/docs/en/datasheet/5800ipmfa.pdf
+.. _SMIP Mote Serial API Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_Serial_API_Guide.pdf
+.. _SMIP Mote CLI Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_CLI_Guide.pdf
+
+.. _LTC5800-IPR: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_CLI_Guide.pdf
+.. _SMIP Easy Start Guide for the Embedded Manager: https://cds.linear.com/docs/en/application-note/SmartMesh_IP_Easy_Start_Guide_for_the_Embedded_Manager.pdf
+.. _SMIP Embedded Manager API Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Embedded_Manager_API_Guide.pdf
+.. _SMIP Embedded Manager CLI Guide: https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Embedded_Manager_CLI_Guide.pdf
+.. _SmartMesh SDK: https://dustcloud.atlassian.net/wiki/spaces/SMSDK/overview

@@ -1,0 +1,88 @@
+*********************
+Project Documentation
+*********************
+
+.. note::
+
+   This section is only relevant for future developers to the CSC-ATAMO Dusty
+   project.
+
+`Project documentation`_ can be found in the ``gh-pages`` branch.
+
+.. _Project Documentation: https://CloudSevenConsulting.github.io/
+
+The ``.rst`` files are shipped to ``./sources``
+
+.. code-block:: bash
+
+   $ git checkout gh-pages
+   $ cd ./_sources
+
+To contribute to the documentation you must:
+
+1. Install Python and Sphinx
+2. Setup your Sphinx project
+3. Building
+
+
+Installing Python Sphinx
+========================
+
+Python Sphinx_ is a tool that helps build documentation out of reStructured Text (rst)
+marked-up files.
+
+.. _Sphinx: http://www.sphinx-doc.org/en/stable/
+
+You must have Python installed (we recommend `Python 3.x <https://www.python.org/downloads/>`_).
+
+Once Python is installed, you should have the ``pip`` utility installed natively (if not, `go here <https://pip.pypa.io/en/stable/installing/>`_). To check if you have ``pip``:
+
+.. code-block:: bash
+
+   $ python -m pip --version
+   pip 9.0.1 from C:\...\Python\Python36-32\lib\site-packages (python 3.6)
+
+Once you checked ``pip`` is installed, run the command to install Sphinx:
+
+.. code-block:: bash
+
+   $ python -m pip install Sphinx
+
+We will also need the ``sphinx_rtd_theme`` for our docs:
+
+   $ python -m pip install sphinx_rtd_theme
+
+Setup your Sphinx Project
+=========================
+
+You will need to setup your sphinx project in a separate directory the git repo:
+
+.. code-block:: bash
+
+   $ cd ~
+   $ mkdir someDir
+   $ cd someDir/
+   $ sphinx-quickstart.exe
+
+   # press [enter] to all options
+
+
+Building
+========
+
+Because of the way the branch ``gh-pages`` is set-up, a funny build process is required.
+
+.. note::
+
+   Team to consider automating this with Python tool
+
+1. If the indexes must change (i.e. new files added/files moved) then a clean is required before build
+
+    a) **Do not** use ``make clean``, as this will remove the ``.git`` files
+    b) Manually remove all build files (everything in ``build/html`` excluding the hidden ``.git`` directory)
+    c) Build the ``DOxygen`` ``xml``
+
+2. ``Make`` the files from source with ``make html``
+3. ``git add --all``
+4. ``git commit -m "docs"`` (who cares about commit messages here)
+5. ``git push origin gh-pages``
