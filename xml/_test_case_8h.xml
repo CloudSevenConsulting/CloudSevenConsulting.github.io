@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_test_case_8h" kind="file" language="C++">
+    <compoundname>TestCase.h</compoundname>
+    <includedby refid="_test_dp_sys_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSys.h</includedby>
+    <includedby refid="_test_dp_framing_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h</includedby>
+    <includedby refid="_test_dp_sample_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h</includedby>
+    <includedby refid="_test_dp_sample_diagnostic_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleDiagnostic.h</includedby>
+    <includedby refid="_test_dp_sample_time_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h</includedby>
+    <includedby refid="_test_dp_sample_sensor_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h</includedby>
+    <includedby refid="_test_port_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h</includedby>
+    <includedby refid="_test_case_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp</includedby>
+    <includedby refid="_test_dn_join_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDnJoin.h</includedby>
+    <includedby refid="_test_dp_uart_8h" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpUart.h</includedby>
+    <invincdepgraph>
+      <node id="413">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h</label>
+        <link refid="_test_dp_sample_sensor_8h"/>
+      </node>
+      <node id="411">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleDiagnostic.h</label>
+        <link refid="_test_dp_sample_diagnostic_8h"/>
+      </node>
+      <node id="415">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDnJoin.h</label>
+        <link refid="_test_dn_join_8h_source"/>
+      </node>
+      <node id="407">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h</label>
+        <link refid="_test_case_8h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpUart.h</label>
+        <link refid="_test_dp_uart_8h"/>
+      </node>
+      <node id="410">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h</label>
+        <link refid="_test_dp_sample_8h"/>
+      </node>
+      <node id="409">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h</label>
+        <link refid="_test_dp_framing_8h"/>
+      </node>
+      <node id="414">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h</label>
+        <link refid="_test_port_8h_source"/>
+      </node>
+      <node id="408">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSys.h</label>
+        <link refid="_test_dp_sys_8h_source"/>
+      </node>
+      <node id="412">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h</label>
+        <link refid="_test_dp_sample_time_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_test_case" prot="public">TestCase</innerclass>
+    <briefdescription>
+<para>Unit Test Base Class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This base class provides a unit testing module. Unit tests should derive from this base class and use the exposed functions to perform testing Testing must then be integrated to the <ref refid="tester_8h" kindref="compound">tester.h</ref> module in the TLD</para><para><simplesect kind="date"><para>2017/10/01 </para></simplesect>
+<simplesect kind="author"><para>Jamie K. Phan </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*============================================================================*/</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">/*============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TESTCASE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TESTCASE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_test_case" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_test_case" kindref="compound">TestCase</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" kindref="member">TestCase</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="34" refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" kindref="member">tctrl_stop_on_success</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" kindref="member">blink</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_case_1a4df94e96b5821448d41abafde5041e25" kindref="member">run</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" kindref="member">t_pass</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TESTCASE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h"/>
+  </compounddef>
+</doxygen>

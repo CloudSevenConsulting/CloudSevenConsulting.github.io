@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dn__qsl__api_8h" kind="file" language="C++">
+    <compoundname>dn_qsl_api.h</compoundname>
+    <includes refid="dn__common_8h" local="yes">../sm_clib/dn_common.h</includes>
+    <includes refid="dn__defaults_8h" local="yes">dn_defaults.h</includes>
+    <includedby refid="main_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/main.cpp</includedby>
+    <includedby refid="dn__fsm_8c" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c</includedby>
+    <includedby refid="_test_dn_join_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDnJoin.cpp</includedby>
+    <incdepgraph>
+      <node id="351">
+        <label>stdbool.h</label>
+      </node>
+      <node id="349">
+        <label>../sm_clib/dn_common.h</label>
+        <link refid="dn__common_8h_source"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>dn_defaults.h</label>
+        <link refid="dn__defaults_8h_source"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>string.h</label>
+      </node>
+      <node id="348">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h</label>
+        <link refid="dn__qsl__api_8h"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dn__qsl__api_8h_1a39dada0541222dfeddbcac1742bb5443" prot="public" static="no">
+        <name>DN_DEST_IP</name>
+        <initializer>DN_DEFAULT_DEST_IP</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="17" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dn__qsl__api_8h_1a63e328147ec083f0b5dd2f6a1b25f828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dn_qsl_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>dn_qsl_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the necessary structures and underlying C Library. </para>        </briefdescription>
+        <detaileddescription>
+<para>Has to be run once before any of the other functions below is run.</para><para><simplesect kind="return"><para>A boolean indicating the success of the initialization. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="38" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="90" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__qsl__api_8h_1a13fc5d41d879be802ef61d3c07f497ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dn_qsl_isConnected</definition>
+        <argsstring>(void)</argsstring>
+        <name>dn_qsl_isConnected</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return TRUE if the mote is connected to a network. </para>        </briefdescription>
+        <detaileddescription>
+<para>Simply checks if the FSM is in the CONNECTED state.</para><para><simplesect kind="return"><para>A boolean indicating if the mote is connected to a network. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="50" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__qsl__api_8h_1af168040c43e282662db47b4613549370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dn_qsl_connect</definition>
+        <argsstring>(uint16_t netID, const uint8_t *joinKey, uint16_t srcPort, uint32_t service_ms)</argsstring>
+        <name>dn_qsl_connect</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>netID</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>joinKey</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>srcPort</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>service_ms</declname>
+        </param>
+        <briefdescription>
+<para>Attempt to make the mote connect to a network with the given parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the passed network ID, join key or source port is zero/NULL, default values are used. If non-zero, the passed service will be requested after joining a network. A new service can be requested later by calling connect again with the same network ID, join key and source port. Further, if the requested service is also indifferent, the function simply returns TRUE.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>netID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the network to attempt to connect with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>joinKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The join key to use in the connection attempt. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port that you expect to get downstream data on. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>service_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service to request after establishing a connection, given in milliseconds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating if the connection attempt and/or service request was successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="70" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="115" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__qsl__api_8h_1a609fb8e0159e8852aa768b40336ce94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dn_qsl_send</definition>
+        <argsstring>(const uint8_t *payload, uint8_t payloadSize_B, uint16_t destPort)</argsstring>
+        <name>dn_qsl_send</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>payloadSize_B</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>destPort</declname>
+        </param>
+        <briefdescription>
+<para>Send a packet into the network. </para>        </briefdescription>
+        <detaileddescription>
+<para>Tells the mote send a packet with the given payload into the network. Said packet is sent to the provided destination port (default if 0) and the IPv6 address defined by DEST_IP (default is the well-known manager address). The FSM waits for a confirmation from the mote that the packet was accepted and queued up for transmission. Note that end-to-end delivery is not guaranteed with the utilized UDP, but reliability is typically &gt; 99.9 %.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a byte array containing the payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payloadSize_B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte size of the payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination port for the packet. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean indicating if the packet was queued up for transmission. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="90" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="175" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__qsl__api_8h_1af545b47557dd9ae3f37ecbbeee08e1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_qsl_read</definition>
+        <argsstring>(uint8_t *readBuffer)</argsstring>
+        <name>dn_qsl_read</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>readBuffer</declname>
+        </param>
+        <briefdescription>
+<para>Read the FIFO buffered inbox of downstream messages. </para>        </briefdescription>
+        <detaileddescription>
+<para>As the payload of downstream messages are pushed into a buffered FIFO inbox, calling this function will pop the first one (oldest) stored into the provided buffer and return the byte size. An empty inbox will simply return 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>readBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a byte array to store the read message payload. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes read into the provided buffer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h" line="105" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="222" bodyend="244"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2016,<sp/>Dust<sp/>Networks.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">QuickStart<sp/>Library<sp/>API.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">\license<sp/>See<sp/>attached<sp/>DN_LICENSE.txt.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DN_QSL_API_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_QSL_API_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sm_clib/dn_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dn_defaults.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>defines<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_DEST_IP<sp/><sp/>DN_DEFAULT_DEST_IP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>typedef<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>variables<sp/>=======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>prototypes<sp/>======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//=====<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dn_qsl_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//=====<sp/>isConnected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dn_qsl_isConnected(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//=====<sp/>connect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dn_qsl_connect(uint16_t<sp/>netID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>joinKey,<sp/>uint16_t<sp/>srcPort,<sp/>uint32_t<sp/>service_ms);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//=====<sp/>send</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dn_qsl_send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>payload,<sp/>uint8_t<sp/>payloadSize_B,<sp/>uint16_t<sp/>destPort);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//=====<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">uint8_t<sp/>dn_qsl_read(uint8_t*<sp/>readBuffer);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_qsl_api.h"/>
+  </compounddef>
+</doxygen>

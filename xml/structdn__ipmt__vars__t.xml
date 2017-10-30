@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__ipmt__vars__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_ipmt_vars_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1abcb689c1bc4116d8e3c84fd76cc12cae" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_vars_t::outputBuf[MAX_FRAME_LENGTH]</definition>
+        <argsstring>[MAX_FRAME_LENGTH]</argsstring>
+        <name>outputBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="17" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1aef1b70ac182ac13a119ff0c497b22827" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dn_ipmt_vars_t::busyTx</definition>
+        <argsstring></argsstring>
+        <name>busyTx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="18" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1ab5c875d146e3b457732ddbea52ba2dee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_vars_t::cmdId</definition>
+        <argsstring></argsstring>
+        <name>cmdId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="19" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1ae647876c4675d6badbaf6d85a68ec5f6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_vars_t::paramId</definition>
+        <argsstring></argsstring>
+        <name>paramId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="20" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1a9749dc1b2af6515c1c6d6b42b415f1d4" prot="public" static="no" mutable="no">
+        <type>dn_ipmt_reply_cbt</type>
+        <definition>dn_ipmt_reply_cbt dn_ipmt_vars_t::replyCb</definition>
+        <argsstring></argsstring>
+        <name>replyCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="22" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1a93facd282f56f9974c63ae05b5df5fe3" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* dn_ipmt_vars_t::replyContents</definition>
+        <argsstring></argsstring>
+        <name>replyContents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="23" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1a807d34073416abe513ae77d60be8e8c8" prot="public" static="no" mutable="no">
+        <type>dn_ipmt_notif_cbt</type>
+        <definition>dn_ipmt_notif_cbt dn_ipmt_vars_t::notifCb</definition>
+        <argsstring></argsstring>
+        <name>notifCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="25" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1a92795a9c6ff6b5fa5807d5c1282b39b8" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* dn_ipmt_vars_t::notifBuf</definition>
+        <argsstring></argsstring>
+        <name>notifBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="26" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__vars__t_1aa77f201980bc71d9b7b59a818a4778b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_vars_t::notifBufLen</definition>
+        <argsstring></argsstring>
+        <name>notifBufLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="27" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" line="15" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.c" bodystart="15" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structdn__ipmt__vars__t_1aef1b70ac182ac13a119ff0c497b22827" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>busyTx</name></member>
+      <member refid="structdn__ipmt__vars__t_1ab5c875d146e3b457732ddbea52ba2dee" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>cmdId</name></member>
+      <member refid="structdn__ipmt__vars__t_1a92795a9c6ff6b5fa5807d5c1282b39b8" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>notifBuf</name></member>
+      <member refid="structdn__ipmt__vars__t_1aa77f201980bc71d9b7b59a818a4778b9" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>notifBufLen</name></member>
+      <member refid="structdn__ipmt__vars__t_1a807d34073416abe513ae77d60be8e8c8" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>notifCb</name></member>
+      <member refid="structdn__ipmt__vars__t_1abcb689c1bc4116d8e3c84fd76cc12cae" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>outputBuf</name></member>
+      <member refid="structdn__ipmt__vars__t_1ae647876c4675d6badbaf6d85a68ec5f6" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>paramId</name></member>
+      <member refid="structdn__ipmt__vars__t_1a9749dc1b2af6515c1c6d6b42b415f1d4" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>replyCb</name></member>
+      <member refid="structdn__ipmt__vars__t_1a93facd282f56f9974c63ae05b5df5fe3" prot="public" virt="non-virtual"><scope>dn_ipmt_vars_t</scope><name>replyContents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__ipmt__time_indication__nt" kind="struct" language="C++" prot="public">
+    <compoundname>dn_ipmt_timeIndication_nt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__ipmt__time_indication__nt_1a1eeeb6106a348f4404b884b7a7d5c783" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dn_ipmt_timeIndication_nt::uptime</definition>
+        <argsstring></argsstring>
+        <name>uptime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="772" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__time_indication__nt_1a9dc0c7122304056c855745fa355c68c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_timeIndication_nt::utcSecs[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>utcSecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="773" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__time_indication__nt_1a7b91164dc0dd4a9b7bc864aacab8aadd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dn_ipmt_timeIndication_nt::utcUsecs</definition>
+        <argsstring></argsstring>
+        <name>utcUsecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="774" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__time_indication__nt_1a0cf4676380328f0fb39f8ba7bbb9f094" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_timeIndication_nt::asn[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>asn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="775" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__time_indication__nt_1a7dfce885c3e70eb1bf76c1461670918e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_timeIndication_nt::asnOffset</definition>
+        <argsstring></argsstring>
+        <name>asnOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="776" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="771" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="771" bodyend="777"/>
+    <listofallmembers>
+      <member refid="structdn__ipmt__time_indication__nt_1a0cf4676380328f0fb39f8ba7bbb9f094" prot="public" virt="non-virtual"><scope>dn_ipmt_timeIndication_nt</scope><name>asn</name></member>
+      <member refid="structdn__ipmt__time_indication__nt_1a7dfce885c3e70eb1bf76c1461670918e" prot="public" virt="non-virtual"><scope>dn_ipmt_timeIndication_nt</scope><name>asnOffset</name></member>
+      <member refid="structdn__ipmt__time_indication__nt_1a1eeeb6106a348f4404b884b7a7d5c783" prot="public" virt="non-virtual"><scope>dn_ipmt_timeIndication_nt</scope><name>uptime</name></member>
+      <member refid="structdn__ipmt__time_indication__nt_1a9dc0c7122304056c855745fa355c68c5" prot="public" virt="non-virtual"><scope>dn_ipmt_timeIndication_nt</scope><name>utcSecs</name></member>
+      <member refid="structdn__ipmt__time_indication__nt_1a7b91164dc0dd4a9b7bc864aacab8aadd" prot="public" virt="non-virtual"><scope>dn_ipmt_timeIndication_nt</scope><name>utcUsecs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

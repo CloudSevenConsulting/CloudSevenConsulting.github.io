@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="usart__vars_8h" kind="file" language="C++">
+    <compoundname>usart_vars.h</compoundname>
+    <includedby refid="dn__uart_8c" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_uart.c</includedby>
+    <includedby refid="usart__flow_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_flow.cpp</includedby>
+    <invincdepgraph>
+      <node id="580">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_flow.cpp</label>
+        <link refid="usart__flow_8cpp"/>
+      </node>
+      <node id="579">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h</label>
+        <link refid="usart__vars_8h"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdn__uart__vars__t" prot="public">dn_uart_vars_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usart__vars_8h_1ae9839a091ff5b3c9133494e96cf81e40" prot="public" static="no">
+        <name>USART_AC__BAUD_RATE</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="7" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart__vars_8h_1a267f08d67887c246e5025633c96ce0ae" prot="public" static="no">
+        <name>USART_AC__NP_N_BIT_END_TX_RTS_CTS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="8" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="usart__vars_8h_1a4476ac5b976abc322d7f92b0f0983e39" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* dn_uart_rxByte_cbt) (uint8_t byte)</definition>
+        <argsstring>)(uint8_t byte)</argsstring>
+        <name>dn_uart_rxByte_cbt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="10" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usart__vars_8h_1a41129aad2591f158643c39f2dc43c92c" prot="public" static="no" mutable="no">
+        <type><ref refid="structdn__uart__vars__t" kindref="compound">dn_uart_vars_t</ref></type>
+        <definition>dn_uart_vars_t dn_uart_vars</definition>
+        <argsstring></argsstring>
+        <name>dn_uart_vars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="36" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_flow.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USART_VARS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_VARS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_AC__BAUD_RATE<sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_AC__NP_N_BIT_END_TX_RTS_CTS<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*dn_uart_rxByte_cbt)(uint8_t<sp/>byte);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structdn__uart__vars__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>dn_uart_rxByte_cbt<sp/><sp/>ipmt_uart_rxByte_cb;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>np_rts;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>np_cts;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pn_rts;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pn_cts;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bufc;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="structdn__uart__vars__t" kindref="compound">dn_uart_vars_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structdn__uart__vars__t" kindref="compound">dn_uart_vars_t</ref><sp/>dn_uart_vars;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__hdlc__vars__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_hdlc_vars_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1a2e7e84b3353b590ea9f3808372997164" prot="public" static="no" mutable="no">
+        <type>dn_hdlc_rxFrame_cbt</type>
+        <definition>dn_hdlc_rxFrame_cbt dn_hdlc_vars_t::rxFrame_cb</definition>
+        <argsstring></argsstring>
+        <name>rxFrame_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="17" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1a0823865256a3d09b1a478c1e09b2ddf5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_hdlc_vars_t::lastRxByte</definition>
+        <argsstring></argsstring>
+        <name>lastRxByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="19" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1ae86a3e86cff24e12eb3fa60a9d29f40d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dn_hdlc_vars_t::busyReceiving</definition>
+        <argsstring></argsstring>
+        <name>busyReceiving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="20" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1a29b67eec4ea7c2a644fa63adebc7fa46" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dn_hdlc_vars_t::inputEscaping</definition>
+        <argsstring></argsstring>
+        <name>inputEscaping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="21" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1ac934aa47221bf3a95e4d61e12fdd9584" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_hdlc_vars_t::inputCrc</definition>
+        <argsstring></argsstring>
+        <name>inputCrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="22" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1abb4f94363b9ef4f1c587e139d8a022c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_hdlc_vars_t::inputBufFill</definition>
+        <argsstring></argsstring>
+        <name>inputBufFill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="23" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1add4ccf6d8d1792ec87ef7d9380d59820" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_hdlc_vars_t::inputBuf[DN_HDLC_INPUT_BUFFER_SIZE]</definition>
+        <argsstring>[DN_HDLC_INPUT_BUFFER_SIZE]</argsstring>
+        <name>inputBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="24" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__hdlc__vars__t_1a4add6c65ba7d76ead12626853d39690f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_hdlc_vars_t::outputCrc</definition>
+        <argsstring></argsstring>
+        <name>outputCrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="26" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" line="15" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="15" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structdn__hdlc__vars__t_1ae86a3e86cff24e12eb3fa60a9d29f40d" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>busyReceiving</name></member>
+      <member refid="structdn__hdlc__vars__t_1add4ccf6d8d1792ec87ef7d9380d59820" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>inputBuf</name></member>
+      <member refid="structdn__hdlc__vars__t_1abb4f94363b9ef4f1c587e139d8a022c5" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>inputBufFill</name></member>
+      <member refid="structdn__hdlc__vars__t_1ac934aa47221bf3a95e4d61e12fdd9584" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>inputCrc</name></member>
+      <member refid="structdn__hdlc__vars__t_1a29b67eec4ea7c2a644fa63adebc7fa46" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>inputEscaping</name></member>
+      <member refid="structdn__hdlc__vars__t_1a0823865256a3d09b1a478c1e09b2ddf5" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>lastRxByte</name></member>
+      <member refid="structdn__hdlc__vars__t_1a4add6c65ba7d76ead12626853d39690f" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>outputCrc</name></member>
+      <member refid="structdn__hdlc__vars__t_1a2e7e84b3353b590ea9f3808372997164" prot="public" virt="non-virtual"><scope>dn_hdlc_vars_t</scope><name>rxFrame_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

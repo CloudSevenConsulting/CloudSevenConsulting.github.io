@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_dp_sample" kind="class" language="C++" prot="public">
+    <compoundname>TestDpSample</compoundname>
+    <basecompoundref refid="class_test_case" prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_dp_sample_1acaa115099e19f34434e73f9dd9da28d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestDpSample::TestDpSample</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestDpSample</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h" line="32" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_1af1aa07e3ecc6fb9d43c094cdfc0c37b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestDpSample::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplements refid="class_test_case_1a4df94e96b5821448d41abafde5041e25">run</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h" line="33" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_1afe53f83d2eaf5483f402e1b5d14bea52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestDpSample::TU_SH_DpSample_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>TU_SH_DpSample_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h" line="34" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" bodystart="28" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="143">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="142">
+        <label>TestDpSample</label>
+        <link refid="class_test_dp_sample"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="145">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="144">
+        <label>TestDpSample</label>
+        <link refid="class_test_dp_sample"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h" line="26" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.h" bodystart="26" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>blink</name></member>
+      <member refid="class_test_dp_sample_1af1aa07e3ecc6fb9d43c094cdfc0c37b8" prot="public" virt="virtual"><scope>TestDpSample</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>TestCase</name></member>
+      <member refid="class_test_dp_sample_1acaa115099e19f34434e73f9dd9da28d9" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>TestDpSample</name></member>
+      <member refid="class_test_dp_sample_1afe53f83d2eaf5483f402e1b5d14bea52" prot="public" virt="non-virtual"><scope>TestDpSample</scope><name>TU_SH_DpSample_op</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_38bf32bbf1ee8fa46ee497610e46a400" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl</compoundname>
+    <innerfile refid="dn__debug_8h">dn_debug.h</innerfile>
+    <innerfile refid="dn__defaults_8h">dn_defaults.h</innerfile>
+    <innerfile refid="dn__fsm_8c">dn_fsm.c</innerfile>
+    <innerfile refid="dn__fsm_8h">dn_fsm.h</innerfile>
+    <innerfile refid="dn__qsl__api_8h">dn_qsl_api.h</innerfile>
+    <innerfile refid="dn__time_8c">dn_time.c</innerfile>
+    <innerfile refid="dn__time_8h">dn_time.h</innerfile>
+    <innerfile refid="dn__watchdog_8c">dn_watchdog.c</innerfile>
+    <innerfile refid="dn__watchdog_8h">dn_watchdog.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/"/>
+  </compounddef>
+</doxygen>

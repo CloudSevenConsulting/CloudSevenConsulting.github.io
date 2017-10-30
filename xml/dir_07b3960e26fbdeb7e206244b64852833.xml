@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_07b3960e26fbdeb7e206244b64852833" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/time</compoundname>
+    <innerfile refid="_i_time_8cpp">ITime.cpp</innerfile>
+    <innerfile refid="_i_time_8h">ITime.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/time/"/>
+  </compounddef>
+</doxygen>

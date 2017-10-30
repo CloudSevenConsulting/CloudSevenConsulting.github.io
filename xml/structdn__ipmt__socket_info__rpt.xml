@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__ipmt__socket_info__rpt" kind="struct" language="C++" prot="public">
+    <compoundname>dn_ipmt_socketInfo_rpt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1aac8c79e048997e75a10957f3bd632ae8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_socketInfo_rpt::RC</definition>
+        <argsstring></argsstring>
+        <name>RC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="761" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1ac63c971e0e3fbeedd73a4d33c7d95d79" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_socketInfo_rpt::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="762" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1ae26c911dcc9af17d48a291217427e28d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_socketInfo_rpt::socketId</definition>
+        <argsstring></argsstring>
+        <name>socketId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="763" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1ad7b19080b560f862d7869fb888dae52e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_socketInfo_rpt::protocol</definition>
+        <argsstring></argsstring>
+        <name>protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="764" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1a77a22fbf5f8706d1b89a6cb8795e12df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_socketInfo_rpt::bindState</definition>
+        <argsstring></argsstring>
+        <name>bindState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="765" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__socket_info__rpt_1aca182e5d5f266e52ec9468e59d77ba7b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_socketInfo_rpt::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="766" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="760" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="760" bodyend="767"/>
+    <listofallmembers>
+      <member refid="structdn__ipmt__socket_info__rpt_1a77a22fbf5f8706d1b89a6cb8795e12df" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>bindState</name></member>
+      <member refid="structdn__ipmt__socket_info__rpt_1ac63c971e0e3fbeedd73a4d33c7d95d79" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>index</name></member>
+      <member refid="structdn__ipmt__socket_info__rpt_1aca182e5d5f266e52ec9468e59d77ba7b" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>port</name></member>
+      <member refid="structdn__ipmt__socket_info__rpt_1ad7b19080b560f862d7869fb888dae52e" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>protocol</name></member>
+      <member refid="structdn__ipmt__socket_info__rpt_1aac8c79e048997e75a10957f3bd632ae8" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>RC</name></member>
+      <member refid="structdn__ipmt__socket_info__rpt_1ae26c911dcc9af17d48a291217427e28d" prot="public" virt="non-virtual"><scope>dn_ipmt_socketInfo_rpt</scope><name>socketId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_accel_magno" kind="class"><name>AccelMagno</name>
+    <member refid="class_accel_magno_1a5636346cc5fe0007e34d940716d38e41" kind="variable"><name>accelFullScale</name></member>
+    <member refid="class_accel_magno_1af1693d5c283d6479b2dbe21de848cd6d" kind="variable"><name>accelLsb</name></member>
+    <member refid="class_accel_magno_1a18a3412e969a4a95ebc24398285297f5" kind="variable"><name>magnoFullScale</name></member>
+    <member refid="class_accel_magno_1ab1b770739f1001df6840ea9a8f17dea3" kind="variable"><name>magnoLsb</name></member>
+    <member refid="class_accel_magno_1a55249284973a9782b0df8e629397b25a" kind="function"><name>read16Bit</name></member>
+    <member refid="class_accel_magno_1aa084b3409e0d8e9c610c037082c3ee48" kind="function"><name>AccelMagno</name></member>
+    <member refid="class_accel_magno_1a48d4681fe913a10e04803e1ce71e0ca0" kind="function"><name>begin</name></member>
+    <member refid="class_accel_magno_1a730951ab3d52b43a097f825443a97110" kind="function"><name>lowPowerMode</name></member>
+    <member refid="class_accel_magno_1a8580024f52c8217a4d36f5c71ba392a6" kind="function"><name>readRegister</name></member>
+    <member refid="class_accel_magno_1a2834a2ac20af6ef18006742e9bf66c80" kind="function"><name>writeRegister</name></member>
+    <member refid="class_accel_magno_1a28153270e6869efc7a7c4858937944f6" kind="function"><name>enableAccel</name></member>
+    <member refid="class_accel_magno_1a82ddd1fc92e3bf0e341c93e836e6db34" kind="function"><name>disableAccel</name></member>
+    <member refid="class_accel_magno_1a5fdb7b42d1be16c9ea171e5cc83be10e" kind="function"><name>setAccelFullScale</name></member>
+    <member refid="class_accel_magno_1a1abc3f8a5e76f22a545cd77de9753706" kind="function"><name>enableMagno</name></member>
+    <member refid="class_accel_magno_1a9d2f48d85cfb041197be0fbe36d86758" kind="function"><name>disableMagno</name></member>
+    <member refid="class_accel_magno_1a833649656518a52153425d6ae176ce82" kind="function"><name>setMagnoFullScale</name></member>
+    <member refid="class_accel_magno_1a876fe5acf027e62a4c77ed47e71caa8e" kind="function"><name>rawAccelX</name></member>
+    <member refid="class_accel_magno_1a65d2f9baa70187aca71a0e44317fc01a" kind="function"><name>rawAccelY</name></member>
+    <member refid="class_accel_magno_1abd217251c988d20c0b585360807d7579" kind="function"><name>rawAccelZ</name></member>
+    <member refid="class_accel_magno_1a78f333a1b39863b9c3052b5342e46cce" kind="function"><name>accelX</name></member>
+    <member refid="class_accel_magno_1adb0fa61d80b92e7e942e6c8c898c0660" kind="function"><name>accelY</name></member>
+    <member refid="class_accel_magno_1a2b974efaf20233c65c19b3b1d25b3cdc" kind="function"><name>accelZ</name></member>
+    <member refid="class_accel_magno_1a06811f3898deb90de4333b1e4811822b" kind="function"><name>magnoX</name></member>
+    <member refid="class_accel_magno_1a74ffed2db19643da37b4581d5af608a8" kind="function"><name>magnoY</name></member>
+    <member refid="class_accel_magno_1a20b1e286b09f1886a16ac76295cb2eeb" kind="function"><name>magnoZ</name></member>
+    <member refid="class_accel_magno_1a1d0080c2fb5d0435c9f6c85e3b797506" kind="function"><name>intRead</name></member>
+  </compound>
+  <compound refid="structdn__fsm__vars__t" kind="struct"><name>dn_fsm_vars_t</name>
+    <member refid="structdn__fsm__vars__t_1a2af37137cf7561fe15f8852c294d510b" kind="variable"><name>fsmEventScheduled_ms</name></member>
+    <member refid="structdn__fsm__vars__t_1a25e6984b9dea209d6cc16c2fab7a6a30" kind="variable"><name>fsmDelay_ms</name></member>
+    <member refid="structdn__fsm__vars__t_1a341dea41b109fdf09044d54109ba2e36" kind="variable"><name>fsmArmed</name></member>
+    <member refid="structdn__fsm__vars__t_1a274aa9fcbba539e462c98eae2fe4fed8" kind="variable"><name>state</name></member>
+    <member refid="structdn__fsm__vars__t_1a63e17ff65b3aca891bb9a9f1744ac9b2" kind="variable"><name>replyCb</name></member>
+    <member refid="structdn__fsm__vars__t_1aa0f269aff19c3b94a30e807790fb3ebc" kind="variable"><name>fsmCb</name></member>
+    <member refid="structdn__fsm__vars__t_1aa85a3f22b95229e2103818801b217e19" kind="variable"><name>replyBuf</name></member>
+    <member refid="structdn__fsm__vars__t_1afa1a4f476b0c811a6237e4fdcae6e2cd" kind="variable"><name>notifBuf</name></member>
+    <member refid="structdn__fsm__vars__t_1a2992244c7ebde06a36394ab7eb29b69d" kind="variable"><name>socketId</name></member>
+    <member refid="structdn__fsm__vars__t_1a7bea3d195f452bfaabcaa2a065d8c58a" kind="variable"><name>networkId</name></member>
+    <member refid="structdn__fsm__vars__t_1a9697e8e0d7e555bf49550283f0738bba" kind="variable"><name>joinKey</name></member>
+    <member refid="structdn__fsm__vars__t_1a691f0a75ec81e529117cfe4093bd62b6" kind="variable"><name>srcPort</name></member>
+    <member refid="structdn__fsm__vars__t_1a946a00127645f28a95010ee8d1816127" kind="variable"><name>service_ms</name></member>
+    <member refid="structdn__fsm__vars__t_1a1c0c544e4fa9e8c1dab65b1fed3d0e47" kind="variable"><name>payloadBuf</name></member>
+    <member refid="structdn__fsm__vars__t_1ac850fb93457d74823410a2e56321d2b7" kind="variable"><name>payloadSize</name></member>
+    <member refid="structdn__fsm__vars__t_1a4f9e8c8eb3d185689c76596ed175a798" kind="variable"><name>destIPv6</name></member>
+    <member refid="structdn__fsm__vars__t_1a42e2c0fa4bbc150cca8befe238d1c222" kind="variable"><name>destPort</name></member>
+    <member refid="structdn__fsm__vars__t_1a56820b528cd0e421f98bf4d01ef12085" kind="variable"><name>inbox</name></member>
+  </compound>
+  <compound refid="structdn__hdlc__vars__t" kind="struct"><name>dn_hdlc_vars_t</name>
+    <member refid="structdn__hdlc__vars__t_1a2e7e84b3353b590ea9f3808372997164" kind="variable"><name>rxFrame_cb</name></member>
+    <member refid="structdn__hdlc__vars__t_1a0823865256a3d09b1a478c1e09b2ddf5" kind="variable"><name>lastRxByte</name></member>
+    <member refid="structdn__hdlc__vars__t_1ae86a3e86cff24e12eb3fa60a9d29f40d" kind="variable"><name>busyReceiving</name></member>
+    <member refid="structdn__hdlc__vars__t_1a29b67eec4ea7c2a644fa63adebc7fa46" kind="variable"><name>inputEscaping</name></member>
+    <member refid="structdn__hdlc__vars__t_1ac934aa47221bf3a95e4d61e12fdd9584" kind="variable"><name>inputCrc</name></member>
+    <member refid="structdn__hdlc__vars__t_1abb4f94363b9ef4f1c587e139d8a022c5" kind="variable"><name>inputBufFill</name></member>
+    <member refid="structdn__hdlc__vars__t_1add4ccf6d8d1792ec87ef7d9380d59820" kind="variable"><name>inputBuf</name></member>
+    <member refid="structdn__hdlc__vars__t_1a4add6c65ba7d76ead12626853d39690f" kind="variable"><name>outputCrc</name></member>
+  </compound>
+  <compound refid="structdn__inbox__t" kind="struct"><name>dn_inbox_t</name>
+    <member refid="structdn__inbox__t_1ab81d5b2369c780020ac09336268a47b0" kind="variable"><name>pktBuf</name></member>
+    <member refid="structdn__inbox__t_1aec89fbc9988f2e89cf60234af752856d" kind="variable"><name>pktSize</name></member>
+    <member refid="structdn__inbox__t_1aa3bcbbba8bb7204b3940ab992dc01cfd" kind="variable"><name>head</name></member>
+    <member refid="structdn__inbox__t_1a0f3deaf63794b098de9b386639603761" kind="variable"><name>tail</name></member>
+    <member refid="structdn__inbox__t_1abb6e3e5e35f0c69881822e82a1bda0f9" kind="variable"><name>unreadPackets</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__adv_received__nt" kind="struct"><name>dn_ipmt_advReceived_nt</name>
+    <member refid="structdn__ipmt__adv_received__nt_1a4f9e00741bc3e85af01cbd572134cdf9" kind="variable"><name>netId</name></member>
+    <member refid="structdn__ipmt__adv_received__nt_1a67bc52b304fcd56110a032ce93d70f91" kind="variable"><name>moteId</name></member>
+    <member refid="structdn__ipmt__adv_received__nt_1a81d612c7c7c80c7a54575b47a4d5c8bf" kind="variable"><name>rssi</name></member>
+    <member refid="structdn__ipmt__adv_received__nt_1ace390c1274889bd557fbc894f93669e9" kind="variable"><name>joinPri</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__bind_socket__rpt" kind="struct"><name>dn_ipmt_bindSocket_rpt</name>
+    <member refid="structdn__ipmt__bind_socket__rpt_1ae710c899e47609f3562bff16406428ee" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__clear_n_v__rpt" kind="struct"><name>dn_ipmt_clearNV_rpt</name>
+    <member refid="structdn__ipmt__clear_n_v__rpt_1a30b36194c6c351330068addd216b8306" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__close_socket__rpt" kind="struct"><name>dn_ipmt_closeSocket_rpt</name>
+    <member refid="structdn__ipmt__close_socket__rpt_1a8d2406c609d686561021b5739312b0e5" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__disconnect__rpt" kind="struct"><name>dn_ipmt_disconnect_rpt</name>
+    <member refid="structdn__ipmt__disconnect__rpt_1a13b8e3f0946fcfaaadc2d629deb46d2f" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__events__nt" kind="struct"><name>dn_ipmt_events_nt</name>
+    <member refid="structdn__ipmt__events__nt_1a8fee421f72763588f392b25d53b91c05" kind="variable"><name>events</name></member>
+    <member refid="structdn__ipmt__events__nt_1a482bd1474356944c03adaff193515642" kind="variable"><name>state</name></member>
+    <member refid="structdn__ipmt__events__nt_1a45110bf20aa3c5794a1bf0c58ded3da8" kind="variable"><name>alarmsList</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__app_info__rpt" kind="struct"><name>dn_ipmt_getParameter_appInfo_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__app_info__rpt_1a8f6bdf636860f6a270b618691dfe98a6" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__app_info__rpt_1a3057e0c8d59c174f84ab08e4ae9180e4" kind="variable"><name>vendorId</name></member>
+    <member refid="structdn__ipmt__get_parameter__app_info__rpt_1aa15f66222185408e53e94445f2762956" kind="variable"><name>appId</name></member>
+    <member refid="structdn__ipmt__get_parameter__app_info__rpt_1ac66194e04a63fbce3f8f92ba62547fe1" kind="variable"><name>appVer</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__auto_join__rpt" kind="struct"><name>dn_ipmt_getParameter_autoJoin_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__auto_join__rpt_1a03094dfa980395fe49f097868b0ca9bc" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__auto_join__rpt_1a025273f2136fdd58b3f1114620624db8" kind="variable"><name>autoJoin</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__charge__rpt" kind="struct"><name>dn_ipmt_getParameter_charge_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__charge__rpt_1a9c5394fd6fc15ab9d6f19123768d245b" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__charge__rpt_1a9287e77bfc5288cfd79766a7a46cd6af" kind="variable"><name>qTotal</name></member>
+    <member refid="structdn__ipmt__get_parameter__charge__rpt_1a4b8e9703215b30331fd7d296a94b65fc" kind="variable"><name>upTime</name></member>
+    <member refid="structdn__ipmt__get_parameter__charge__rpt_1a283d0604261768a962735025f661adc4" kind="variable"><name>tempInt</name></member>
+    <member refid="structdn__ipmt__get_parameter__charge__rpt_1a46a3ff166e2201df1d05884a28cacb2e" kind="variable"><name>tempFrac</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__event_mask__rpt" kind="struct"><name>dn_ipmt_getParameter_eventMask_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__event_mask__rpt_1a3254b0a03bc266fd52a5ef71b515e18d" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__event_mask__rpt_1a618d75ab437f3845f80d3cba71948018" kind="variable"><name>eventMask</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__ipv6_address__rpt" kind="struct"><name>dn_ipmt_getParameter_ipv6Address_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__ipv6_address__rpt_1a5917ae9f55f00684a3f5c155d4f9f5a2" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__ipv6_address__rpt_1a71830ae7677587212eae06f67ca70ac9" kind="variable"><name>ipv6Address</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__join_duty_cycle__rpt" kind="struct"><name>dn_ipmt_getParameter_joinDutyCycle_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__join_duty_cycle__rpt_1a12bd522005bbb74336fb1f6bbe310b60" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__join_duty_cycle__rpt_1a927bb466bb9d2ed9a1127571f956e8f9" kind="variable"><name>joinDutyCycle</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__mac_address__rpt" kind="struct"><name>dn_ipmt_getParameter_macAddress_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__mac_address__rpt_1a097872f8a899f52431baa6287d843629" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__mac_address__rpt_1aaf7a5e9182e3b7e40d3da307fff5d1e4" kind="variable"><name>macAddress</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__mote_id__rpt" kind="struct"><name>dn_ipmt_getParameter_moteId_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__mote_id__rpt_1a06742fc3572a0e9b3db7e7cceb9e4f8f" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_id__rpt_1a3c665ac1f5e12072339d268da0c19490" kind="variable"><name>moteId</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__mote_info__rpt" kind="struct"><name>dn_ipmt_getParameter_moteInfo_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1a40eb4e329eea054e6f52d6b3467fb20e" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1af2c6a0082ff7724daa08d2bd9a319026" kind="variable"><name>apiVersion</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1ad4afc4330dbf99d88a17ed6436cf8030" kind="variable"><name>serialNumber</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1a7094759a1772acf718eb01a9f6145d0f" kind="variable"><name>hwModel</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1a4d76e90409057ce839a08a81a8291444" kind="variable"><name>hwRev</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1accf079828418c1829cc5230b2f0bc632" kind="variable"><name>swVerMajor</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1a43791de52e597742ee9d1dec4ff36928" kind="variable"><name>swVerMinor</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1ac5a1226fe42d965c8d54250f5642f231" kind="variable"><name>swVerPatch</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1aeab8461e11d1cb9b96e4819717d03f93" kind="variable"><name>swVerBuild</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_info__rpt_1a89996228e497f4956af9cf17109e359c" kind="variable"><name>bootSwVer</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__mote_status__rpt" kind="struct"><name>dn_ipmt_getParameter_moteStatus_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1a1f62423b9b21d3a667ce03839467ffdc" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1a90566af7c6abb0eb41a5fe0629d58b49" kind="variable"><name>state</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1ae5703d5e7f68bf9618b8932fc2e58425" kind="variable"><name>reserved_0</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1a222d47d2b431767c055dfb1a4314cebe" kind="variable"><name>reserved_1</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1a6aaa86662a8f6a79245bbbaf9ff68154" kind="variable"><name>numParents</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1abbfac5e610ee53c5a04ed45f8d06010f" kind="variable"><name>alarms</name></member>
+    <member refid="structdn__ipmt__get_parameter__mote_status__rpt_1a9c949fc36926f4a625ecfd22316333c0" kind="variable"><name>reserved_2</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__net_info__rpt" kind="struct"><name>dn_ipmt_getParameter_netInfo_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__net_info__rpt_1a2ca5600037576f147276060c39a45da5" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__net_info__rpt_1a5e94e157e34d780acc5be9efc86c2f38" kind="variable"><name>macAddress</name></member>
+    <member refid="structdn__ipmt__get_parameter__net_info__rpt_1a502c37e51844c9c24c970f06b111511f" kind="variable"><name>moteId</name></member>
+    <member refid="structdn__ipmt__get_parameter__net_info__rpt_1a36cc69cd8037f4e8162784a5b907eb59" kind="variable"><name>networkId</name></member>
+    <member refid="structdn__ipmt__get_parameter__net_info__rpt_1a9122625bcffb7bcc591a5bb4609aadf3" kind="variable"><name>slotSize</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__network_id__rpt" kind="struct"><name>dn_ipmt_getParameter_networkId_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__network_id__rpt_1ab28cb7db899d37f8e1efc62231637a72" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__network_id__rpt_1ab5452bbec613ce06dfb0c4914c807a5d" kind="variable"><name>networkId</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter___o_t_a_p_lockout__rpt" kind="struct"><name>dn_ipmt_getParameter_OTAPLockout_rpt</name>
+    <member refid="structdn__ipmt__get_parameter___o_t_a_p_lockout__rpt_1a5aa343b97774b62b2bf2c89eeb63dd65" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter___o_t_a_p_lockout__rpt_1a8630f9c43d4e59dd89d08ea897e1e58b" kind="variable"><name>mode</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__power_src_info__rpt" kind="struct"><name>dn_ipmt_getParameter_powerSrcInfo_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a50fec447e0cc710e339964425b163afe" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a3d392df9af821e6c7bc66e2cb1f2c443" kind="variable"><name>maxStCurrent</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a531fbb8c729d7867451f716dc48fd0d1" kind="variable"><name>minLifetime</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a0e3e06496e9c715a64a6655fc914080f" kind="variable"><name>currentLimit_0</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a01b8ad3447e498a39573d1d46c8ae986" kind="variable"><name>dischargePeriod_0</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a2547fa6374a4efc3862ce6e0dd47b00d" kind="variable"><name>rechargePeriod_0</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a9ac59e9a6ea28682bfeccc70cf2e9d9a" kind="variable"><name>currentLimit_1</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a5d7d2a4127117f928ac4dd89104b0e60" kind="variable"><name>dischargePeriod_1</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a583f6e07c2e3f7751f81150a8706742a" kind="variable"><name>rechargePeriod_1</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a6f94709ae27639497258abc6c2329888" kind="variable"><name>currentLimit_2</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a994b41b0a80facead291e3132f7a9252" kind="variable"><name>dischargePeriod_2</name></member>
+    <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1ac927f0476aa399598f56d94512385264" kind="variable"><name>rechargePeriod_2</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__routing_mode__rpt" kind="struct"><name>dn_ipmt_getParameter_routingMode_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__routing_mode__rpt_1a0d1401636cd38244bcdc71957a704e0b" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__routing_mode__rpt_1a66241020d4e76b4b57170a5a6e604df4" kind="variable"><name>routingMode</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__test_radio_rx_stats__rpt" kind="struct"><name>dn_ipmt_getParameter_testRadioRxStats_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__test_radio_rx_stats__rpt_1a55ce26e68b8c236fbeeb8ab5de70d308" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__test_radio_rx_stats__rpt_1a543b3637ff73998b3c10029e63ccb615" kind="variable"><name>rxOk</name></member>
+    <member refid="structdn__ipmt__get_parameter__test_radio_rx_stats__rpt_1a326e5b0a9f47c05c5f3809d935615394" kind="variable"><name>rxFailed</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__time__rpt" kind="struct"><name>dn_ipmt_getParameter_time_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1ac7b7e3b12ce3c7eea27ecb90c843c8b8" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1a9eefeea2fb13bfc875a3540daa394b95" kind="variable"><name>upTime</name></member>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1a021224db82b6df2126e9068d14998066" kind="variable"><name>utcSecs</name></member>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1acc52a969c54783b8a45fa30aa46e5bcd" kind="variable"><name>utcUsecs</name></member>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1aa38d7a4ea2163b66f7f5538f5227e992" kind="variable"><name>asn</name></member>
+    <member refid="structdn__ipmt__get_parameter__time__rpt_1a75d65c297d591c38bbdc97f1b7388009" kind="variable"><name>asnOffset</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_parameter__tx_power__rpt" kind="struct"><name>dn_ipmt_getParameter_txPower_rpt</name>
+    <member refid="structdn__ipmt__get_parameter__tx_power__rpt_1a1148b620b6f4a6309f8a86779e43d14d" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_parameter__tx_power__rpt_1aa619112dc8eee95e62185e8a9d943089" kind="variable"><name>txPower</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__get_service_info__rpt" kind="struct"><name>dn_ipmt_getServiceInfo_rpt</name>
+    <member refid="structdn__ipmt__get_service_info__rpt_1a4050cd2498ef07ad146913990abcc81b" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__get_service_info__rpt_1ad2517392eb36165ceaa8379895d258b9" kind="variable"><name>destAddr</name></member>
+    <member refid="structdn__ipmt__get_service_info__rpt_1ac3f9170a9f58a1f6b90482234086cd7b" kind="variable"><name>type</name></member>
+    <member refid="structdn__ipmt__get_service_info__rpt_1adeb4c49d1281647f19de4708b87783c0" kind="variable"><name>state</name></member>
+    <member refid="structdn__ipmt__get_service_info__rpt_1a96dc1d74d396e3b2633f61f6f4fd3d67" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__join__rpt" kind="struct"><name>dn_ipmt_join_rpt</name>
+    <member refid="structdn__ipmt__join__rpt_1ab77df69a0688a4cf8beae9d6156efd87" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__low_power_sleep__rpt" kind="struct"><name>dn_ipmt_lowPowerSleep_rpt</name>
+    <member refid="structdn__ipmt__low_power_sleep__rpt_1af39e345626256a4ecfe9367907d60aea" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__mac_rx__nt" kind="struct"><name>dn_ipmt_macRx_nt</name>
+    <member refid="structdn__ipmt__mac_rx__nt_1abcccf8991dd784b7b83cf4b3189a46d3" kind="variable"><name>payload</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__open_socket__rpt" kind="struct"><name>dn_ipmt_openSocket_rpt</name>
+    <member refid="structdn__ipmt__open_socket__rpt_1aa69d774a0516d0826f0dce2fc6c19dfa" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__open_socket__rpt_1aa6771f3c1574e1a47168b327a6ff1d05" kind="variable"><name>socketId</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__receive__nt" kind="struct"><name>dn_ipmt_receive_nt</name>
+    <member refid="structdn__ipmt__receive__nt_1ae5d1f0f5df4025f6b047ed4412f6114b" kind="variable"><name>socketId</name></member>
+    <member refid="structdn__ipmt__receive__nt_1a67164aebc7f06dc16749425497c6e138" kind="variable"><name>srcAddr</name></member>
+    <member refid="structdn__ipmt__receive__nt_1aa5c83a7bb40e39fe42a9c2d81adee298" kind="variable"><name>srcPort</name></member>
+    <member refid="structdn__ipmt__receive__nt_1aaeff7a6a12fdbc57cbb0d6fabbeaf99d" kind="variable"><name>payloadLen</name></member>
+    <member refid="structdn__ipmt__receive__nt_1ac6bf62ca7a01976e5d1d1225c7950edf" kind="variable"><name>payload</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__request_service__rpt" kind="struct"><name>dn_ipmt_requestService_rpt</name>
+    <member refid="structdn__ipmt__request_service__rpt_1a71b881823843197b45544bb7211b71c2" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__reset__rpt" kind="struct"><name>dn_ipmt_reset_rpt</name>
+    <member refid="structdn__ipmt__reset__rpt_1a931ff9a6606ecb700b7d2aa8dda2f8a8" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__search__rpt" kind="struct"><name>dn_ipmt_search_rpt</name>
+    <member refid="structdn__ipmt__search__rpt_1adc96d7e146238edb106aed7e52e0c697" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__send_to__rpt" kind="struct"><name>dn_ipmt_sendTo_rpt</name>
+    <member refid="structdn__ipmt__send_to__rpt_1a584b703df89221e5347aaf83b96c1d2f" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__adv_key__rpt" kind="struct"><name>dn_ipmt_setParameter_advKey_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__adv_key__rpt_1a7ff2778c3369da7ed490eb1c866e2b2b" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__auto_join__rpt" kind="struct"><name>dn_ipmt_setParameter_autoJoin_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__auto_join__rpt_1aa9b38e005c741c9417187c118849385f" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__event_mask__rpt" kind="struct"><name>dn_ipmt_setParameter_eventMask_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__event_mask__rpt_1a81cd9f0ff1ad08e8ccd8a7b1528f3c77" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__join_duty_cycle__rpt" kind="struct"><name>dn_ipmt_setParameter_joinDutyCycle_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__join_duty_cycle__rpt_1a6876942bd764a721678c625c4c30bbb7" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__join_key__rpt" kind="struct"><name>dn_ipmt_setParameter_joinKey_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__join_key__rpt_1ac4e8827f9014ea961ff874c933760515" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__mac_address__rpt" kind="struct"><name>dn_ipmt_setParameter_macAddress_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__mac_address__rpt_1acdc35907a4f0bd38a7863d627ec7b3cc" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__network_id__rpt" kind="struct"><name>dn_ipmt_setParameter_networkId_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__network_id__rpt_1ac7c9dc464a5f3c3102fdefb9fb1c85a7" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter___o_t_a_p_lockout__rpt" kind="struct"><name>dn_ipmt_setParameter_OTAPLockout_rpt</name>
+    <member refid="structdn__ipmt__set_parameter___o_t_a_p_lockout__rpt_1ad20fce1834d971b284f5151bd794faef" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__power_src_info__rpt" kind="struct"><name>dn_ipmt_setParameter_powerSrcInfo_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__power_src_info__rpt_1a51544772efac784c8b69b2f02da0ca5f" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__routing_mode__rpt" kind="struct"><name>dn_ipmt_setParameter_routingMode_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__routing_mode__rpt_1a87ad7451775d35013cf2c6c86e95018f" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__set_parameter__tx_power__rpt" kind="struct"><name>dn_ipmt_setParameter_txPower_rpt</name>
+    <member refid="structdn__ipmt__set_parameter__tx_power__rpt_1a2d9605b5b866873af14a344b08776bcb" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__socket_info__rpt" kind="struct"><name>dn_ipmt_socketInfo_rpt</name>
+    <member refid="structdn__ipmt__socket_info__rpt_1aac8c79e048997e75a10957f3bd632ae8" kind="variable"><name>RC</name></member>
+    <member refid="structdn__ipmt__socket_info__rpt_1ac63c971e0e3fbeedd73a4d33c7d95d79" kind="variable"><name>index</name></member>
+    <member refid="structdn__ipmt__socket_info__rpt_1ae26c911dcc9af17d48a291217427e28d" kind="variable"><name>socketId</name></member>
+    <member refid="structdn__ipmt__socket_info__rpt_1ad7b19080b560f862d7869fb888dae52e" kind="variable"><name>protocol</name></member>
+    <member refid="structdn__ipmt__socket_info__rpt_1a77a22fbf5f8706d1b89a6cb8795e12df" kind="variable"><name>bindState</name></member>
+    <member refid="structdn__ipmt__socket_info__rpt_1aca182e5d5f266e52ec9468e59d77ba7b" kind="variable"><name>port</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__test_radio_rx__rpt" kind="struct"><name>dn_ipmt_testRadioRx_rpt</name>
+    <member refid="structdn__ipmt__test_radio_rx__rpt_1a7ef222a02d48b1810d0c07584db3e304" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__test_radio_tx_ext__rpt" kind="struct"><name>dn_ipmt_testRadioTxExt_rpt</name>
+    <member refid="structdn__ipmt__test_radio_tx_ext__rpt_1a1aec3fa58cd0b875bff4e47413156ec0" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__time_indication__nt" kind="struct"><name>dn_ipmt_timeIndication_nt</name>
+    <member refid="structdn__ipmt__time_indication__nt_1a1eeeb6106a348f4404b884b7a7d5c783" kind="variable"><name>uptime</name></member>
+    <member refid="structdn__ipmt__time_indication__nt_1a9dc0c7122304056c855745fa355c68c5" kind="variable"><name>utcSecs</name></member>
+    <member refid="structdn__ipmt__time_indication__nt_1a7b91164dc0dd4a9b7bc864aacab8aadd" kind="variable"><name>utcUsecs</name></member>
+    <member refid="structdn__ipmt__time_indication__nt_1a0cf4676380328f0fb39f8ba7bbb9f094" kind="variable"><name>asn</name></member>
+    <member refid="structdn__ipmt__time_indication__nt_1a7dfce885c3e70eb1bf76c1461670918e" kind="variable"><name>asnOffset</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__tx_done__nt" kind="struct"><name>dn_ipmt_txDone_nt</name>
+    <member refid="structdn__ipmt__tx_done__nt_1a93bc3c25d50e2ebd59164b589a262d40" kind="variable"><name>packetId</name></member>
+    <member refid="structdn__ipmt__tx_done__nt_1a8ba6b0ad33fe048c95b2588b57d8c9f5" kind="variable"><name>status</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__vars__t" kind="struct"><name>dn_ipmt_vars_t</name>
+    <member refid="structdn__ipmt__vars__t_1abcb689c1bc4116d8e3c84fd76cc12cae" kind="variable"><name>outputBuf</name></member>
+    <member refid="structdn__ipmt__vars__t_1aef1b70ac182ac13a119ff0c497b22827" kind="variable"><name>busyTx</name></member>
+    <member refid="structdn__ipmt__vars__t_1ab5c875d146e3b457732ddbea52ba2dee" kind="variable"><name>cmdId</name></member>
+    <member refid="structdn__ipmt__vars__t_1ae647876c4675d6badbaf6d85a68ec5f6" kind="variable"><name>paramId</name></member>
+    <member refid="structdn__ipmt__vars__t_1a9749dc1b2af6515c1c6d6b42b415f1d4" kind="variable"><name>replyCb</name></member>
+    <member refid="structdn__ipmt__vars__t_1a93facd282f56f9974c63ae05b5df5fe3" kind="variable"><name>replyContents</name></member>
+    <member refid="structdn__ipmt__vars__t_1a807d34073416abe513ae77d60be8e8c8" kind="variable"><name>notifCb</name></member>
+    <member refid="structdn__ipmt__vars__t_1a92795a9c6ff6b5fa5807d5c1282b39b8" kind="variable"><name>notifBuf</name></member>
+    <member refid="structdn__ipmt__vars__t_1aa77f201980bc71d9b7b59a818a4778b9" kind="variable"><name>notifBufLen</name></member>
+  </compound>
+  <compound refid="structdn__ipmt__zeroize__rpt" kind="struct"><name>dn_ipmt_zeroize_rpt</name>
+    <member refid="structdn__ipmt__zeroize__rpt_1a8af1b638588934a6c69a7247cf1b2afc" kind="variable"><name>RC</name></member>
+  </compound>
+  <compound refid="structdn__serial__mt__vars__t" kind="struct"><name>dn_serial_mt_vars_t</name>
+    <member refid="structdn__serial__mt__vars__t_1a4f176aa35a84ce3b897f5b8943018ff1" kind="variable"><name>txPacketId</name></member>
+    <member refid="structdn__serial__mt__vars__t_1ac3ce88a548e369fde14035c8dbf3a085" kind="variable"><name>rxPacketId</name></member>
+    <member refid="structdn__serial__mt__vars__t_1a53e432d2dd8a1e8ea7ba76a03226a3ac" kind="variable"><name>replyCmdId</name></member>
+    <member refid="structdn__serial__mt__vars__t_1a087c3386da63fbfe243befaf771074e6" kind="variable"><name>replyCb</name></member>
+    <member refid="structdn__serial__mt__vars__t_1a0db376e2f04cd213fa14bbcc5298cbdd" kind="variable"><name>requestCb</name></member>
+  </compound>
+  <compound refid="structdn__uart__vars__t" kind="struct"><name>dn_uart_vars_t</name>
+    <member refid="structdn__uart__vars__t_1a9e781dd27fde18cc1612843051002286" kind="variable"><name>ipmt_uart_rxByte_cb</name></member>
+    <member refid="structdn__uart__vars__t_1a5c45292db643b3554a1e4053362977dd" kind="variable"><name>np_rts</name></member>
+    <member refid="structdn__uart__vars__t_1a2474498597c7928024ec4398c27b5981" kind="variable"><name>np_cts</name></member>
+    <member refid="structdn__uart__vars__t_1a011bfc458ab2531f812f661cd9c67cdf" kind="variable"><name>pn_rts</name></member>
+    <member refid="structdn__uart__vars__t_1a6c3b5168e6dd87a0f843629bb2a9b2a6" kind="variable"><name>pn_cts</name></member>
+    <member refid="structdn__uart__vars__t_1aa2c9c27d840688abd52112882b0ba5c0" kind="variable"><name>bufc</name></member>
+  </compound>
+  <compound refid="structdp__payload__t" kind="struct"><name>dp_payload_t</name>
+    <member refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kind="variable"><name>_ready_send</name></member>
+    <member refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kind="variable"><name>_payload_ptr</name></member>
+    <member refid="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" kind="variable"><name>payload</name></member>
+  </compound>
+  <compound refid="structsys__state" kind="struct"><name>sys_state</name>
+    <member refid="structsys__state_1a59266639a126d10200a8e75c19f5f539" kind="variable"><name>_conf_set_flag</name></member>
+    <member refid="structsys__state_1a8d27e1b467a76a698e7ea04c70b0517a" kind="variable"><name>_conf</name></member>
+    <member refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kind="variable"><name>_sys_sleepguard</name></member>
+    <member refid="structsys__state_1aab3c50a704cfad2f09f6a0ce69396841" kind="variable"><name>_sys_ready_flag</name></member>
+    <member refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" kind="variable"><name>_sensor_status</name></member>
+    <member refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kind="variable"><name>_sensor_type</name></member>
+    <member refid="structsys__state_1a3cb6ca8a8fa7dff59d246f6555bf1225" kind="variable"><name>_sensor_addr</name></member>
+    <member refid="structsys__state_1a0f563c3e86bb8b0be33874b724049c83" kind="variable"><name>_sensor_n_outputs</name></member>
+  </compound>
+  <compound refid="class_test_case" kind="class"><name>TestCase</name>
+    <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" kind="variable"><name>tctrl_stop_on_success</name></member>
+    <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" kind="function"><name>TestCase</name></member>
+    <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" kind="function"><name>blink</name></member>
+    <member refid="class_test_case_1a4df94e96b5821448d41abafde5041e25" kind="function"><name>run</name></member>
+    <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kind="function"><name>t_fail</name></member>
+    <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" kind="function"><name>t_pass</name></member>
+  </compound>
+  <compound refid="class_test_dn_join" kind="class"><name>TestDnJoin</name>
+    <member refid="class_test_dn_join_1a70fd3f5beeeef566ceafe44fbefac0dd" kind="function"><name>TestDnJoin</name></member>
+    <member refid="class_test_dn_join_1a4bbf702908e66844ec0fa5ae341f54dc" kind="function"><name>run</name></member>
+    <member refid="class_test_dn_join_1aa2e5030069012e64d4df7f99fb20b735" kind="function"><name>test_join_bau</name></member>
+  </compound>
+  <compound refid="class_test_dp_framing" kind="class"><name>TestDpFraming</name>
+    <member refid="class_test_dp_framing_1a5299e545d6668c2caeefbd9a2759f87d" kind="function"><name>TestDpFraming</name></member>
+    <member refid="class_test_dp_framing_1a419312058d5a199ebf9996900b9e94f1" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_framing_1a506ec0acdf2ec1b73cbcb40011dab106" kind="function"><name>TU_SH_DpFraming_op</name></member>
+  </compound>
+  <compound refid="class_test_dp_sample" kind="class"><name>TestDpSample</name>
+    <member refid="class_test_dp_sample_1acaa115099e19f34434e73f9dd9da28d9" kind="function"><name>TestDpSample</name></member>
+    <member refid="class_test_dp_sample_1af1aa07e3ecc6fb9d43c094cdfc0c37b8" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_sample_1afe53f83d2eaf5483f402e1b5d14bea52" kind="function"><name>TU_SH_DpSample_op</name></member>
+  </compound>
+  <compound refid="class_test_dp_sample_diagnostic" kind="class"><name>TestDpSampleDiagnostic</name>
+    <member refid="class_test_dp_sample_diagnostic_1ad7d97989182bd8b752a8f6880b9d9d4e" kind="function"><name>TestDpSampleDiagnostic</name></member>
+    <member refid="class_test_dp_sample_diagnostic_1af05dcbb75ea8cd6ed8cc19160d9d108f" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_sample_diagnostic_1ae5aabab11da24be39d9f02040799ca8b" kind="function"><name>TU_SH_DpSampleDiagnostic_op</name></member>
+  </compound>
+  <compound refid="class_test_dp_sample_sensor" kind="class"><name>TestDpSampleSensor</name>
+    <member refid="class_test_dp_sample_sensor_1ad8f4380e9bd1e72fcda59586c0a5d345" kind="function"><name>TestDpSampleSensor</name></member>
+    <member refid="class_test_dp_sample_sensor_1a4dd9272b7e36108d949874591b20ba86" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_sample_sensor_1a490a4fae1929530e3f07a3c0bfdc37ab" kind="function"><name>TU_SH_DpSampleSensor_op</name></member>
+  </compound>
+  <compound refid="class_test_dp_sample_time" kind="class"><name>TestDpSampleTime</name>
+    <member refid="class_test_dp_sample_time_1ad19e70e94eaf74ef2f1e8f35ab0e9d2a" kind="function"><name>TestDpSampleTime</name></member>
+    <member refid="class_test_dp_sample_time_1a4240ec773e29ae0e775a46480315ee38" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_sample_time_1a2a08a8768727c16f2514ddcad50ec888" kind="function"><name>TU_SH_DpSampleTime_op</name></member>
+  </compound>
+  <compound refid="class_test_dp_sys" kind="class"><name>TestDpSys</name>
+    <member refid="class_test_dp_sys_1acf3236bd22f6aabb76dc2f53d500ce22" kind="function"><name>TestDpSys</name></member>
+    <member refid="class_test_dp_sys_1ab6520f132f67a42404702dd3a68c74f0" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_sys_1a2e10d634fef3ed81b9994e3355f60588" kind="function"><name>TU_SH_DpSys_FlashBlink_Op</name></member>
+  </compound>
+  <compound refid="class_test_dp_uart" kind="class"><name>TestDpUart</name>
+    <member refid="class_test_dp_uart_1aaf394eb7faf370fb70fc06937867fd8f" kind="function"><name>TestDpUart</name></member>
+    <member refid="class_test_dp_uart_1acd075401c95f11b0863ac5595ae94036" kind="function"><name>run</name></member>
+    <member refid="class_test_dp_uart_1a1e0f61484e825ba3be6ced7604418451" kind="function"><name>TU_SH_DpUart_external_op</name></member>
+  </compound>
+  <compound refid="class_test_port" kind="class"><name>TestPort</name>
+    <member refid="class_test_port_1a78037564896f8a48a61f83440698430f" kind="function"><name>TestPort</name></member>
+    <member refid="class_test_port_1aa8ffd5f733e8efce73b37692b7ec12a3" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="dp__api_8d" kind="file"><name>dp_api.d</name>
+  </compound>
+  <compound refid="dp__conf_8d" kind="file"><name>dp_conf.d</name>
+  </compound>
+  <compound refid="dp__sm_8d" kind="file"><name>dp_sm.d</name>
+  </compound>
+  <compound refid="main_8d" kind="file"><name>main.d</name>
+  </compound>
+  <compound refid="port_8d" kind="file"><name>port.d</name>
+  </compound>
+  <compound refid="_accel_magno_8d" kind="file"><name>AccelMagno.d</name>
+  </compound>
+  <compound refid="frame_8d" kind="file"><name>frame.d</name>
+  </compound>
+  <compound refid="sample_8d" kind="file"><name>sample.d</name>
+  </compound>
+  <compound refid="sensor_8d" kind="file"><name>sensor.d</name>
+  </compound>
+  <compound refid="dn__endianness_8d" kind="file"><name>dn_endianness.d</name>
+  </compound>
+  <compound refid="dn__hdlc_8d" kind="file"><name>dn_hdlc.d</name>
+  </compound>
+  <compound refid="dn__ipmt_8d" kind="file"><name>dn_ipmt.d</name>
+  </compound>
+  <compound refid="dn__lock_8d" kind="file"><name>dn_lock.d</name>
+  </compound>
+  <compound refid="dn__serial__mt_8d" kind="file"><name>dn_serial_mt.d</name>
+  </compound>
+  <compound refid="dn__uart_8d" kind="file"><name>dn_uart.d</name>
+  </compound>
+  <compound refid="dn__fsm_8d" kind="file"><name>dn_fsm.d</name>
+  </compound>
+  <compound refid="dn__time_8d" kind="file"><name>dn_time.d</name>
+  </compound>
+  <compound refid="dn__watchdog_8d" kind="file"><name>dn_watchdog.d</name>
+  </compound>
+  <compound refid="tester_8d" kind="file"><name>tester.d</name>
+  </compound>
+  <compound refid="_test_case_8d" kind="file"><name>TestCase.d</name>
+  </compound>
+  <compound refid="_test_dn_join_8d" kind="file"><name>TestDnJoin.d</name>
+  </compound>
+  <compound refid="_test_dp_framing_8d" kind="file"><name>TestDpFraming.d</name>
+  </compound>
+  <compound refid="_test_dp_sample_8d" kind="file"><name>TestDpSample.d</name>
+  </compound>
+  <compound refid="_test_dp_sample_diagnostic_8d" kind="file"><name>TestDpSampleDiagnostic.d</name>
+  </compound>
+  <compound refid="_test_dp_sample_sensor_8d" kind="file"><name>TestDpSampleSensor.d</name>
+  </compound>
+  <compound refid="_test_dp_sample_time_8d" kind="file"><name>TestDpSampleTime.d</name>
+  </compound>
+  <compound refid="_test_dp_sys_8d" kind="file"><name>TestDpSys.d</name>
+  </compound>
+  <compound refid="_test_dp_uart_8d" kind="file"><name>TestDpUart.d</name>
+  </compound>
+  <compound refid="_test_port_8d" kind="file"><name>TestPort.d</name>
+  </compound>
+  <compound refid="_i_time_8d" kind="file"><name>ITime.d</name>
+  </compound>
+  <compound refid="_i_serial_8d" kind="file"><name>ISerial.d</name>
+  </compound>
+  <compound refid="usart__flow_8d" kind="file"><name>usart_flow.d</name>
+  </compound>
+  <compound refid="dp__api_8cpp" kind="file"><name>dp_api.cpp</name>
+    <member refid="dp__api_8cpp_1a71cbbdab199f8302e52e281fcf841b90" kind="function"><name>dp_board_set_led</name></member>
+  </compound>
+  <compound refid="dp__api_8h" kind="file"><name>dp_api.h</name>
+    <member refid="dp__api_8h_1abbd14ed8d6db11cecaa66822555119fc" kind="function"><name>dp_board_set_led</name></member>
+  </compound>
+  <compound refid="dp__conf_8cpp" kind="file"><name>dp_conf.cpp</name>
+    <member refid="dp__conf_8cpp_1a4e001dffbbcfb96b39fa524eaefdcef1" kind="variable"><name>SYS_LUT</name></member>
+    <member refid="dp__conf_8cpp_1a7d5c556ef9e6f303c6f0918a77b7340c" kind="variable"><name>sys_conf</name></member>
+    <member refid="dp__conf_8cpp_1a08f7b47310813f745cbd9b198ca58282" kind="function"><name>dp_conf_set</name></member>
+    <member refid="dp__conf_8cpp_1a1829e16f613df6587360dee94d64e782" kind="function"><name>dp_conf_default</name></member>
+    <member refid="dp__conf_8cpp_1aba0f54d029a616c1a098e6108bcb84a5" kind="function"><name>dp_conf_param_set</name></member>
+    <member refid="dp__conf_8cpp_1ac7dbd056e868938d7c6fcfd34df72300" kind="function"><name>dp_conf_param_get_cur</name></member>
+    <member refid="dp__conf_8cpp_1a383a44d74154806906b1f47f120a227d" kind="function"><name>dp_conf_param_lookup_max</name></member>
+    <member refid="dp__conf_8cpp_1aa8727be8771b5e93a8064e26e72da9c5" kind="function"><name>dp_conf_param_lookup_min</name></member>
+  </compound>
+  <compound refid="dp__conf_8h" kind="file"><name>dp_conf.h</name>
+    <member refid="dp__conf_8h_1a8a1cb2f17ac8a7df0d8c90df27ac4be2" kind="define"><name>DP_LUT__N_PARAM</name></member>
+    <member refid="dp__conf_8h_1a46dd1447dfe0c6ca2c9b97ec57f54262" kind="define"><name>DP_LUT__COL_FIELD_LEN</name></member>
+    <member refid="dp__conf_8h_1a388753ed4daefe4296fedebd39e1bddc" kind="define"><name>DP_LUT__COL_MAX_VAL</name></member>
+    <member refid="dp__conf_8h_1ab42fee7721c514d904088bcec9edf757" kind="define"><name>DP_LUT__COL_MIN_VAL</name></member>
+    <member refid="dp__conf_8h_1aabffc915ea9536bd61433fd65bf10313" kind="define"><name>LUT_IDX__LOG_LEVEL</name></member>
+    <member refid="dp__conf_8h_1a7ef9b2f9396ff2a0d532d53eddbd9dad" kind="define"><name>LUT_IDX__SAMPLE_PERIOD</name></member>
+    <member refid="dp__conf_8h_1af0e132b2fb7244c620ca2058c407236a" kind="define"><name>LUT_IDX__SLEEP_OVERHEAD</name></member>
+    <member refid="dp__conf_8h_1a5892264f47a1902deb57960758d8b06c" kind="define"><name>LUT_IDX__SENSOR_COMM_TYPE</name></member>
+    <member refid="dp__conf_8h_1a89c18333b165fc4d51f78c203ad3bf4e" kind="define"><name>LUT_IDX__SENSOR_RESOLUTION</name></member>
+    <member refid="dp__conf_8h_1a59fa90c0a26ee63297f48820bb49ec3a" kind="define"><name>LUT_IDX__SENSOR_CLK_SPEED</name></member>
+    <member refid="dp__conf_8h_1a203483c52f7c69e0264bd1b4da45d864" kind="define"><name>LUT_IDX__WSN_JOIN_DC_INIT</name></member>
+    <member refid="dp__conf_8h_1a707c6dee746eb7a5d920abfb19448aa6" kind="define"><name>LUT_IDX__WSN_JOIN_DC_DECR</name></member>
+    <member refid="dp__conf_8h_1a53743730fec7957864d9804f5a1d0d68" kind="define"><name>LUT_IDX__WSN_JOIN_WAIT_INIT</name></member>
+    <member refid="dp__conf_8h_1ad278a369ae301952e70359b96509abfb" kind="define"><name>LUT_IDX__WSN_JOIN_WAIT_INCR</name></member>
+    <member refid="dp__conf_8h_1ae75a48d0056bc26599a957d2103fc802" kind="define"><name>LUT_IDX__SLEEP_GUARD_TIMEOUT</name></member>
+    <member refid="dp__conf_8h_1a68402aaa0ca72da25e02f40962fd8e72" kind="function"><name>dp_conf_set</name></member>
+    <member refid="dp__conf_8h_1a1829e16f613df6587360dee94d64e782" kind="function"><name>dp_conf_default</name></member>
+    <member refid="dp__conf_8h_1ac2f8c54cd25dc8900b3dca836d2ab240" kind="function"><name>dp_conf_param_set</name></member>
+    <member refid="dp__conf_8h_1ade54ab17258d9e63d26e956d63753631" kind="function"><name>dp_conf_param_get_cur</name></member>
+    <member refid="dp__conf_8h_1aed69579e1fcc764c4cde73ac2fb348c7" kind="function"><name>dp_conf_param_lookup_max</name></member>
+    <member refid="dp__conf_8h_1a77c0365a04c60f8de46c3254dc8f6346" kind="function"><name>dp_conf_param_lookup_min</name></member>
+  </compound>
+  <compound refid="dp__sm_8cpp" kind="file"><name>dp_sm.cpp</name>
+    <member refid="dp__sm_8cpp_1a0ad17cb6bfdb4e9c7aed1e9a4f3a4c26" kind="variable"><name>SystemState</name></member>
+    <member refid="dp__sm_8cpp_1a4a6000498ac34d217eacf2a29ae2801d" kind="function"><name>dp_state_init</name></member>
+    <member refid="dp__sm_8cpp_1a2b76aac04c646205bda87f29a9c8678c" kind="function"><name>dp_is_sys_ready</name></member>
+    <member refid="dp__sm_8cpp_1a494b8107834f91baa267ed2417895fa4" kind="function"><name>dp_sleep</name></member>
+    <member refid="dp__sm_8cpp_1af0238d99eead5fcd403af24ada634341" kind="function"><name>dp_wake</name></member>
+    <member refid="dp__sm_8cpp_1af1039f9ef50a1c8148aa9ab8dfae55f4" kind="function"><name>dp_sleepguard_set</name></member>
+    <member refid="dp__sm_8cpp_1ab4bbc6e9e1dd54f73e34cd54e8add3b6" kind="function"><name>dp_sleepguard_free</name></member>
+  </compound>
+  <compound refid="dp__sm_8h" kind="file"><name>dp_sm.h</name>
+    <member refid="dp__sm_8h_1af7a356062d3adb073f8c2a206c805558" kind="define"><name>DP_SYS__SYS_READY</name></member>
+    <member refid="dp__sm_8h_1a486617724ebef83b1f120104b463d3e0" kind="define"><name>DP_SYS__SYS_NOT_READY</name></member>
+    <member refid="dp__sm_8h_1a4a6000498ac34d217eacf2a29ae2801d" kind="function"><name>dp_state_init</name></member>
+    <member refid="dp__sm_8h_1a2b76aac04c646205bda87f29a9c8678c" kind="function"><name>dp_is_sys_ready</name></member>
+    <member refid="dp__sm_8h_1a6e05ece747fba4de6767c9546bc093e8" kind="function"><name>dp_sleep</name></member>
+    <member refid="dp__sm_8h_1af0238d99eead5fcd403af24ada634341" kind="function"><name>dp_wake</name></member>
+    <member refid="dp__sm_8h_1af1039f9ef50a1c8148aa9ab8dfae55f4" kind="function"><name>dp_sleepguard_set</name></member>
+    <member refid="dp__sm_8h_1ab4bbc6e9e1dd54f73e34cd54e8add3b6" kind="function"><name>dp_sleepguard_free</name></member>
+  </compound>
+  <compound refid="globals_8h" kind="file"><name>globals.h</name>
+    <member refid="globals_8h_1a6d58f9ac447476b4e084d7ca383f5183" kind="define"><name>FAILURE</name></member>
+    <member refid="globals_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kind="define"><name>SUCCESS</name></member>
+    <member refid="globals_8h_1a444f2a44d85dd16d87936edd8d8d84f8" kind="variable"><name>Board</name></member>
+    <member refid="globals_8h_1a0ad17cb6bfdb4e9c7aed1e9a4f3a4c26" kind="variable"><name>SystemState</name></member>
+    <member refid="globals_8h_1a7d5c556ef9e6f303c6f0918a77b7340c" kind="variable"><name>sys_conf</name></member>
+    <member refid="globals_8h_1a95ad5fe82ae2f44742e1c49e2431a81e" kind="variable"><name>dp_payload</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ad193006eabeb9c2832d900f6bc395af2" kind="define"><name>DP_BUILD__TEST_MODE</name></member>
+    <member refid="main_8cpp_1acbc4593f545622d87b5c7f290cd7da73" kind="define"><name>DP_BUILD__UART_USB_MODE</name></member>
+    <member refid="main_8cpp_1a444f2a44d85dd16d87936edd8d8d84f8" kind="variable"><name>Board</name></member>
+    <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
+    <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="port_8cpp" kind="file"><name>port.cpp</name>
+    <member refid="port_8cpp_1a1b562ea4d12b7ab089ab22a22fcf4a04" kind="function"><name>interrupt_pci_init</name></member>
+    <member refid="port_8cpp_1ad8478867d6441d9d94f92819688f15c1" kind="function"><name>port_init</name></member>
+    <member refid="port_8cpp_1a4f83e54634bf9540df359cc57699312b" kind="function"><name>pin_set_mode</name></member>
+    <member refid="port_8cpp_1a3f857dd655c78b9db6e1c0cdac10c677" kind="function"><name>pin_set_digital</name></member>
+    <member refid="port_8cpp_1ae2ba619ff98ebbf183b7763753a62845" kind="function"><name>pin_read</name></member>
+  </compound>
+  <compound refid="port_8h" kind="file"><name>port.h</name>
+    <member refid="port_8h_1ac01b692769b60035357dbdff13e659ce" kind="define"><name>DP_PORT__M1P1</name></member>
+    <member refid="port_8h_1ab2295f80147e77b6e66f493b9c13076a" kind="define"><name>DP_PORT__M2P1</name></member>
+    <member refid="port_8h_1a79845ecbd5f3eeb0cef3325c707df4fa" kind="define"><name>DP_PORT__M3P1</name></member>
+    <member refid="port_8h_1af898db6a046f694f7ccada10bb02e22d" kind="define"><name>DP_PORT__M4P1</name></member>
+    <member refid="port_8h_1a0f13fa5d9ccba828942d5ddb684414e1" kind="define"><name>DP_PORT__M5P1</name></member>
+    <member refid="port_8h_1afaf88a51110291620b9d7c326ed37116" kind="define"><name>DP_PORT__M6P1</name></member>
+    <member refid="port_8h_1a95a0a6eb155bf27079a97196619fe3df" kind="define"><name>DP_PORT__M7P1</name></member>
+    <member refid="port_8h_1a871b5f20b5a01df3d98ea9c4cb71e803" kind="define"><name>DP_PORT__UART_NP_RTS</name></member>
+    <member refid="port_8h_1aee58b7656160d45e6859297d4d33eec2" kind="define"><name>DP_PORT__UART_NP_CTS</name></member>
+    <member refid="port_8h_1ae2a6c33373ef968688c4607dac90d1c5" kind="define"><name>DP_PORT__UART_PN_RTS</name></member>
+    <member refid="port_8h_1ab2245fb0a7100ec8ac96a7658d824fe7" kind="define"><name>DP_PORT__UART_PN_CTS</name></member>
+    <member refid="port_8h_1a2000aba7295c9c170a3d462dce68f2b0" kind="function"><name>ISR</name></member>
+    <member refid="port_8h_1a1b562ea4d12b7ab089ab22a22fcf4a04" kind="function"><name>interrupt_pci_init</name></member>
+    <member refid="port_8h_1ad8478867d6441d9d94f92819688f15c1" kind="function"><name>port_init</name></member>
+    <member refid="port_8h_1ac320d5af2eb0c5b354ee0dbcee59680c" kind="function"><name>pin_set_mode</name></member>
+    <member refid="port_8h_1ae5f0717eb814f0352a95f3fe1cd70aef" kind="function"><name>pin_set_digital</name></member>
+    <member refid="port_8h_1ae2ba619ff98ebbf183b7763753a62845" kind="function"><name>pin_read</name></member>
+  </compound>
+  <compound refid="_accel_magno_8cpp" kind="file"><name>AccelMagno.cpp</name>
+    <member refid="_accel_magno_8cpp_1a694e631e46ffc062993d01830be74cbb" kind="define"><name>INT1_PIN</name></member>
+    <member refid="_accel_magno_8cpp_1ae3b068b847930dee391ba5256f9c8f94" kind="define"><name>INT2_PIN</name></member>
+    <member refid="_accel_magno_8cpp_1aa96c33acd05dc4905ba24cdc62b3c549" kind="define"><name>POWERDOWN_PIN</name></member>
+    <member refid="_accel_magno_8cpp_1a7fe4a13198c0b3d8cf09802e7247fd2c" kind="define"><name>TEMP_OUT_L</name></member>
+    <member refid="_accel_magno_8cpp_1ae8c4c28fe604535a3a57d0536c6e8175" kind="define"><name>TEMP_OUT_H</name></member>
+    <member refid="_accel_magno_8cpp_1a531cdf7ba18ec0dfed3896828d5930b8" kind="define"><name>STATUS_M</name></member>
+    <member refid="_accel_magno_8cpp_1abab698c56e01e1fd410398c4e7beaaf3" kind="define"><name>OUT_X_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1a2489b398fe6a7418ea8f45c61cce4f9b" kind="define"><name>OUT_X_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1ac2a68cdf4dc38a1e6953a131d193aac2" kind="define"><name>OUT_Y_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1a296228caa98301cb5cd765cafc9ee7b6" kind="define"><name>OUT_Y_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1ae30aefcb21f60ce603a214d5678b8f9d" kind="define"><name>OUT_Z_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1abbf1fdc9b183596b72618c113b30718b" kind="define"><name>OUT_Z_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1a9fcb9e460d175bfc7ab4d80bf788b43a" kind="define"><name>WHO_AM_I</name></member>
+    <member refid="_accel_magno_8cpp_1a9a44004d0455fdb1384f303c142acf3d" kind="define"><name>INT_CTRL_M</name></member>
+    <member refid="_accel_magno_8cpp_1a5a42ea617d3bb38574b2a19b553b1e1a" kind="define"><name>INT_SRC_M</name></member>
+    <member refid="_accel_magno_8cpp_1acefeab011ea4e58c1713737ec1b74532" kind="define"><name>INT_THS_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1a947fca65e458b8a0876fb2081fb3d160" kind="define"><name>INT_THS_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1aefd0e8a793e3c02e175a3a0ac885ae06" kind="define"><name>OFFSET_X_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1ab04fa06f1385fc3c724681c5cd9bc13d" kind="define"><name>OFFSET_X_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1a237110484935b26cffcd09ac3fbe4bbd" kind="define"><name>OFFSET_Y_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1a35a3910d0bc0864633570a7ee9f21b95" kind="define"><name>OFFSET_Y_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1a92ad9cbcf3982468b588f6300e67ba4b" kind="define"><name>OFFSET_Z_L_M</name></member>
+    <member refid="_accel_magno_8cpp_1a4e3b93098e9a0aced65a440feba21053" kind="define"><name>OFFSET_Z_H_M</name></member>
+    <member refid="_accel_magno_8cpp_1aa952d25cadf589fe0ebd65b7e5235734" kind="define"><name>REFERENCE_X</name></member>
+    <member refid="_accel_magno_8cpp_1a406757ab11eb77b0fe55207b327d7d0f" kind="define"><name>REFERENCE_Y</name></member>
+    <member refid="_accel_magno_8cpp_1adc134d160126ccd17e7a9a77480ff2e2" kind="define"><name>REFERENCE_Z</name></member>
+    <member refid="_accel_magno_8cpp_1a42379a4552f270194fa30447d0d737dd" kind="define"><name>CTRL0</name></member>
+    <member refid="_accel_magno_8cpp_1a381a127b3461c60ee9adf461df4f3e27" kind="define"><name>CTRL1</name></member>
+    <member refid="_accel_magno_8cpp_1a540a6cfcb8b00ec305e81d8379112340" kind="define"><name>CTRL2</name></member>
+    <member refid="_accel_magno_8cpp_1a644c728ce14a6d263c3519445104c9cb" kind="define"><name>CTRL3</name></member>
+    <member refid="_accel_magno_8cpp_1a8b5415ddd5cd89fb93f215ead3caf666" kind="define"><name>CTRL4</name></member>
+    <member refid="_accel_magno_8cpp_1a979628f32bce7c3af9b25173a0aef233" kind="define"><name>CTRL5</name></member>
+    <member refid="_accel_magno_8cpp_1ab77545e3c2802d2181c886d8dc71ca2c" kind="define"><name>CTRL6</name></member>
+    <member refid="_accel_magno_8cpp_1a8b6dbd81c8c1fb453cca82ab715d069a" kind="define"><name>CTRL7</name></member>
+    <member refid="_accel_magno_8cpp_1ac0d6f774cbd1c763115e8e4ed916d71a" kind="define"><name>STATUS_A</name></member>
+    <member refid="_accel_magno_8cpp_1af07420cc51cd538201554ceb8187eb32" kind="define"><name>OUT_X_L_A</name></member>
+    <member refid="_accel_magno_8cpp_1aff0544c632e0f9a08e9e4ed32a6f8a21" kind="define"><name>OUT_X_H_A</name></member>
+    <member refid="_accel_magno_8cpp_1a7c057ac2609133a18c32ae2b630daafb" kind="define"><name>OUT_Y_L_A</name></member>
+    <member refid="_accel_magno_8cpp_1affecb4c00ec91d1cb8fd0e2e00dc268f" kind="define"><name>OUT_Y_H_A</name></member>
+    <member refid="_accel_magno_8cpp_1a09387c436745ba77d147288050d7d8c1" kind="define"><name>OUT_Z_L_A</name></member>
+    <member refid="_accel_magno_8cpp_1afd262b693d21cb2585621aa7f8c7d2a1" kind="define"><name>OUT_Z_H_A</name></member>
+    <member refid="_accel_magno_8cpp_1adcd8d113c8791a336768b8da70010ea7" kind="define"><name>FIFO_CTRL</name></member>
+    <member refid="_accel_magno_8cpp_1a8ff327dd2e3548068a66bffdc932d5ad" kind="define"><name>FIFO_SRC</name></member>
+    <member refid="_accel_magno_8cpp_1a65b52b42d851817fe77b0552d989b54a" kind="define"><name>IG_CFG1</name></member>
+    <member refid="_accel_magno_8cpp_1ae8ffba03b92b12be99a22cc73f1baab6" kind="define"><name>IG_SRC1</name></member>
+    <member refid="_accel_magno_8cpp_1a3083a95475b60308ef79dbcd8781d03a" kind="define"><name>IG_THS1</name></member>
+    <member refid="_accel_magno_8cpp_1a2cf50961ec4ca81f65b4b0fe6e3542f3" kind="define"><name>IG_DUR1</name></member>
+    <member refid="_accel_magno_8cpp_1a0bf2422da754ddd52cd7f03d24f095f7" kind="define"><name>IG_CFG2</name></member>
+    <member refid="_accel_magno_8cpp_1a781f9ca4dc086d50fd766c468aa39d3b" kind="define"><name>IG_SRC2</name></member>
+    <member refid="_accel_magno_8cpp_1a6d3c2ed40bdad32ad666a6d24adcc24b" kind="define"><name>IG_THS2</name></member>
+    <member refid="_accel_magno_8cpp_1ad589baf31ecb3b981fd18d5c6e7f56d0" kind="define"><name>IG_DUR2</name></member>
+    <member refid="_accel_magno_8cpp_1a72296c7a2c62252b65b70c387f3de322" kind="define"><name>CLICK_CFG</name></member>
+    <member refid="_accel_magno_8cpp_1a709f34da66755c684de2b3d58de46515" kind="define"><name>CLICK_SRC</name></member>
+    <member refid="_accel_magno_8cpp_1aec7367f2c97c08cd2320937a7c4bcd44" kind="define"><name>CLICK_THS</name></member>
+    <member refid="_accel_magno_8cpp_1acb7e51d1df3047c08c50ae6682a6cd70" kind="define"><name>TIME_LIMIT</name></member>
+    <member refid="_accel_magno_8cpp_1ac30c996ced5888ea4564189fd45a1ce1" kind="define"><name>TIME_LATENCY</name></member>
+    <member refid="_accel_magno_8cpp_1abef5be0b55aff45fba055caae72d00ab" kind="define"><name>TIME_WINDOW</name></member>
+    <member refid="_accel_magno_8cpp_1aa7b862d228fc4821ad9e80ea404b6211" kind="define"><name>ACT_THS</name></member>
+    <member refid="_accel_magno_8cpp_1a4a2254de4b303d28b4c0857ecf40a19c" kind="define"><name>ACT_DUR</name></member>
+    <member refid="_accel_magno_8cpp_1af81a11fa206aa8561fa281bf6c66774c" kind="define"><name>ACCEL_2G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a458275dface6ae01a0cf4e0de86f2add" kind="define"><name>ACCEL_4G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1abbb8226ef778c6a4c508120cdb16f983" kind="define"><name>ACCEL_6G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1ab5cb1af112804c7df5547fa73b42bb62" kind="define"><name>ACCEL_8G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a9e3f2a59d518e70fad2b776ca0066286" kind="define"><name>ACCEL_16G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a4e524f55705b475436b19a73423c282e" kind="define"><name>MAGNO_2G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a6fd5ad89fcdab389687ef7b425e3557c" kind="define"><name>MAGNO_4G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a25c16dd5550e84274f9584f2a3c3ad7c" kind="define"><name>MAGNO_8G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a8bb070ddf83eaf9260fa74301f9c872e" kind="define"><name>MAGNO_12G_LSB</name></member>
+    <member refid="_accel_magno_8cpp_1a52cf4b9e19fb0cd5f92212e3f53e1c22" kind="define"><name>MY_SPEED_MAX</name></member>
+    <member refid="_accel_magno_8cpp_1a90bb81458155ecbe9638912b802daf6c" kind="define"><name>MY_DATA_ORDER</name></member>
+    <member refid="_accel_magno_8cpp_1a4bfad9ba1a99cf20dd58dcdfe5904d73" kind="define"><name>MY_DATA_MODE</name></member>
+  </compound>
+  <compound refid="_accel_magno_8h" kind="file"><name>AccelMagno.h</name>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0" kind="enum"><name>AccelFullScaleEnum</name></member>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc" kind="enumvalue"><name>ACCEL_2G</name></member>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aa4f0aa9e39378ca8561d3c5c3c34eac7" kind="enumvalue"><name>ACCEL_4G</name></member>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aca384fc951c7e37084ad181d2657bd7a" kind="enumvalue"><name>ACCEL_6G</name></member>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a9916755163a87b2a70e7ab986d403aaf" kind="enumvalue"><name>ACCEL_8G</name></member>
+    <member refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40fcc5e6816634f083aece7b48b79346" kind="enumvalue"><name>ACCEL_16G</name></member>
+    <member refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d" kind="enum"><name>MagnoFullScaleEnum</name></member>
+    <member refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5" kind="enumvalue"><name>MAGNO_2GAUSS</name></member>
+    <member refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da84401b0c35ace0df16435ec78d87e7ab" kind="enumvalue"><name>MAGNO_4GAUSS</name></member>
+    <member refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf48441ee6719673d82bea08b7318e783" kind="enumvalue"><name>MAGNO_8GAUSS</name></member>
+    <member refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da666eae77f920f2b96eecead92fa17481" kind="enumvalue"><name>MAGNO_12GAUSS</name></member>
+  </compound>
+  <compound refid="frame_8cpp" kind="file"><name>frame.cpp</name>
+    <member refid="frame_8cpp_1a95ad5fe82ae2f44742e1c49e2431a81e" kind="variable"><name>dp_payload</name></member>
+    <member refid="frame_8cpp_1a5873f83281cad58ec6090fa11b594982" kind="function"><name>reserve_field</name></member>
+    <member refid="frame_8cpp_1aa50f306570bc5d20a08251ac638d7281" kind="function"><name>pack_field_header</name></member>
+    <member refid="frame_8cpp_1aba8afef542e86173021cc8b2966596ef" kind="function"><name>dp_payload_flush</name></member>
+  </compound>
+  <compound refid="frame_8h" kind="file"><name>frame.h</name>
+    <member refid="frame_8h_1ab08dfcc7932c3b6c0b87d391ae74488f" kind="define"><name>DP_SAM__N_FIELD_MAX</name></member>
+    <member refid="frame_8h_1a7b389cf58229a0ddaea1478bef5eb691" kind="define"><name>DP_SAM__LEN_FIELD_VAL_MAX</name></member>
+    <member refid="frame_8h_1af7fca02973472c66a5a4b966a5830fd0" kind="define"><name>DP_SAM__LEN_FIELD_VAL_MIN</name></member>
+    <member refid="frame_8h_1aaf9ca4921e43fdd14901f48a67bf2847" kind="define"><name>DP_SAM__LEN_FIELD_VAL_TIME</name></member>
+    <member refid="frame_8h_1a66b4f78e3a0f0bbfff79ca79c6dc7ee0" kind="define"><name>DP_SAM__LEN_FIELD_VAL_DIAG</name></member>
+    <member refid="frame_8h_1a0684d3aa88193e5dc1664d6a86198a31" kind="define"><name>DP_SAM__LEN_FIELD_HEAD</name></member>
+    <member refid="frame_8h_1a57436d9edcc69ea284824eff864514c2" kind="define"><name>DP_SAM__LEN_DATL_HEAD</name></member>
+    <member refid="frame_8h_1ae862e559a0d00d60aa910b4e06ae17d1" kind="define"><name>DP_SAM__LEN_PAYL_HEAD</name></member>
+    <member refid="frame_8h_1a96859afa9bc060acb0ad6d3c9f7c649a" kind="define"><name>DP_SAM__LEN_PAYL_MAX</name></member>
+    <member refid="frame_8h_1ad8b049ee4891e77b162214525e17c5a4" kind="define"><name>DP_SAM__PAYL_TYPE_DATA</name></member>
+    <member refid="frame_8h_1a6944e95985b3a149b9a5ff159d8409f4" kind="define"><name>DP_SAM__PAYL_TYPE_CONF</name></member>
+    <member refid="frame_8h_1a6b0fded156a0791f13f6aeea7da3def2" kind="define"><name>DP_SAM__FIELD_TYPE_TIME</name></member>
+    <member refid="frame_8h_1a2c39b015382a06b153e75ec17f939adf" kind="define"><name>DP_SAM__FIELD_TYPE_SENS</name></member>
+    <member refid="frame_8h_1a2162af976c8c745a11f5b8aa1d765af7" kind="define"><name>DP_SAM__FIELD_TYPE_DIAG</name></member>
+    <member refid="frame_8h_1a1222b19bea7edefbcb23ed9f171aabbf" kind="function"><name>reserve_field</name></member>
+    <member refid="frame_8h_1a3a57bfd6f96b56b12d33b9ef9a9cfcb4" kind="function"><name>pack_field_header</name></member>
+    <member refid="frame_8h_1aba8afef542e86173021cc8b2966596ef" kind="function"><name>dp_payload_flush</name></member>
+  </compound>
+  <compound refid="sample_8cpp" kind="file"><name>sample.cpp</name>
+    <member refid="sample_8cpp_1ab390d9357605e1f534edd5d1111aeaea" kind="define"><name>DP_SAM__TYPE_SENS</name></member>
+    <member refid="sample_8cpp_1af366ed45732f3c405cbe8ecc4e82cf0a" kind="define"><name>DP_SAM__TYPE_DIAG</name></member>
+    <member refid="sample_8cpp_1aca38d14b4011649e3be4a69fcdbb326f" kind="define"><name>DP_SAM__TYPE_BOTH</name></member>
+    <member refid="sample_8cpp_1aaa6180ddd1d38a0647fe3f092ad434db" kind="function"><name>sample</name></member>
+    <member refid="sample_8cpp_1a14a33f73f2904424b208fc04bfd943c1" kind="function"><name>sample_time</name></member>
+    <member refid="sample_8cpp_1af7457515038926f9fd2f5b0765577b60" kind="function"><name>sample_sensor</name></member>
+    <member refid="sample_8cpp_1ac247786c48545fb376f6a9cc7665425b" kind="function"><name>sample_diagnostic</name></member>
+  </compound>
+  <compound refid="sample_8h" kind="file"><name>sample.h</name>
+    <member refid="sample_8h_1af208741d2299e487438a7991359966db" kind="function"><name>sample</name></member>
+    <member refid="sample_8h_1a14a33f73f2904424b208fc04bfd943c1" kind="function"><name>sample_time</name></member>
+    <member refid="sample_8h_1a2aafaac3d05eff6bd3a9af14489f29b0" kind="function"><name>sample_sensor</name></member>
+    <member refid="sample_8h_1aa601607d17d0e74dcaed27e05773cb9a" kind="function"><name>sample_diagnostic</name></member>
+  </compound>
+  <compound refid="sensor_8cpp" kind="file"><name>sensor.cpp</name>
+    <member refid="sensor_8cpp_1aded1786c4d23284bd89308afbaca614d" kind="function"><name>sensor_read</name></member>
+    <member refid="sensor_8cpp_1a2e7d206e7648d0d4460967fbf33d9b5b" kind="function"><name>sensor_drive_accel_magno</name></member>
+  </compound>
+  <compound refid="sensor_8h" kind="file"><name>sensor.h</name>
+    <member refid="sensor_8h_1a62b843976d2b7f21f4ff227c522c2f39" kind="define"><name>DP_SENS__OUTPUTS_MAX</name></member>
+    <member refid="sensor_8h_1a5c327e3cae499cd7c99e902f10364558" kind="define"><name>DP_SENS__RESOLUTION_MAX</name></member>
+    <member refid="sensor_8h_1a529d62914e1e57df4a8618c40c1294ae" kind="define"><name>DP_SENS__ACCEL_MAGNO</name></member>
+    <member refid="sensor_8h_1a11575a82efca971554bb5fc568c473d7" kind="define"><name>DP_SENS__STATUS_NOT_SET</name></member>
+    <member refid="sensor_8h_1a40763aa7493e185ba3db61cb17bf61c8" kind="function"><name>sensor_read</name></member>
+    <member refid="sensor_8h_1ab4d22cd96c90e952c0201cad9071bec4" kind="function"><name>sensor_drive_accel_magno</name></member>
+  </compound>
+  <compound refid="dn__clib__build_8h" kind="file"><name>dn_clib_build.h</name>
+    <member refid="dn__clib__build_8h_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="dn__clib__build_8h_1a06fc87d81c62e9abb8790b6e5713c55ba1bb8b5bff86b1b2ef3111f92c3e381eb" kind="enumvalue"><name>VER_BUILD</name></member>
+  </compound>
+  <compound refid="dn__clib__version_8h" kind="file"><name>dn_clib_version.h</name>
+    <member refid="dn__clib__version_8h_1adf764cbdea00d65edcd07bb9953ad2b7" kind="enum"><name>@1</name></member>
+    <member refid="dn__clib__version_8h_1adf764cbdea00d65edcd07bb9953ad2b7a6b451a9f9f39793f231d5f19c95353dd" kind="enumvalue"><name>VER_MAJOR</name></member>
+    <member refid="dn__clib__version_8h_1adf764cbdea00d65edcd07bb9953ad2b7a91c112fc3d3a130e4158db68bf05e488" kind="enumvalue"><name>VER_MINOR</name></member>
+    <member refid="dn__clib__version_8h_1adf764cbdea00d65edcd07bb9953ad2b7a36910f2c13a7aa22ecdfa54aac60b23d" kind="enumvalue"><name>VER_PATCH</name></member>
+  </compound>
+  <compound refid="dn__common_8h" kind="file"><name>dn_common.h</name>
+    <member refid="dn__common_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="dn__common_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921a" kind="enum"><name>dn_err_t</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921aab6740c777f27844e1a3e150e549dedec" kind="enumvalue"><name>DN_ERR_NONE</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921aa885803a693277eb6348181367d94d154" kind="enumvalue"><name>DN_ERR_BUSY</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921aa2615f6c33378eca791fa411cfddb445f" kind="enumvalue"><name>DN_ERR_NOT_CONNECTED</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921aa4818ef96b09fb06e4440fd01345187fa" kind="enumvalue"><name>DN_ERR_ALREADY</name></member>
+    <member refid="dn__common_8h_1a705cd83ca69fe22710ead6969e34921aaaa6733950ba5477dc170680d1656ad8b" kind="enumvalue"><name>DN_ERR_MALFORMED</name></member>
+  </compound>
+  <compound refid="dn__endianness_8c" kind="file"><name>dn_endianness.c</name>
+    <member refid="dn__endianness_8c_1ab2886e95d20c8e2e91c7f3f2a0284c8f" kind="function"><name>dn_write_uint16_t</name></member>
+    <member refid="dn__endianness_8c_1a6eb18c3995f5f7a9f30bd46e11b33689" kind="function"><name>dn_write_uint32_t</name></member>
+    <member refid="dn__endianness_8c_1a2bc1fa5c5ae28688c534682812914a61" kind="function"><name>dn_read_uint16_t</name></member>
+    <member refid="dn__endianness_8c_1a4606726558c3975d56ad708f8e6cffea" kind="function"><name>dn_read_uint32_t</name></member>
+  </compound>
+  <compound refid="dn__endianness_8h" kind="file"><name>dn_endianness.h</name>
+    <member refid="dn__endianness_8h_1ab2886e95d20c8e2e91c7f3f2a0284c8f" kind="function"><name>dn_write_uint16_t</name></member>
+    <member refid="dn__endianness_8h_1a6eb18c3995f5f7a9f30bd46e11b33689" kind="function"><name>dn_write_uint32_t</name></member>
+    <member refid="dn__endianness_8h_1a42ed0651e0733f646c2fa5c4ca24414d" kind="function"><name>dn_write_int32_t</name></member>
+    <member refid="dn__endianness_8h_1a2bc1fa5c5ae28688c534682812914a61" kind="function"><name>dn_read_uint16_t</name></member>
+    <member refid="dn__endianness_8h_1a4606726558c3975d56ad708f8e6cffea" kind="function"><name>dn_read_uint32_t</name></member>
+    <member refid="dn__endianness_8h_1a00a596989962f349f0d2ebe6203a2f38" kind="function"><name>dn_read_int32_t</name></member>
+  </compound>
+  <compound refid="dn__hdlc_8c" kind="file"><name>dn_hdlc.c</name>
+    <member refid="dn__hdlc_8c_1a3eec6d607f1794cb78afd87982f56ec8" kind="variable"><name>dn_hdlc_vars</name></member>
+    <member refid="dn__hdlc_8c_1a5a7eee74398011ad4939330f41dc16d0" kind="function"><name>dn_hdlc_rxByte</name></member>
+    <member refid="dn__hdlc_8c_1a53dbcbf1cbe4a209d48a00ceb7fab94e" kind="function"><name>dn_hdlc_inputOpen</name></member>
+    <member refid="dn__hdlc_8c_1a615d1f34422066330960a1e325aea28e" kind="function"><name>dn_hdlc_inputWrite</name></member>
+    <member refid="dn__hdlc_8c_1a4037ab0d42df9f4d7dada5d9dd73b756" kind="function"><name>dn_hdlc_inputClose</name></member>
+    <member refid="dn__hdlc_8c_1a55953ff983c04a08464470d510df09aa" kind="function"><name>dn_hdlc_crcIteration</name></member>
+    <member refid="dn__hdlc_8c_1a33df84245ae564bd916173ed2f1ec1a6" kind="function"><name>dn_hdlc_init</name></member>
+    <member refid="dn__hdlc_8c_1a75c32f48315f83f22f1eaa51c822dacc" kind="function"><name>dn_hdlc_outputOpen</name></member>
+    <member refid="dn__hdlc_8c_1ab322d5d684e5338bae01e79559488e86" kind="function"><name>dn_hdlc_outputWrite</name></member>
+    <member refid="dn__hdlc_8c_1a754d5eef8e6f2a2c89a01488dc488f51" kind="function"><name>dn_hdlc_outputClose</name></member>
+  </compound>
+  <compound refid="dn__hdlc_8h" kind="file"><name>dn_hdlc.h</name>
+    <member refid="dn__hdlc_8h_1a6ccedf46ab60c151187db969444d2eb5" kind="define"><name>DN_HDLC_FLAG</name></member>
+    <member refid="dn__hdlc_8h_1acb39731a3603b5754cc1b03833c758d0" kind="define"><name>DN_HDLC_ESCAPE</name></member>
+    <member refid="dn__hdlc_8h_1a834e03cc5133a6647d118274558992de" kind="define"><name>DN_HDLC_ESCAPE_MASK</name></member>
+    <member refid="dn__hdlc_8h_1af45e18bd8eb6f32bee259e89a918738e" kind="define"><name>DN_HDLC_CRCINIT</name></member>
+    <member refid="dn__hdlc_8h_1a70add970b623a527378af46f4080f546" kind="define"><name>DN_HDLC_CRCGOOD</name></member>
+    <member refid="dn__hdlc_8h_1a07bc8be66db3149803630bd84830173b" kind="define"><name>DN_HDLC_MAX_FRAME_LENGTH</name></member>
+    <member refid="dn__hdlc_8h_1ae87585320f9d0ad5f71a9f59d97d0707" kind="define"><name>DN_HDLC_INPUT_BUFFER_SIZE</name></member>
+    <member refid="dn__hdlc_8h_1aaec37d7e4471b7ae4fa1d3e9528b1bec" kind="typedef"><name>dn_hdlc_rxFrame_cbt</name></member>
+    <member refid="dn__hdlc_8h_1ae64634b7fdc1a2e14784ce02bdd3db2a" kind="variable"><name>dn_hdlc_fcstab</name></member>
+    <member refid="dn__hdlc_8h_1a33df84245ae564bd916173ed2f1ec1a6" kind="function"><name>dn_hdlc_init</name></member>
+    <member refid="dn__hdlc_8h_1a75c32f48315f83f22f1eaa51c822dacc" kind="function"><name>dn_hdlc_outputOpen</name></member>
+    <member refid="dn__hdlc_8h_1ab322d5d684e5338bae01e79559488e86" kind="function"><name>dn_hdlc_outputWrite</name></member>
+    <member refid="dn__hdlc_8h_1a754d5eef8e6f2a2c89a01488dc488f51" kind="function"><name>dn_hdlc_outputClose</name></member>
+  </compound>
+  <compound refid="dn__ipmt_8c" kind="file"><name>dn_ipmt.c</name>
+    <member refid="dn__ipmt_8c_1a85e3c574fbd1c732fe8ead59f4b114c1" kind="variable"><name>dn_ipmt_vars</name></member>
+    <member refid="dn__ipmt_8c_1a24786a29fc408bba256caa2903662185" kind="function"><name>dn_ipmt_setParameter_macAddress_reply</name></member>
+    <member refid="dn__ipmt_8c_1a696698f82235ca22cc06293ab8b93d20" kind="function"><name>dn_ipmt_setParameter_joinKey_reply</name></member>
+    <member refid="dn__ipmt_8c_1a50a42d7d1d6b1d4f2000901cf74d562c" kind="function"><name>dn_ipmt_setParameter_networkId_reply</name></member>
+    <member refid="dn__ipmt_8c_1a6189dcd19bc6d375f64d8bd99b373b53" kind="function"><name>dn_ipmt_setParameter_txPower_reply</name></member>
+    <member refid="dn__ipmt_8c_1af9268e5a7d3628e7d8ce2107abeeba60" kind="function"><name>dn_ipmt_setParameter_joinDutyCycle_reply</name></member>
+    <member refid="dn__ipmt_8c_1ae511e1a23578a6e1b5f2c8ddbea5b58d" kind="function"><name>dn_ipmt_setParameter_eventMask_reply</name></member>
+    <member refid="dn__ipmt_8c_1a633a164b3355c0f02fc2753720e54e00" kind="function"><name>dn_ipmt_setParameter_OTAPLockout_reply</name></member>
+    <member refid="dn__ipmt_8c_1a81878ae1827e25bf6f236694a88c2eb1" kind="function"><name>dn_ipmt_setParameter_routingMode_reply</name></member>
+    <member refid="dn__ipmt_8c_1a89034be5e5812e21b596d154ea69ea26" kind="function"><name>dn_ipmt_setParameter_powerSrcInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1af2c183461727d2b6f0722abafd455d3a" kind="function"><name>dn_ipmt_setParameter_advKey_reply</name></member>
+    <member refid="dn__ipmt_8c_1a4d36d558a2346850a7b8aa871918584d" kind="function"><name>dn_ipmt_setParameter_autoJoin_reply</name></member>
+    <member refid="dn__ipmt_8c_1a80db69e2730b17b479c3a21c5b267eb0" kind="function"><name>dn_ipmt_getParameter_macAddress_reply</name></member>
+    <member refid="dn__ipmt_8c_1a044d97c5e0e7ccb0c416563966c3b990" kind="function"><name>dn_ipmt_getParameter_networkId_reply</name></member>
+    <member refid="dn__ipmt_8c_1a5dd422dd53bedf6beb04890e8d23a7a2" kind="function"><name>dn_ipmt_getParameter_txPower_reply</name></member>
+    <member refid="dn__ipmt_8c_1a55887e9c7abad2dc072d70e832101220" kind="function"><name>dn_ipmt_getParameter_joinDutyCycle_reply</name></member>
+    <member refid="dn__ipmt_8c_1a1221e317fe1fa6f9c59bf89bf6ca2862" kind="function"><name>dn_ipmt_getParameter_eventMask_reply</name></member>
+    <member refid="dn__ipmt_8c_1a8ef83724cc2b448dd3653fa717b97812" kind="function"><name>dn_ipmt_getParameter_moteInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1ac9c8797aa49514fc9c56ba4c5d8eb2d2" kind="function"><name>dn_ipmt_getParameter_netInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1ac7188a6068a3719201ace96e9644f995" kind="function"><name>dn_ipmt_getParameter_moteStatus_reply</name></member>
+    <member refid="dn__ipmt_8c_1a643ed950ac24db0d803a66c2f1ca7b37" kind="function"><name>dn_ipmt_getParameter_time_reply</name></member>
+    <member refid="dn__ipmt_8c_1ab9e5cac4143d2994dd962d52f1bfc6de" kind="function"><name>dn_ipmt_getParameter_charge_reply</name></member>
+    <member refid="dn__ipmt_8c_1a14d5398d97606fca05049591d941d6d7" kind="function"><name>dn_ipmt_getParameter_testRadioRxStats_reply</name></member>
+    <member refid="dn__ipmt_8c_1a0b2e4e9a64a2935007eaeef4305dd081" kind="function"><name>dn_ipmt_getParameter_OTAPLockout_reply</name></member>
+    <member refid="dn__ipmt_8c_1a1477c755c96ef4e91cb5fe5e113e65de" kind="function"><name>dn_ipmt_getParameter_moteId_reply</name></member>
+    <member refid="dn__ipmt_8c_1aa95921aa5acc99bd4082d7b51882225d" kind="function"><name>dn_ipmt_getParameter_ipv6Address_reply</name></member>
+    <member refid="dn__ipmt_8c_1a24f036f4737340727960c3d9c4f5dbc0" kind="function"><name>dn_ipmt_getParameter_routingMode_reply</name></member>
+    <member refid="dn__ipmt_8c_1a7084ce708b58b69f3d5e77739694d5ad" kind="function"><name>dn_ipmt_getParameter_appInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1a46724d18519eca5aa08711d6d61920e2" kind="function"><name>dn_ipmt_getParameter_powerSrcInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1ac02e42ad3aa121b4cc628d4734c1ced0" kind="function"><name>dn_ipmt_getParameter_autoJoin_reply</name></member>
+    <member refid="dn__ipmt_8c_1a0c09d03519700b15aba3fd527ac5f04e" kind="function"><name>dn_ipmt_join_reply</name></member>
+    <member refid="dn__ipmt_8c_1af734ed796d026311c3fa694d0edc2fc7" kind="function"><name>dn_ipmt_disconnect_reply</name></member>
+    <member refid="dn__ipmt_8c_1a4a465fffa4ff7f65be3b1a7fbb147091" kind="function"><name>dn_ipmt_reset_reply</name></member>
+    <member refid="dn__ipmt_8c_1a7fc5df288c69b585bb1eb78973a84263" kind="function"><name>dn_ipmt_lowPowerSleep_reply</name></member>
+    <member refid="dn__ipmt_8c_1a4abb203055cc6247a13f430b6602003d" kind="function"><name>dn_ipmt_testRadioRx_reply</name></member>
+    <member refid="dn__ipmt_8c_1aa8ac88c5cdeaf6cf061d4e50046a55dc" kind="function"><name>dn_ipmt_clearNV_reply</name></member>
+    <member refid="dn__ipmt_8c_1a93110719cdf5ef8ed92899d1e965eb43" kind="function"><name>dn_ipmt_requestService_reply</name></member>
+    <member refid="dn__ipmt_8c_1a1aa8a0c5531bf748a5e76a2a2ce2ed7e" kind="function"><name>dn_ipmt_getServiceInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1a27d646bd92054bf0520c337aa71ee075" kind="function"><name>dn_ipmt_openSocket_reply</name></member>
+    <member refid="dn__ipmt_8c_1af3f0293c73cc6848b65840426557ebfe" kind="function"><name>dn_ipmt_closeSocket_reply</name></member>
+    <member refid="dn__ipmt_8c_1a204a5b8b1d3b97e6eb58c35c562740f9" kind="function"><name>dn_ipmt_bindSocket_reply</name></member>
+    <member refid="dn__ipmt_8c_1abd20c25aa68a8c9e1fb47abf059c5ac9" kind="function"><name>dn_ipmt_sendTo_reply</name></member>
+    <member refid="dn__ipmt_8c_1a3924cf752f7ff457d90da278f5abc18f" kind="function"><name>dn_ipmt_search_reply</name></member>
+    <member refid="dn__ipmt_8c_1a170d60d363fc83059f3fa2c0875e2548" kind="function"><name>dn_ipmt_testRadioTxExt_reply</name></member>
+    <member refid="dn__ipmt_8c_1a0761e396eb55723a26df2ea1203182f0" kind="function"><name>dn_ipmt_zeroize_reply</name></member>
+    <member refid="dn__ipmt_8c_1a845c8b2edf825f6cd4901eb213d4a1b6" kind="function"><name>dn_ipmt_socketInfo_reply</name></member>
+    <member refid="dn__ipmt_8c_1a1f313be6ce095eb421d0cac5e8fbc44b" kind="function"><name>dn_ipmt_rxSerialRequest</name></member>
+    <member refid="dn__ipmt_8c_1ae42f2efba23317ea8c7a09c2ba80d0a3" kind="function"><name>dn_ipmt_init</name></member>
+    <member refid="dn__ipmt_8c_1a46bd9cf5194abcd2617df0cdbff2ef0b" kind="function"><name>dn_ipmt_cancelTx</name></member>
+    <member refid="dn__ipmt_8c_1adbc666e7e78b9f381d1d90beb9d30b91" kind="function"><name>dn_ipmt_setParameter_macAddress</name></member>
+    <member refid="dn__ipmt_8c_1acc2e7d5e771f0190e1f65eb62f59b109" kind="function"><name>dn_ipmt_setParameter_joinKey</name></member>
+    <member refid="dn__ipmt_8c_1af3d6cd8d04d296e109ef3ff3cabac691" kind="function"><name>dn_ipmt_setParameter_networkId</name></member>
+    <member refid="dn__ipmt_8c_1a68cbe53a8b4354145dd9af8f433b79cc" kind="function"><name>dn_ipmt_setParameter_txPower</name></member>
+    <member refid="dn__ipmt_8c_1a22336b535c37326ec2527ba36a8be010" kind="function"><name>dn_ipmt_setParameter_joinDutyCycle</name></member>
+    <member refid="dn__ipmt_8c_1a053da563a921dfe2b169b1cf66a37ce5" kind="function"><name>dn_ipmt_setParameter_eventMask</name></member>
+    <member refid="dn__ipmt_8c_1a02a6d82f8ff50a3740f58be8cdf32b06" kind="function"><name>dn_ipmt_setParameter_OTAPLockout</name></member>
+    <member refid="dn__ipmt_8c_1a9fceae3a244a5d36839b5d345e9dd0d0" kind="function"><name>dn_ipmt_setParameter_routingMode</name></member>
+    <member refid="dn__ipmt_8c_1a21dc4e49b3394c655f80a5af42829a12" kind="function"><name>dn_ipmt_setParameter_powerSrcInfo</name></member>
+    <member refid="dn__ipmt_8c_1a2775146dacd2e19e24384dfe10cef459" kind="function"><name>dn_ipmt_setParameter_advKey</name></member>
+    <member refid="dn__ipmt_8c_1a60d24c87b084fae8b13706f2ba5f0ae2" kind="function"><name>dn_ipmt_setParameter_autoJoin</name></member>
+    <member refid="dn__ipmt_8c_1a5af064a35b08cdf2e7bbfa7f0d7dd91a" kind="function"><name>dn_ipmt_getParameter_macAddress</name></member>
+    <member refid="dn__ipmt_8c_1a2a0585a1c5107adb8f017cb8d5d9106b" kind="function"><name>dn_ipmt_getParameter_networkId</name></member>
+    <member refid="dn__ipmt_8c_1a166f3b37946473bd44f52eea9499fca5" kind="function"><name>dn_ipmt_getParameter_txPower</name></member>
+    <member refid="dn__ipmt_8c_1a70a96611f1ddda43731a124bd38254dc" kind="function"><name>dn_ipmt_getParameter_joinDutyCycle</name></member>
+    <member refid="dn__ipmt_8c_1ac98e19d40a01131dc7ecfd74951b930b" kind="function"><name>dn_ipmt_getParameter_eventMask</name></member>
+    <member refid="dn__ipmt_8c_1a9e7feffeb4759848bb6cf6081021fdf7" kind="function"><name>dn_ipmt_getParameter_moteInfo</name></member>
+    <member refid="dn__ipmt_8c_1a9f130ef67282c0ae7620b0933713b9bb" kind="function"><name>dn_ipmt_getParameter_netInfo</name></member>
+    <member refid="dn__ipmt_8c_1adf1c36655f140fb6fa5ba9fd6728415a" kind="function"><name>dn_ipmt_getParameter_moteStatus</name></member>
+    <member refid="dn__ipmt_8c_1a247f2fa544b5313731e9dc5e4c48ef2d" kind="function"><name>dn_ipmt_getParameter_time</name></member>
+    <member refid="dn__ipmt_8c_1a5aa89e3c403ca6e56e7fc9c8f1be2416" kind="function"><name>dn_ipmt_getParameter_charge</name></member>
+    <member refid="dn__ipmt_8c_1a811722f07105d44f67e2103719142803" kind="function"><name>dn_ipmt_getParameter_testRadioRxStats</name></member>
+    <member refid="dn__ipmt_8c_1aef3f4e8586474fa6ad49414d94a360ec" kind="function"><name>dn_ipmt_getParameter_OTAPLockout</name></member>
+    <member refid="dn__ipmt_8c_1acdec26eedea438cd575743f66e8497f2" kind="function"><name>dn_ipmt_getParameter_moteId</name></member>
+    <member refid="dn__ipmt_8c_1a466779cec3dc7923605e40cfae4371ca" kind="function"><name>dn_ipmt_getParameter_ipv6Address</name></member>
+    <member refid="dn__ipmt_8c_1af66b4cf469e19ab115ecfc0506325c05" kind="function"><name>dn_ipmt_getParameter_routingMode</name></member>
+    <member refid="dn__ipmt_8c_1a28b85d834cedf101bcb6219470db3052" kind="function"><name>dn_ipmt_getParameter_appInfo</name></member>
+    <member refid="dn__ipmt_8c_1a7e581e17427fd4ecd919b34ec4c2fa84" kind="function"><name>dn_ipmt_getParameter_powerSrcInfo</name></member>
+    <member refid="dn__ipmt_8c_1a369c8507e325aedcd960baf9f81647d4" kind="function"><name>dn_ipmt_getParameter_autoJoin</name></member>
+    <member refid="dn__ipmt_8c_1a6a29aaf1b77d2fb96ecd46c62990bf2d" kind="function"><name>dn_ipmt_join</name></member>
+    <member refid="dn__ipmt_8c_1a525c794d6652fef3e44003bc1abc3e1f" kind="function"><name>dn_ipmt_disconnect</name></member>
+    <member refid="dn__ipmt_8c_1a27fd9d25447417ca5fc3c34f701edce5" kind="function"><name>dn_ipmt_reset</name></member>
+    <member refid="dn__ipmt_8c_1a48e0a02d54148a545b25b04ad65d99b4" kind="function"><name>dn_ipmt_lowPowerSleep</name></member>
+    <member refid="dn__ipmt_8c_1acdbd84f2e14b3e190f54e218f243ad68" kind="function"><name>dn_ipmt_testRadioRx</name></member>
+    <member refid="dn__ipmt_8c_1af5aa93caf869632da1980bae0b44df78" kind="function"><name>dn_ipmt_clearNV</name></member>
+    <member refid="dn__ipmt_8c_1acda448495ae9f0fee3501d8341318c85" kind="function"><name>dn_ipmt_requestService</name></member>
+    <member refid="dn__ipmt_8c_1ac060d080e9eea83f1343e7f92a92f83b" kind="function"><name>dn_ipmt_getServiceInfo</name></member>
+    <member refid="dn__ipmt_8c_1a71739ab961147f48e05c07cb2f318cd0" kind="function"><name>dn_ipmt_openSocket</name></member>
+    <member refid="dn__ipmt_8c_1ab2847e46797eeaff27530efd09d77826" kind="function"><name>dn_ipmt_closeSocket</name></member>
+    <member refid="dn__ipmt_8c_1a70a50e3a53069a040f5f8b71046be468" kind="function"><name>dn_ipmt_bindSocket</name></member>
+    <member refid="dn__ipmt_8c_1a660bee85e66c90486031d70b28aaf862" kind="function"><name>dn_ipmt_sendTo</name></member>
+    <member refid="dn__ipmt_8c_1a04ddedd3abe5217f6f5f139d408eb1e7" kind="function"><name>dn_ipmt_search</name></member>
+    <member refid="dn__ipmt_8c_1ab861cdfef10015181af225b924b53085" kind="function"><name>dn_ipmt_testRadioTxExt</name></member>
+    <member refid="dn__ipmt_8c_1a3855932b70dcc67f33f5e50f7e92980e" kind="function"><name>dn_ipmt_zeroize</name></member>
+    <member refid="dn__ipmt_8c_1a60ed8fb27081f5da67a5f9923a7f0e0b" kind="function"><name>dn_ipmt_socketInfo</name></member>
+  </compound>
+  <compound refid="dn__ipmt_8h" kind="file"><name>dn_ipmt.h</name>
+    <member refid="dn__ipmt_8h_1aecae779890dfc6b313fe2854369e5497" kind="define"><name>MAX_FRAME_LENGTH</name></member>
+    <member refid="dn__ipmt_8h_1a6c4196a918c78de20f72a42c9e44dd6c" kind="define"><name>DN_SUBCMDID_NONE</name></member>
+    <member refid="dn__ipmt_8h_1a4c786083688a774debac0fc304f2cdec" kind="define"><name>CMDID_SETPARAMETER</name></member>
+    <member refid="dn__ipmt_8h_1a1db61e6fa4068a32cf2cd2c40aa699cc" kind="define"><name>CMDID_GETPARAMETER</name></member>
+    <member refid="dn__ipmt_8h_1af57711f4cd0f7d2cdb2c896d45aab16d" kind="define"><name>CMDID_JOIN</name></member>
+    <member refid="dn__ipmt_8h_1ae396f830cd7381d300b1717ac8901368" kind="define"><name>CMDID_DISCONNECT</name></member>
+    <member refid="dn__ipmt_8h_1ac48415d4c58e4b0c6f5eb5659026aa75" kind="define"><name>CMDID_RESET</name></member>
+    <member refid="dn__ipmt_8h_1a71255795607c24b4e0ceea802a2d6a2c" kind="define"><name>CMDID_LOWPOWERSLEEP</name></member>
+    <member refid="dn__ipmt_8h_1ad118bda06a367135af334c30d965ad89" kind="define"><name>CMDID_TESTRADIORX</name></member>
+    <member refid="dn__ipmt_8h_1a17c6d488dcf7e3987ec3c48cc346cba0" kind="define"><name>CMDID_CLEARNV</name></member>
+    <member refid="dn__ipmt_8h_1a9ef9097e4ec461d18ce27d4045bbe0e1" kind="define"><name>CMDID_REQUESTSERVICE</name></member>
+    <member refid="dn__ipmt_8h_1aaede1f99fb33a5d9ff00f66971885a3e" kind="define"><name>CMDID_GETSERVICEINFO</name></member>
+    <member refid="dn__ipmt_8h_1acf7c2a20d5ec49da7ec505c76b87052f" kind="define"><name>CMDID_OPENSOCKET</name></member>
+    <member refid="dn__ipmt_8h_1a7fbc59fd536ecab77781ba3910746ba4" kind="define"><name>CMDID_CLOSESOCKET</name></member>
+    <member refid="dn__ipmt_8h_1a5311891dc1a72d1f31ff3617d2dad2c7" kind="define"><name>CMDID_BINDSOCKET</name></member>
+    <member refid="dn__ipmt_8h_1aa9ef90572ba09de19c03770766c0f0ec" kind="define"><name>CMDID_SENDTO</name></member>
+    <member refid="dn__ipmt_8h_1a6e93c5cc03a72c8df08623b013e153e1" kind="define"><name>CMDID_SEARCH</name></member>
+    <member refid="dn__ipmt_8h_1ab85ca2f7ed0b2a462f9ae75709e6c3ac" kind="define"><name>CMDID_TESTRADIOTXEXT</name></member>
+    <member refid="dn__ipmt_8h_1a81eafb7601071ee5b6c859db2bca03fc" kind="define"><name>CMDID_ZEROIZE</name></member>
+    <member refid="dn__ipmt_8h_1aac249b7670f4fd5dce95af04f38d77ec" kind="define"><name>CMDID_SOCKETINFO</name></member>
+    <member refid="dn__ipmt_8h_1aacc8b8c4e4446aad8eb9d0a1ffddf352" kind="define"><name>CMDID_TIMEINDICATION</name></member>
+    <member refid="dn__ipmt_8h_1a442a8dffe3b5bcbe41aaaa1bac3abd95" kind="define"><name>CMDID_EVENTS</name></member>
+    <member refid="dn__ipmt_8h_1ad735e229be97c2650f4f348824f9a466" kind="define"><name>CMDID_RECEIVE</name></member>
+    <member refid="dn__ipmt_8h_1a1c8056ca743f46834ec0e78d0e119ffc" kind="define"><name>CMDID_MACRX</name></member>
+    <member refid="dn__ipmt_8h_1acd46f38d60ee3e8b5ec3f2414eac3214" kind="define"><name>CMDID_TXDONE</name></member>
+    <member refid="dn__ipmt_8h_1a757d6881193cbf164cd824f95b799476" kind="define"><name>CMDID_ADVRECEIVED</name></member>
+    <member refid="dn__ipmt_8h_1a01d19282c733027169a5a4a08390b284" kind="define"><name>PARAMID_MACADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1a79c98cdf9732a686437fe625a9e8a1f1" kind="define"><name>PARAMID_JOINKEY</name></member>
+    <member refid="dn__ipmt_8h_1ad77e86c374d7d61d24a2e8af11d9e329" kind="define"><name>PARAMID_NETWORKID</name></member>
+    <member refid="dn__ipmt_8h_1a566fb21db78947a6623af47dee15edf9" kind="define"><name>PARAMID_TXPOWER</name></member>
+    <member refid="dn__ipmt_8h_1affeae9ba3fc86e79a9d7afef84e31518" kind="define"><name>PARAMID_JOINDUTYCYCLE</name></member>
+    <member refid="dn__ipmt_8h_1a22d68ffcf6b8e64a97425c94faa08ab5" kind="define"><name>PARAMID_EVENTMASK</name></member>
+    <member refid="dn__ipmt_8h_1aa5cdec9dd7934f04d17662ff019c0cbf" kind="define"><name>PARAMID_MOTEINFO</name></member>
+    <member refid="dn__ipmt_8h_1abd46e07ee15a9a5ad67abadf29e015e1" kind="define"><name>PARAMID_NETINFO</name></member>
+    <member refid="dn__ipmt_8h_1a9e51a522c847c39b9df51e2067b6da73" kind="define"><name>PARAMID_MOTESTATUS</name></member>
+    <member refid="dn__ipmt_8h_1afa121eefb200c550e8da59e093fd76ab" kind="define"><name>PARAMID_TIME</name></member>
+    <member refid="dn__ipmt_8h_1a628b02ca985fd780e30b21828ca666eb" kind="define"><name>PARAMID_CHARGE</name></member>
+    <member refid="dn__ipmt_8h_1a4cef37b34add1423171b218fe0d5e9fa" kind="define"><name>PARAMID_TESTRADIORXSTATS</name></member>
+    <member refid="dn__ipmt_8h_1a2e91881ac473a343b9204818a940a20b" kind="define"><name>PARAMID_OTAPLOCKOUT</name></member>
+    <member refid="dn__ipmt_8h_1a91d1eab003e30ad4ab3c97736abdaa1f" kind="define"><name>PARAMID_MOTEID</name></member>
+    <member refid="dn__ipmt_8h_1a7c4a89151bb908a6f7e98be90a88a93b" kind="define"><name>PARAMID_IPV6ADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1aa9fd61b5a780e752891cf2a5476fa6c0" kind="define"><name>PARAMID_ROUTINGMODE</name></member>
+    <member refid="dn__ipmt_8h_1a3011e8351c91de82ef9daaca8ce3a8b3" kind="define"><name>PARAMID_APPINFO</name></member>
+    <member refid="dn__ipmt_8h_1a7fc5ef622e2a9e315f286c2945bb7815" kind="define"><name>PARAMID_POWERSRCINFO</name></member>
+    <member refid="dn__ipmt_8h_1a428bdb8b1a55853b56e09f9c3718f46e" kind="define"><name>PARAMID_ADVKEY</name></member>
+    <member refid="dn__ipmt_8h_1a9141f05d6fdd3b13de4f2ea6327314fb" kind="define"><name>PARAMID_AUTOJOIN</name></member>
+    <member refid="dn__ipmt_8h_1a69f981185ba99470b3d62aa9391037f6" kind="define"><name>DN_SETPARAMETER_MACADDRESS_REQ_OFFS_MACADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1abd1812283836b717062392734b6dbd12" kind="define"><name>DN_SETPARAMETER_MACADDRESS_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a0a6fdf7638f2a4159c7b541bd8f3adfb" kind="define"><name>DN_SETPARAMETER_JOINKEY_REQ_OFFS_JOINKEY</name></member>
+    <member refid="dn__ipmt_8h_1a81ac26ca907779879cdeb8f4f054efec" kind="define"><name>DN_SETPARAMETER_JOINKEY_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acf6e7dff2aea31c1c216c89793861c94" kind="define"><name>DN_SETPARAMETER_NETWORKID_REQ_OFFS_NETWORKID</name></member>
+    <member refid="dn__ipmt_8h_1a9dd3820c8c0dfe2fd51de8eee799cd0b" kind="define"><name>DN_SETPARAMETER_NETWORKID_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af3f4b1c3eadb11a5a31e98c94aefb926" kind="define"><name>DN_SETPARAMETER_TXPOWER_REQ_OFFS_TXPOWER</name></member>
+    <member refid="dn__ipmt_8h_1a7a2c2e48dd6bfa29a4fc3e8fe776b300" kind="define"><name>DN_SETPARAMETER_TXPOWER_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a8cf55ff33f4d933b81e480135893ffaa" kind="define"><name>DN_SETPARAMETER_JOINDUTYCYCLE_REQ_OFFS_DUTYCYCLE</name></member>
+    <member refid="dn__ipmt_8h_1acb486b1255636813f863798072a4ce67" kind="define"><name>DN_SETPARAMETER_JOINDUTYCYCLE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a044377329a2c2d421b962f1a3ddfd6a1" kind="define"><name>DN_SETPARAMETER_EVENTMASK_REQ_OFFS_EVENTMASK</name></member>
+    <member refid="dn__ipmt_8h_1a5cd29e3cdc5257bbc96fceb17898f47b" kind="define"><name>DN_SETPARAMETER_EVENTMASK_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aed50af24d6ea9a83c7186698f35cd55e" kind="define"><name>DN_SETPARAMETER_OTAPLOCKOUT_REQ_OFFS_MODE</name></member>
+    <member refid="dn__ipmt_8h_1a448394018dbd7f79654c5b8ef352f91d" kind="define"><name>DN_SETPARAMETER_OTAPLOCKOUT_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a16c09d298b050fc7df66a33c672a0c2c" kind="define"><name>DN_SETPARAMETER_ROUTINGMODE_REQ_OFFS_MODE</name></member>
+    <member refid="dn__ipmt_8h_1a3b52d27194965e6de5f35e57e0ab61eb" kind="define"><name>DN_SETPARAMETER_ROUTINGMODE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a9bb0526747c8bfab83ab0e7be2259df5" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_MAXSTCURRENT</name></member>
+    <member refid="dn__ipmt_8h_1aa80ec5dd4d732649e1763365fd8acd6c" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_MINLIFETIME</name></member>
+    <member refid="dn__ipmt_8h_1a565cef0a8f7e1c1bfaae908a7a07bced" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_CURRENTLIMIT_0</name></member>
+    <member refid="dn__ipmt_8h_1a7c468d2a731b7d75029bd79d5465d59c" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_DISCHARGEPERIOD_0</name></member>
+    <member refid="dn__ipmt_8h_1a56a66278e13e0a545bcd1aff700fb3da" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_RECHARGEPERIOD_0</name></member>
+    <member refid="dn__ipmt_8h_1a3a0c7754e5eb37f1645007b68fca4158" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_CURRENTLIMIT_1</name></member>
+    <member refid="dn__ipmt_8h_1a53bb136098d05508170201359cc75440" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_DISCHARGEPERIOD_1</name></member>
+    <member refid="dn__ipmt_8h_1abe036887c68c207d7939c90d40865ff3" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_RECHARGEPERIOD_1</name></member>
+    <member refid="dn__ipmt_8h_1a392b4e5ca493a59d736cea4b4f015dd2" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_CURRENTLIMIT_2</name></member>
+    <member refid="dn__ipmt_8h_1ab7eaeeb987b66450fa095a72d1cd8d76" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_DISCHARGEPERIOD_2</name></member>
+    <member refid="dn__ipmt_8h_1a2fe9c1e32273cb5648a9667076a5991d" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_OFFS_RECHARGEPERIOD_2</name></member>
+    <member refid="dn__ipmt_8h_1a84c6485584b9fa67c4f6fc3f6867da80" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acbb54185ad10ad51530a267630ef2326" kind="define"><name>DN_SETPARAMETER_ADVKEY_REQ_OFFS_ADVKEY</name></member>
+    <member refid="dn__ipmt_8h_1a81a891d290bfc76aea6c621239407753" kind="define"><name>DN_SETPARAMETER_ADVKEY_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a80b01ca5c6ca3c6630e3226e90e865fc" kind="define"><name>DN_SETPARAMETER_AUTOJOIN_REQ_OFFS_MODE</name></member>
+    <member refid="dn__ipmt_8h_1afc37592b896a71d9a9e31fc7f008127b" kind="define"><name>DN_SETPARAMETER_AUTOJOIN_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aefe6bbc6f83f1f2277da1cda650c0b1b" kind="define"><name>DN_GETPARAMETER_MACADDRESS_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a0a1ecf0bb3889b8aaa9e22360b01e8dd" kind="define"><name>DN_GETPARAMETER_NETWORKID_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a7c18e59889f14de68c3a9cf765938267" kind="define"><name>DN_GETPARAMETER_TXPOWER_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ae93ad9f77dab45ad0abb0533363dc01a" kind="define"><name>DN_GETPARAMETER_JOINDUTYCYCLE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acb0e457490366b4f779ca49ed1c5fbf1" kind="define"><name>DN_GETPARAMETER_EVENTMASK_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acd0626ceacfc539aa28cf66880f4594a" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aa925977fddfbcf8f624988ccd50f0b61" kind="define"><name>DN_GETPARAMETER_NETINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a46effcd51909f56a174530ef229f3926" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a2c6477ae7d2017ce73328a360275900f" kind="define"><name>DN_GETPARAMETER_TIME_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af2fd5960fc87660d4a264f3f9077072c" kind="define"><name>DN_GETPARAMETER_CHARGE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a585de2136c663c0dbee458b863c7afd7" kind="define"><name>DN_GETPARAMETER_TESTRADIORXSTATS_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ae3fe5d7c0d26dd4d0a140b5b7a54b338" kind="define"><name>DN_GETPARAMETER_OTAPLOCKOUT_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a7ae408e6158007809b58d19a59cc805a" kind="define"><name>DN_GETPARAMETER_MOTEID_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aa16059288f2877363ccca0244723d295" kind="define"><name>DN_GETPARAMETER_IPV6ADDRESS_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a988aa9d5a29d72a10e7966d7e16198e7" kind="define"><name>DN_GETPARAMETER_ROUTINGMODE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac42cdc3f3efdf33f3e6e69b14a0f2168" kind="define"><name>DN_GETPARAMETER_APPINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ad47f774d7a702ab786e872d879383072" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a656ed674be1553e9ce57610bba46e659" kind="define"><name>DN_GETPARAMETER_AUTOJOIN_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a3fb7bd711e4724be081231d61c1de3a3" kind="define"><name>DN_JOIN_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acca83952ce826c3ec268ab15cfd1fea6" kind="define"><name>DN_DISCONNECT_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aef9685ec071df6b529f524d5a36db93c" kind="define"><name>DN_RESET_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a49772eef97077f968c2a0e59966459b4" kind="define"><name>DN_LOWPOWERSLEEP_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1afc9d55fcf2b9dbd255ad5a6e7fc61d25" kind="define"><name>DN_TESTRADIORX_REQ_OFFS_CHANNELMASK</name></member>
+    <member refid="dn__ipmt_8h_1a990ed2987aa364d3858d5f2f0cefce3e" kind="define"><name>DN_TESTRADIORX_REQ_OFFS_TIME</name></member>
+    <member refid="dn__ipmt_8h_1ae4b80c9badc79283f76802b1ad59b9f5" kind="define"><name>DN_TESTRADIORX_REQ_OFFS_STATIONID</name></member>
+    <member refid="dn__ipmt_8h_1a4aef3d3a9516c61dc3be64b1be3aaf43" kind="define"><name>DN_TESTRADIORX_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a68424824143582045c75ce65b865d3e1" kind="define"><name>DN_CLEARNV_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac8392fde1d18f0128fa451990653dc23" kind="define"><name>DN_REQUESTSERVICE_REQ_OFFS_DESTADDR</name></member>
+    <member refid="dn__ipmt_8h_1a6904079e2ce8fab361b9536915668d4e" kind="define"><name>DN_REQUESTSERVICE_REQ_OFFS_SERVICETYPE</name></member>
+    <member refid="dn__ipmt_8h_1a58be91576e8d2368b48e6ea3a4e97574" kind="define"><name>DN_REQUESTSERVICE_REQ_OFFS_VALUE</name></member>
+    <member refid="dn__ipmt_8h_1a6d2b9a8d384895f81d962b020ac64a61" kind="define"><name>DN_REQUESTSERVICE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a955c83237b7044b6aed095532b976ff5" kind="define"><name>DN_GETSERVICEINFO_REQ_OFFS_DESTADDR</name></member>
+    <member refid="dn__ipmt_8h_1a4f2e0015269803cfe4a087156c4facd5" kind="define"><name>DN_GETSERVICEINFO_REQ_OFFS_TYPE</name></member>
+    <member refid="dn__ipmt_8h_1a872f429096fe0c28e70f909c963b6b3c" kind="define"><name>DN_GETSERVICEINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ab0a725b0e9e8336bfe3c3678f3858a9f" kind="define"><name>DN_OPENSOCKET_REQ_OFFS_PROTOCOL</name></member>
+    <member refid="dn__ipmt_8h_1aacc9dd20bb9d2629b2826e73b74f3c97" kind="define"><name>DN_OPENSOCKET_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ab0cc4e802aa97bde63f59b558f152108" kind="define"><name>DN_CLOSESOCKET_REQ_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1a64e6268442de79ad925d7e14a4695bc4" kind="define"><name>DN_CLOSESOCKET_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac052143ca04c3b4d8c4d269cdc9195bc" kind="define"><name>DN_BINDSOCKET_REQ_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1a96b45417237630268f8badfcabef2e55" kind="define"><name>DN_BINDSOCKET_REQ_OFFS_PORT</name></member>
+    <member refid="dn__ipmt_8h_1ada8141adf7e1d075e205bdfb30354a75" kind="define"><name>DN_BINDSOCKET_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a79e45812c3962e817eb1553bef5af59a" kind="define"><name>DN_SENDTO_REQ_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1a6c0183114271726093ba79dd05d49fd7" kind="define"><name>DN_SENDTO_REQ_OFFS_DESTIP</name></member>
+    <member refid="dn__ipmt_8h_1a55413f45780f3e6dcce8c9d7fd712958" kind="define"><name>DN_SENDTO_REQ_OFFS_DESTPORT</name></member>
+    <member refid="dn__ipmt_8h_1a2031a1b99843375a23671ac1dbd145f2" kind="define"><name>DN_SENDTO_REQ_OFFS_SERVICETYPE</name></member>
+    <member refid="dn__ipmt_8h_1a7cc73360f605e4a0819eed78d754383d" kind="define"><name>DN_SENDTO_REQ_OFFS_PRIORITY</name></member>
+    <member refid="dn__ipmt_8h_1a7cff565acf09a708acd8838afd30794a" kind="define"><name>DN_SENDTO_REQ_OFFS_PACKETID</name></member>
+    <member refid="dn__ipmt_8h_1a9314d700ee40dcb0555fbc4ce76a1ae6" kind="define"><name>DN_SENDTO_REQ_OFFS_PAYLOAD</name></member>
+    <member refid="dn__ipmt_8h_1ace52b6cde99e711afa3069bfc42a5ff6" kind="define"><name>DN_SENDTO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a4de579cd10a61a4900e3f98a897785e7" kind="define"><name>DN_SEARCH_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ab606fd65c284e122f0e21a1fc44763a0" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_TESTTYPE</name></member>
+    <member refid="dn__ipmt_8h_1a5d95b2adc4d45428febbbe4a2ecb8d3f" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_CHANMASK</name></member>
+    <member refid="dn__ipmt_8h_1a3c9342890100a554a79c6af39311ba12" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_REPEATCNT</name></member>
+    <member refid="dn__ipmt_8h_1a4ee19b5769720adf629b1de2dd94a4cf" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_TXPOWER</name></member>
+    <member refid="dn__ipmt_8h_1a52618a3a4072802d77483445ee58727f" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_SEQSIZE</name></member>
+    <member refid="dn__ipmt_8h_1a64178b7da282f915dc576da889c2f974" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_1</name></member>
+    <member refid="dn__ipmt_8h_1a579d69295098eaed29b56d047add8903" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_1</name></member>
+    <member refid="dn__ipmt_8h_1a944642a144b3f1bdc999435680470a1b" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_2</name></member>
+    <member refid="dn__ipmt_8h_1a9ce59e07dae7d7dd64afeb9d4b706a0d" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_2</name></member>
+    <member refid="dn__ipmt_8h_1aca945516a9d276d390cfe8a722187f71" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_3</name></member>
+    <member refid="dn__ipmt_8h_1a963df8dbc9942329020d48c7e4bf265e" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_3</name></member>
+    <member refid="dn__ipmt_8h_1a19e23d2f10bdfc440a92b0c185426ed5" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_4</name></member>
+    <member refid="dn__ipmt_8h_1a662b8e518566ee22990b8046d6154eee" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_4</name></member>
+    <member refid="dn__ipmt_8h_1aae68ebfa3ebd8ecb19d17433477dd5e3" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_5</name></member>
+    <member refid="dn__ipmt_8h_1a4f3b7f856e5b989f743147b121962f3d" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_5</name></member>
+    <member refid="dn__ipmt_8h_1accbe84f034cd3c83a67fb575fd9768b2" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_6</name></member>
+    <member refid="dn__ipmt_8h_1a902ccd366bb23697ab502d57984af59e" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_6</name></member>
+    <member refid="dn__ipmt_8h_1ab88f1ebbb9949520fbd243e5e414b50f" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_7</name></member>
+    <member refid="dn__ipmt_8h_1a101e46a6d45e9381694335d7d19b7fd7" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_7</name></member>
+    <member refid="dn__ipmt_8h_1a5bb05629bd277040e8c3373ce60beecf" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_8</name></member>
+    <member refid="dn__ipmt_8h_1a6df1ee4e52c16cc761ad4b4b8578e67d" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_8</name></member>
+    <member refid="dn__ipmt_8h_1a8af85dba461cd82f27d77ed2c0aad6ed" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_9</name></member>
+    <member refid="dn__ipmt_8h_1ab001e140a113862257dcc08132cfb418" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_9</name></member>
+    <member refid="dn__ipmt_8h_1abe027b345189f172bc26b0204aa07533" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_PKLEN_10</name></member>
+    <member refid="dn__ipmt_8h_1a42600d31a5252179985fe266972ab197" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_DELAY_10</name></member>
+    <member refid="dn__ipmt_8h_1a5671d11a676f89f3538decdad3ba5713" kind="define"><name>DN_TESTRADIOTXEXT_REQ_OFFS_STATIONID</name></member>
+    <member refid="dn__ipmt_8h_1a66654a33cc7d5a0983fc396c03837eab" kind="define"><name>DN_TESTRADIOTXEXT_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1abfc13cbf5029282ecc4d49026212fb8d" kind="define"><name>DN_ZEROIZE_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aef7efc2f0f1d69a5ced983c25e540952" kind="define"><name>DN_SOCKETINFO_REQ_OFFS_INDEX</name></member>
+    <member refid="dn__ipmt_8h_1ae55c8a9acec2f8f777dd0444a300dec6" kind="define"><name>DN_SOCKETINFO_REQ_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ae5e682fea461061a2775399ef031bdb4" kind="define"><name>DN_SETPARAMETER_MACADDRESS_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af3e8c1bd0c607c29aa4a2aef875f4120" kind="define"><name>DN_SETPARAMETER_JOINKEY_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a1f22a477d3f12333ff9c0c61f79284aa" kind="define"><name>DN_SETPARAMETER_NETWORKID_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ad89225df670b83334077b0798bd867e4" kind="define"><name>DN_SETPARAMETER_TXPOWER_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a8425eacfc001e89444e0efc8476ceb96" kind="define"><name>DN_SETPARAMETER_JOINDUTYCYCLE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a12cfb38a3ad831c22a66c1d5fde3efed" kind="define"><name>DN_SETPARAMETER_EVENTMASK_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af5630150d161f38ca26ef41a21c5843a" kind="define"><name>DN_SETPARAMETER_OTAPLOCKOUT_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a0f346b477a6c41e398ce0e79d132239c" kind="define"><name>DN_SETPARAMETER_ROUTINGMODE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a46103f7c91a2ad21cc613ff0034eaaa2" kind="define"><name>DN_SETPARAMETER_POWERSRCINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a950272cf5f2e62c6ae2b69bfd4f613cc" kind="define"><name>DN_SETPARAMETER_ADVKEY_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ab6410dca2e8a0ba34eba0f495946e298" kind="define"><name>DN_SETPARAMETER_AUTOJOIN_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1acbaa23695de1c43213e2126ffbf80733" kind="define"><name>DN_GETPARAMETER_MACADDRESS_REPLY_OFFS_MACADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1a4ed5c7b8382f5084bad8fc00c6c2fa82" kind="define"><name>DN_GETPARAMETER_MACADDRESS_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1abd7b222af1d39717bde5734a25df6058" kind="define"><name>DN_GETPARAMETER_NETWORKID_REPLY_OFFS_NETWORKID</name></member>
+    <member refid="dn__ipmt_8h_1a75ec78023a28852d5350af65976281d7" kind="define"><name>DN_GETPARAMETER_NETWORKID_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ae00ddfe969d49b04e6712796f9542129" kind="define"><name>DN_GETPARAMETER_TXPOWER_REPLY_OFFS_TXPOWER</name></member>
+    <member refid="dn__ipmt_8h_1ae44e607dd39e6adb71e616bf7bba9b74" kind="define"><name>DN_GETPARAMETER_TXPOWER_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aab6b85fa9361fcc08941238f5b5e2d10" kind="define"><name>DN_GETPARAMETER_JOINDUTYCYCLE_REPLY_OFFS_JOINDUTYCYCLE</name></member>
+    <member refid="dn__ipmt_8h_1acfcd90ded982dee98e4a2bc8392bf7c8" kind="define"><name>DN_GETPARAMETER_JOINDUTYCYCLE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a657de26a9f88f67194e705a86453b32c" kind="define"><name>DN_GETPARAMETER_EVENTMASK_REPLY_OFFS_EVENTMASK</name></member>
+    <member refid="dn__ipmt_8h_1a9056508ebcc2cfab8dcfe453cc89ce36" kind="define"><name>DN_GETPARAMETER_EVENTMASK_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a1e6ae5932df78ae2e8d0af513bfcd300" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_APIVERSION</name></member>
+    <member refid="dn__ipmt_8h_1a2a2e920588b6f5480bc3561174841868" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_SERIALNUMBER</name></member>
+    <member refid="dn__ipmt_8h_1a81454e4e2c66884d610af6273296dbad" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_HWMODEL</name></member>
+    <member refid="dn__ipmt_8h_1aefbc242223f5457575523fdcb9cde892" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_HWREV</name></member>
+    <member refid="dn__ipmt_8h_1a93684acb2eda3ee838739fcbb1f88254" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_SWVERMAJOR</name></member>
+    <member refid="dn__ipmt_8h_1aed936297b6e2cea9ecf8aa9699724675" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_SWVERMINOR</name></member>
+    <member refid="dn__ipmt_8h_1a18af0406d297809f16c9e9022e2ccff8" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_SWVERPATCH</name></member>
+    <member refid="dn__ipmt_8h_1abe1d025231e590f8fbab87c279b10395" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_SWVERBUILD</name></member>
+    <member refid="dn__ipmt_8h_1aa1aedb79be2e124eb75b683254b104d1" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_OFFS_BOOTSWVER</name></member>
+    <member refid="dn__ipmt_8h_1ac199b31afe5b04cd36faee21a4c4fe8c" kind="define"><name>DN_GETPARAMETER_MOTEINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a323f0be6466b37acbd907e48111abfe1" kind="define"><name>DN_GETPARAMETER_NETINFO_REPLY_OFFS_MACADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1afc41d364c1de81d4b43422b782936462" kind="define"><name>DN_GETPARAMETER_NETINFO_REPLY_OFFS_MOTEID</name></member>
+    <member refid="dn__ipmt_8h_1a6b6f8065b9f3312141a61d3398bf2f4e" kind="define"><name>DN_GETPARAMETER_NETINFO_REPLY_OFFS_NETWORKID</name></member>
+    <member refid="dn__ipmt_8h_1acc488be38c87d60a88b1efd66897a668" kind="define"><name>DN_GETPARAMETER_NETINFO_REPLY_OFFS_SLOTSIZE</name></member>
+    <member refid="dn__ipmt_8h_1a0abd6171607633f23ea069768671d3e0" kind="define"><name>DN_GETPARAMETER_NETINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a2a483337ff4b29734d85420c9c00fe19" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_STATE</name></member>
+    <member refid="dn__ipmt_8h_1a93d5ac9fbd11fc8f9875103fab2c0e73" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_RESERVED_0</name></member>
+    <member refid="dn__ipmt_8h_1a7dc90d0cd9f0ba2cc6e2caf4f843f312" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_RESERVED_1</name></member>
+    <member refid="dn__ipmt_8h_1ad36d8984e1c8107751f84dd53b1605b9" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_NUMPARENTS</name></member>
+    <member refid="dn__ipmt_8h_1abf208ca6f4b2d394e984e8f178deb8b0" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_ALARMS</name></member>
+    <member refid="dn__ipmt_8h_1a66ea8c735166e950b82860b3ec4e1ba2" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_OFFS_RESERVED_2</name></member>
+    <member refid="dn__ipmt_8h_1a201083ec6948d17ec08aa30f1d78e35c" kind="define"><name>DN_GETPARAMETER_MOTESTATUS_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a11eee8581a2b44fadc77bc6b5d57625a" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_OFFS_UPTIME</name></member>
+    <member refid="dn__ipmt_8h_1ab5f89815703e5ad93267ea36ceb152c1" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_OFFS_UTCSECS</name></member>
+    <member refid="dn__ipmt_8h_1a239ac731d08d72fbc648ce18b86a9134" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_OFFS_UTCUSECS</name></member>
+    <member refid="dn__ipmt_8h_1a3d95f38c16be16a74d93dcd8d9cbf5a6" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_OFFS_ASN</name></member>
+    <member refid="dn__ipmt_8h_1a9959460f744c13c0fb0bd40b1b2a87f4" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_OFFS_ASNOFFSET</name></member>
+    <member refid="dn__ipmt_8h_1a46ebad0e6dc7da253bb16f8f493e0bed" kind="define"><name>DN_GETPARAMETER_TIME_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a08e65a627bd62cdfdae6632a02410a18" kind="define"><name>DN_GETPARAMETER_CHARGE_REPLY_OFFS_QTOTAL</name></member>
+    <member refid="dn__ipmt_8h_1a5a98d8595426a97c8a33c19e8677b7d7" kind="define"><name>DN_GETPARAMETER_CHARGE_REPLY_OFFS_UPTIME</name></member>
+    <member refid="dn__ipmt_8h_1ac0c0e393ff438feb49470b9dc4830e0d" kind="define"><name>DN_GETPARAMETER_CHARGE_REPLY_OFFS_TEMPINT</name></member>
+    <member refid="dn__ipmt_8h_1a740df1570c7932aca3b19bea08b11925" kind="define"><name>DN_GETPARAMETER_CHARGE_REPLY_OFFS_TEMPFRAC</name></member>
+    <member refid="dn__ipmt_8h_1aef66954bc37c17c7e4d64d974d70a673" kind="define"><name>DN_GETPARAMETER_CHARGE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a8ebd3881dda17907f18af8f1150267e6" kind="define"><name>DN_GETPARAMETER_TESTRADIORXSTATS_REPLY_OFFS_RXOK</name></member>
+    <member refid="dn__ipmt_8h_1a356f8a871a9bea4a3762b3bfce61686e" kind="define"><name>DN_GETPARAMETER_TESTRADIORXSTATS_REPLY_OFFS_RXFAILED</name></member>
+    <member refid="dn__ipmt_8h_1ab97a96ba411a5e9ad539bc6ca6a77a11" kind="define"><name>DN_GETPARAMETER_TESTRADIORXSTATS_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a82d66f15f9b961b5fe6d374d0c6a9c71" kind="define"><name>DN_GETPARAMETER_OTAPLOCKOUT_REPLY_OFFS_MODE</name></member>
+    <member refid="dn__ipmt_8h_1aca851ab02164810fdc57186df81252bc" kind="define"><name>DN_GETPARAMETER_OTAPLOCKOUT_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a25218e95b94dcd1771c0aa869dc80db9" kind="define"><name>DN_GETPARAMETER_MOTEID_REPLY_OFFS_MOTEID</name></member>
+    <member refid="dn__ipmt_8h_1a36a273db1ae1c402a7e618baa159cad1" kind="define"><name>DN_GETPARAMETER_MOTEID_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a1a50cfd37491143aae8e592c3ffeb133" kind="define"><name>DN_GETPARAMETER_IPV6ADDRESS_REPLY_OFFS_IPV6ADDRESS</name></member>
+    <member refid="dn__ipmt_8h_1a72cef8fae768c4fdfff396769f958e13" kind="define"><name>DN_GETPARAMETER_IPV6ADDRESS_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a433d38e9ce90a8c46bab6d1d3b4cd1a6" kind="define"><name>DN_GETPARAMETER_ROUTINGMODE_REPLY_OFFS_ROUTINGMODE</name></member>
+    <member refid="dn__ipmt_8h_1a2b67777a7dbce07a545be7caf4b6b571" kind="define"><name>DN_GETPARAMETER_ROUTINGMODE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a1df66c1eb7debba864326e36a81ef6c9" kind="define"><name>DN_GETPARAMETER_APPINFO_REPLY_OFFS_VENDORID</name></member>
+    <member refid="dn__ipmt_8h_1aea10e961ab473837edef390212743fff" kind="define"><name>DN_GETPARAMETER_APPINFO_REPLY_OFFS_APPID</name></member>
+    <member refid="dn__ipmt_8h_1ab45bb470193e20f3d4fbc543b4dcf61c" kind="define"><name>DN_GETPARAMETER_APPINFO_REPLY_OFFS_APPVER</name></member>
+    <member refid="dn__ipmt_8h_1a6ecbbde6aef8757946f7e6fcea1b09b9" kind="define"><name>DN_GETPARAMETER_APPINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ae77ed845b7f717abb32aa22bdfe63bc4" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_MAXSTCURRENT</name></member>
+    <member refid="dn__ipmt_8h_1a46f926d85f70caf2e5fa9831bd601e8a" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_MINLIFETIME</name></member>
+    <member refid="dn__ipmt_8h_1a47955e84a69c52f79e8f59fbdc7998f8" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_CURRENTLIMIT_0</name></member>
+    <member refid="dn__ipmt_8h_1a99781925655bda2bed2cfd348b54aa79" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_DISCHARGEPERIOD_0</name></member>
+    <member refid="dn__ipmt_8h_1ace3caf0849a8ef87c640dc2f252db071" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_RECHARGEPERIOD_0</name></member>
+    <member refid="dn__ipmt_8h_1a01cdd2fe37823c7ba91ac2796ab1f87e" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_CURRENTLIMIT_1</name></member>
+    <member refid="dn__ipmt_8h_1a402470aa60c5fb35771d5e3c6c4127ac" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_DISCHARGEPERIOD_1</name></member>
+    <member refid="dn__ipmt_8h_1a8961c898769603c0408beabdfb9d97c3" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_RECHARGEPERIOD_1</name></member>
+    <member refid="dn__ipmt_8h_1a1421101807187f60c1642bcacbf90acc" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_CURRENTLIMIT_2</name></member>
+    <member refid="dn__ipmt_8h_1a359fc2d0451ede504674c4068fec1584" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_DISCHARGEPERIOD_2</name></member>
+    <member refid="dn__ipmt_8h_1a5ad63346505a5e0190e27e63f4f0e5a7" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_OFFS_RECHARGEPERIOD_2</name></member>
+    <member refid="dn__ipmt_8h_1a7d67fc15441edcd6aa14c0fddfd87d4a" kind="define"><name>DN_GETPARAMETER_POWERSRCINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a865dd1d001a3085151b9da01a40bf5d4" kind="define"><name>DN_GETPARAMETER_AUTOJOIN_REPLY_OFFS_AUTOJOIN</name></member>
+    <member refid="dn__ipmt_8h_1ac6d3da84f73bc93362e79911669160b8" kind="define"><name>DN_GETPARAMETER_AUTOJOIN_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aafb8e641e2004aae1afc76535e24b9ec" kind="define"><name>DN_JOIN_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a2367cbaa75987305e4c18733101f586f" kind="define"><name>DN_DISCONNECT_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ad86ee866ff7961da73fd1fc032a4d4b8" kind="define"><name>DN_RESET_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a9754bcdcc53a700a03d55cad0fdb011d" kind="define"><name>DN_LOWPOWERSLEEP_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a1d22308cc9279b8e126d8726f3f0908e" kind="define"><name>DN_TESTRADIORX_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af1133833a0a96af5b40ab86dd8d949fd" kind="define"><name>DN_CLEARNV_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a82842ccba84ab22d377512e97bf6558b" kind="define"><name>DN_REQUESTSERVICE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aad07028c9f84052e4fd9c67593a7a4ea" kind="define"><name>DN_GETSERVICEINFO_REPLY_OFFS_DESTADDR</name></member>
+    <member refid="dn__ipmt_8h_1a7efac9f6b1e8826451ea443c5e223eb7" kind="define"><name>DN_GETSERVICEINFO_REPLY_OFFS_TYPE</name></member>
+    <member refid="dn__ipmt_8h_1a6fd30d7cf7212e3081972a87a1282c07" kind="define"><name>DN_GETSERVICEINFO_REPLY_OFFS_STATE</name></member>
+    <member refid="dn__ipmt_8h_1aaea695adb23c79bd5d62fb7333ea6749" kind="define"><name>DN_GETSERVICEINFO_REPLY_OFFS_VALUE</name></member>
+    <member refid="dn__ipmt_8h_1ab6a61f1b7e75c92573f39087b6fd0812" kind="define"><name>DN_GETSERVICEINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a359f37c24b34880363d675c7bb35709d" kind="define"><name>DN_OPENSOCKET_REPLY_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1a793aeaef8abe8f87d0d6a6b644a69c63" kind="define"><name>DN_OPENSOCKET_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac59596f8b1a43f92c2c496971d9df407" kind="define"><name>DN_CLOSESOCKET_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af4568f24728e11e187fc2d559d7f5f8d" kind="define"><name>DN_BINDSOCKET_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a8422c656b1c60d9d135922f275f1c35a" kind="define"><name>DN_SENDTO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac67c8af50630fa03d17342a52d3e9f9e" kind="define"><name>DN_SEARCH_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a5df356756a4ab8e6913dd1ea5acbf813" kind="define"><name>DN_TESTRADIOTXEXT_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a47e839a89df5cbc545b5dd4f673b0d23" kind="define"><name>DN_ZEROIZE_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1af90539983d48d30eebca1d44a45ee449" kind="define"><name>DN_SOCKETINFO_REPLY_OFFS_INDEX</name></member>
+    <member refid="dn__ipmt_8h_1a214b2b6b447679b8e19e6b35e89219b7" kind="define"><name>DN_SOCKETINFO_REPLY_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1ada5e9971ff5fba76df98b97b33a5ea9b" kind="define"><name>DN_SOCKETINFO_REPLY_OFFS_PROTOCOL</name></member>
+    <member refid="dn__ipmt_8h_1a1bfd77f54c91dba3ffd6d6d9b198efcf" kind="define"><name>DN_SOCKETINFO_REPLY_OFFS_BINDSTATE</name></member>
+    <member refid="dn__ipmt_8h_1a1e5a58d961a4aec9b9e225da164a2b43" kind="define"><name>DN_SOCKETINFO_REPLY_OFFS_PORT</name></member>
+    <member refid="dn__ipmt_8h_1a576d3985e2812939eb87da5bb92d7b63" kind="define"><name>DN_SOCKETINFO_REPLY_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a8cd07a78cf0ca27c72021eac9a12b8aa" kind="define"><name>DN_TIMEINDICATION_NOTIF_OFFS_UPTIME</name></member>
+    <member refid="dn__ipmt_8h_1a0f411e7927a0c57c8657474377b88abd" kind="define"><name>DN_TIMEINDICATION_NOTIF_OFFS_UTCSECS</name></member>
+    <member refid="dn__ipmt_8h_1a14920f1513dcb8aa5ecdd5cafb0141e3" kind="define"><name>DN_TIMEINDICATION_NOTIF_OFFS_UTCUSECS</name></member>
+    <member refid="dn__ipmt_8h_1a57d1ec06ac9a538b0142bba9c943a8bf" kind="define"><name>DN_TIMEINDICATION_NOTIF_OFFS_ASN</name></member>
+    <member refid="dn__ipmt_8h_1a8f2c7264513f4a1151788aecd77076a2" kind="define"><name>DN_TIMEINDICATION_NOTIF_OFFS_ASNOFFSET</name></member>
+    <member refid="dn__ipmt_8h_1a84e7816ef060410e3bf8d454e8703a09" kind="define"><name>DN_TIMEINDICATION_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ac9050b6d3b27698eb10927d1c16af377" kind="define"><name>DN_EVENTS_NOTIF_OFFS_EVENTS</name></member>
+    <member refid="dn__ipmt_8h_1a8b85d1e02d93b8dec341f133a0a4e6cf" kind="define"><name>DN_EVENTS_NOTIF_OFFS_STATE</name></member>
+    <member refid="dn__ipmt_8h_1a93b21efe0692058b61de80bc6148c8b7" kind="define"><name>DN_EVENTS_NOTIF_OFFS_ALARMSLIST</name></member>
+    <member refid="dn__ipmt_8h_1aed9247f12e1060110b7635c93d45d4ee" kind="define"><name>DN_EVENTS_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1ad8d6806b346a78c4a6022593e0b16594" kind="define"><name>DN_RECEIVE_NOTIF_OFFS_SOCKETID</name></member>
+    <member refid="dn__ipmt_8h_1a5cb05f96676d1b6bb744a6e88aaf0c0d" kind="define"><name>DN_RECEIVE_NOTIF_OFFS_SRCADDR</name></member>
+    <member refid="dn__ipmt_8h_1a4e82a5fa63bbd3ec192dbcc806ed2b02" kind="define"><name>DN_RECEIVE_NOTIF_OFFS_SRCPORT</name></member>
+    <member refid="dn__ipmt_8h_1a1db8e760e9cbd5afc8ea7d4a46b725af" kind="define"><name>DN_RECEIVE_NOTIF_OFFS_PAYLOAD</name></member>
+    <member refid="dn__ipmt_8h_1ab37b2ef7b10fd99f5a12aaa718d31324" kind="define"><name>DN_RECEIVE_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a069b8e15761d2b743d23733abf2d88a0" kind="define"><name>DN_MACRX_NOTIF_OFFS_PAYLOAD</name></member>
+    <member refid="dn__ipmt_8h_1a1ddf99b2fc7bd05c6238dbec9f5c0ca2" kind="define"><name>DN_MACRX_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a96ec8666cd8148e1d1b69b77b96c3504" kind="define"><name>DN_TXDONE_NOTIF_OFFS_PACKETID</name></member>
+    <member refid="dn__ipmt_8h_1a16fa17a4e1aaac94e7b951b4eee2e207" kind="define"><name>DN_TXDONE_NOTIF_OFFS_STATUS</name></member>
+    <member refid="dn__ipmt_8h_1a2edb57b4e4fe7c95e3c3f824627c428c" kind="define"><name>DN_TXDONE_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1aa04f24770afc8a9d4254a6de79aa1ec6" kind="define"><name>DN_ADVRECEIVED_NOTIF_OFFS_NETID</name></member>
+    <member refid="dn__ipmt_8h_1a830288c9ddfbd0d905478d0cd0ba478d" kind="define"><name>DN_ADVRECEIVED_NOTIF_OFFS_MOTEID</name></member>
+    <member refid="dn__ipmt_8h_1a74e3b901ec86e3976e999a92a60cac76" kind="define"><name>DN_ADVRECEIVED_NOTIF_OFFS_RSSI</name></member>
+    <member refid="dn__ipmt_8h_1a48c290fca3710c10adfa685ace2c8a55" kind="define"><name>DN_ADVRECEIVED_NOTIF_OFFS_JOINPRI</name></member>
+    <member refid="dn__ipmt_8h_1ae4e57dde68b295a23f0ec2ede447eb38" kind="define"><name>DN_ADVRECEIVED_NOTIF_LEN</name></member>
+    <member refid="dn__ipmt_8h_1a139315feb40c33ac0e4eaa246537ea19" kind="typedef"><name>dn_ipmt_notif_cbt</name></member>
+    <member refid="dn__ipmt_8h_1a7d4d0c4e716d182becf1ee4630ea1dd0" kind="typedef"><name>dn_ipmt_reply_cbt</name></member>
+    <member refid="dn__ipmt_8h_1a750d6c18bdd3e0f0f842a6a997bbad09" kind="typedef"><name>dn_ipmt_status_cbt</name></member>
+    <member refid="dn__ipmt_8h_1aa71bd35b5526247bc90b76c4d32d144c" kind="variable"><name>ipv6Addr_manager</name></member>
+    <member refid="dn__ipmt_8h_1ae42f2efba23317ea8c7a09c2ba80d0a3" kind="function"><name>dn_ipmt_init</name></member>
+    <member refid="dn__ipmt_8h_1a46bd9cf5194abcd2617df0cdbff2ef0b" kind="function"><name>dn_ipmt_cancelTx</name></member>
+    <member refid="dn__ipmt_8h_1adbc666e7e78b9f381d1d90beb9d30b91" kind="function"><name>dn_ipmt_setParameter_macAddress</name></member>
+    <member refid="dn__ipmt_8h_1acc2e7d5e771f0190e1f65eb62f59b109" kind="function"><name>dn_ipmt_setParameter_joinKey</name></member>
+    <member refid="dn__ipmt_8h_1af3d6cd8d04d296e109ef3ff3cabac691" kind="function"><name>dn_ipmt_setParameter_networkId</name></member>
+    <member refid="dn__ipmt_8h_1a68cbe53a8b4354145dd9af8f433b79cc" kind="function"><name>dn_ipmt_setParameter_txPower</name></member>
+    <member refid="dn__ipmt_8h_1a22336b535c37326ec2527ba36a8be010" kind="function"><name>dn_ipmt_setParameter_joinDutyCycle</name></member>
+    <member refid="dn__ipmt_8h_1a053da563a921dfe2b169b1cf66a37ce5" kind="function"><name>dn_ipmt_setParameter_eventMask</name></member>
+    <member refid="dn__ipmt_8h_1a02a6d82f8ff50a3740f58be8cdf32b06" kind="function"><name>dn_ipmt_setParameter_OTAPLockout</name></member>
+    <member refid="dn__ipmt_8h_1a9fceae3a244a5d36839b5d345e9dd0d0" kind="function"><name>dn_ipmt_setParameter_routingMode</name></member>
+    <member refid="dn__ipmt_8h_1a21dc4e49b3394c655f80a5af42829a12" kind="function"><name>dn_ipmt_setParameter_powerSrcInfo</name></member>
+    <member refid="dn__ipmt_8h_1a2775146dacd2e19e24384dfe10cef459" kind="function"><name>dn_ipmt_setParameter_advKey</name></member>
+    <member refid="dn__ipmt_8h_1a60d24c87b084fae8b13706f2ba5f0ae2" kind="function"><name>dn_ipmt_setParameter_autoJoin</name></member>
+    <member refid="dn__ipmt_8h_1a5af064a35b08cdf2e7bbfa7f0d7dd91a" kind="function"><name>dn_ipmt_getParameter_macAddress</name></member>
+    <member refid="dn__ipmt_8h_1a2a0585a1c5107adb8f017cb8d5d9106b" kind="function"><name>dn_ipmt_getParameter_networkId</name></member>
+    <member refid="dn__ipmt_8h_1a166f3b37946473bd44f52eea9499fca5" kind="function"><name>dn_ipmt_getParameter_txPower</name></member>
+    <member refid="dn__ipmt_8h_1a70a96611f1ddda43731a124bd38254dc" kind="function"><name>dn_ipmt_getParameter_joinDutyCycle</name></member>
+    <member refid="dn__ipmt_8h_1ac98e19d40a01131dc7ecfd74951b930b" kind="function"><name>dn_ipmt_getParameter_eventMask</name></member>
+    <member refid="dn__ipmt_8h_1a9e7feffeb4759848bb6cf6081021fdf7" kind="function"><name>dn_ipmt_getParameter_moteInfo</name></member>
+    <member refid="dn__ipmt_8h_1a9f130ef67282c0ae7620b0933713b9bb" kind="function"><name>dn_ipmt_getParameter_netInfo</name></member>
+    <member refid="dn__ipmt_8h_1adf1c36655f140fb6fa5ba9fd6728415a" kind="function"><name>dn_ipmt_getParameter_moteStatus</name></member>
+    <member refid="dn__ipmt_8h_1a247f2fa544b5313731e9dc5e4c48ef2d" kind="function"><name>dn_ipmt_getParameter_time</name></member>
+    <member refid="dn__ipmt_8h_1a5aa89e3c403ca6e56e7fc9c8f1be2416" kind="function"><name>dn_ipmt_getParameter_charge</name></member>
+    <member refid="dn__ipmt_8h_1a811722f07105d44f67e2103719142803" kind="function"><name>dn_ipmt_getParameter_testRadioRxStats</name></member>
+    <member refid="dn__ipmt_8h_1aef3f4e8586474fa6ad49414d94a360ec" kind="function"><name>dn_ipmt_getParameter_OTAPLockout</name></member>
+    <member refid="dn__ipmt_8h_1acdec26eedea438cd575743f66e8497f2" kind="function"><name>dn_ipmt_getParameter_moteId</name></member>
+    <member refid="dn__ipmt_8h_1a466779cec3dc7923605e40cfae4371ca" kind="function"><name>dn_ipmt_getParameter_ipv6Address</name></member>
+    <member refid="dn__ipmt_8h_1af66b4cf469e19ab115ecfc0506325c05" kind="function"><name>dn_ipmt_getParameter_routingMode</name></member>
+    <member refid="dn__ipmt_8h_1a28b85d834cedf101bcb6219470db3052" kind="function"><name>dn_ipmt_getParameter_appInfo</name></member>
+    <member refid="dn__ipmt_8h_1a7e581e17427fd4ecd919b34ec4c2fa84" kind="function"><name>dn_ipmt_getParameter_powerSrcInfo</name></member>
+    <member refid="dn__ipmt_8h_1a369c8507e325aedcd960baf9f81647d4" kind="function"><name>dn_ipmt_getParameter_autoJoin</name></member>
+    <member refid="dn__ipmt_8h_1a6a29aaf1b77d2fb96ecd46c62990bf2d" kind="function"><name>dn_ipmt_join</name></member>
+    <member refid="dn__ipmt_8h_1a525c794d6652fef3e44003bc1abc3e1f" kind="function"><name>dn_ipmt_disconnect</name></member>
+    <member refid="dn__ipmt_8h_1a27fd9d25447417ca5fc3c34f701edce5" kind="function"><name>dn_ipmt_reset</name></member>
+    <member refid="dn__ipmt_8h_1a48e0a02d54148a545b25b04ad65d99b4" kind="function"><name>dn_ipmt_lowPowerSleep</name></member>
+    <member refid="dn__ipmt_8h_1acdbd84f2e14b3e190f54e218f243ad68" kind="function"><name>dn_ipmt_testRadioRx</name></member>
+    <member refid="dn__ipmt_8h_1af5aa93caf869632da1980bae0b44df78" kind="function"><name>dn_ipmt_clearNV</name></member>
+    <member refid="dn__ipmt_8h_1acda448495ae9f0fee3501d8341318c85" kind="function"><name>dn_ipmt_requestService</name></member>
+    <member refid="dn__ipmt_8h_1ac060d080e9eea83f1343e7f92a92f83b" kind="function"><name>dn_ipmt_getServiceInfo</name></member>
+    <member refid="dn__ipmt_8h_1a71739ab961147f48e05c07cb2f318cd0" kind="function"><name>dn_ipmt_openSocket</name></member>
+    <member refid="dn__ipmt_8h_1ab2847e46797eeaff27530efd09d77826" kind="function"><name>dn_ipmt_closeSocket</name></member>
+    <member refid="dn__ipmt_8h_1a70a50e3a53069a040f5f8b71046be468" kind="function"><name>dn_ipmt_bindSocket</name></member>
+    <member refid="dn__ipmt_8h_1a660bee85e66c90486031d70b28aaf862" kind="function"><name>dn_ipmt_sendTo</name></member>
+    <member refid="dn__ipmt_8h_1a04ddedd3abe5217f6f5f139d408eb1e7" kind="function"><name>dn_ipmt_search</name></member>
+    <member refid="dn__ipmt_8h_1ab861cdfef10015181af225b924b53085" kind="function"><name>dn_ipmt_testRadioTxExt</name></member>
+    <member refid="dn__ipmt_8h_1a3855932b70dcc67f33f5e50f7e92980e" kind="function"><name>dn_ipmt_zeroize</name></member>
+    <member refid="dn__ipmt_8h_1a60ed8fb27081f5da67a5f9923a7f0e0b" kind="function"><name>dn_ipmt_socketInfo</name></member>
+  </compound>
+  <compound refid="dn__lock_8c" kind="file"><name>dn_lock.c</name>
+    <member refid="dn__lock_8c_1a05be3abdc3eca07a8de6fa76c5c678d1" kind="function"><name>dn_lock</name></member>
+    <member refid="dn__lock_8c_1a53463b11841a2d9c82c0a17f8e84f4f8" kind="function"><name>dn_unlock</name></member>
+  </compound>
+  <compound refid="dn__lock_8h" kind="file"><name>dn_lock.h</name>
+    <member refid="dn__lock_8h_1a05be3abdc3eca07a8de6fa76c5c678d1" kind="function"><name>dn_lock</name></member>
+    <member refid="dn__lock_8h_1a53463b11841a2d9c82c0a17f8e84f4f8" kind="function"><name>dn_unlock</name></member>
+  </compound>
+  <compound refid="dn__serial__mt_8c" kind="file"><name>dn_serial_mt.c</name>
+    <member refid="dn__serial__mt_8c_1ab27c08008e1fbc0047709aeeeb6b5fb5" kind="variable"><name>dn_serial_mt_vars</name></member>
+    <member refid="dn__serial__mt_8c_1ae3fe7de205fa07a83db26903ba1f878d" kind="function"><name>dn_serial_mt_rxHdlcFrame</name></member>
+    <member refid="dn__serial__mt_8c_1a58c09b9ecd5084c38a88ba98c1f620b7" kind="function"><name>dn_serial_mt_dispatch_response</name></member>
+    <member refid="dn__serial__mt_8c_1a023f0dea55b2a7339ca4f2f214342f00" kind="function"><name>dn_serial_sendReply</name></member>
+    <member refid="dn__serial__mt_8c_1a07835b2b776a6543f31ef1ef9033aa75" kind="function"><name>dn_serial_mt_init</name></member>
+    <member refid="dn__serial__mt_8c_1a1f96763473e758a6a34d079deb3e13f8" kind="function"><name>dn_serial_mt_sendRequest</name></member>
+  </compound>
+  <compound refid="dn__serial__mt_8h" kind="file"><name>dn_serial_mt.h</name>
+    <member refid="dn__serial__mt_8h_1aac8a80275eff250815b1a388ba258a1f" kind="define"><name>DN_SERIAL_API_MASK_RESPONSE</name></member>
+    <member refid="dn__serial__mt_8h_1a638ff0c1bb2436a6aafb6781ee2bc214" kind="define"><name>DN_SERIAL_API_MASK_PACKETID</name></member>
+    <member refid="dn__serial__mt_8h_1a2cc5b3e82ceff2645e926dda8b90a46b" kind="define"><name>DN_SERIAL_API_MASK_SYNC</name></member>
+    <member refid="dn__serial__mt_8h_1a46055612be8af277060775f1a330e0da" kind="define"><name>DN_SERIAL_PACKETID_NOTSET</name></member>
+    <member refid="dn__serial__mt_8h_1abcc7af0f415272a3e8364080b6b47486" kind="define"><name>DN_SERIAL_RC_OK</name></member>
+    <member refid="dn__serial__mt_8h_1aa3fcd914cfeb874d2cad338f1c474d93" kind="typedef"><name>dn_serial_request_cbt</name></member>
+    <member refid="dn__serial__mt_8h_1aac95d4665434679127c705ff7388295e" kind="typedef"><name>dn_serial_reply_cbt</name></member>
+    <member refid="dn__serial__mt_8h_1a07835b2b776a6543f31ef1ef9033aa75" kind="function"><name>dn_serial_mt_init</name></member>
+    <member refid="dn__serial__mt_8h_1a1f96763473e758a6a34d079deb3e13f8" kind="function"><name>dn_serial_mt_sendRequest</name></member>
+  </compound>
+  <compound refid="dn__uart_8c" kind="file"><name>dn_uart.c</name>
+    <member refid="dn__uart_8c_1a0048e381938beaeeac3fa114150f1227" kind="function"><name>dn_uart_init</name></member>
+    <member refid="dn__uart_8c_1af2d520ea2938c62e9f84126c24c9b6f6" kind="function"><name>dn_uart_txByte</name></member>
+    <member refid="dn__uart_8c_1a46e049715a7a5b48231eaf249331014d" kind="function"><name>dn_uart_txFlush</name></member>
+  </compound>
+  <compound refid="dn__uart_8h" kind="file"><name>dn_uart.h</name>
+    <member refid="dn__uart_8h_1a4476ac5b976abc322d7f92b0f0983e39" kind="typedef"><name>dn_uart_rxByte_cbt</name></member>
+    <member refid="dn__uart_8h_1a0048e381938beaeeac3fa114150f1227" kind="function"><name>dn_uart_init</name></member>
+    <member refid="dn__uart_8h_1af2d520ea2938c62e9f84126c24c9b6f6" kind="function"><name>dn_uart_txByte</name></member>
+    <member refid="dn__uart_8h_1a46e049715a7a5b48231eaf249331014d" kind="function"><name>dn_uart_txFlush</name></member>
+  </compound>
+  <compound refid="dn__debug_8h" kind="file"><name>dn_debug.h</name>
+    <member refid="dn__debug_8h_1a8de3ed741dadc9c979a4ff17c0a9116e" kind="define"><name>NDEBUG</name></member>
+    <member refid="dn__debug_8h_1a5c301473d32c067ae8db6c41b76a2502" kind="define"><name>NLOG</name></member>
+    <member refid="dn__debug_8h_1adaa78f48cc5f16815291697278ab4ab5" kind="define"><name>debug</name></member>
+    <member refid="dn__debug_8h_1ab2e6bbab06d48541c72ea237a86dcffd" kind="define"><name>clean_errno</name></member>
+    <member refid="dn__debug_8h_1aab82a35ff3e94d1028501db189a4b021" kind="define"><name>log_err</name></member>
+    <member refid="dn__debug_8h_1a0b9b49791ddc1aac7caa31cfb10f173f" kind="define"><name>log_warn</name></member>
+    <member refid="dn__debug_8h_1ab906bb1655b428369efbca0b73b5f09a" kind="define"><name>log_info</name></member>
+  </compound>
+  <compound refid="dn__defaults_8h" kind="file"><name>dn_defaults.h</name>
+    <member refid="dn__defaults_8h_1a251d995ae63b43ecd34fdfb1c0c979e1" kind="define"><name>DN_IPv6ADDR_LEN</name></member>
+    <member refid="dn__defaults_8h_1a55dd9fd073df927ca3f6a146e20bceda" kind="define"><name>DN_JOIN_KEY_LEN</name></member>
+    <member refid="dn__defaults_8h_1a3194ae57bb4e3fd4b67b4b050492aec9" kind="define"><name>DN_WELL_KNOWN_PORT_1</name></member>
+    <member refid="dn__defaults_8h_1a2023195d0883879ba8123cd91fb8bbdd" kind="define"><name>DN_WELL_KNOWN_PORT_2</name></member>
+    <member refid="dn__defaults_8h_1af5d3716181b86c112b49d30f624e5147" kind="define"><name>DN_WELL_KNOWN_PORT_3</name></member>
+    <member refid="dn__defaults_8h_1adf4abdeaa53bbe21d23389e3b2372a09" kind="define"><name>DN_WELL_KNOWN_PORT_4</name></member>
+    <member refid="dn__defaults_8h_1ad9193085f0948caf9c64ffcb20e7937f" kind="define"><name>DN_WELL_KNOWN_PORT_5</name></member>
+    <member refid="dn__defaults_8h_1a4e2fb0168a70fd4ea523d46f496b5adf" kind="define"><name>DN_WELL_KNOWN_PORT_6</name></member>
+    <member refid="dn__defaults_8h_1ad76af226d3b2df363247f3ad979f6786" kind="define"><name>DN_WELL_KNOWN_PORT_7</name></member>
+    <member refid="dn__defaults_8h_1a83a5297671c1ec74ba9df48c38668fef" kind="define"><name>DN_WELL_KNOWN_PORT_8</name></member>
+    <member refid="dn__defaults_8h_1af319d7e77741f4de47bb79799909e183" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_MNG_HIGH</name></member>
+    <member refid="dn__defaults_8h_1a4c711d3e0539253ba2be1b2a6acb687a" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_MNG_MED</name></member>
+    <member refid="dn__defaults_8h_1af78cf9b7d3ec8cd575b99126e015136e" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_MNG_LOW</name></member>
+    <member refid="dn__defaults_8h_1a1e563a407900ea5ac842170352561740" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_IP_HIGH</name></member>
+    <member refid="dn__defaults_8h_1ad5fafb45c8cf9409aaa9a86ba438c173" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_IP_MED</name></member>
+    <member refid="dn__defaults_8h_1a8388debc55291524fa721814a214af97" kind="define"><name>DN_PAYLOAD_SIZE_LIMIT_IP_LOW</name></member>
+    <member refid="dn__defaults_8h_1aea91e382c6fecc5e466932dcffa0b40c" kind="define"><name>DN_PROMISCUOUS_NET_ID</name></member>
+    <member refid="dn__defaults_8h_1aca2b2e9d6633b20af0477cdae0843019" kind="define"><name>DN_DEFAULT_NET_ID</name></member>
+    <member refid="dn__defaults_8h_1a52054b94eb64c1ec1c958039130e8a69" kind="define"><name>DN_DEFAULT_JOIN_KEY</name></member>
+    <member refid="dn__defaults_8h_1a60660ac1479bb657c0772c22a74e6d4a" kind="define"><name>DN_DEFAULT_DEST_PORT</name></member>
+    <member refid="dn__defaults_8h_1a064df08aabc414df3a7f0cb1413dad70" kind="define"><name>DN_DEFAULT_DEST_IP</name></member>
+    <member refid="dn__defaults_8h_1a0eb3189853f182d23a3b9ab6fb42f537" kind="define"><name>DN_DEFAULT_SRC_PORT</name></member>
+    <member refid="dn__defaults_8h_1ae187c44f24971c1192b01c8f8164d101" kind="define"><name>DN_DEFAULT_PAYLOAD_SIZE_LIMIT</name></member>
+    <member refid="dn__defaults_8h_1a22a2cfb8fa814b18da4cc32966daf00e" kind="define"><name>DN_DEFAULT_SERVICE_MS</name></member>
+    <member refid="dn__defaults_8h_1a4a36d5bc725554dc27b96430816dc969" kind="variable"><name>dn_default_joinKey</name></member>
+    <member refid="dn__defaults_8h_1ae842cdb59b8ef6a7c74800fc375abfe5" kind="variable"><name>dn_default_manager_ipv6Addr</name></member>
+  </compound>
+  <compound refid="dn__fsm_8c" kind="file"><name>dn_fsm.c</name>
+    <member refid="dn__fsm_8c_1a88a16efe0dc7eb948f91a91f3284e29f" kind="variable"><name>dn_fsm_vars</name></member>
+    <member refid="dn__fsm_8c_1a7f4fae5632dd666adec4d7ac81a6316a" kind="function"><name>dn_fsm_run</name></member>
+    <member refid="dn__fsm_8c_1a640719da0f6d3e4e20f304f1691117ec" kind="function"><name>dn_fsm_scheduleEvent</name></member>
+    <member refid="dn__fsm_8c_1a4aa8cb69b8fec2dafb32202442e9b825" kind="function"><name>dn_fsm_cancelEvent</name></member>
+    <member refid="dn__fsm_8c_1af8e40252fc69fcaa8d11d279077c5179" kind="function"><name>dn_fsm_setReplyCallback</name></member>
+    <member refid="dn__fsm_8c_1aae3efe2cbd4d6c260627c6bfa1cb5620" kind="function"><name>dn_fsm_enterState</name></member>
+    <member refid="dn__fsm_8c_1aaccf130658bf14de0ad2936fa042a216" kind="function"><name>dn_fsm_cmd_timeout</name></member>
+    <member refid="dn__fsm_8c_1a1ff9df2f6b5f95639289b19b194a20ec" kind="function"><name>dn_ipmt_notif_cb</name></member>
+    <member refid="dn__fsm_8c_1aadbbd432b281ce3f2d48355a8b9badf6" kind="function"><name>dn_ipmt_reply_cb</name></member>
+    <member refid="dn__fsm_8c_1a3443f283e4ce58b10ee5603a61b8e766" kind="function"><name>dn_event_responseTimeout</name></member>
+    <member refid="dn__fsm_8c_1ab70564464ef90a6718151802aef2e7f5" kind="function"><name>dn_event_reset</name></member>
+    <member refid="dn__fsm_8c_1a36512ac1878531cbc06a53846ce95c7a" kind="function"><name>dn_reply_reset</name></member>
+    <member refid="dn__fsm_8c_1af6c114719fd3af84d914ad6a05aa786f" kind="function"><name>dn_event_disconnect</name></member>
+    <member refid="dn__fsm_8c_1abde5a6bb1b9e8c088cfc00a2e8a24510" kind="function"><name>dn_reply_disconnect</name></member>
+    <member refid="dn__fsm_8c_1ad373f0fed69ff4e009f24697fbfa29ed" kind="function"><name>dn_event_getMoteStatus</name></member>
+    <member refid="dn__fsm_8c_1a927b64fe78177a7ec6bbc64a592416a1" kind="function"><name>dn_reply_getMoteStatus</name></member>
+    <member refid="dn__fsm_8c_1ada8903e4255f26f03f42185cce8b97d6" kind="function"><name>dn_event_openSocket</name></member>
+    <member refid="dn__fsm_8c_1a5e44b856793a06cd226ac6f294b23f5b" kind="function"><name>dn_reply_openSocket</name></member>
+    <member refid="dn__fsm_8c_1af69a49056fb4ee5139cf889c91c52505" kind="function"><name>dn_event_bindSocket</name></member>
+    <member refid="dn__fsm_8c_1afe6bf0a867f452147f092d29e7c629f1" kind="function"><name>dn_reply_bindSocket</name></member>
+    <member refid="dn__fsm_8c_1a1f65e8d6716196c849f67e08dddf7b2e" kind="function"><name>dn_event_setJoinKey</name></member>
+    <member refid="dn__fsm_8c_1a4b1a7efed0d72947815f73ea2d9d73c3" kind="function"><name>dn_reply_setJoinKey</name></member>
+    <member refid="dn__fsm_8c_1a9c588fef7f35a9ee910e09dba59f266c" kind="function"><name>dn_event_setNetworkId</name></member>
+    <member refid="dn__fsm_8c_1ad42f8c8f86b3069349d24f4c6622f77b" kind="function"><name>dn_reply_setNetworkId</name></member>
+    <member refid="dn__fsm_8c_1a5c08884300869df45f2059d93cab640d" kind="function"><name>dn_event_search</name></member>
+    <member refid="dn__fsm_8c_1a5efbaed93bf9e46fb63722b3509af0d4" kind="function"><name>dn_reply_search</name></member>
+    <member refid="dn__fsm_8c_1a7489b934e07367960e3e28da76f5ea30" kind="function"><name>dn_event_join</name></member>
+    <member refid="dn__fsm_8c_1a283b66e1648bf756d12ad184e4ded1ab" kind="function"><name>dn_reply_join</name></member>
+    <member refid="dn__fsm_8c_1abb7460413c93eb41275cf72691c46ecd" kind="function"><name>dn_event_requestService</name></member>
+    <member refid="dn__fsm_8c_1a47f9905ada0feaeccba797965e9aca07" kind="function"><name>dn_reply_requestService</name></member>
+    <member refid="dn__fsm_8c_1a44f012071edddde0fb830f113bb8b416" kind="function"><name>dn_event_getServiceInfo</name></member>
+    <member refid="dn__fsm_8c_1a385bc1fd6a6a009d498df4a2181a4dbd" kind="function"><name>dn_reply_getServiceInfo</name></member>
+    <member refid="dn__fsm_8c_1a0bd0e6d55b062b87c336400da203bf0d" kind="function"><name>dn_event_sendTo</name></member>
+    <member refid="dn__fsm_8c_1ad7037a07caf4b723251f6ee1856882f7" kind="function"><name>dn_reply_sendTo</name></member>
+    <member refid="dn__fsm_8c_1a83e7136f60cbd50381de34b895135cd0" kind="function"><name>checkAndSaveNetConfig</name></member>
+    <member refid="dn__fsm_8c_1a9126118482adb50234f440df18bade45" kind="function"><name>getPayloadLimit</name></member>
+    <member refid="dn__fsm_8c_1a63e328147ec083f0b5dd2f6a1b25f828" kind="function"><name>dn_qsl_init</name></member>
+    <member refid="dn__fsm_8c_1a13fc5d41d879be802ef61d3c07f497ce" kind="function"><name>dn_qsl_isConnected</name></member>
+    <member refid="dn__fsm_8c_1a6c8fd449270c501edd5dec85b2eab721" kind="function"><name>dn_qsl_connect</name></member>
+    <member refid="dn__fsm_8c_1a609fb8e0159e8852aa768b40336ce94b" kind="function"><name>dn_qsl_send</name></member>
+    <member refid="dn__fsm_8c_1af545b47557dd9ae3f37ecbbeee08e1c5" kind="function"><name>dn_qsl_read</name></member>
+  </compound>
+  <compound refid="dn__fsm_8h" kind="file"><name>dn_fsm.h</name>
+    <member refid="dn__fsm_8h_1affd49336f142bf8efee7d6410f0b5c35" kind="define"><name>DN_FSM_STATE_NOT_INITIALIZED</name></member>
+    <member refid="dn__fsm_8h_1a12b79be8d1480b5004ea3ec252b206e5" kind="define"><name>DN_FSM_STATE_DISCONNECTED</name></member>
+    <member refid="dn__fsm_8h_1ac573aa4234d6618476ea18b9eba0a08e" kind="define"><name>DN_FSM_STATE_PRE_JOIN</name></member>
+    <member refid="dn__fsm_8h_1adefbb932406c7c3aa474535814fa4f5a" kind="define"><name>DN_FSM_STATE_JOINING</name></member>
+    <member refid="dn__fsm_8h_1a2074d2ed55d87701649fe9f94832f53d" kind="define"><name>DN_FSM_STATE_REQ_SERVICE</name></member>
+    <member refid="dn__fsm_8h_1a48d6e3baef8c669123db031f62dc77de" kind="define"><name>DN_FSM_STATE_RESETTING</name></member>
+    <member refid="dn__fsm_8h_1ae581a7c269cd8ce43d26f1f4cd7aeea2" kind="define"><name>DN_FSM_STATE_PROMISCUOUS</name></member>
+    <member refid="dn__fsm_8h_1af3b9218ea081a732c2678c85bf2f1270" kind="define"><name>DN_FSM_STATE_CONNECTED</name></member>
+    <member refid="dn__fsm_8h_1a7a8f3c4cd778d46b96ae6572245f4820" kind="define"><name>DN_FSM_STATE_SENDING</name></member>
+    <member refid="dn__fsm_8h_1a2de9c3902640ab2a6f2948ab802534c3" kind="define"><name>DN_FSM_STATE_SEND_FAILED</name></member>
+    <member refid="dn__fsm_8h_1a68667c341cf1cf1d58e2299c62bc044d" kind="define"><name>DN_MOTE_STATE_IDLE</name></member>
+    <member refid="dn__fsm_8h_1a082bb86d832aaaff2d9dcde5bec81f5a" kind="define"><name>DN_MOTE_STATE_SEARCHING</name></member>
+    <member refid="dn__fsm_8h_1a9a803b1eaeb8443e70f84cd0abe8e257" kind="define"><name>DN_MOTE_STATE_NEGOCIATING</name></member>
+    <member refid="dn__fsm_8h_1aabf1b312a6beed2ecc3968205697e5ac" kind="define"><name>DN_MOTE_STATE_CONNECTED</name></member>
+    <member refid="dn__fsm_8h_1a4165c2b96f0b9aac5503837a759dae41" kind="define"><name>DN_MOTE_STATE_OPERATIONAL</name></member>
+    <member refid="dn__fsm_8h_1a816f71bc5a42b9362963fbd973b65301" kind="define"><name>DN_MOTE_EVENT_MASK_NONE</name></member>
+    <member refid="dn__fsm_8h_1acb56e3de9d01c29839f4711d6d6a0e70" kind="define"><name>DN_MOTE_EVENT_MASK_BOOT</name></member>
+    <member refid="dn__fsm_8h_1aa80a37e14d889bc03f58a270a5f477a3" kind="define"><name>DN_MOTE_EVENT_MASK_ALARM_CHANGE</name></member>
+    <member refid="dn__fsm_8h_1ab6befa460e1d2e25d8fa405b87a1226e" kind="define"><name>DN_MOTE_EVENT_MASK_TIME_CHANGE</name></member>
+    <member refid="dn__fsm_8h_1ad4adfaf656693efb83644de9651f5669" kind="define"><name>DN_MOTE_EVENT_MASK_JOIN_FAIL</name></member>
+    <member refid="dn__fsm_8h_1ad117f60d9a7463c1b077168232ba0874" kind="define"><name>DN_MOTE_EVENT_MASK_DISCONNECTED</name></member>
+    <member refid="dn__fsm_8h_1a42a518404020bc336d8163f30ad7c522" kind="define"><name>DN_MOTE_EVENT_MASK_OPERATIONAL</name></member>
+    <member refid="dn__fsm_8h_1a35331a2e1e77ffa49d976b3315d39975" kind="define"><name>DN_MOTE_EVENT_MASK_SVC_CHANGE</name></member>
+    <member refid="dn__fsm_8h_1a0ee4effe03bc5316eb5bd84a151715fc" kind="define"><name>DN_MOTE_EVENT_MASK_JOIN_STARTED</name></member>
+    <member refid="dn__fsm_8h_1a570f1a7502e15701fc177a21808a5413" kind="define"><name>DN_RC_OK</name></member>
+    <member refid="dn__fsm_8h_1acfffd087d6ce7d6d77ca904d2b26494d" kind="define"><name>DN_RC_ERROR</name></member>
+    <member refid="dn__fsm_8h_1a52255badc7c8c5434bdbbe2098139a3a" kind="define"><name>DN_RC_BUSY</name></member>
+    <member refid="dn__fsm_8h_1ad5e01194fa515d687eafd7aada06d96d" kind="define"><name>DN_RC_INVALID_LEN</name></member>
+    <member refid="dn__fsm_8h_1a5894a74b5c4d33cdf27346445753ff60" kind="define"><name>DN_RC_INVALID_STATE</name></member>
+    <member refid="dn__fsm_8h_1ae04c67e4deb4a2f30ee01fca45fdc10e" kind="define"><name>DN_RC_UNSUPPORTED</name></member>
+    <member refid="dn__fsm_8h_1a02bf7e8c6c06a066621c3b3cb90438b0" kind="define"><name>DN_RC_UNKNOWN_PARAM</name></member>
+    <member refid="dn__fsm_8h_1af77fa55185412eb933023095fa6cd206" kind="define"><name>DN_RC_UNKNOWN_CMD</name></member>
+    <member refid="dn__fsm_8h_1a5d944e3d12678ed4b2a7b55c0a2ca899" kind="define"><name>DN_RC_WRITE_FAIL</name></member>
+    <member refid="dn__fsm_8h_1a6b76ef21d3799d1b98b2b55717499020" kind="define"><name>DN_RC_READ_FAIL</name></member>
+    <member refid="dn__fsm_8h_1a0c86a9a4514d8490d8da20fc5422d06c" kind="define"><name>DN_RC_LOW_VOLTAGE</name></member>
+    <member refid="dn__fsm_8h_1a0de6e4b120ba9c42303ef27f09cb4327" kind="define"><name>DN_RC_NO_RESOURCES</name></member>
+    <member refid="dn__fsm_8h_1a500c74cb6de32fb8c94a0c5a14a37841" kind="define"><name>DN_RC_INCOMPLETE_JOIN_INFO</name></member>
+    <member refid="dn__fsm_8h_1a6f460e0c689eb7c5664765a4b3d69198" kind="define"><name>DN_RC_NOT_FOUND</name></member>
+    <member refid="dn__fsm_8h_1a8845ef5cb6e2b7d51fd1ccc3bae38e34" kind="define"><name>DN_RC_INVALID_VALUE</name></member>
+    <member refid="dn__fsm_8h_1a40614171373afd043b57c5ae2ef713c4" kind="define"><name>DN_RC_ACCESS_DENIED</name></member>
+    <member refid="dn__fsm_8h_1a1d3ec144da470e6dc3633480423f0b48" kind="define"><name>DN_RC_ERASE_FAIL</name></member>
+    <member refid="dn__fsm_8h_1a9a6b2c351ed6cfa66d015d46b7029105" kind="define"><name>DN_FSM_RUN_INTERVAL_MS</name></member>
+    <member refid="dn__fsm_8h_1a3ca72c31c18952ee14b33631ae50eeb5" kind="define"><name>DN_MIN_TX_INTERPACKET_DELAY_MS</name></member>
+    <member refid="dn__fsm_8h_1a65a12813b2903756757bf1b900263cc9" kind="define"><name>DN_CMD_PERIOD_MS</name></member>
+    <member refid="dn__fsm_8h_1acae3a43b63af0b571e476bd1472c9a3b" kind="define"><name>DN_SERIAL_RESPONSE_TIMEOUT_MS</name></member>
+    <member refid="dn__fsm_8h_1ac74140c1d8843d240ff29153fb1d8feb" kind="define"><name>DN_CONNECT_TIMEOUT_S</name></member>
+    <member refid="dn__fsm_8h_1aa69eae96c2fbd27c6bf8aad38bcb931a" kind="define"><name>DN_SEND_TIMEOUT_MS</name></member>
+    <member refid="dn__fsm_8h_1a47eccc6be4614ef1e41a30874ff5f25d" kind="define"><name>DN_PROTOCOL_TYPE_UDP</name></member>
+    <member refid="dn__fsm_8h_1a2daa4e7a63b978df132a082e2b256e2b" kind="define"><name>DN_SERVICE_TYPE_BW</name></member>
+    <member refid="dn__fsm_8h_1abf05bfc3d711398af70117f78348db47" kind="define"><name>DN_SERVICE_ADDRESS</name></member>
+    <member refid="dn__fsm_8h_1ae94c1cb79ee1311c8b3484b869a870ee" kind="define"><name>DN_SERVICE_STATE_COMPLETED</name></member>
+    <member refid="dn__fsm_8h_1ac0540b57b0c4396cc63398ee82de6948" kind="define"><name>DN_SERVICE_STATE_PENDING</name></member>
+    <member refid="dn__fsm_8h_1acd1cb3ef20ba165c6f43215f8080cc99" kind="define"><name>DN_PACKET_PRIORITY_LOW</name></member>
+    <member refid="dn__fsm_8h_1a2909696d329b30117cc93296b010a294" kind="define"><name>DN_PACKET_PRIORITY_MEDIUM</name></member>
+    <member refid="dn__fsm_8h_1aad7419f4ad35932527f7d4924a35e2bd" kind="define"><name>DN_PACKET_PRIORITY_HIGH</name></member>
+    <member refid="dn__fsm_8h_1a5d607fed29791c19c2f05162982797a3" kind="define"><name>DN_PACKET_ID_NO_NOTIF</name></member>
+    <member refid="dn__fsm_8h_1a95d8f757fa2a0de50452ce8174315049" kind="define"><name>DN_INBOX_SIZE</name></member>
+    <member refid="dn__fsm_8h_1aa377ec6887372ea6a348297d874c6421" kind="define"><name>DN_MOTE_DISCONNECT_BEFORE_RESET</name></member>
+    <member refid="dn__fsm_8h_1aa14fc197a641eea3198abea3aef26bfe" kind="typedef"><name>dn_fsm_timer_cbt</name></member>
+    <member refid="dn__fsm_8h_1a70965e4738fc36b61c8862c031ba85a8" kind="typedef"><name>dn_fsm_reply_cbt</name></member>
+  </compound>
+  <compound refid="dn__qsl__api_8h" kind="file"><name>dn_qsl_api.h</name>
+    <member refid="dn__qsl__api_8h_1a39dada0541222dfeddbcac1742bb5443" kind="define"><name>DN_DEST_IP</name></member>
+    <member refid="dn__qsl__api_8h_1a63e328147ec083f0b5dd2f6a1b25f828" kind="function"><name>dn_qsl_init</name></member>
+    <member refid="dn__qsl__api_8h_1a13fc5d41d879be802ef61d3c07f497ce" kind="function"><name>dn_qsl_isConnected</name></member>
+    <member refid="dn__qsl__api_8h_1af168040c43e282662db47b4613549370" kind="function"><name>dn_qsl_connect</name></member>
+    <member refid="dn__qsl__api_8h_1a609fb8e0159e8852aa768b40336ce94b" kind="function"><name>dn_qsl_send</name></member>
+    <member refid="dn__qsl__api_8h_1af545b47557dd9ae3f37ecbbeee08e1c5" kind="function"><name>dn_qsl_read</name></member>
+  </compound>
+  <compound refid="dn__time_8c" kind="file"><name>dn_time.c</name>
+    <member refid="dn__time_8c_1a787baac0b4656487bc05eb27dd411341" kind="function"><name>dn_time_ms</name></member>
+    <member refid="dn__time_8c_1a4dee62a7003adba1f763dc64eec5d603" kind="function"><name>dn_sleep_ms</name></member>
+  </compound>
+  <compound refid="dn__time_8h" kind="file"><name>dn_time.h</name>
+    <member refid="dn__time_8h_1a787baac0b4656487bc05eb27dd411341" kind="function"><name>dn_time_ms</name></member>
+    <member refid="dn__time_8h_1a4dee62a7003adba1f763dc64eec5d603" kind="function"><name>dn_sleep_ms</name></member>
+  </compound>
+  <compound refid="dn__watchdog_8c" kind="file"><name>dn_watchdog.c</name>
+    <member refid="dn__watchdog_8c_1abdb188cf476bfda73a3b807ccb1f9f2f" kind="function"><name>dn_watchdog_feed</name></member>
+  </compound>
+  <compound refid="dn__watchdog_8h" kind="file"><name>dn_watchdog.h</name>
+    <member refid="dn__watchdog_8h_1abdb188cf476bfda73a3b807ccb1f9f2f" kind="function"><name>dn_watchdog_feed</name></member>
+  </compound>
+  <compound refid="tester_8cpp" kind="file"><name>tester.cpp</name>
+    <member refid="tester_8cpp_1ad66cf46cbf0ae21ae96793712dc27d4f" kind="function"><name>do_system_test</name></member>
+  </compound>
+  <compound refid="tester_8h" kind="file"><name>tester.h</name>
+    <member refid="tester_8h_1a57ee5883f4c498c3f813d2e4c7faed51" kind="define"><name>DP_BUILD__TCTRL_DNJOIN</name></member>
+    <member refid="tester_8h_1ab22061455241517b4eeb0a2592489bb4" kind="define"><name>DP_BUILD__TCTRL_DPUART</name></member>
+    <member refid="tester_8h_1adba315c6a47ee0eeeb94928d4448e701" kind="define"><name>DP_BUILD__TCTRL_DPSYS</name></member>
+    <member refid="tester_8h_1a8e2f10c6180a1617d8473f700cd01dcc" kind="define"><name>DP_BUILD__TCTRL_DPFRAMING</name></member>
+    <member refid="tester_8h_1a0a9323e36ca7ef48a962582fb0fa41a9" kind="define"><name>DP_BUILD__TCTRL_DPSAMPLE</name></member>
+    <member refid="tester_8h_1a4e5874a22659f32089ee23fc4de6932c" kind="define"><name>DP_BUILD__TCTRL_DPSAMPLE_DIAG</name></member>
+    <member refid="tester_8h_1ac56f57dee8ebc4719d40d2fb55eafe87" kind="define"><name>DP_BUILD__TCTRL_DPSAMPLE_TIME</name></member>
+    <member refid="tester_8h_1a0ab3e4ce8b1b46dcc7015fe66e3e9e30" kind="define"><name>DP_BUILD__TCTRL_DPSAMPLE_SENS</name></member>
+    <member refid="tester_8h_1a9be50945e34e0548f662f83c19352c5d" kind="define"><name>DP_BUILD__TCTRL_PORT</name></member>
+    <member refid="tester_8h_1ad66cf46cbf0ae21ae96793712dc27d4f" kind="function"><name>do_system_test</name></member>
+  </compound>
+  <compound refid="_test_case_8cpp" kind="file"><name>TestCase.cpp</name>
+  </compound>
+  <compound refid="_test_case_8h" kind="file"><name>TestCase.h</name>
+  </compound>
+  <compound refid="_test_dn_join_8cpp" kind="file"><name>TestDnJoin.cpp</name>
+  </compound>
+  <compound refid="_test_dn_join_8h" kind="file"><name>TestDnJoin.h</name>
+    <member refid="_test_dn_join_8h_1a98cc8cb672fc5f4bf11d9845ce1b8e37" kind="define"><name>NETID</name></member>
+    <member refid="_test_dn_join_8h_1aa3c996cd54fc785c166d1620e378d2a4" kind="define"><name>JOINKEY</name></member>
+    <member refid="_test_dn_join_8h_1acd8611c345a80a3375fab39bcd120003" kind="define"><name>BANDWIDTH_MS</name></member>
+    <member refid="_test_dn_join_8h_1a5cda66ebcba8c3ad7a648ff5bcd57bb8" kind="define"><name>SRC_PORT</name></member>
+  </compound>
+  <compound refid="_test_dp_framing_8cpp" kind="file"><name>TestDpFraming.cpp</name>
+    <member refid="_test_dp_framing_8cpp_1a43d6dff4753a159311f99407d9989146" kind="define"><name>FRAMING_FAIL</name></member>
+  </compound>
+  <compound refid="_test_dp_framing_8h" kind="file"><name>TestDpFraming.h</name>
+  </compound>
+  <compound refid="_test_dp_sample_8cpp" kind="file"><name>TestDpSample.cpp</name>
+    <member refid="_test_dp_sample_8cpp_1a9d37d43ac2717b06ef7120784465e56f" kind="define"><name>RETURN_SUCCESS</name></member>
+    <member refid="_test_dp_sample_8cpp_1a2c984349b6e2ee2e658b9cf9ef2aa2fb" kind="define"><name>RETURN_FAILURE</name></member>
+  </compound>
+  <compound refid="_test_dp_sample_8h" kind="file"><name>TestDpSample.h</name>
+  </compound>
+  <compound refid="_test_dp_sample_diagnostic_8cpp" kind="file"><name>TestDpSampleDiagnostic.cpp</name>
+    <member refid="_test_dp_sample_diagnostic_8cpp_1a9d37d43ac2717b06ef7120784465e56f" kind="define"><name>RETURN_SUCCESS</name></member>
+  </compound>
+  <compound refid="_test_dp_sample_diagnostic_8h" kind="file"><name>TestDpSampleDiagnostic.h</name>
+  </compound>
+  <compound refid="_test_dp_sample_sensor_8cpp" kind="file"><name>TestDpSampleSensor.cpp</name>
+    <member refid="_test_dp_sample_sensor_8cpp_1a9d37d43ac2717b06ef7120784465e56f" kind="define"><name>RETURN_SUCCESS</name></member>
+  </compound>
+  <compound refid="_test_dp_sample_sensor_8h" kind="file"><name>TestDpSampleSensor.h</name>
+  </compound>
+  <compound refid="_test_dp_sample_time_8cpp" kind="file"><name>TestDpSampleTime.cpp</name>
+  </compound>
+  <compound refid="_test_dp_sample_time_8h" kind="file"><name>TestDpSampleTime.h</name>
+  </compound>
+  <compound refid="_test_dp_sys_8cpp" kind="file"><name>TestDpSys.cpp</name>
+  </compound>
+  <compound refid="_test_dp_sys_8h" kind="file"><name>TestDpSys.h</name>
+  </compound>
+  <compound refid="_test_dp_uart_8cpp" kind="file"><name>TestDpUart.cpp</name>
+  </compound>
+  <compound refid="_test_dp_uart_8h" kind="file"><name>TestDpUart.h</name>
+  </compound>
+  <compound refid="_test_port_8cpp" kind="file"><name>TestPort.cpp</name>
+  </compound>
+  <compound refid="_test_port_8h" kind="file"><name>TestPort.h</name>
+  </compound>
+  <compound refid="_i_time_8cpp" kind="file"><name>ITime.cpp</name>
+    <member refid="_i_time_8cpp_1a8f27fca25bbd8ae0adc88d6bf9cf2ded" kind="function"><name>dp_delay</name></member>
+    <member refid="_i_time_8cpp_1a9cc80f7f6e8532d908e0b53975c4b944" kind="function"><name>dp_time_now</name></member>
+    <member refid="_i_time_8cpp_1a26a0467bfab6c9bbc9d662854372153d" kind="function"><name>get_dn_time</name></member>
+    <member refid="_i_time_8cpp_1a605e78bdb4ee52a4ff5630fa5980f173" kind="function"><name>time_next_sample</name></member>
+    <member refid="_i_time_8cpp_1a7611b1a70583f7d59e7dabecf8b299b6" kind="function"><name>time_until_next_sample</name></member>
+  </compound>
+  <compound refid="_i_time_8h" kind="file"><name>ITime.h</name>
+    <member refid="_i_time_8h_1afd910db208d331d8b5b5ff5eed45cc76" kind="function"><name>dp_delay</name></member>
+    <member refid="_i_time_8h_1a9cc80f7f6e8532d908e0b53975c4b944" kind="function"><name>dp_time_now</name></member>
+    <member refid="_i_time_8h_1a067b812f215457962c01626fd6714779" kind="function"><name>time_now_dn</name></member>
+    <member refid="_i_time_8h_1a605e78bdb4ee52a4ff5630fa5980f173" kind="function"><name>time_next_sample</name></member>
+    <member refid="_i_time_8h_1a5bc3e279e831b86ede2d796c9011a598" kind="function"><name>time_until_next_sample</name></member>
+  </compound>
+  <compound refid="_i_serial_8cpp" kind="file"><name>ISerial.cpp</name>
+    <member refid="_i_serial_8cpp_1a1533cf35ec447601079a40ef02e5eae7" kind="function"><name>dp_usart_init</name></member>
+    <member refid="_i_serial_8cpp_1a658fb27995ec4858aba7898ca6eb52a7" kind="function"><name>dp_usart_end</name></member>
+    <member refid="_i_serial_8cpp_1a6b2c052a2d6bbdcc14ec97cb0c32e5ee" kind="function"><name>dp_usart_flush</name></member>
+    <member refid="_i_serial_8cpp_1ad1b9941cfe8e970bd8d2b1c691b348e0" kind="function"><name>dp_usart_write</name></member>
+  </compound>
+  <compound refid="_i_serial_8h" kind="file"><name>ISerial.h</name>
+    <member refid="_i_serial_8h_1abe129b56edbf79aceea9d46ce6cac3a1" kind="function"><name>dp_usart_init</name></member>
+    <member refid="_i_serial_8h_1a658fb27995ec4858aba7898ca6eb52a7" kind="function"><name>dp_usart_end</name></member>
+    <member refid="_i_serial_8h_1a6b2c052a2d6bbdcc14ec97cb0c32e5ee" kind="function"><name>dp_usart_flush</name></member>
+    <member refid="_i_serial_8h_1ae79e23816de9a98a5064e20fe081b866" kind="function"><name>dp_usart_write</name></member>
+  </compound>
+  <compound refid="usart__flow_8cpp" kind="file"><name>usart_flow.cpp</name>
+    <member refid="usart__flow_8cpp_1a41129aad2591f158643c39f2dc43c92c" kind="variable"><name>dn_uart_vars</name></member>
+    <member refid="usart__flow_8cpp_1ace634ee0bdee1b2ba68b62bf62cfd608" kind="function"><name>usart_cts_status</name></member>
+    <member refid="usart__flow_8cpp_1af09466705d8b519d8e45de8d6ae4d4da" kind="function"><name>usart_mode4_flow</name></member>
+    <member refid="usart__flow_8cpp_1a2b48ff339db394e3b9997e396a2f0d44" kind="function"><name>update_port_usart</name></member>
+    <member refid="usart__flow_8cpp_1a9c4665742c6b6eb1f0bb9dde41f7cba3" kind="function"><name>ISR</name></member>
+  </compound>
+  <compound refid="usart__flow_8h" kind="file"><name>usart_flow.h</name>
+    <member refid="usart__flow_8h_1a4e45a51c0afffc1a00b0564bc1920e6d" kind="define"><name>USART__DIRECTION_PN</name></member>
+    <member refid="usart__flow_8h_1a266327f19a9b5ef1d101af1a2c907f39" kind="define"><name>USART__DIRECTION_NP</name></member>
+    <member refid="usart__flow_8h_1a86fad73874ecff8969ced22d5f330757" kind="define"><name>USART__FLOWCTRL_ASSERT</name></member>
+    <member refid="usart__flow_8h_1a427a058326b3bc00382cbe87a56c13d5" kind="define"><name>USART__FLOWCTRL_DEASSERT</name></member>
+    <member refid="usart__flow_8h_1ace634ee0bdee1b2ba68b62bf62cfd608" kind="function"><name>usart_cts_status</name></member>
+    <member refid="usart__flow_8h_1af0385b143454480e3a2a310cd4677e86" kind="function"><name>usart_mode4_flow</name></member>
+    <member refid="usart__flow_8h_1a2b48ff339db394e3b9997e396a2f0d44" kind="function"><name>update_port_usart</name></member>
+  </compound>
+  <compound refid="usart__vars_8h" kind="file"><name>usart_vars.h</name>
+    <member refid="usart__vars_8h_1ae9839a091ff5b3c9133494e96cf81e40" kind="define"><name>USART_AC__BAUD_RATE</name></member>
+    <member refid="usart__vars_8h_1a267f08d67887c246e5025633c96ce0ae" kind="define"><name>USART_AC__NP_N_BIT_END_TX_RTS_CTS</name></member>
+    <member refid="usart__vars_8h_1a4476ac5b976abc322d7f92b0f0983e39" kind="typedef"><name>dn_uart_rxByte_cbt</name></member>
+    <member refid="usart__vars_8h_1a41129aad2591f158643c39f2dc43c92c" kind="variable"><name>dn_uart_vars</name></member>
+  </compound>
+  <compound refid="dir_2465a4ec7e00d4ee6e2462684132b37f" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sample/0x00_AccelMagno</name>
+  </compound>
+  <compound refid="dir_40af0d3db919f9931b617f2126af9b7b" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno</name>
+  </compound>
+  <compound refid="dir_1f7a39b2ead77451e9b2408e5ba86e4e" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote</name>
+  </compound>
+  <compound refid="dir_d4d16d7b0e333e2a1d480bfd56008f1e" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2</name>
+  </compound>
+  <compound refid="dir_a11a45b89a53a97c9ffb8d0a2e443c63" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug</name>
+  </compound>
+  <compound refid="dir_f91160c04265022c4a86a1eb32ca0b38" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro</name>
+  </compound>
+  <compound refid="dir_6bf42e8db54ede033cde9ab388aae059" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main</name>
+  </compound>
+  <compound refid="dir_fd67312b0323c409d1c3893ff730dffc" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects</name>
+  </compound>
+  <compound refid="dir_20278b1d41ef2c2fc80f1410ac1f4079" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample</name>
+  </compound>
+  <compound refid="dir_2ef440e84bcc8067ff7f354c56b2afb0" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sample</name>
+  </compound>
+  <compound refid="dir_75be411f3a2edc11085cee9385a331b6" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib</name>
+  </compound>
+  <compound refid="dir_fb6a3d9a56dc78be28a771aed571968f" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib</name>
+  </compound>
+  <compound refid="dir_26d8cf2f2fcb51750bcad3b2fbeed758" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_qsl</name>
+  </compound>
+  <compound refid="dir_35733798cc578973313087cdac357923" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl</name>
+  </compound>
+  <compound refid="dir_d0b1bd8d62199f46fb42b09e24061110" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/Testing</name>
+  </compound>
+  <compound refid="dir_bb652ba1552e34dc35271db34ff949f1" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing</name>
+  </compound>
+  <compound refid="dir_19b8c32ac65344f38c4d22406a161157" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/time</name>
+  </compound>
+  <compound refid="dir_bee84b8490e786c2715e27f320e7ab63" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/time</name>
+  </compound>
+  <compound refid="dir_d38c84f34d8e7b76d3b58dce36aa1e7a" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart</name>
+  </compound>
+  <compound refid="dir_2595b90ed247f7e283aa9aafa3e2df5c" kind="dir"><name>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/usart</name>
+  </compound>
+</doxygenindex>

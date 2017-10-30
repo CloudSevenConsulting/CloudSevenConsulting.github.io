@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_test_port_8cpp" kind="file" language="C++">
+    <compoundname>TestPort.cpp</compoundname>
+    <includes refid="_test_port_8h" local="yes">TestPort.h</includes>
+    <includes refid="port_8h" local="yes">../port.h</includes>
+    <incdepgraph>
+      <node id="546">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.cpp</label>
+        <link refid="_test_port_8cpp"/>
+        <childnode refid="547" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="549">
+        <label>../port.h</label>
+        <link refid="port_8h_source"/>
+        <childnode refid="550" relation="include">
+        </childnode>
+      </node>
+      <node id="548">
+        <label>TestCase.h</label>
+        <link refid="_test_case_8h"/>
+      </node>
+      <node id="547">
+        <label>TestPort.h</label>
+        <link refid="_test_port_8h_source"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+      </node>
+      <node id="550">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DpUart.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>2017-10-02<sp/>00:28:09</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>kjph</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TestPort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">TestPort::TestPort(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a4f83e54634bf9540df359cc57699312b" kindref="member">pin_set_mode</ref>(DP_PORT__M7P1,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a4f83e54634bf9540df359cc57699312b" kindref="member">pin_set_mode</ref>(DP_PORT__M6P1,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_port_1aa8ffd5f733e8efce73b37692b7ec12a3" kindref="member">TestPort::run</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a3f857dd655c78b9db6e1c0cdac10c677" kindref="member">pin_set_digital</ref>(DP_PORT__M7P1,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a3f857dd655c78b9db6e1c0cdac10c677" kindref="member">pin_set_digital</ref>(DP_PORT__M6P1,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(500);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a3f857dd655c78b9db6e1c0cdac10c677" kindref="member">pin_set_digital</ref>(DP_PORT__M7P1,<sp/>LOW);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="port_8cpp_1a3f857dd655c78b9db6e1c0cdac10c677" kindref="member">pin_set_digital</ref>(DP_PORT__M6P1,<sp/>LOW);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(500);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.cpp"/>
+  </compounddef>
+</doxygen>

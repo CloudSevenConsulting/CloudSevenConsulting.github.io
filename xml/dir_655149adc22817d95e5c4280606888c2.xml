@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_655149adc22817d95e5c4280606888c2" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug</compoundname>
+    <innerdir refid="dir_dc39810cc411a14993071917a6966a66">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sample</innerdir>
+    <innerdir refid="dir_2e4b560f92f8cbf5554172b879677bf3">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sensor</innerdir>
+    <innerdir refid="dir_0a08426d94a8d68f6b9f2878e0062137">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib</innerdir>
+    <innerdir refid="dir_1808e3f70ac3a0beaf94fee2bdd0ca2d">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_qsl</innerdir>
+    <innerdir refid="dir_93d4d9c44d33912c9b9bbe3c03a88fe0">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/Testing</innerdir>
+    <innerdir refid="dir_05d4447801b94047fd242a85f5ff5e41">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/time</innerdir>
+    <innerdir refid="dir_65e3c39a9e90b8a84a3d3c170575428f">C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/usart</innerdir>
+    <innerfile refid="dp__conf_8d">dp_conf.d</innerfile>
+    <innerfile refid="dp__sm_8d">dp_sm.d</innerfile>
+    <innerfile refid="main_8d">main.d</innerfile>
+    <innerfile refid="tester_8d">tester.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/"/>
+  </compounddef>
+</doxygen>

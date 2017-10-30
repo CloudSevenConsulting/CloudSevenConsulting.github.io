@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dn__hdlc_8h" kind="file" language="C++">
+    <compoundname>dn_hdlc.h</compoundname>
+    <includes refid="dn__common_8h" local="yes">dn_common.h</includes>
+    <includedby refid="dn__hdlc_8c" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c</includedby>
+    <includedby refid="dn__serial__mt_8c" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c</includedby>
+    <incdepgraph>
+      <node id="244">
+        <label>stdbool.h</label>
+      </node>
+      <node id="242">
+        <label>dn_common.h</label>
+        <link refid="dn__common_8h_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>string.h</label>
+      </node>
+      <node id="241">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h</label>
+        <link refid="dn__hdlc_8h"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dn__hdlc_8h_1a6ccedf46ab60c151187db969444d2eb5" prot="public" static="no">
+        <name>DN_HDLC_FLAG</name>
+        <initializer>0x7e</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="52" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1acb39731a3603b5754cc1b03833c758d0" prot="public" static="no">
+        <name>DN_HDLC_ESCAPE</name>
+        <initializer>0x7d</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="53" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1a834e03cc5133a6647d118274558992de" prot="public" static="no">
+        <name>DN_HDLC_ESCAPE_MASK</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="54" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1af45e18bd8eb6f32bee259e89a918738e" prot="public" static="no">
+        <name>DN_HDLC_CRCINIT</name>
+        <initializer>0xffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="55" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1a70add970b623a527378af46f4080f546" prot="public" static="no">
+        <name>DN_HDLC_CRCGOOD</name>
+        <initializer>0xf0b8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="56" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1a07bc8be66db3149803630bd84830173b" prot="public" static="no">
+        <name>DN_HDLC_MAX_FRAME_LENGTH</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="58" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dn__hdlc_8h_1ae87585320f9d0ad5f71a9f59d97d0707" prot="public" static="no">
+        <name>DN_HDLC_INPUT_BUFFER_SIZE</name>
+        <initializer>DN_HDLC_MAX_FRAME_LENGTH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="59" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dn__hdlc_8h_1aaec37d7e4471b7ae4fa1d3e9528b1bec" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* dn_hdlc_rxFrame_cbt) (uint8_t *rxFrame, uint8_t rxFrameLen)</definition>
+        <argsstring>)(uint8_t *rxFrame, uint8_t rxFrameLen)</argsstring>
+        <name>dn_hdlc_rxFrame_cbt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="63" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dn__hdlc_8h_1ae64634b7fdc1a2e14784ce02bdd3db2a" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t dn_hdlc_fcstab[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>dn_hdlc_fcstab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="17" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dn__hdlc_8h_1a33df84245ae564bd916173ed2f1ec1a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_hdlc_init</definition>
+        <argsstring>(dn_hdlc_rxFrame_cbt rxFrame_cb)</argsstring>
+        <name>dn_hdlc_init</name>
+        <param>
+          <type>dn_hdlc_rxFrame_cbt</type>
+          <declname>rxFrame_cb</declname>
+        </param>
+        <briefdescription>
+<para>Setting up the instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="73" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="47" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__hdlc_8h_1a75c32f48315f83f22f1eaa51c822dacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_hdlc_outputOpen</definition>
+        <argsstring>()</argsstring>
+        <name>dn_hdlc_outputOpen</name>
+        <briefdescription>
+<para>Start an HDLC frame in the output buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="75" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="134" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__hdlc_8h_1ab322d5d684e5338bae01e79559488e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_hdlc_outputWrite</definition>
+        <argsstring>(uint8_t b)</argsstring>
+        <name>dn_hdlc_outputWrite</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Add a byte to the outgoing HDLC frame being built. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="76" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="147" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__hdlc_8h_1a754d5eef8e6f2a2c89a01488dc488f51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_hdlc_outputClose</definition>
+        <argsstring>()</argsstring>
+        <name>dn_hdlc_outputClose</name>
+        <briefdescription>
+<para>Finalize the outgoing HDLC frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h" line="77" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.c" bodystart="165" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2014,<sp/>Dust<sp/>Networks.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">HDLC<sp/>library.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">\license<sp/>See<sp/>attached<sp/>DN_LICENSE.txt.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DN_HDLC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dn_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>defines<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>table<sp/>is<sp/>used<sp/>to<sp/>expedite<sp/>execution<sp/>(at<sp/>the<sp/>expense<sp/>of<sp/>memory<sp/>usage)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>dn_hdlc_fcstab[256]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/>0x0000,<sp/>0x1189,<sp/>0x2312,<sp/>0x329b,<sp/>0x4624,<sp/>0x57ad,<sp/>0x6536,<sp/>0x74bf,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/>0x8c48,<sp/>0x9dc1,<sp/>0xaf5a,<sp/>0xbed3,<sp/>0xca6c,<sp/>0xdbe5,<sp/>0xe97e,<sp/>0xf8f7,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/>0x1081,<sp/>0x0108,<sp/>0x3393,<sp/>0x221a,<sp/>0x56a5,<sp/>0x472c,<sp/>0x75b7,<sp/>0x643e,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/>0x9cc9,<sp/>0x8d40,<sp/>0xbfdb,<sp/>0xae52,<sp/>0xdaed,<sp/>0xcb64,<sp/>0xf9ff,<sp/>0xe876,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/>0x2102,<sp/>0x308b,<sp/>0x0210,<sp/>0x1399,<sp/>0x6726,<sp/>0x76af,<sp/>0x4434,<sp/>0x55bd,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/>0xad4a,<sp/>0xbcc3,<sp/>0x8e58,<sp/>0x9fd1,<sp/>0xeb6e,<sp/>0xfae7,<sp/>0xc87c,<sp/>0xd9f5,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/>0x3183,<sp/>0x200a,<sp/>0x1291,<sp/>0x0318,<sp/>0x77a7,<sp/>0x662e,<sp/>0x54b5,<sp/>0x453c,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/>0xbdcb,<sp/>0xac42,<sp/>0x9ed9,<sp/>0x8f50,<sp/>0xfbef,<sp/>0xea66,<sp/>0xd8fd,<sp/>0xc974,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/>0x4204,<sp/>0x538d,<sp/>0x6116,<sp/>0x709f,<sp/>0x0420,<sp/>0x15a9,<sp/>0x2732,<sp/>0x36bb,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/>0xce4c,<sp/>0xdfc5,<sp/>0xed5e,<sp/>0xfcd7,<sp/>0x8868,<sp/>0x99e1,<sp/>0xab7a,<sp/>0xbaf3,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/>0x5285,<sp/>0x430c,<sp/>0x7197,<sp/>0x601e,<sp/>0x14a1,<sp/>0x0528,<sp/>0x37b3,<sp/>0x263a,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/>0xdecd,<sp/>0xcf44,<sp/>0xfddf,<sp/>0xec56,<sp/>0x98e9,<sp/>0x8960,<sp/>0xbbfb,<sp/>0xaa72,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/>0x6306,<sp/>0x728f,<sp/>0x4014,<sp/>0x519d,<sp/>0x2522,<sp/>0x34ab,<sp/>0x0630,<sp/>0x17b9,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/>0xef4e,<sp/>0xfec7,<sp/>0xcc5c,<sp/>0xddd5,<sp/>0xa96a,<sp/>0xb8e3,<sp/>0x8a78,<sp/>0x9bf1,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/>0x7387,<sp/>0x620e,<sp/>0x5095,<sp/>0x411c,<sp/>0x35a3,<sp/>0x242a,<sp/>0x16b1,<sp/>0x0738,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/>0xffcf,<sp/>0xee46,<sp/>0xdcdd,<sp/>0xcd54,<sp/>0xb9eb,<sp/>0xa862,<sp/>0x9af9,<sp/>0x8b70,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/>0x8408,<sp/>0x9581,<sp/>0xa71a,<sp/>0xb693,<sp/>0xc22c,<sp/>0xd3a5,<sp/>0xe13e,<sp/>0xf0b7,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/>0x0840,<sp/>0x19c9,<sp/>0x2b52,<sp/>0x3adb,<sp/>0x4e64,<sp/>0x5fed,<sp/>0x6d76,<sp/>0x7cff,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/>0x9489,<sp/>0x8500,<sp/>0xb79b,<sp/>0xa612,<sp/>0xd2ad,<sp/>0xc324,<sp/>0xf1bf,<sp/>0xe036,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/>0x18c1,<sp/>0x0948,<sp/>0x3bd3,<sp/>0x2a5a,<sp/>0x5ee5,<sp/>0x4f6c,<sp/>0x7df7,<sp/>0x6c7e,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/>0xa50a,<sp/>0xb483,<sp/>0x8618,<sp/>0x9791,<sp/>0xe32e,<sp/>0xf2a7,<sp/>0xc03c,<sp/>0xd1b5,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/>0x2942,<sp/>0x38cb,<sp/>0x0a50,<sp/>0x1bd9,<sp/>0x6f66,<sp/>0x7eef,<sp/>0x4c74,<sp/>0x5dfd,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/>0xb58b,<sp/>0xa402,<sp/>0x9699,<sp/>0x8710,<sp/>0xf3af,<sp/>0xe226,<sp/>0xd0bd,<sp/>0xc134,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/>0x39c3,<sp/>0x284a,<sp/>0x1ad1,<sp/>0x0b58,<sp/>0x7fe7,<sp/>0x6e6e,<sp/>0x5cf5,<sp/>0x4d7c,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/>0xc60c,<sp/>0xd785,<sp/>0xe51e,<sp/>0xf497,<sp/>0x8028,<sp/>0x91a1,<sp/>0xa33a,<sp/>0xb2b3,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/>0x4a44,<sp/>0x5bcd,<sp/>0x6956,<sp/>0x78df,<sp/>0x0c60,<sp/>0x1de9,<sp/>0x2f72,<sp/>0x3efb,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/>0xd68d,<sp/>0xc704,<sp/>0xf59f,<sp/>0xe416,<sp/>0x90a9,<sp/>0x8120,<sp/>0xb3bb,<sp/>0xa232,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/>0x5ac5,<sp/>0x4b4c,<sp/>0x79d7,<sp/>0x685e,<sp/>0x1ce1,<sp/>0x0d68,<sp/>0x3ff3,<sp/>0x2e7a,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/>0xe70e,<sp/>0xf687,<sp/>0xc41c,<sp/>0xd595,<sp/>0xa12a,<sp/>0xb0a3,<sp/>0x8238,<sp/>0x93b1,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/>0x6b46,<sp/>0x7acf,<sp/>0x4854,<sp/>0x59dd,<sp/>0x2d62,<sp/>0x3ceb,<sp/>0x0e70,<sp/>0x1ff9,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/>0xf78f,<sp/>0xe606,<sp/>0xd49d,<sp/>0xc514,<sp/>0xb1ab,<sp/>0xa022,<sp/>0x92b9,<sp/>0x8330,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/>0x7bc7,<sp/>0x6a4e,<sp/>0x58d5,<sp/>0x495c,<sp/>0x3de3,<sp/>0x2c6a,<sp/>0x1ef1,<sp/>0x0f78</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_FLAG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_ESCAPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_ESCAPE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_CRCINIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_CRCGOOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xf0b8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_MAX_FRAME_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DN_HDLC_INPUT_BUFFER_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>DN_HDLC_MAX_FRAME_LENGTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>typedef<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*dn_hdlc_rxFrame_cbt)(uint8_t*<sp/>rxFrame,<sp/>uint8_t<sp/>rxFrameLen);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>variables<sp/>=======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>prototypes<sp/>======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_hdlc_init(dn_hdlc_rxFrame_cbt<sp/>rxFrame_cb);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_hdlc_outputOpen();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_hdlc_outputWrite(uint8_t<sp/>b);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_hdlc_outputClose();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_hdlc.h"/>
+  </compounddef>
+</doxygen>

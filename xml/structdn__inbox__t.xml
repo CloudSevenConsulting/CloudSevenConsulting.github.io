@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__inbox__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_inbox_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__inbox__t_1ab81d5b2369c780020ac09336268a47b0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_inbox_t::pktBuf[DN_INBOX_SIZE][DN_DEFAULT_PAYLOAD_SIZE_LIMIT]</definition>
+        <argsstring>[DN_INBOX_SIZE][DN_DEFAULT_PAYLOAD_SIZE_LIMIT]</argsstring>
+        <name>pktBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="108" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__inbox__t_1aec89fbc9988f2e89cf60234af752856d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_inbox_t::pktSize[DN_INBOX_SIZE]</definition>
+        <argsstring>[DN_INBOX_SIZE]</argsstring>
+        <name>pktSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="109" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__inbox__t_1aa3bcbbba8bb7204b3940ab992dc01cfd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_inbox_t::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="110" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__inbox__t_1a0f3deaf63794b098de9b386639603761" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_inbox_t::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="111" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__inbox__t_1abb6e3e5e35f0c69881822e82a1bda0f9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_inbox_t::unreadPackets</definition>
+        <argsstring></argsstring>
+        <name>unreadPackets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="112" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" line="107" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.h" bodystart="106" bodyend="113"/>
+    <listofallmembers>
+      <member refid="structdn__inbox__t_1aa3bcbbba8bb7204b3940ab992dc01cfd" prot="public" virt="non-virtual"><scope>dn_inbox_t</scope><name>head</name></member>
+      <member refid="structdn__inbox__t_1ab81d5b2369c780020ac09336268a47b0" prot="public" virt="non-virtual"><scope>dn_inbox_t</scope><name>pktBuf</name></member>
+      <member refid="structdn__inbox__t_1aec89fbc9988f2e89cf60234af752856d" prot="public" virt="non-virtual"><scope>dn_inbox_t</scope><name>pktSize</name></member>
+      <member refid="structdn__inbox__t_1a0f3deaf63794b098de9b386639603761" prot="public" virt="non-virtual"><scope>dn_inbox_t</scope><name>tail</name></member>
+      <member refid="structdn__inbox__t_1abb6e3e5e35f0c69881822e82a1bda0f9" prot="public" virt="non-virtual"><scope>dn_inbox_t</scope><name>unreadPackets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

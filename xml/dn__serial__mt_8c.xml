@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dn__serial__mt_8c" kind="file" language="C++">
+    <compoundname>dn_serial_mt.c</compoundname>
+    <includes refid="dn__serial__mt_8h" local="yes">dn_serial_mt.h</includes>
+    <includes refid="dn__hdlc_8h" local="yes">dn_hdlc.h</includes>
+    <incdepgraph>
+      <node id="285">
+        <label>stdbool.h</label>
+      </node>
+      <node id="283">
+        <label>dn_common.h</label>
+        <link refid="dn__common_8h_source"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c</label>
+        <link refid="dn__serial__mt_8c"/>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>dn_serial_mt.h</label>
+        <link refid="dn__serial__mt_8h_source"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>string.h</label>
+      </node>
+      <node id="287">
+        <label>dn_hdlc.h</label>
+        <link refid="dn__hdlc_8h_source"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdn__serial__mt__vars__t" prot="public">dn_serial_mt_vars_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dn__serial__mt_8c_1ab27c08008e1fbc0047709aeeeb6b5fb5" prot="public" static="no" mutable="no">
+        <type><ref refid="structdn__serial__mt__vars__t" kindref="compound">dn_serial_mt_vars_t</ref></type>
+        <definition>dn_serial_mt_vars_t dn_serial_mt_vars</definition>
+        <argsstring></argsstring>
+        <name>dn_serial_mt_vars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="25" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dn__serial__mt_8c_1ae3fe7de205fa07a83db26903ba1f878d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_serial_mt_rxHdlcFrame</definition>
+        <argsstring>(uint8_t *rxFrame, uint8_t rxFrameLen)</argsstring>
+        <name>dn_serial_mt_rxHdlcFrame</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>rxFrame</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>rxFrameLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="92" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__serial__mt_8c_1a58c09b9ecd5084c38a88ba98c1f620b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_serial_mt_dispatch_response</definition>
+        <argsstring>(uint8_t cmdId, uint8_t *payload, uint8_t length)</argsstring>
+        <name>dn_serial_mt_dispatch_response</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmdId</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="30" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="156" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__serial__mt_8c_1a023f0dea55b2a7339ca4f2f214342f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_serial_sendReply</definition>
+        <argsstring>(uint8_t cmdId, uint8_t rc, uint8_t *payload, uint8_t length)</argsstring>
+        <name>dn_serial_sendReply</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmdId</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Not public, only used for sending ACK. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="142" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__serial__mt_8c_1a07835b2b776a6543f31ef1ef9033aa75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dn_serial_mt_init</definition>
+        <argsstring>(dn_serial_request_cbt requestCb)</argsstring>
+        <name>dn_serial_mt_init</name>
+        <param>
+          <type>dn_serial_request_cbt</type>
+          <declname>requestCb</declname>
+        </param>
+        <briefdescription>
+<para>Setting up the instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="38" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="38" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="dn__serial__mt_8c_1a1f96763473e758a6a34d079deb3e13f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dn_err_t</type>
+        <definition>dn_err_t dn_serial_mt_sendRequest</definition>
+        <argsstring>(uint8_t cmdId, uint8_t extraFlags, uint8_t *payload, uint8_t length, dn_serial_reply_cbt replyCb)</argsstring>
+        <name>dn_serial_mt_sendRequest</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmdId</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>extraFlags</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>dn_serial_reply_cbt</type>
+          <declname>replyCb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="51" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="51" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2014,<sp/>Dust<sp/>Networks.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">HDLC<sp/>library.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">\license<sp/>See<sp/>attached<sp/>DN_LICENSE.txt.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dn_serial_mt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dn_hdlc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>variables<sp/>=======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structdn__serial__mt__vars__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>packet<sp/>IDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>txPacketId;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rxPacketId;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reply<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replyCmdId;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/>dn_serial_reply_cbt<sp/><sp/><sp/><sp/><sp/><sp/><sp/>replyCb;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>request<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/>dn_serial_request_cbt<sp/><sp/><sp/><sp/><sp/>requestCb;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/><ref refid="structdn__serial__mt__vars__t" kindref="compound">dn_serial_mt_vars_t</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structdn__serial__mt__vars__t" kindref="compound">dn_serial_mt_vars_t</ref><sp/>dn_serial_mt_vars;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>prototype<sp/>=======================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_mt_rxHdlcFrame(uint8_t*<sp/>rxFrame,<sp/>uint8_t<sp/>rxFrameLen);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_mt_dispatch_response(uint8_t<sp/>cmdId,<sp/>uint8_t<sp/>*payload,<sp/>uint8_t<sp/>length);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_sendReply(uint8_t<sp/>cmdId,<sp/>uint8_t<sp/>rc,<sp/>uint8_t<sp/>*payload,<sp/>uint8_t<sp/>length);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>public<sp/>==========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_mt_init(dn_serial_request_cbt<sp/>requestCb)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reset<sp/>local<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/>memset(&amp;dn_serial_mt_vars,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(dn_serial_mt_vars));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/>dn_serial_mt_vars.txPacketId<sp/>=<sp/>DN_SERIAL_PACKETID_NOTSET;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/>dn_serial_mt_vars.rxPacketId<sp/>=<sp/>DN_SERIAL_PACKETID_NOTSET;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/>dn_serial_mt_vars.requestCb<sp/><sp/>=<sp/>requestCb;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>the<sp/>HDLC<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_init(dn_serial_mt_rxHdlcFrame);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">dn_err_t<sp/>dn_serial_mt_sendRequest(uint8_t<sp/>cmdId,<sp/><sp/>uint8_t<sp/>extraFlags,<sp/>uint8_t*<sp/>payload,<sp/>uint8_t<sp/>length,<sp/>dn_serial_reply_cbt<sp/>replyCb)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>i;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>flags;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>register<sp/>reply<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/>dn_serial_mt_vars.replyCmdId<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cmdId;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/>dn_serial_mt_vars.replyCb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>replyCb;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>the<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/>flags<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dn_serial_mt_vars.txPacketId==DN_SERIAL_PACKETID_NOTSET)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.txPacketId<sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/><sp/>|=<sp/>0x01&lt;&lt;3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sync<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/><sp/>|=<sp/>dn_serial_mt_vars.txPacketId&lt;&lt;1;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>txPacketId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flags<sp/><sp/>|=<sp/>dn_serial_mt_vars.txPacketId&lt;&lt;1;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>txPacketId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/>flags<sp/><sp/><sp/><sp/><sp/>|=<sp/>extraFlags;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>the<sp/>frame<sp/>over<sp/>serial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputOpen();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(cmdId);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cmdId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(length);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(flags);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;length;<sp/>i++)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>payload</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_hdlc_outputWrite(payload[i]);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputClose();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>toggle<sp/>the<sp/>txPacketId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dn_serial_mt_vars.txPacketId==0x00)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.txPacketId<sp/><sp/><sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.txPacketId<sp/><sp/><sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DN_ERR_NONE;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>private<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_mt_rxHdlcFrame(uint8_t*<sp/>rxFrame,<sp/>uint8_t<sp/>rxFrameLen)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fields<sp/>in<sp/>the<sp/>serial<sp/>API<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>cmdId;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>length;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>flags;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>isResponse;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>packetId;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>isSync;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>misc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>isRepeatId;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assert<sp/>length<sp/>is<sp/>OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rxFrameLen&lt;3)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/>cmdId<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>rxFrame[0];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/>length<sp/><sp/><sp/><sp/><sp/>=<sp/>rxFrame[1];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/>flags<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>rxFrame[2];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/>isResponse<sp/>=<sp/>((flags<sp/>&amp;<sp/>DN_SERIAL_API_MASK_RESPONSE)!=0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/>packetId<sp/><sp/><sp/>=<sp/>((flags<sp/>&amp;<sp/>DN_SERIAL_API_MASK_PACKETID)!=0);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/>isSync<sp/><sp/><sp/><sp/><sp/>=<sp/>((flags<sp/>&amp;<sp/>DN_SERIAL_API_MASK_SYNC)!=0);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>valid<sp/>packet<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isResponse)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dispatch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_dispatch_response(cmdId,&amp;rxFrame[3],length);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isSync<sp/>||<sp/>packetId!=dn_serial_mt_vars.rxPacketId)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isRepeatId<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>FALSE;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.rxPacketId<sp/>=<sp/>packetId;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isRepeatId<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>TRUE;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_sendReply(cmdId,DN_SERIAL_RC_OK,NULL,0);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dispatch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isRepeatId==FALSE<sp/>&amp;&amp;<sp/>length&gt;0<sp/>&amp;&amp;<sp/>dn_serial_mt_vars.requestCb!=NULL)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.requestCb(cmdId,flags,&amp;rxFrame[3],length);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_sendReply(uint8_t<sp/>cmdId,<sp/>uint8_t<sp/>rc,<sp/>uint8_t<sp/>*payload,<sp/>uint8_t<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>i;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputOpen();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(cmdId);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cmdId</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(length);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(DN_SERIAL_API_MASK_RESPONSE<sp/>|<sp/>(dn_serial_mt_vars.rxPacketId&lt;&lt;1));<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputWrite(rc);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;length;<sp/>i++)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>payload</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_hdlc_outputWrite(payload[i]);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/>dn_hdlc_outputClose();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dn_serial_mt_dispatch_response(uint8_t<sp/>cmdId,<sp/>uint8_t*<sp/>payload,<sp/>uint8_t<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>rc;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/>rc<sp/>=<sp/>payload[0];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmdId==dn_serial_mt_vars.replyCmdId<sp/>&amp;&amp;<sp/>dn_serial_mt_vars.replyCb!=NULL)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>the<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(dn_serial_mt_vars.replyCb)(cmdId,rc,&amp;payload[1],length);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.replyCmdId<sp/><sp/><sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dn_serial_mt_vars.replyCb<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">//===========================<sp/>helpers<sp/>=========================================</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dp__sm_8cpp" kind="file" language="C++">
+    <compoundname>dp_sm.cpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="dp__sm_8h" local="yes">dp_sm.h</includes>
+    <includes refid="globals_8h" local="yes">globals.h</includes>
+    <includes refid="dp__conf_8h" local="yes">dp_conf.h</includes>
+    <incdepgraph>
+      <node id="98">
+        <label>duinoPRO.h</label>
+      </node>
+      <node id="94">
+        <label>stdint.h</label>
+      </node>
+      <node id="96">
+        <label>dp_conf.h</label>
+        <link refid="dp__conf_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>globals.h</label>
+        <link refid="globals_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp</label>
+        <link refid="dp__sm_8cpp"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>string.h</label>
+      </node>
+      <node id="97">
+        <label>sample/frame.h</label>
+        <link refid="frame_8h_source"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Arduino.h</label>
+      </node>
+      <node id="93">
+        <label>dp_sm.h</label>
+        <link refid="dp__sm_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dp__sm_8cpp_1a0ad17cb6bfdb4e9c7aed1e9a4f3a4c26" prot="public" static="no" mutable="no">
+        <type><ref refid="structsys__state" kindref="compound">sys_state</ref></type>
+        <definition>sys_state SystemState</definition>
+        <argsstring></argsstring>
+        <name>SystemState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="16" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dp__sm_8cpp_1a4a6000498ac34d217eacf2a29ae2801d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dp_state_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_state_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialise state variables. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ensures memory for system state variables is allocated correctly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="18" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dp__sm_8cpp_1a2b76aac04c646205bda87f29a9c8678c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dp_is_sys_ready</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_is_sys_ready</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if system is ready for use. </para>        </briefdescription>
+        <detaileddescription>
+<para>Interface for external modules to check if system is ready. This is relevant after the system has woke up from a sleep.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DP_SYS__SYS_READY=1 if system ready, DP_SYS__SYS_NOT_READY=0 elsewise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="25" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="dp__sm_8cpp_1a494b8107834f91baa267ed2417895fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dp_sleep</definition>
+        <argsstring>(uint32_t milliseconds)</argsstring>
+        <name>dp_sleep</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>time_milliseconds</declname>
+          <defname>milliseconds</defname>
+        </param>
+        <briefdescription>
+<para>Put the system to sleep. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sleep in this context refers to a low-power mode in which pre-determined peripherals are turned off to reduce energy consumption by the device. Note that these peripherals will require rebooting on wakeup. This routine can fail if the sleepguard is set, preventing the system from sleeping</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_milliseconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time to put the system to sleep for in milliseconds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="30" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="30" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="dp__sm_8cpp_1af0238d99eead5fcd403af24ada634341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dp_wake</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_wake</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reboots system peripherals that were turned off in sys_sleep. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this routine will take time before all peripherals are operational. The routine will set a global flag when this is done</para><para><simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="54" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="dp__sm_8cpp_1af1039f9ef50a1c8148aa9ab8dfae55f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dp_sleepguard_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_sleepguard_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Public function to set the global sleepguard flag. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that if the flag is already set, this will increment the flag to indicate how many resources require the system to be on. The complimentary function sleepguard_free will decrease this flag value, until eventually the the value is zero (false) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="62" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="dp__sm_8cpp_1ab4bbc6e9e1dd54f73e34cd54e8add3b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dp_sleepguard_free</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_sleepguard_free</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Public function to free the global sleepguard flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" line="67" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>dp_sm.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>2017-09-27<sp/>18:08:06</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>kjph</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dp__sm_8h" kindref="compound">dp_sm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="globals_8h" kindref="compound">globals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dp__conf_8h" kindref="compound">dp_conf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="structsys__state" kindref="compound">sys_state</ref><sp/>SystemState;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1a4a6000498ac34d217eacf2a29ae2801d" kindref="member">dp_state_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(&amp;SystemState,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(SystemState));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a8d27e1b467a76a698e7ea04c70b0517a" kindref="member">_conf</ref><sp/>=<sp/>sys_conf;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState._sys_ready_flag<sp/>=<sp/>DP_SYS__SYS_READY;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1a2b76aac04c646205bda87f29a9c8678c" kindref="member">dp_is_sys_ready</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SystemState._sys_ready_flag;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1a6e05ece747fba4de6767c9546bc093e8" kindref="member">dp_sleep</ref>(uint32_t<sp/>milliseconds)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>verify<sp/>this<sp/>timeout<sp/>routine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>waited<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>max_wait<sp/>=<sp/><ref refid="dp__conf_8h_1ade54ab17258d9e63d26e956d63753631" kindref="member">dp_conf_param_get_cur</ref>(LUT_IDX__SLEEP_GUARD_TIMEOUT);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Sleep<sp/>Guard*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SystemState.<ref refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kindref="member">_sys_sleepguard</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waited<sp/>+=<sp/>10;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(waited<sp/>&gt;<sp/>max_wait)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kindref="member">_sys_sleepguard</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState._sys_ready_flag<sp/>=<sp/>DP_SYS__SYS_NOT_READY;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(milliseconds);</highlight><highlight class="comment">//TODO:<sp/>make<sp/>a<sp/>proper<sp/>sleep<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1af0238d99eead5fcd403af24ada634341" kindref="member">dp_wake</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO;<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState._sys_ready_flag<sp/>=<sp/>DP_SYS__SYS_READY;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1af1039f9ef50a1c8148aa9ab8dfae55f4" kindref="member">dp_sleepguard_set</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kindref="member">_sys_sleepguard</ref>++;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dp__sm_8h_1ab4bbc6e9e1dd54f73e34cd54e8add3b6" kindref="member">dp_sleepguard_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SystemState.<ref refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kindref="member">_sys_sleepguard</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" kindref="member">_sys_sleepguard</ref>--;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.cpp"/>
+  </compounddef>
+</doxygen>

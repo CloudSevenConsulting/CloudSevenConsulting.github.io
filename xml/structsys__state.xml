@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structsys__state" kind="struct" language="C++" prot="public">
+    <compoundname>sys_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsys__state_1a59266639a126d10200a8e75c19f5f539" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>sys_state::_conf_set_flag</definition>
+        <argsstring></argsstring>
+        <name>_conf_set_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by configuration module to determine if system has loaded a config into memory or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="46" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1a8d27e1b467a76a698e7ea04c70b0517a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>sys_state::_conf</definition>
+        <argsstring></argsstring>
+        <name>_conf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the configuration used during run-time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="47" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>sys_state::_sys_sleepguard</definition>
+        <argsstring></argsstring>
+        <name>_sys_sleepguard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prevents system from sleeping wheng greater than 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="48" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1aab3c50a704cfad2f09f6a0ce69396841" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sys_state::_sys_ready_flag</definition>
+        <argsstring></argsstring>
+        <name>_sys_ready_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="49" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>sys_state::_sensor_status</definition>
+        <argsstring></argsstring>
+        <name>_sensor_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the status of the sensor module </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="50" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>sys_state::_sensor_type</definition>
+        <argsstring></argsstring>
+        <name>_sensor_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates which sensor driver to use for current session </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="51" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1a3cb6ca8a8fa7dff59d246f6555bf1225" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>sys_state::_sensor_addr</definition>
+        <argsstring></argsstring>
+        <name>_sensor_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the sensor&apos;s slave address. Depends on communication (drive) used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="52" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsys__state_1a0f563c3e86bb8b0be33874b724049c83" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sys_state::_sensor_n_outputs</definition>
+        <argsstring></argsstring>
+        <name>_sensor_n_outputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="53" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" line="45" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/dp_sm.h" bodystart="45" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structsys__state_1a8d27e1b467a76a698e7ea04c70b0517a" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_conf</name></member>
+      <member refid="structsys__state_1a59266639a126d10200a8e75c19f5f539" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_conf_set_flag</name></member>
+      <member refid="structsys__state_1a3cb6ca8a8fa7dff59d246f6555bf1225" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sensor_addr</name></member>
+      <member refid="structsys__state_1a0f563c3e86bb8b0be33874b724049c83" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sensor_n_outputs</name></member>
+      <member refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sensor_status</name></member>
+      <member refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sensor_type</name></member>
+      <member refid="structsys__state_1aab3c50a704cfad2f09f6a0ce69396841" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sys_ready_flag</name></member>
+      <member refid="structsys__state_1a9ab2104e87e5e9bf16bacdc5a445bfb9" prot="public" virt="non-virtual"><scope>sys_state</scope><name>_sys_sleepguard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

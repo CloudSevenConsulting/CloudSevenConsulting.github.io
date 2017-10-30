@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_accel_magno_8h" kind="file" language="C++">
+    <compoundname>AccelMagno.h</compoundname>
+    <includes local="no">Module.h</includes>
+    <includedby refid="_accel_magno_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp</includedby>
+    <includedby refid="sensor_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp</includedby>
+    <incdepgraph>
+      <node id="146">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h</label>
+        <link refid="_accel_magno_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>Module.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_accel_magno" prot="public">AccelMagno</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0" prot="public" static="no">
+        <name>AccelFullScaleEnum</name>
+        <enumvalue id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc" prot="public">
+          <name>ACCEL_2G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 2g </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aa4f0aa9e39378ca8561d3c5c3c34eac7" prot="public">
+          <name>ACCEL_4G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 4g </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aca384fc951c7e37084ad181d2657bd7a" prot="public">
+          <name>ACCEL_6G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 6g </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a9916755163a87b2a70e7ab986d403aaf" prot="public">
+          <name>ACCEL_8G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 8g </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40fcc5e6816634f083aece7b48b79346" prot="public">
+          <name>ACCEL_16G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 16g </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values for controlling accelerometer full scale range. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d" prot="public" static="no">
+        <name>MagnoFullScaleEnum</name>
+        <enumvalue id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5" prot="public">
+          <name>MAGNO_2GAUSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 2 gauss </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da84401b0c35ace0df16435ec78d87e7ab" prot="public">
+          <name>MAGNO_4GAUSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 4 gauss </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf48441ee6719673d82bea08b7318e783" prot="public">
+          <name>MAGNO_8GAUSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 8 gauss </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da666eae77f920f2b96eecead92fa17481" prot="public">
+          <name>MAGNO_12GAUSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full scale range of 12 gauss </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values for controlling magnetometer full scale range. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="39" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AccelMagno.h<sp/>is<sp/>part<sp/>of<sp/>the<sp/>duinoPRO<sp/>firmware.<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>duinoPRO<sp/>is<sp/>an<sp/>Arduino™-compatible<sp/>platform<sp/>in<sp/>a<sp/>flat<sp/>form<sp/>factor<sp/>with<sp/>surface-mount,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>solderable<sp/>modules.<sp/>It<sp/>is<sp/>designed<sp/>with<sp/>commercialization<sp/>of<sp/>real<sp/>products<sp/>in<sp/>mind.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Note<sp/>that<sp/>we<sp/>have<sp/>designed<sp/>duinoPRO<sp/>to<sp/>be<sp/>compatible<sp/>with<sp/>the<sp/>Arduino™<sp/>IDE.<sp/><sp/>This<sp/>does</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>not<sp/>imply<sp/>that<sp/>duinoPRO<sp/>is<sp/>certified,<sp/>tested<sp/>or<sp/>endorsed<sp/>by<sp/>Arduino™<sp/>in<sp/>any<sp/>way.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>For<sp/>more<sp/>information,<sp/>contact<sp/>info@duinopro.cc<sp/>or<sp/>visit<sp/>www.duinopro.cc.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>BSD<sp/>3-Clause<sp/>license</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>(see<sp/>https://github.com/duinoPRO/firmware/blob/master/duinoPRO_BSD_fwlicense.txt).</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Using<sp/>duinoPRO<sp/>core<sp/>and<sp/>libraries<sp/>licensed<sp/>under<sp/>BSD<sp/>for<sp/>the<sp/>firmware<sp/>of<sp/>a<sp/>commercial</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>product<sp/>does<sp/>not<sp/>require<sp/>you<sp/>to<sp/>release<sp/>the<sp/>source<sp/>code<sp/>for<sp/>the<sp/>firmware.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ACCELMAGNO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCELMAGNO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Module.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0" kindref="member">AccelFullScaleEnum</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc" kindref="member">ACCEL_2G</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aa4f0aa9e39378ca8561d3c5c3c34eac7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aa4f0aa9e39378ca8561d3c5c3c34eac7" kindref="member">ACCEL_4G</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aca384fc951c7e37084ad181d2657bd7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aca384fc951c7e37084ad181d2657bd7a" kindref="member">ACCEL_6G</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a9916755163a87b2a70e7ab986d403aaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a9916755163a87b2a70e7ab986d403aaf" kindref="member">ACCEL_8G</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40fcc5e6816634f083aece7b48b79346" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40fcc5e6816634f083aece7b48b79346" kindref="member">ACCEL_16G</ref><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d" kindref="member">MagnoFullScaleEnum</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5" kindref="member">MAGNO_2GAUSS</ref>,<sp/></highlight></codeline>
+<codeline lineno="41" refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da84401b0c35ace0df16435ec78d87e7ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da84401b0c35ace0df16435ec78d87e7ab" kindref="member">MAGNO_4GAUSS</ref>,<sp/></highlight></codeline>
+<codeline lineno="42" refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf48441ee6719673d82bea08b7318e783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf48441ee6719673d82bea08b7318e783" kindref="member">MAGNO_8GAUSS</ref>,<sp/></highlight></codeline>
+<codeline lineno="43" refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da666eae77f920f2b96eecead92fa17481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da666eae77f920f2b96eecead92fa17481" kindref="member">MAGNO_12GAUSS</ref><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_accel_magno" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_accel_magno" kindref="compound">AccelMagno</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Module<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>accelFullScale;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>accelLsb;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>magnoFullScale;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magnoLsb;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_accel_magno_1a55249284973a9782b0df8e629397b25a" kindref="member">read16Bit</ref>(uint8_t<sp/>highAddr,<sp/>uint8_t<sp/>lowAddr);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_accel_magno_1aa084b3409e0d8e9c610c037082c3ee48" kindref="member">AccelMagno</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a48d4681fe913a10e04803e1ce71e0ca0" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a730951ab3d52b43a097f825443a97110" kindref="member">lowPowerMode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lowpower);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_accel_magno_1a8580024f52c8217a4d36f5c71ba392a6" kindref="member">readRegister</ref>(uint8_t<sp/>addr);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a2834a2ac20af6ef18006742e9bf66c80" kindref="member">writeRegister</ref>(uint8_t<sp/>addr,<sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a28153270e6869efc7a7c4858937944f6" kindref="member">enableAccel</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a82ddd1fc92e3bf0e341c93e836e6db34" kindref="member">disableAccel</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a5fdb7b42d1be16c9ea171e5cc83be10e" kindref="member">setAccelFullScale</ref>(uint8_t<sp/>mode);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a1abc3f8a5e76f22a545cd77de9753706" kindref="member">enableMagno</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a9d2f48d85cfb041197be0fbe36d86758" kindref="member">disableMagno</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a833649656518a52153425d6ae176ce82" kindref="member">setMagnoFullScale</ref>(uint8_t<sp/>mode);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_accel_magno_1a876fe5acf027e62a4c77ed47e71caa8e" kindref="member">rawAccelX</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_accel_magno_1a65d2f9baa70187aca71a0e44317fc01a" kindref="member">rawAccelY</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_accel_magno_1abd217251c988d20c0b585360807d7579" kindref="member">rawAccelZ</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a78f333a1b39863b9c3052b5342e46cce" kindref="member">accelX</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1adb0fa61d80b92e7e942e6c8c898c0660" kindref="member">accelY</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a2b974efaf20233c65c19b3b1d25b3cdc" kindref="member">accelZ</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a06811f3898deb90de4333b1e4811822b" kindref="member">magnoX</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a74ffed2db19643da37b4581d5af608a8" kindref="member">magnoY</ref>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a20b1e286b09f1886a16ac76295cb2eeb" kindref="member">magnoZ</ref>();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_accel_magno_1a1d0080c2fb5d0435c9f6c85e3b797506" kindref="member">intRead</ref>(uint8_t<sp/>intNum);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AccelMagno_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h"/>
+  </compounddef>
+</doxygen>

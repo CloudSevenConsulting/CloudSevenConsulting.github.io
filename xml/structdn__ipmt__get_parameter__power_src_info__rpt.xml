@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__ipmt__get_parameter__power_src_info__rpt" kind="struct" language="C++" prot="public">
+    <compoundname>dn_ipmt_getParameter_powerSrcInfo_rpt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a50fec447e0cc710e339964425b163afe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_getParameter_powerSrcInfo_rpt::RC</definition>
+        <argsstring></argsstring>
+        <name>RC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="676" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a3d392df9af821e6c7bc66e2cb1f2c443" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::maxStCurrent</definition>
+        <argsstring></argsstring>
+        <name>maxStCurrent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="677" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a531fbb8c729d7867451f716dc48fd0d1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_ipmt_getParameter_powerSrcInfo_rpt::minLifetime</definition>
+        <argsstring></argsstring>
+        <name>minLifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="678" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a0e3e06496e9c715a64a6655fc914080f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::currentLimit_0</definition>
+        <argsstring></argsstring>
+        <name>currentLimit_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="679" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a01b8ad3447e498a39573d1d46c8ae986" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::dischargePeriod_0</definition>
+        <argsstring></argsstring>
+        <name>dischargePeriod_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="680" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a2547fa6374a4efc3862ce6e0dd47b00d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::rechargePeriod_0</definition>
+        <argsstring></argsstring>
+        <name>rechargePeriod_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="681" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a9ac59e9a6ea28682bfeccc70cf2e9d9a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::currentLimit_1</definition>
+        <argsstring></argsstring>
+        <name>currentLimit_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="682" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a5d7d2a4127117f928ac4dd89104b0e60" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::dischargePeriod_1</definition>
+        <argsstring></argsstring>
+        <name>dischargePeriod_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="683" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a583f6e07c2e3f7751f81150a8706742a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::rechargePeriod_1</definition>
+        <argsstring></argsstring>
+        <name>rechargePeriod_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="684" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a6f94709ae27639497258abc6c2329888" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::currentLimit_2</definition>
+        <argsstring></argsstring>
+        <name>currentLimit_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="685" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1a994b41b0a80facead291e3132f7a9252" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::dischargePeriod_2</definition>
+        <argsstring></argsstring>
+        <name>dischargePeriod_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="686" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__ipmt__get_parameter__power_src_info__rpt_1ac927f0476aa399598f56d94512385264" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_ipmt_getParameter_powerSrcInfo_rpt::rechargePeriod_2</definition>
+        <argsstring></argsstring>
+        <name>rechargePeriod_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="687" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" line="675" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_ipmt.h" bodystart="675" bodyend="688"/>
+    <listofallmembers>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a0e3e06496e9c715a64a6655fc914080f" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>currentLimit_0</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a9ac59e9a6ea28682bfeccc70cf2e9d9a" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>currentLimit_1</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a6f94709ae27639497258abc6c2329888" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>currentLimit_2</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a01b8ad3447e498a39573d1d46c8ae986" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>dischargePeriod_0</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a5d7d2a4127117f928ac4dd89104b0e60" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>dischargePeriod_1</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a994b41b0a80facead291e3132f7a9252" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>dischargePeriod_2</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a3d392df9af821e6c7bc66e2cb1f2c443" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>maxStCurrent</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a531fbb8c729d7867451f716dc48fd0d1" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>minLifetime</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a50fec447e0cc710e339964425b163afe" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>RC</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a2547fa6374a4efc3862ce6e0dd47b00d" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>rechargePeriod_0</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1a583f6e07c2e3f7751f81150a8706742a" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>rechargePeriod_1</name></member>
+      <member refid="structdn__ipmt__get_parameter__power_src_info__rpt_1ac927f0476aa399598f56d94512385264" prot="public" virt="non-virtual"><scope>dn_ipmt_getParameter_powerSrcInfo_rpt</scope><name>rechargePeriod_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

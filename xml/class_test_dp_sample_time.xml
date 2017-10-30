@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_dp_sample_time" kind="class" language="C++" prot="public">
+    <compoundname>TestDpSampleTime</compoundname>
+    <basecompoundref refid="class_test_case" prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_dp_sample_time_1ad19e70e94eaf74ef2f1e8f35ab0e9d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestDpSampleTime::TestDpSampleTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestDpSampleTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_time_1a4240ec773e29ae0e775a46480315ee38" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestDpSampleTime::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplements refid="class_test_case_1a4df94e96b5821448d41abafde5041e25">run</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h" line="30" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_time_1a2a08a8768727c16f2514ddcad50ec888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestDpSampleTime::TU_SH_DpSampleTime_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>TU_SH_DpSampleTime_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.cpp" bodystart="24" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="155">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="154">
+        <label>TestDpSampleTime</label>
+        <link refid="class_test_dp_sample_time"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="157">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="156">
+        <label>TestDpSampleTime</label>
+        <link refid="class_test_dp_sample_time"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h" line="23" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.h" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>blink</name></member>
+      <member refid="class_test_dp_sample_time_1a4240ec773e29ae0e775a46480315ee38" prot="public" virt="virtual"><scope>TestDpSampleTime</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>TestCase</name></member>
+      <member refid="class_test_dp_sample_time_1ad19e70e94eaf74ef2f1e8f35ab0e9d2a" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>TestDpSampleTime</name></member>
+      <member refid="class_test_dp_sample_time_1a2a08a8768727c16f2514ddcad50ec888" prot="public" virt="non-virtual"><scope>TestDpSampleTime</scope><name>TU_SH_DpSampleTime_op</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

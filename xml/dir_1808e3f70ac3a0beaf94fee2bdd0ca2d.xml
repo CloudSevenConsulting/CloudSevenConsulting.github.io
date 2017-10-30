@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_1808e3f70ac3a0beaf94fee2bdd0ca2d" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_qsl</compoundname>
+    <innerfile refid="dn__fsm_8d">dn_fsm.d</innerfile>
+    <innerfile refid="dn__time_8d">dn_time.d</innerfile>
+    <innerfile refid="dn__watchdog_8d">dn_watchdog.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_qsl/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_dp_sample_sensor" kind="class" language="C++" prot="public">
+    <compoundname>TestDpSampleSensor</compoundname>
+    <basecompoundref refid="class_test_case" prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_dp_sample_sensor_1ad8f4380e9bd1e72fcda59586c0a5d345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestDpSampleSensor::TestDpSampleSensor</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestDpSampleSensor</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_sensor_1a4dd9272b7e36108d949874591b20ba86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestDpSampleSensor::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplements refid="class_test_case_1a4df94e96b5821448d41abafde5041e25">run</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h" line="30" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_sample_sensor_1a490a4fae1929530e3f07a3c0bfdc37ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestDpSampleSensor::TU_SH_DpSampleSensor_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>TU_SH_DpSampleSensor_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.cpp" bodystart="27" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="150">
+        <label>TestDpSampleSensor</label>
+        <link refid="class_test_dp_sample_sensor"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="152">
+        <label>TestDpSampleSensor</label>
+        <link refid="class_test_dp_sample_sensor"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h" line="23" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.h" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>blink</name></member>
+      <member refid="class_test_dp_sample_sensor_1a4dd9272b7e36108d949874591b20ba86" prot="public" virt="virtual"><scope>TestDpSampleSensor</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>TestCase</name></member>
+      <member refid="class_test_dp_sample_sensor_1ad8f4380e9bd1e72fcda59586c0a5d345" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>TestDpSampleSensor</name></member>
+      <member refid="class_test_dp_sample_sensor_1a490a4fae1929530e3f07a3c0bfdc37ab" prot="public" virt="non-virtual"><scope>TestDpSampleSensor</scope><name>TU_SH_DpSampleSensor_op</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

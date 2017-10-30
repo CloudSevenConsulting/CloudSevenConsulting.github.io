@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sensor_8cpp" kind="file" language="C++">
+    <compoundname>sensor.cpp</compoundname>
+    <includes refid="_accel_magno_8h" local="yes">0x00_AccelMagno/AccelMagno.h</includes>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+    <includes refid="globals_8h" local="yes">../globals.h</includes>
+    <incdepgraph>
+      <node id="189">
+        <label>duinoPRO.h</label>
+      </node>
+      <node id="184">
+        <label>stdint.h</label>
+      </node>
+      <node id="187">
+        <label>dp_conf.h</label>
+        <link refid="dp__conf_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>../globals.h</label>
+        <link refid="globals_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp</label>
+        <link refid="sensor_8cpp"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>0x00_AccelMagno/AccelMagno.h</label>
+        <link refid="_accel_magno_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>sensor.h</label>
+        <link refid="sensor_8h_source"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>sample/frame.h</label>
+        <link refid="frame_8h_source"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>Module.h</label>
+      </node>
+      <node id="186">
+        <label>dp_sm.h</label>
+        <link refid="dp__sm_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sensor_8cpp_1aded1786c4d23284bd89308afbaca614d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sensor_read</definition>
+        <argsstring>(uint16_t *buf, uint8_t buf_size)</argsstring>
+        <name>sensor_read</name>
+        <param>
+          <type>uint16_t *</type>
+          <defname>buf</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>buf_size</defname>
+        </param>
+        <briefdescription>
+<para>Manages the selection of sensor driver and reading of sensor data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks that a sensor has been configured (if not, the sensor configuration routine is called), then calls the correct sensor driver function based on the sensor type recorded in SystemState.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer for storing sensor reading, passed to driver function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of buffer in bytes (not number of elements)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp" line="16" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp" bodystart="16" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8cpp_1a2e7d206e7648d0d4460967fbf33d9b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sensor_drive_accel_magno</definition>
+        <argsstring>(uint8_t sensor_addr, uint16_t *buf)</argsstring>
+        <name>sensor_drive_accel_magno</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>sensor_addr</defname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <defname>buf</defname>
+        </param>
+        <briefdescription>
+<para>Read sensor data from the LSM303D accelerometer/magnetometer sensor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initiates communication with the LSM303D sensor, disables its low power mode and enables its outputs. Then acquires sensor data, storing this in the provided buffer. The sensor is returned to low power mode once sensor data is read.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sensor_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>module address at which sensor is located on the duinoPRO (1-6) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer for storing sensor reading, passed to driver function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp" line="49" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp" bodystart="49" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>sensor.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>2017-09-27<sp/>19:34:22</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>kjph</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*External<sp/>libraries*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_accel_magno_8h" kindref="compound">0x00_AccelMagno/AccelMagno.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*Project<sp/>includes*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sensor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../globals.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*SystemState*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">uint8_t<sp/>sensor_read(uint16_t<sp/>*buf,<sp/>uint8_t<sp/>buf_size)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Check<sp/>if<sp/>the<sp/>buffer<sp/>is<sp/>large<sp/>enough*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf_size<sp/>&lt;<sp/>SystemState._sensor_n_outputs)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FAILURE;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Check<sp/>the<sp/>sensor<sp/>is<sp/>set*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SystemState.<ref refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" kindref="member">_sensor_status</ref><sp/>==<sp/>DP_SENS__STATUS_NOT_SET)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO:<sp/>run<sp/>sensor<sp/>configuration*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Select<sp/>and<sp/>run<sp/>sensor<sp/>driver*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(SystemState.<ref refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kindref="member">_sensor_type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>DP_SENS__ACCEL_MAGNO:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sensor_drive_accel_magno(SystemState.<ref refid="structsys__state_1a3cb6ca8a8fa7dff59d246f6555bf1225" kindref="member">_sensor_addr</ref>,<sp/>buf);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO:<sp/>check<sp/>return*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO:<sp/>set<sp/>buffer<sp/>to<sp/>all<sp/>zeros<sp/>if<sp/>invalid*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*All<sp/>the<sp/>other<sp/>types*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*..etc*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Error<sp/>function:<sp/>CRITICAL*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FAILURE;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>move<sp/>to<sp/>separate<sp/>file<sp/>-<sp/>one<sp/>each<sp/>for<sp/>each<sp/>sensor<sp/>driver/type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">uint8_t<sp/>sensor_drive_accel_magno(uint8_t<sp/>sensor_addr,<sp/>uint16_t<sp/>*buf)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Check<sp/>if<sp/>the<sp/>buffer<sp/>is<sp/>large<sp/>enough*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buf)<sp/>&lt;<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FAILURE;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Initiate<sp/>connection<sp/>to<sp/>Accel/Magno<sp/>sensor<sp/>and<sp/>exit<sp/>low<sp/>power<sp/>mode*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accel_magno" kindref="compound">AccelMagno</ref><sp/>sensor_AccMag(sensor_addr);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.begin();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.lowPowerMode(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Set<sp/>and<sp/>enable<sp/>accelerometer<sp/>and<sp/>magnetometer<sp/>at<sp/>full<sp/>scales*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.setAccelFullScale(<ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc" kindref="member">ACCEL_2G</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.setMagnoFullScale(<ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5" kindref="member">MAGNO_2GAUSS</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.enableAccel();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.enableMagno();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>ask<sp/>client<sp/>if<sp/>it<sp/>is<sp/>desirable<sp/>to<sp/>be<sp/>able<sp/>operate<sp/>in<sp/>different<sp/>modes?<sp/>e.g.<sp/>accel<sp/>but<sp/>not<sp/>not<sp/>mag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Acquire<sp/>sensor<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[0]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.accelX());</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[1]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.accelY());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[2]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.accelZ());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[3]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.magnoX());</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[4]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.magnoY());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[5]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint16_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(sensor_AccMag.magnoZ());</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Put<sp/>sensor<sp/>into<sp/>low<sp/>power<sp/>mode*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_AccMag.lowPowerMode(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sensor.cpp"/>
+  </compounddef>
+</doxygen>

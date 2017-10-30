@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__serial__mt__vars__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_serial_mt_vars_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__serial__mt__vars__t_1a4f176aa35a84ce3b897f5b8943018ff1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_serial_mt_vars_t::txPacketId</definition>
+        <argsstring></argsstring>
+        <name>txPacketId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="16" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__serial__mt__vars__t_1ac3ce88a548e369fde14035c8dbf3a085" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_serial_mt_vars_t::rxPacketId</definition>
+        <argsstring></argsstring>
+        <name>rxPacketId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="17" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__serial__mt__vars__t_1a53e432d2dd8a1e8ea7ba76a03226a3ac" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_serial_mt_vars_t::replyCmdId</definition>
+        <argsstring></argsstring>
+        <name>replyCmdId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="19" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__serial__mt__vars__t_1a087c3386da63fbfe243befaf771074e6" prot="public" static="no" mutable="no">
+        <type>dn_serial_reply_cbt</type>
+        <definition>dn_serial_reply_cbt dn_serial_mt_vars_t::replyCb</definition>
+        <argsstring></argsstring>
+        <name>replyCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="20" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__serial__mt__vars__t_1a0db376e2f04cd213fa14bbcc5298cbdd" prot="public" static="no" mutable="no">
+        <type>dn_serial_request_cbt</type>
+        <definition>dn_serial_request_cbt dn_serial_mt_vars_t::requestCb</definition>
+        <argsstring></argsstring>
+        <name>requestCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="22" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" line="14" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/dn_serial_mt.c" bodystart="14" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structdn__serial__mt__vars__t_1a087c3386da63fbfe243befaf771074e6" prot="public" virt="non-virtual"><scope>dn_serial_mt_vars_t</scope><name>replyCb</name></member>
+      <member refid="structdn__serial__mt__vars__t_1a53e432d2dd8a1e8ea7ba76a03226a3ac" prot="public" virt="non-virtual"><scope>dn_serial_mt_vars_t</scope><name>replyCmdId</name></member>
+      <member refid="structdn__serial__mt__vars__t_1a0db376e2f04cd213fa14bbcc5298cbdd" prot="public" virt="non-virtual"><scope>dn_serial_mt_vars_t</scope><name>requestCb</name></member>
+      <member refid="structdn__serial__mt__vars__t_1ac3ce88a548e369fde14035c8dbf3a085" prot="public" virt="non-virtual"><scope>dn_serial_mt_vars_t</scope><name>rxPacketId</name></member>
+      <member refid="structdn__serial__mt__vars__t_1a4f176aa35a84ce3b897f5b8943018ff1" prot="public" virt="non-virtual"><scope>dn_serial_mt_vars_t</scope><name>txPacketId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

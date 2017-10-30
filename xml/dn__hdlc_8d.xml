@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dn__hdlc_8d" kind="file" language="D">
+    <compoundname>dn_hdlc.d</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">sm_clib/dn_hdlc.d<sp/>sm_clib/dn_hdlc.o:<sp/>../sm_clib/dn_hdlc.c<sp/>\</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/>../sm_clib/dn_hdlc.h<sp/>../sm_clib/dn_common.h<sp/>\
+<sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h<sp/>\
+<sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stdint.h<sp/>\
+<sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h<sp/>\
+<sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stdbool.h<sp/>\
+<sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.h<sp/>\</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/>c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stddef.h<sp/>\</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/>../sm_clib/dn_uart.h<sp/>../sm_clib/dn_lock.h</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">../sm_clib/dn_hdlc.h:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">../sm_clib/dn_common.h:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stdint.h:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stdbool.h:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.h:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">c:\program\<sp/>files\<sp/>(x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\4.9.2\include\stddef.h:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">../sm_clib/dn_uart.h:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">../sm_clib/dn_lock.h:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib/dn_hdlc.d"/>
+  </compounddef>
+</doxygen>

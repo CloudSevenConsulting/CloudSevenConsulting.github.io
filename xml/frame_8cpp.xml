@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="frame_8cpp" kind="file" language="C++">
+    <compoundname>frame.cpp</compoundname>
+    <includes local="no">string.h</includes>
+    <includes refid="globals_8h" local="yes">../globals.h</includes>
+    <includes refid="frame_8h" local="yes">frame.h</includes>
+    <incdepgraph>
+      <node id="156">
+        <label>duinoPRO.h</label>
+      </node>
+      <node id="153">
+        <label>stdint.h</label>
+      </node>
+      <node id="154">
+        <label>dp_conf.h</label>
+        <link refid="dp__conf_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>../globals.h</label>
+        <link refid="globals_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>string.h</label>
+      </node>
+      <node id="155">
+        <label>sample/frame.h</label>
+        <link refid="frame_8h_source"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>dp_sm.h</label>
+        <link refid="dp__sm_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp</label>
+        <link refid="frame_8cpp"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="frame_8cpp_1a95ad5fe82ae2f44742e1c49e2431a81e" prot="public" static="no" mutable="no">
+        <type><ref refid="structdp__payload__t" kindref="compound">dp_payload_t</ref></type>
+        <definition>dp_payload_t dp_payload</definition>
+        <argsstring></argsstring>
+        <name>dp_payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" line="13" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="frame_8cpp_1a5873f83281cad58ec6090fa11b594982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t reserve_field</definition>
+        <argsstring>(uint8_t type, uint8_t val_len, uint8_t *payload_ptr, uint8_t *header_ptr)</argsstring>
+        <name>reserve_field</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>type</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>val_len</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>payload_ptr</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>header_ptr</defname>
+        </param>
+        <briefdescription>
+<para>Reserve space in payload for field of desired length. </para>        </briefdescription>
+        <detaileddescription>
+<para>Increments internal payload pointer to end of required space for field (i.e. reserves field). Calls pack_payload_header to build and write field header to payload. Returns pointer to beginning of field value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>code representing the type of data/field to be reserved </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of field value in bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to internal payload pointer dp_payload._payload_ptr </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to current position in payload</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to start of field value in payload, -1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" line="16" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" bodystart="16" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="frame_8cpp_1aa50f306570bc5d20a08251ac638d7281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t pack_field_header</definition>
+        <argsstring>(uint8_t type, uint8_t len, uint8_t *header_ptr)</argsstring>
+        <name>pack_field_header</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>type</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>len</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>header_ptr</defname>
+        </param>
+        <briefdescription>
+<para>Build and write field header to payload. </para>        </briefdescription>
+        <detaileddescription>
+<para>Given the desired field type and length of the field value in bytes, this function constructs the appropriate field header and writes it to the payload at the position indicated by the pointer provided.</para><para>Field value length is encoded as the first (most significant) three bits of the field header such that: 0b001XXXXX <ndash/>&gt; 2 0b010XXXXX <ndash/>&gt; 4 0b011XXXXX <ndash/>&gt; 6 0b100XXXXX <ndash/>&gt; 8 0b101XXXXX <ndash/>&gt; 10 0b110XXXXX <ndash/>&gt; 12</para><para>Field type is encoded in the last (least significant) five bits of the field header. For instance: 0bXXX11111 <ndash/>&gt; timestamp 0bXXX11110 <ndash/>&gt; disgnostic In the case of sensor data, the five LSBs are encoded with the sensor type code (from system state variables).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>code representing the type of field to be reserved </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of field value in bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to current position in payload</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length of field header, -1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" bodystart="31" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="frame_8cpp_1aba8afef542e86173021cc8b2966596ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dp_payload_flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>dp_payload_flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clears the payload buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" line="68" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>sample.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>2017-09-28<sp/>06:50:27</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>kjph</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*memset*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;frame.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="structdp__payload__t" kindref="compound">dp_payload_t</ref><sp/>dp_payload;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">uint8_t<sp/>reserve_field(uint8_t<sp/>type,<sp/>uint8_t<sp/>val_len,<sp/>uint8_t<sp/>*payload_ptr,<sp/>uint8_t<sp/>*header_ptr)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Populate<sp/>field<sp/>header*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>header_len<sp/>=<sp/>pack_field_header(type,<sp/>val_len,<sp/>header_ptr);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(header_len<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Increment<sp/>internal<sp/>payload<sp/>pointer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>(*payload_ptr)<sp/>+=<sp/>header_len<sp/>+<sp/>val_len;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*payload_ptr)<sp/>-<sp/>val_len;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">uint8_t<sp/>pack_field_header(uint8_t<sp/>type,<sp/>uint8_t<sp/>len,<sp/>uint8_t<sp/>*header_ptr)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>field_header<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Input<sp/>validation*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>DP_SAM__LEN_FIELD_VAL_MIN<sp/>||<sp/>len<sp/>&gt;<sp/>DP_SAM__LEN_FIELD_VAL_MAX<sp/>||<sp/>(len%2)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!header_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Encode<sp/>field<sp/>length<sp/>into<sp/>field<sp/>header<sp/>(3<sp/>MSBs,<sp/>6<sp/>possible<sp/>values)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>field_header<sp/>=<sp/>(len&lt;&lt;4);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Encode<sp/>field<sp/>type<sp/>into<sp/>field<sp/>header<sp/>(5<sp/>LSBs)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/>DP_SAM__FIELD_TYPE_TIME)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field_header<sp/>|=<sp/>0b00011111;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/>DP_SAM__FIELD_TYPE_SENS)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field_header<sp/>|=<sp/>SystemState.<ref refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kindref="member">_sensor_type</ref>;<sp/></highlight><highlight class="comment">/*the<sp/>sensor<sp/>code<sp/>is<sp/>the<sp/>5<sp/>LSBs<sp/>of<sp/>_sensor_type<sp/>(3<sp/>MSBs<sp/>are<sp/>zero)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/>DP_SAM__FIELD_TYPE_DIAG)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field_header<sp/>|=<sp/>0b00011110;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Invalid<sp/>type*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Store<sp/>field<sp/>header<sp/>at<sp/>specified<sp/>pointer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>(*header_ptr)<sp/>=<sp/>field_header;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DP_SAM__LEN_FIELD_HEAD;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dp_payload_flush(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(&amp;dp_payload,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(dp_payload));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.cpp"/>
+  </compounddef>
+</doxygen>

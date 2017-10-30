@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a11a45b89a53a97c9ffb8d0a2e443c63" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug</compoundname>
+    <innerdir refid="dir_2ef440e84bcc8067ff7f354c56b2afb0">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sample</innerdir>
+    <innerdir refid="dir_fb6a3d9a56dc78be28a771aed571968f">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib</innerdir>
+    <innerdir refid="dir_26d8cf2f2fcb51750bcad3b2fbeed758">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_qsl</innerdir>
+    <innerdir refid="dir_d0b1bd8d62199f46fb42b09e24061110">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/Testing</innerdir>
+    <innerdir refid="dir_bee84b8490e786c2715e27f320e7ab63">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/time</innerdir>
+    <innerdir refid="dir_2595b90ed247f7e283aa9aafa3e2df5c">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/usart</innerdir>
+    <innerfile refid="dp__api_8d">dp_api.d</innerfile>
+    <innerfile refid="dp__conf_8d">dp_conf.d</innerfile>
+    <innerfile refid="dp__sm_8d">dp_sm.d</innerfile>
+    <innerfile refid="main_8d">main.d</innerfile>
+    <innerfile refid="port_8d">port.d</innerfile>
+    <innerfile refid="tester_8d">tester.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/"/>
+  </compounddef>
+</doxygen>

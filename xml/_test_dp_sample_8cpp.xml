@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_test_dp_sample_8cpp" kind="file" language="C++">
+    <compoundname>TestDpSample.cpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="_test_dp_sample_8h" local="yes">TestDpSample.h</includes>
+    <includes refid="globals_8h" local="yes">../globals.h</includes>
+    <includes refid="sample_8h" local="yes">../sample/sample.h</includes>
+    <includes refid="sensor_8h" local="yes">../sample/sensor.h</includes>
+    <incdepgraph>
+      <node id="460">
+        <label>duinoPRO.h</label>
+      </node>
+      <node id="451">
+        <label>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp</label>
+        <link refid="_test_dp_sample_8cpp"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>stdint.h</label>
+      </node>
+      <node id="458">
+        <label>dp_conf.h</label>
+        <link refid="dp__conf_8h"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>../globals.h</label>
+        <link refid="globals_8h"/>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>stddef.h</label>
+      </node>
+      <node id="462">
+        <label>../sample/sensor.h</label>
+        <link refid="sensor_8h_source"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>../sample/sample.h</label>
+        <link refid="sample_8h_source"/>
+      </node>
+      <node id="455">
+        <label>TestCase.h</label>
+        <link refid="_test_case_8h"/>
+      </node>
+      <node id="459">
+        <label>sample/frame.h</label>
+        <link refid="frame_8h_source"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>TestDpSample.h</label>
+        <link refid="_test_dp_sample_8h"/>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>dp_sm.h</label>
+        <link refid="dp__sm_8h"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_test_dp_sample_8cpp_1a9d37d43ac2717b06ef7120784465e56f" prot="public" static="no">
+        <name>RETURN_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" line="16" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_test_dp_sample_8cpp_1a2c984349b6e2ee2e658b9cf9ef2aa2fb" prot="public" static="no">
+        <name>RETURN_FAILURE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" line="17" column="9" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>TestDpSample.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>19/10/2017<sp/>10:36:40<sp/>AM</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>Aaron<sp/>Hurst</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_test_dp_sample_8h" kindref="compound">TestDpSample.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../globals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sample/sample.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sample/sensor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETURN_SUCCESS<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETURN_FAILURE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">TestDpSample::TestDpSample(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_dp_sample_1af1aa07e3ecc6fb9d43c094cdfc0c37b8" kindref="member">TestDpSample::run</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>TU_SH_DpSample_op();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TestDpSample::TU_SH_DpSample_op(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Variables*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>tmp_sensor_n_outputs,<sp/>tmp_sensor_type,<sp/>tmp_sensor_status;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Expected<sp/>payload<sp/>output*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>expected_sens[20]<sp/>=<sp/>{0x00,<sp/>0x02,<sp/>0x5F,<sp/>0x2A,<sp/>0x53,<sp/>0x01,<sp/>0xB7,<sp/>0xC0,<sp/>0x01,<sp/>0x02,<sp/>0x50,<sp/>0x10,<sp/>0xFF,<sp/>0x00,<sp/>0x11,<sp/>0xDD,<sp/>0x00,<sp/>0x11,<sp/>0x05,<sp/>0x04};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>expected_diag[12]<sp/>=<sp/>{0x00,<sp/>0x02,<sp/>0x5F,<sp/>0x2A,<sp/>0x53,<sp/>0x01,<sp/>0xB7,<sp/>0x5E,<sp/>0x43,<sp/>0xBD,<sp/>0x42,<sp/>0x9C};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>expected_both[25]<sp/>=<sp/>{0x00,<sp/>0x03,<sp/>0x5F,<sp/>0x2A,<sp/>0x53,<sp/>0x01,<sp/>0xB7,<sp/>0xC0,<sp/>0x01,<sp/>0x02,<sp/>0x50,<sp/>0x10,<sp/>0xFF,<sp/>0x00,<sp/>0x11,<sp/>0xDD,<sp/>0x00,<sp/>0x11,<sp/>0x05,<sp/>0x04,<sp/>0x5E,<sp/>0x43,<sp/>0xBD,<sp/>0x42,<sp/>0x9C};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Save<sp/>current<sp/>settings*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_sensor_n_outputs<sp/>=<sp/>SystemState._sensor_n_outputs;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_sensor_type<sp/>=<sp/>SystemState.<ref refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kindref="member">_sensor_type</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_sensor_status<sp/>=<sp/>SystemState.<ref refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" kindref="member">_sensor_status</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Apply<sp/>test<sp/>settings*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState._sensor_n_outputs<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kindref="member">_sensor_type</ref><sp/>=<sp/>DP_SENS__ACCEL_MAGNO;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" kindref="member">_sensor_status</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>TEST<sp/>CASE<sp/>1:<sp/>sensor<sp/>only</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sample(1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>RETURN_SUCCESS<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kindref="member">_ready_send</ref><sp/>!=<sp/>1<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kindref="member">_payload_ptr</ref><sp/>!=<sp/>20)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>20;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dp_payload.<ref refid="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" kindref="member">payload</ref>[i]<sp/>!=<sp/>expected_sens[i])<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>TEST<sp/>CASE<sp/>2:<sp/>diagnostic<sp/>only</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sample(2);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>RETURN_SUCCESS<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kindref="member">_ready_send</ref><sp/>!=<sp/>1<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kindref="member">_payload_ptr</ref><sp/>!=<sp/>12)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>12;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dp_payload.<ref refid="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" kindref="member">payload</ref>[i]<sp/>!=<sp/>expected_diag[i])<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>TEST<sp/>CASE<sp/>3:<sp/>sensor<sp/>&amp;<sp/>diagnostic</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sample(3);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>RETURN_SUCCESS<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kindref="member">_ready_send</ref><sp/>!=<sp/>1<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kindref="member">_payload_ptr</ref><sp/>!=<sp/>25)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>25;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dp_payload.<ref refid="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" kindref="member">payload</ref>[i]<sp/>!=<sp/>expected_both[i])<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>PASSED<sp/>BAU<sp/>TESTS</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" kindref="member">t_pass</ref>();<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>TEST<sp/>CASES<sp/>4<sp/>&amp;<sp/>5:<sp/>input<sp/>validation</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sample(0);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>RETURN_FAILURE<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kindref="member">_ready_send</ref><sp/>!=<sp/>0<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kindref="member">_payload_ptr</ref><sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>sample(4);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>!=<sp/>RETURN_FAILURE<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" kindref="member">_ready_send</ref><sp/>!=<sp/>0<sp/>||<sp/>dp_payload.<ref refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" kindref="member">_payload_ptr</ref><sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" kindref="member">t_fail</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>PASSED<sp/>INPUT<sp/>VALIDATION<sp/>TESTS</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/>*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" kindref="member">t_pass</ref>();<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Reinstate<sp/>settings*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState._sensor_n_outputs<sp/>=<sp/>tmp_sensor_n_outputs;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1a84e2260f973f1ad5c4de77151909e87a" kindref="member">_sensor_type</ref><sp/>=<sp/>tmp_sensor_type;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemState.<ref refid="structsys__state_1af6db2ff58fbf0d7ed951c19e0af89476" kindref="member">_sensor_status</ref><sp/>=<sp/>tmp_sensor_status;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp"/>
+  </compounddef>
+</doxygen>

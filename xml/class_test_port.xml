@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_port" kind="class" language="C++" prot="public">
+    <compoundname>TestPort</compoundname>
+    <basecompoundref refid="class_test_case" prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_port_1a78037564896f8a48a61f83440698430f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestPort::TestPort</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestPort</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h" line="24" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.cpp" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_port_1aa8ffd5f733e8efce73b37692b7ec12a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestPort::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplements refid="class_test_case_1a4df94e96b5821448d41abafde5041e25">run</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h" line="25" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="167">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="166">
+        <label>TestPort</label>
+        <link refid="class_test_port"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="169">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="168">
+        <label>TestPort</label>
+        <link refid="class_test_port"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h" line="18" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestPort.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestPort</scope><name>blink</name></member>
+      <member refid="class_test_port_1aa8ffd5f733e8efce73b37692b7ec12a3" prot="public" virt="virtual"><scope>TestPort</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestPort</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestPort</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestPort</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestPort</scope><name>TestCase</name></member>
+      <member refid="class_test_port_1a78037564896f8a48a61f83440698430f" prot="public" virt="non-virtual"><scope>TestPort</scope><name>TestPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

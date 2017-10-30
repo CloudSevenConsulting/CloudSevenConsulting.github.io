@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_accel_magno" kind="class" language="C++" prot="public">
+    <compoundname>AccelMagno</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Module</basecompoundref>
+    <includes refid="_accel_magno_8h" local="no">AccelMagno.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_accel_magno_1a5636346cc5fe0007e34d940716d38e41" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AccelMagno::accelFullScale</definition>
+        <argsstring></argsstring>
+        <name>accelFullScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="51" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accel_magno_1af1693d5c283d6479b2dbe21de848cd6d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelMagno::accelLsb</definition>
+        <argsstring></argsstring>
+        <name>accelLsb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="52" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accel_magno_1a18a3412e969a4a95ebc24398285297f5" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AccelMagno::magnoFullScale</definition>
+        <argsstring></argsstring>
+        <name>magnoFullScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="53" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accel_magno_1ab1b770739f1001df6840ea9a8f17dea3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AccelMagno::magnoLsb</definition>
+        <argsstring></argsstring>
+        <name>magnoLsb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="54" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_accel_magno_1a55249284973a9782b0df8e629397b25a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t AccelMagno::read16Bit</definition>
+        <argsstring>(uint8_t highAddr, uint8_t lowAddr)</argsstring>
+        <name>read16Bit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>highAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>lowAddr</declname>
+        </param>
+        <briefdescription>
+<para>Read a signed 16-bit value from two registers in the Accelerometer/Magnetometer chip. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Address of the register to be read containing the most significant bits. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lowAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Address of the register to be read containing the least significant bits. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The 16-bit value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="62" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="155" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_accel_magno_1aa084b3409e0d8e9c610c037082c3ee48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccelMagno::AccelMagno</definition>
+        <argsstring>(int id)</argsstring>
+        <name>AccelMagno</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_accel_magno" kindref="compound">AccelMagno</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the location of the <ref refid="class_accel_magno" kindref="compound">AccelMagno</ref> module on the duinoPRO baseboard. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="68" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="106" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a48d4681fe913a10e04803e1ce71e0ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Begin using the <ref refid="class_accel_magno" kindref="compound">AccelMagno</ref> module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="72" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="114" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a730951ab3d52b43a097f825443a97110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::lowPowerMode</definition>
+        <argsstring>(bool lowpower)</argsstring>
+        <name>lowPowerMode</name>
+        <param>
+          <type>bool</type>
+          <declname>lowpower</declname>
+        </param>
+        <briefdescription>
+<para>Enable or disable low-power mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lowpower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- true to enable low-power mode, false to disable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="77" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a8580024f52c8217a4d36f5c71ba392a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t AccelMagno::readRegister</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>readRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Read the value of a register in the LDM303D chip. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Address of the register to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The register value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="83" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="131" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a2834a2ac20af6ef18006742e9bf66c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::writeRegister</definition>
+        <argsstring>(uint8_t addr, uint8_t data)</argsstring>
+        <name>writeRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write a value to a register in the LDM303D chip. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Address of the register to be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The value to be written to the register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="89" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="144" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a28153270e6869efc7a7c4858937944f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::enableAccel</definition>
+        <argsstring>()</argsstring>
+        <name>enableAccel</name>
+        <briefdescription>
+<para>Enable accelerometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="93" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a82ddd1fc92e3bf0e341c93e836e6db34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::disableAccel</definition>
+        <argsstring>()</argsstring>
+        <name>disableAccel</name>
+        <briefdescription>
+<para>Disable accelerometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="97" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a5fdb7b42d1be16c9ea171e5cc83be10e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::setAccelFullScale</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>setAccelFullScale</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the full-scale range of the accelerometer. The allowable ranges are from +/-2g to +/-16g. Possible values are listed in <ref refid="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0" kindref="member">AccelFullScaleEnum</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Value for full-scale range, from AccelFullScaleEnum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="104" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="175" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a1abc3f8a5e76f22a545cd77de9753706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::enableMagno</definition>
+        <argsstring>()</argsstring>
+        <name>enableMagno</name>
+        <briefdescription>
+<para>Enable magnetometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="108" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="212" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a9d2f48d85cfb041197be0fbe36d86758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::disableMagno</definition>
+        <argsstring>()</argsstring>
+        <name>disableMagno</name>
+        <briefdescription>
+<para>Disable magnetometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="112" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="223" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a833649656518a52153425d6ae176ce82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccelMagno::setMagnoFullScale</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>setMagnoFullScale</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the full-scale range of the magnetometer. The allowable ranges are from +/-2 Gauss to +/-12 Gauss. Possible values are listed in <ref refid="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d" kindref="member">MagnoFullScaleEnum</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Value for full-scale range, from MagnoFullScaleEnum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="119" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="231" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a876fe5acf027e62a4c77ed47e71caa8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t AccelMagno::rawAccelX</definition>
+        <argsstring>()</argsstring>
+        <name>rawAccelX</name>
+        <briefdescription>
+<para>Raw X axis accelerometer reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The raw reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="124" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a65d2f9baa70187aca71a0e44317fc01a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t AccelMagno::rawAccelY</definition>
+        <argsstring>()</argsstring>
+        <name>rawAccelY</name>
+        <briefdescription>
+<para>Raw Y axis accelerometer reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The raw reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="128" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1abd217251c988d20c0b585360807d7579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t AccelMagno::rawAccelZ</definition>
+        <argsstring>()</argsstring>
+        <name>rawAccelZ</name>
+        <briefdescription>
+<para>Raw Z axis accelerometer reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The raw reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="132" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="273" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a78f333a1b39863b9c3052b5342e46cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::accelX</definition>
+        <argsstring>()</argsstring>
+        <name>accelX</name>
+        <briefdescription>
+<para>X axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="137" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="278" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1adb0fa61d80b92e7e942e6c8c898c0660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::accelY</definition>
+        <argsstring>()</argsstring>
+        <name>accelY</name>
+        <briefdescription>
+<para>Y axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="142" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="283" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a2b974efaf20233c65c19b3b1d25b3cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::accelZ</definition>
+        <argsstring>()</argsstring>
+        <name>accelZ</name>
+        <briefdescription>
+<para>Z axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="147" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="288" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a06811f3898deb90de4333b1e4811822b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::magnoX</definition>
+        <argsstring>()</argsstring>
+        <name>magnoX</name>
+        <briefdescription>
+<para>X axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="153" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a74ffed2db19643da37b4581d5af608a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::magnoY</definition>
+        <argsstring>()</argsstring>
+        <name>magnoY</name>
+        <briefdescription>
+<para>Y axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="158" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a20b1e286b09f1886a16ac76295cb2eeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float AccelMagno::magnoZ</definition>
+        <argsstring>()</argsstring>
+        <name>magnoZ</name>
+        <briefdescription>
+<para>Z axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The scaled reading. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="163" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accel_magno_1a1d0080c2fb5d0435c9f6c85e3b797506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AccelMagno::intRead</definition>
+        <argsstring>(uint8_t intNum)</argsstring>
+        <name>intRead</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>intNum</declname>
+        </param>
+        <briefdescription>
+<para>Read the specified interrupt signal of the LDM303D chip. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Number of the interrupt signal (1 or 2) to be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of the interrupt signal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="169" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.cpp" bodystart="308" bodyend="318"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for controlling a duinoPRO Accelerometer/Magnetometer module. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>AccelMagno</label>
+        <link refid="class_accel_magno"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AccelMagno</label>
+        <link refid="class_accel_magno"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" line="49" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno/AccelMagno.h" bodystart="49" bodyend="170"/>
+    <listofallmembers>
+      <member refid="class_accel_magno_1a5636346cc5fe0007e34d940716d38e41" prot="private" virt="non-virtual"><scope>AccelMagno</scope><name>accelFullScale</name></member>
+      <member refid="class_accel_magno_1af1693d5c283d6479b2dbe21de848cd6d" prot="private" virt="non-virtual"><scope>AccelMagno</scope><name>accelLsb</name></member>
+      <member refid="class_accel_magno_1aa084b3409e0d8e9c610c037082c3ee48" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>AccelMagno</name></member>
+      <member refid="class_accel_magno_1a78f333a1b39863b9c3052b5342e46cce" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>accelX</name></member>
+      <member refid="class_accel_magno_1adb0fa61d80b92e7e942e6c8c898c0660" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>accelY</name></member>
+      <member refid="class_accel_magno_1a2b974efaf20233c65c19b3b1d25b3cdc" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>accelZ</name></member>
+      <member refid="class_accel_magno_1a48d4681fe913a10e04803e1ce71e0ca0" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>begin</name></member>
+      <member refid="class_accel_magno_1a82ddd1fc92e3bf0e341c93e836e6db34" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>disableAccel</name></member>
+      <member refid="class_accel_magno_1a9d2f48d85cfb041197be0fbe36d86758" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>disableMagno</name></member>
+      <member refid="class_accel_magno_1a28153270e6869efc7a7c4858937944f6" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>enableAccel</name></member>
+      <member refid="class_accel_magno_1a1abc3f8a5e76f22a545cd77de9753706" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>enableMagno</name></member>
+      <member refid="class_accel_magno_1a1d0080c2fb5d0435c9f6c85e3b797506" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>intRead</name></member>
+      <member refid="class_accel_magno_1a730951ab3d52b43a097f825443a97110" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>lowPowerMode</name></member>
+      <member refid="class_accel_magno_1a18a3412e969a4a95ebc24398285297f5" prot="private" virt="non-virtual"><scope>AccelMagno</scope><name>magnoFullScale</name></member>
+      <member refid="class_accel_magno_1ab1b770739f1001df6840ea9a8f17dea3" prot="private" virt="non-virtual"><scope>AccelMagno</scope><name>magnoLsb</name></member>
+      <member refid="class_accel_magno_1a06811f3898deb90de4333b1e4811822b" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>magnoX</name></member>
+      <member refid="class_accel_magno_1a74ffed2db19643da37b4581d5af608a8" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>magnoY</name></member>
+      <member refid="class_accel_magno_1a20b1e286b09f1886a16ac76295cb2eeb" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>magnoZ</name></member>
+      <member refid="class_accel_magno_1a876fe5acf027e62a4c77ed47e71caa8e" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>rawAccelX</name></member>
+      <member refid="class_accel_magno_1a65d2f9baa70187aca71a0e44317fc01a" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>rawAccelY</name></member>
+      <member refid="class_accel_magno_1abd217251c988d20c0b585360807d7579" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>rawAccelZ</name></member>
+      <member refid="class_accel_magno_1a55249284973a9782b0df8e629397b25a" prot="protected" virt="non-virtual"><scope>AccelMagno</scope><name>read16Bit</name></member>
+      <member refid="class_accel_magno_1a8580024f52c8217a4d36f5c71ba392a6" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>readRegister</name></member>
+      <member refid="class_accel_magno_1a5fdb7b42d1be16c9ea171e5cc83be10e" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>setAccelFullScale</name></member>
+      <member refid="class_accel_magno_1a833649656518a52153425d6ae176ce82" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>setMagnoFullScale</name></member>
+      <member refid="class_accel_magno_1a2834a2ac20af6ef18006742e9bf66c80" prot="public" virt="non-virtual"><scope>AccelMagno</scope><name>writeRegister</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

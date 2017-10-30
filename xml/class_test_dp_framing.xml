@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_dp_framing" kind="class" language="C++" prot="public">
+    <compoundname>TestDpFraming</compoundname>
+    <basecompoundref refid="class_test_case" prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_dp_framing_1a5299e545d6668c2caeefbd9a2759f87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestDpFraming::TestDpFraming</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestDpFraming</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h" line="26" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_framing_1a419312058d5a199ebf9996900b9e94f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestDpFraming::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplements refid="class_test_case_1a4df94e96b5821448d41abafde5041e25">run</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h" line="27" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_dp_framing_1a506ec0acdf2ec1b73cbcb40011dab106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestDpFraming::TU_SH_DpFraming_op</definition>
+        <argsstring>(void)</argsstring>
+        <name>TU_SH_DpFraming_op</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h" line="28" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.cpp" bodystart="27" bodyend="181"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="138">
+        <label>TestDpFraming</label>
+        <link refid="class_test_dp_framing"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="140">
+        <label>TestDpFraming</label>
+        <link refid="class_test_dp_framing"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h" line="20" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpFraming.h" bodystart="20" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>blink</name></member>
+      <member refid="class_test_dp_framing_1a419312058d5a199ebf9996900b9e94f1" prot="public" virt="virtual"><scope>TestDpFraming</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>TestCase</name></member>
+      <member refid="class_test_dp_framing_1a5299e545d6668c2caeefbd9a2759f87d" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>TestDpFraming</name></member>
+      <member refid="class_test_dp_framing_1a506ec0acdf2ec1b73cbcb40011dab106" prot="public" virt="non-virtual"><scope>TestDpFraming</scope><name>TU_SH_DpFraming_op</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

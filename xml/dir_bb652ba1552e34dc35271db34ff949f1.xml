@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bb652ba1552e34dc35271db34ff949f1" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing</compoundname>
+    <innerfile refid="_test_case_8cpp">TestCase.cpp</innerfile>
+    <innerfile refid="_test_case_8h">TestCase.h</innerfile>
+    <innerfile refid="_test_dn_join_8cpp">TestDnJoin.cpp</innerfile>
+    <innerfile refid="_test_dn_join_8h">TestDnJoin.h</innerfile>
+    <innerfile refid="_test_dp_framing_8cpp">TestDpFraming.cpp</innerfile>
+    <innerfile refid="_test_dp_framing_8h">TestDpFraming.h</innerfile>
+    <innerfile refid="_test_dp_sample_8cpp">TestDpSample.cpp</innerfile>
+    <innerfile refid="_test_dp_sample_8h">TestDpSample.h</innerfile>
+    <innerfile refid="_test_dp_sample_diagnostic_8cpp">TestDpSampleDiagnostic.cpp</innerfile>
+    <innerfile refid="_test_dp_sample_diagnostic_8h">TestDpSampleDiagnostic.h</innerfile>
+    <innerfile refid="_test_dp_sample_sensor_8cpp">TestDpSampleSensor.cpp</innerfile>
+    <innerfile refid="_test_dp_sample_sensor_8h">TestDpSampleSensor.h</innerfile>
+    <innerfile refid="_test_dp_sample_time_8cpp">TestDpSampleTime.cpp</innerfile>
+    <innerfile refid="_test_dp_sample_time_8h">TestDpSampleTime.h</innerfile>
+    <innerfile refid="_test_dp_sys_8cpp">TestDpSys.cpp</innerfile>
+    <innerfile refid="_test_dp_sys_8h">TestDpSys.h</innerfile>
+    <innerfile refid="_test_dp_uart_8cpp">TestDpUart.cpp</innerfile>
+    <innerfile refid="_test_dp_uart_8h">TestDpUart.h</innerfile>
+    <innerfile refid="_test_port_8cpp">TestPort.cpp</innerfile>
+    <innerfile refid="_test_port_8h">TestPort.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/"/>
+  </compounddef>
+</doxygen>

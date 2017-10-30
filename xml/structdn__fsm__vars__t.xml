@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__fsm__vars__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_fsm_vars_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a2af37137cf7561fe15f8852c294d510b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dn_fsm_vars_t::fsmEventScheduled_ms</definition>
+        <argsstring></argsstring>
+        <name>fsmEventScheduled_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="21" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a25e6984b9dea209d6cc16c2fab7a6a30" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_fsm_vars_t::fsmDelay_ms</definition>
+        <argsstring></argsstring>
+        <name>fsmDelay_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="22" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a341dea41b109fdf09044d54109ba2e36" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dn_fsm_vars_t::fsmArmed</definition>
+        <argsstring></argsstring>
+        <name>fsmArmed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="23" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a274aa9fcbba539e462c98eae2fe4fed8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="24" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a63e17ff65b3aca891bb9a9f1744ac9b2" prot="public" static="no" mutable="no">
+        <type>dn_fsm_reply_cbt</type>
+        <definition>dn_fsm_reply_cbt dn_fsm_vars_t::replyCb</definition>
+        <argsstring></argsstring>
+        <name>replyCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="26" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1aa0f269aff19c3b94a30e807790fb3ebc" prot="public" static="no" mutable="no">
+        <type>dn_fsm_timer_cbt</type>
+        <definition>dn_fsm_timer_cbt dn_fsm_vars_t::fsmCb</definition>
+        <argsstring></argsstring>
+        <name>fsmCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="27" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1aa85a3f22b95229e2103818801b217e19" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::replyBuf[MAX_FRAME_LENGTH]</definition>
+        <argsstring>[MAX_FRAME_LENGTH]</argsstring>
+        <name>replyBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="28" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1afa1a4f476b0c811a6237e4fdcae6e2cd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::notifBuf[MAX_FRAME_LENGTH]</definition>
+        <argsstring>[MAX_FRAME_LENGTH]</argsstring>
+        <name>notifBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a2992244c7ebde06a36394ab7eb29b69d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::socketId</definition>
+        <argsstring></argsstring>
+        <name>socketId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a7bea3d195f452bfaabcaa2a065d8c58a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_fsm_vars_t::networkId</definition>
+        <argsstring></argsstring>
+        <name>networkId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="32" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a9697e8e0d7e555bf49550283f0738bba" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::joinKey[DN_JOIN_KEY_LEN]</definition>
+        <argsstring>[DN_JOIN_KEY_LEN]</argsstring>
+        <name>joinKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="33" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a691f0a75ec81e529117cfe4093bd62b6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_fsm_vars_t::srcPort</definition>
+        <argsstring></argsstring>
+        <name>srcPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="34" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a946a00127645f28a95010ee8d1816127" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dn_fsm_vars_t::service_ms</definition>
+        <argsstring></argsstring>
+        <name>service_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="35" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a1c0c544e4fa9e8c1dab65b1fed3d0e47" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::payloadBuf[DN_DEFAULT_PAYLOAD_SIZE_LIMIT]</definition>
+        <argsstring>[DN_DEFAULT_PAYLOAD_SIZE_LIMIT]</argsstring>
+        <name>payloadBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="36" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1ac850fb93457d74823410a2e56321d2b7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::payloadSize</definition>
+        <argsstring></argsstring>
+        <name>payloadSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="37" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a4f9e8c8eb3d185689c76596ed175a798" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_fsm_vars_t::destIPv6[DN_IPv6ADDR_LEN]</definition>
+        <argsstring>[DN_IPv6ADDR_LEN]</argsstring>
+        <name>destIPv6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="38" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a42e2c0fa4bbc150cca8befe238d1c222" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dn_fsm_vars_t::destPort</definition>
+        <argsstring></argsstring>
+        <name>destPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="39" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__fsm__vars__t_1a56820b528cd0e421f98bf4d01ef12085" prot="public" static="no" mutable="no">
+        <type><ref refid="structdn__inbox__t" kindref="compound">dn_inbox_t</ref></type>
+        <definition>dn_inbox_t dn_fsm_vars_t::inbox</definition>
+        <argsstring></argsstring>
+        <name>inbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="40" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>dn_inbox_t</label>
+        <link refid="structdn__inbox__t"/>
+      </node>
+      <node id="5">
+        <label>dn_fsm_vars_t</label>
+        <link refid="structdn__fsm__vars__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>inbox</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" line="19" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_qsl/dn_fsm.c" bodystart="18" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structdn__fsm__vars__t_1a4f9e8c8eb3d185689c76596ed175a798" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>destIPv6</name></member>
+      <member refid="structdn__fsm__vars__t_1a42e2c0fa4bbc150cca8befe238d1c222" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>destPort</name></member>
+      <member refid="structdn__fsm__vars__t_1a341dea41b109fdf09044d54109ba2e36" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>fsmArmed</name></member>
+      <member refid="structdn__fsm__vars__t_1aa0f269aff19c3b94a30e807790fb3ebc" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>fsmCb</name></member>
+      <member refid="structdn__fsm__vars__t_1a25e6984b9dea209d6cc16c2fab7a6a30" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>fsmDelay_ms</name></member>
+      <member refid="structdn__fsm__vars__t_1a2af37137cf7561fe15f8852c294d510b" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>fsmEventScheduled_ms</name></member>
+      <member refid="structdn__fsm__vars__t_1a56820b528cd0e421f98bf4d01ef12085" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>inbox</name></member>
+      <member refid="structdn__fsm__vars__t_1a9697e8e0d7e555bf49550283f0738bba" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>joinKey</name></member>
+      <member refid="structdn__fsm__vars__t_1a7bea3d195f452bfaabcaa2a065d8c58a" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>networkId</name></member>
+      <member refid="structdn__fsm__vars__t_1afa1a4f476b0c811a6237e4fdcae6e2cd" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>notifBuf</name></member>
+      <member refid="structdn__fsm__vars__t_1a1c0c544e4fa9e8c1dab65b1fed3d0e47" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>payloadBuf</name></member>
+      <member refid="structdn__fsm__vars__t_1ac850fb93457d74823410a2e56321d2b7" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>payloadSize</name></member>
+      <member refid="structdn__fsm__vars__t_1aa85a3f22b95229e2103818801b217e19" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>replyBuf</name></member>
+      <member refid="structdn__fsm__vars__t_1a63e17ff65b3aca891bb9a9f1744ac9b2" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>replyCb</name></member>
+      <member refid="structdn__fsm__vars__t_1a946a00127645f28a95010ee8d1816127" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>service_ms</name></member>
+      <member refid="structdn__fsm__vars__t_1a2992244c7ebde06a36394ab7eb29b69d" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>socketId</name></member>
+      <member refid="structdn__fsm__vars__t_1a691f0a75ec81e529117cfe4093bd62b6" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>srcPort</name></member>
+      <member refid="structdn__fsm__vars__t_1a274aa9fcbba539e462c98eae2fe4fed8" prot="public" virt="non-virtual"><scope>dn_fsm_vars_t</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

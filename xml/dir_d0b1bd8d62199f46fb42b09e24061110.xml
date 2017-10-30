@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d0b1bd8d62199f46fb42b09e24061110" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/Testing</compoundname>
+    <innerfile refid="_test_case_8d">TestCase.d</innerfile>
+    <innerfile refid="_test_dn_join_8d">TestDnJoin.d</innerfile>
+    <innerfile refid="_test_dp_framing_8d">TestDpFraming.d</innerfile>
+    <innerfile refid="_test_dp_sample_8d">TestDpSample.d</innerfile>
+    <innerfile refid="_test_dp_sample_diagnostic_8d">TestDpSampleDiagnostic.d</innerfile>
+    <innerfile refid="_test_dp_sample_sensor_8d">TestDpSampleSensor.d</innerfile>
+    <innerfile refid="_test_dp_sample_time_8d">TestDpSampleTime.d</innerfile>
+    <innerfile refid="_test_dp_sys_8d">TestDpSys.d</innerfile>
+    <innerfile refid="_test_dp_uart_8d">TestDpUart.d</innerfile>
+    <innerfile refid="_test_port_8d">TestPort.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/Testing/"/>
+  </compounddef>
+</doxygen>

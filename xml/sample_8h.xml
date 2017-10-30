@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="sample_8h" kind="file" language="C++">
+    <compoundname>sample.h</compoundname>
+    <includedby refid="sample_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.cpp</includedby>
+    <includedby refid="_test_dp_sample_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSample.cpp</includedby>
+    <includedby refid="_test_dp_sample_diagnostic_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleDiagnostic.cpp</includedby>
+    <includedby refid="_test_dp_sample_sensor_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleSensor.cpp</includedby>
+    <includedby refid="_test_dp_sample_time_8cpp" local="yes">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestDpSampleTime.cpp</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sample_8h_1af208741d2299e487438a7991359966db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sample</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>sample</name>
+        <param>
+          <type>uint8_t</type>
+        </param>
+        <briefdescription>
+<para>Fully prepares payload ready for push operation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Loads required information into the dp_payload ready for sending. The system timestamp is always included as the first field in the payload. The remaining information to be loaded is specified by calling function:<orderedlist>
+<listitem><para>sensor data only,</para></listitem><listitem><para>diagnostic data only, or</para></listitem><listitem><para>both.</para></listitem></orderedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of sample operation to perform (1, 2 or 3)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.h" line="27" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.cpp" bodystart="16" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="sample_8h_1a14a33f73f2904424b208fc04bfd943c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sample_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>sample_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sample current timestamp. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads and stores the current Dust Network time in the payload (global variabele) starting from the current position of the payload internal pointer.</para><para>The timestamp is a uint32_t natively. This is stored sequentially as four uint8_t entries in the payload. The most significant byte of the timestamp is stored first. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.h" line="40" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.cpp" bodystart="70" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="sample_8h_1a2aafaac3d05eff6bd3a9af14489f29b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sample_sensor</definition>
+        <argsstring>(void)</argsstring>
+        <name>sample_sensor</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sample sensor data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads and stores current sensor readings in the payload (global variable) starting from the current position of the payload internal pointer.</para><para>Support is provided throughout the duinoPRO-Dusty software for sensor data up to 16-bit resolution. The 16-bits for each sensor reading are stored as two uint8_t entries in the payload. The most significant byte of sensor data is stored first in the payload.</para><para><simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.h" line="56" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.cpp" bodystart="94" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="sample_8h_1aa601607d17d0e74dcaed27e05773cb9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t sample_diagnostic</definition>
+        <argsstring>(void)</argsstring>
+        <name>sample_diagnostic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sample diagnostic data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads and stores the current battery voltage in the payload (global variable) starting from the current position of the payload internal pointer.</para><para>The duinoPRO battery voltage is measured using Board.getVbat(), which is defined in the duinoPRO library.</para><para>Battery voltage sensing is toggled on and off during the call to this function to minimise energy consumption.</para><para>The battery voltage is returned as a floating point number (32 bit). In the payload, this is stored as a series of four uint8_t numbers. This requires some additional re-assembly of the data at the network manager. As usual, the most significent byte is stored first in the payload.</para><para><simplesect kind="return"><para>0 on success, 1 on failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.h" line="79" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.cpp" bodystart="121" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>sample.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>8/10/2017<sp/>7:28:31<sp/>PM</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>Aaron<sp/>Hurst</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SAMPLE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/>sample(uint8_t);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sample_time(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/>sample_sensor(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/></highlight><highlight class="comment">//=====================================</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/>sample_diagnostic(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SAMPLE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/sample.h"/>
+  </compounddef>
+</doxygen>

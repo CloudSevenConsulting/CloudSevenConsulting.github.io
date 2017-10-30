@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdn__uart__vars__t" kind="struct" language="C++" prot="public">
+    <compoundname>dn_uart_vars_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdn__uart__vars__t_1a9e781dd27fde18cc1612843051002286" prot="public" static="no" mutable="no">
+        <type>dn_uart_rxByte_cbt</type>
+        <definition>dn_uart_rxByte_cbt dn_uart_vars_t::ipmt_uart_rxByte_cb</definition>
+        <argsstring></argsstring>
+        <name>ipmt_uart_rxByte_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="28" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__uart__vars__t_1a5c45292db643b3554a1e4053362977dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dn_uart_vars_t::np_rts</definition>
+        <argsstring></argsstring>
+        <name>np_rts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__uart__vars__t_1a2474498597c7928024ec4398c27b5981" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dn_uart_vars_t::np_cts</definition>
+        <argsstring></argsstring>
+        <name>np_cts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="30" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__uart__vars__t_1a011bfc458ab2531f812f661cd9c67cdf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dn_uart_vars_t::pn_rts</definition>
+        <argsstring></argsstring>
+        <name>pn_rts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="31" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__uart__vars__t_1a6c3b5168e6dd87a0f843629bb2a9b2a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dn_uart_vars_t::pn_cts</definition>
+        <argsstring></argsstring>
+        <name>pn_cts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="32" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdn__uart__vars__t_1aa2c9c27d840688abd52112882b0ba5c0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dn_uart_vars_t::bufc</definition>
+        <argsstring></argsstring>
+        <name>bufc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="33" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" line="27" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/usart_vars.h" bodystart="27" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structdn__uart__vars__t_1aa2c9c27d840688abd52112882b0ba5c0" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>bufc</name></member>
+      <member refid="structdn__uart__vars__t_1a9e781dd27fde18cc1612843051002286" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>ipmt_uart_rxByte_cb</name></member>
+      <member refid="structdn__uart__vars__t_1a2474498597c7928024ec4398c27b5981" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>np_cts</name></member>
+      <member refid="structdn__uart__vars__t_1a5c45292db643b3554a1e4053362977dd" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>np_rts</name></member>
+      <member refid="structdn__uart__vars__t_1a6c3b5168e6dd87a0f843629bb2a9b2a6" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>pn_cts</name></member>
+      <member refid="structdn__uart__vars__t_1a011bfc458ab2531f812f661cd9c67cdf" prot="public" virt="non-virtual"><scope>dn_uart_vars_t</scope><name>pn_rts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

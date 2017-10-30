@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_test_case" kind="class" language="C++" prot="public">
+    <compoundname>TestCase</compoundname>
+    <derivedcompoundref refid="class_test_dn_join" prot="public" virt="non-virtual">TestDnJoin</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_framing" prot="public" virt="non-virtual">TestDpFraming</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_sample" prot="public" virt="non-virtual">TestDpSample</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_sample_diagnostic" prot="public" virt="non-virtual">TestDpSampleDiagnostic</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_sample_sensor" prot="public" virt="non-virtual">TestDpSampleSensor</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_sample_time" prot="public" virt="non-virtual">TestDpSampleTime</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_sys" prot="public" virt="non-virtual">TestDpSys</derivedcompoundref>
+    <derivedcompoundref refid="class_test_dp_uart" prot="public" virt="non-virtual">TestDpUart</derivedcompoundref>
+    <derivedcompoundref refid="class_test_port" prot="public" virt="non-virtual">TestPort</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TestCase::tctrl_stop_on_success</definition>
+        <argsstring></argsstring>
+        <name>tctrl_stop_on_success</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows tester to specify if successful tests should hold the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="34" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestCase::TestCase</definition>
+        <argsstring>(void)</argsstring>
+        <name>TestCase</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_test_case" kindref="compound">TestCase</ref> base class for unit-testing in Embedded App</para><para>This is the base class in which other unit-tests should derive from. This class guarantees the methods run, t_fail, t_pass. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="29" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestCase::blink</definition>
+        <argsstring>(void)</argsstring>
+        <name>blink</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Simple blink procedure for visual feedback on the DP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="39" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_case_1a4df94e96b5821448d41abafde5041e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TestCase::run</definition>
+        <argsstring>(void)</argsstring>
+        <name>run</name>
+        <reimplementedby refid="class_test_port_1aa8ffd5f733e8efce73b37692b7ec12a3">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_uart_1acd075401c95f11b0863ac5595ae94036">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_sys_1ab6520f132f67a42404702dd3a68c74f0">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_framing_1a419312058d5a199ebf9996900b9e94f1">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_sample_time_1a4240ec773e29ae0e775a46480315ee38">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_sample_sensor_1a4dd9272b7e36108d949874591b20ba86">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_sample_diagnostic_1af05dcbb75ea8cd6ed8cc19160d9d108f">run</reimplementedby>
+        <reimplementedby refid="class_test_dn_join_1a4bbf702908e66844ec0fa5ae341f54dc">run</reimplementedby>
+        <reimplementedby refid="class_test_dp_sample_1af1aa07e3ecc6fb9d43c094cdfc0c37b8">run</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for test cases </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="44" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestCase::t_fail</definition>
+        <argsstring>(void)</argsstring>
+        <name>t_fail</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standardised routine for failures.</para><para>This routine holds on a while(1) with visual feedback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="51" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestCase::t_pass</definition>
+        <argsstring>(void)</argsstring>
+        <name>t_pass</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standardised routine for passes</para><para>This routine has the option to pass on success using the attribute (tctrl_stop_on_success) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="59" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.cpp" bodystart="37" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="131">
+        <label>TestDpUart</label>
+        <link refid="class_test_dp_uart"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>TestDpSampleSensor</label>
+        <link refid="class_test_dp_sample_sensor"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>TestDpFraming</label>
+        <link refid="class_test_dp_framing"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>TestDpSys</label>
+        <link refid="class_test_dp_sys"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>TestCase</label>
+        <link refid="class_test_case"/>
+      </node>
+      <node id="124">
+        <label>TestDnJoin</label>
+        <link refid="class_test_dn_join"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>TestDpSampleDiagnostic</label>
+        <link refid="class_test_dp_sample_diagnostic"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>TestDpSampleTime</label>
+        <link refid="class_test_dp_sample_time"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>TestPort</label>
+        <link refid="class_test_port"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>TestDpSample</label>
+        <link refid="class_test_dp_sample"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" line="20" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Testing/TestCase.h" bodystart="20" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_test_case_1af91b68189eab379d90e7fc9e89e29408" prot="public" virt="non-virtual"><scope>TestCase</scope><name>blink</name></member>
+      <member refid="class_test_case_1a4df94e96b5821448d41abafde5041e25" prot="public" virt="virtual"><scope>TestCase</scope><name>run</name></member>
+      <member refid="class_test_case_1a6953b6325babf9041f2964a1d96ed09b" prot="public" virt="non-virtual"><scope>TestCase</scope><name>t_fail</name></member>
+      <member refid="class_test_case_1a323ab4907f1d75da591f7b8ca8d4381a" prot="public" virt="non-virtual"><scope>TestCase</scope><name>t_pass</name></member>
+      <member refid="class_test_case_1a372d7d24247bdec5cc20294b3249531d" prot="public" virt="non-virtual"><scope>TestCase</scope><name>tctrl_stop_on_success</name></member>
+      <member refid="class_test_case_1aa09d8739dae1f2b360d12e366db47b63" prot="public" virt="non-virtual"><scope>TestCase</scope><name>TestCase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

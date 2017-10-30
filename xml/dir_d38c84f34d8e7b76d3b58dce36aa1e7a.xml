@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d38c84f34d8e7b76d3b58dce36aa1e7a" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart</compoundname>
+    <innerfile refid="_i_serial_8cpp">ISerial.cpp</innerfile>
+    <innerfile refid="_i_serial_8h">ISerial.h</innerfile>
+    <innerfile refid="usart__flow_8cpp">usart_flow.cpp</innerfile>
+    <innerfile refid="usart__flow_8h">usart_flow.h</innerfile>
+    <innerfile refid="usart__vars_8h">usart_vars.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/usart/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdp__payload__t" kind="struct" language="C++" prot="public">
+    <compoundname>dp_payload_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>dp_payload_t::_ready_send</definition>
+        <argsstring></argsstring>
+        <name>_ready_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to determine if payload is ready for pushing to the Dusty module for transmission over the WSN </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" line="55" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>dp_payload_t::_payload_ptr</definition>
+        <argsstring></argsstring>
+        <name>_payload_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the current position in the payload, i.e. the index of the payload array (next parameter) up to which the payload has been filled/ written and at which the next entry should be placed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" line="56" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>dp_payload_t::payload</definition>
+        <argsstring>[DP_SAM__LEN_PAYL_MAX]</argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array for storing the current payload </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" line="57" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" line="54" column="1" bodyfile="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/frame.h" bodystart="54" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structdp__payload__t_1a6bf18d2f0973bca55f8667a348857a4a" prot="public" virt="non-virtual"><scope>dp_payload_t</scope><name>_payload_ptr</name></member>
+      <member refid="structdp__payload__t_1a0d10def95285245f3ec2bd75266240f9" prot="public" virt="non-virtual"><scope>dp_payload_t</scope><name>_ready_send</name></member>
+      <member refid="structdp__payload__t_1af2e6ae18679b80a064d14df6fc7f72bc" prot="public" virt="non-virtual"><scope>dp_payload_t</scope><name>payload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

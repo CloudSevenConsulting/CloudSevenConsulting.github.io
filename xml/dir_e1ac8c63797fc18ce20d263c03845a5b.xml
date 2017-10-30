@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_e1ac8c63797fc18ce20d263c03845a5b" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib</compoundname>
+    <innerfile refid="dn__clib__build_8h">dn_clib_build.h</innerfile>
+    <innerfile refid="dn__clib__version_8h">dn_clib_version.h</innerfile>
+    <innerfile refid="dn__common_8h">dn_common.h</innerfile>
+    <innerfile refid="dn__endianness_8c">dn_endianness.c</innerfile>
+    <innerfile refid="dn__endianness_8h">dn_endianness.h</innerfile>
+    <innerfile refid="dn__hdlc_8c">dn_hdlc.c</innerfile>
+    <innerfile refid="dn__hdlc_8h">dn_hdlc.h</innerfile>
+    <innerfile refid="dn__ipmt_8c">dn_ipmt.c</innerfile>
+    <innerfile refid="dn__ipmt_8h">dn_ipmt.h</innerfile>
+    <innerfile refid="dn__lock_8c">dn_lock.c</innerfile>
+    <innerfile refid="dn__lock_8h">dn_lock.h</innerfile>
+    <innerfile refid="dn__serial__mt_8c">dn_serial_mt.c</innerfile>
+    <innerfile refid="dn__serial__mt_8h">dn_serial_mt.h</innerfile>
+    <innerfile refid="dn__uart_8c">dn_uart.c</innerfile>
+    <innerfile refid="dn__uart_8h">dn_uart.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sm_clib/"/>
+  </compounddef>
+</doxygen>

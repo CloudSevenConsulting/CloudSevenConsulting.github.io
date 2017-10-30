@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_20278b1d41ef2c2fc80f1410ac1f4079" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample</compoundname>
+    <innerdir refid="dir_40af0d3db919f9931b617f2126af9b7b">C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/0x00_AccelMagno</innerdir>
+    <innerfile refid="frame_8cpp">frame.cpp</innerfile>
+    <innerfile refid="frame_8h">frame.h</innerfile>
+    <innerfile refid="sample_8cpp">sample.cpp</innerfile>
+    <innerfile refid="sample_8h">sample.h</innerfile>
+    <innerfile refid="sensor_8cpp">sensor.cpp</innerfile>
+    <innerfile refid="sensor_8h">sensor.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/JSITE-M1/2_work/10_uwa/1_units/ELEC5552_Design2/5_repos/DustyDuinoPro/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/sample/"/>
+  </compounddef>
+</doxygen>

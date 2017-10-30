@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_0a08426d94a8d68f6b9f2878e0062137" kind="dir">
+    <compoundname>C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib</compoundname>
+    <innerfile refid="dn__endianness_8d">dn_endianness.d</innerfile>
+    <innerfile refid="dn__hdlc_8d">dn_hdlc.d</innerfile>
+    <innerfile refid="dn__ipmt_8d">dn_ipmt.d</innerfile>
+    <innerfile refid="dn__lock_8d">dn_lock.d</innerfile>
+    <innerfile refid="dn__serial__mt_8d">dn_serial_mt.d</innerfile>
+    <innerfile refid="dn__uart_8d">dn_uart.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kjph/Documents/jFiles/02_work/010_uwa/01_units/ELEC5552_Design2/04_embeddedApp/c7c-atamo-dusty/projects/C7C.Atamo.Dusty.Mote_0_0_2/C7C.Atamo.Dusty.Mote/main/Debug/sm_clib/"/>
+  </compounddef>
+</doxygen>
