@@ -126,6 +126,14 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
        $ git commit -m "Update source..."
        $ git push origin src
 
+    Alternatively, use:
+
+    .. code-block:: bash
+
+        $ python Build.py
+
+    This does not clean, so make sure you do that!
+
 3. If the indexes in your build must change (i.e. new files added/files moved) then a clean is required before build
 
     a) **Do not** use ``make clean``, as this will remove the ``.git`` files.
