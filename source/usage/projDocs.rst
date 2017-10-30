@@ -119,9 +119,14 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
 1. If the indexes must change (i.e. new files added/files moved) then a clean is required before build
 
-    a) **Do not** use ``make clean``, as this will remove the ``.git`` files
-    b) Manually remove all build files (everything in ``build/html`` excluding the hidden ``.git`` directory)
-    c) Build the ``DOxygen`` ``xml``
+    a) **Do not** use ``make clean``, as this will remove the ``.git`` files. You can use the script ``CleanBuild.py``
+
+      .. code-block:: bash
+
+          $ python CleanBuild.py
+
+    c) Manually remove all build files (everything in ``build/html`` excluding the hidden ``.git`` directory)
+    d) Build the ``DOxygen`` ``xml``
 
 2. ``Make`` the files from source with ``make html``
 3. ``git add --all``
