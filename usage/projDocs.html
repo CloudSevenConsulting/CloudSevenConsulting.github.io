@@ -303,29 +303,46 @@ $ git checkout doxy
 <p class="last">Team to consider automating this with Python tool</p>
 </div>
 <ol class="arabic">
-<li><p class="first">If the indexes must change (i.e. new files added/files moved) then a clean is required before build</p>
+<li><p class="first">Make your modifications in the <code class="docutils literal"><span class="pre">src</span></code> branch (you shouldn’t need to checkout at all, just <code class="docutils literal"><span class="pre">cd</span></code>).</p>
+</li>
+<li><p class="first">Commit your source changes</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git add --all
+$ git commit -m <span class="s2">&quot;Update source...&quot;</span>
+$ git push origin src
+</pre></div>
+</div>
+<p>Alternatively, use:</p>
+<blockquote>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ python Build.py
+</pre></div>
+</div>
+<p>This does not clean, so make sure you do that!</p>
+</div></blockquote>
+</li>
+<li><p class="first">If the indexes in your build must change (i.e. new files added/files moved) then a clean is required before build</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><strong>Do not</strong> use <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span></code>, as this will remove the <code class="docutils literal"><span class="pre">.git</span></code> files. You can use the script <code class="docutils literal"><span class="pre">CleanBuild.py</span></code></li>
+<li><strong>Do not</strong> use <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span></code>, as this will remove the <code class="docutils literal"><span class="pre">.git</span></code> files.</li>
+<li>Manually remove all build files (everything in <code class="docutils literal"><span class="pre">build/html</span></code> excluding the hidden <code class="docutils literal"><span class="pre">.git</span></code> directory)</li>
+<li>Build the <code class="docutils literal"><span class="pre">DOxygen</span></code> <code class="docutils literal"><span class="pre">xml</span></code></li>
 </ol>
+<p>Alternatively you can use the script <code class="docutils literal"><span class="pre">CleanBuild.py</span></code></p>
 <blockquote>
 <div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ python CleanBuild.py
 </pre></div>
 </div>
 </div></blockquote>
-<ol class="loweralpha simple" start="3">
-<li>Manually remove all build files (everything in <code class="docutils literal"><span class="pre">build/html</span></code> excluding the hidden <code class="docutils literal"><span class="pre">.git</span></code> directory)</li>
-<li>Build the <code class="docutils literal"><span class="pre">DOxygen</span></code> <code class="docutils literal"><span class="pre">xml</span></code></li>
-</ol>
 </div></blockquote>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">Make</span></code> the files from source with <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code></p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">--all</span></code></p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;docs&quot;</span></code> (who cares about commit messages here)</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">gh-pages</span></code></p>
+<li><p class="first">Commit your changes</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> build/html/
+$ git add --all
+$ git commit -m <span class="s2">&quot;docs&quot;</span>   <span class="c1"># who cares about commit messages here</span>
+<span class="c1"># git push origin master</span>
+</pre></div>
+</div>
 </li>
 </ol>
 </div>
