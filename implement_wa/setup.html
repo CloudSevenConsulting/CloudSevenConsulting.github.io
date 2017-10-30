@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
+        <link rel="up" title="Django Web Application" href="main.html"/>
+        <link rel="next" title="Testing" href="../tech_testing/main.html"/>
+        <link rel="prev" title="Django Web Application" href="main.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="main.html">Django Web Application</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="main.html">Django Web Application</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/implement_wa/setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>This section pertains to the setup of the Django web application using Elastic Beanstalk and a Linux operating system. A more general guide (including setup using Windows) can be found in
+<a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html">AWS documentation</a>.</p>
+<p>This guide was made using <cite>Python version 2.7.10</cite>. After downloading the DustyDjango code from <a href="#id8"><span class="problematic" id="id9">`here`_</span></a>. Navigate to terminal, and install the  <code class="docutils literal"><span class="pre">virtualenv</span></code> package using:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install virtualenv
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">virtualenv</span></code> is a tool to create isolated Python environments. More information about the package can be found <a class="reference external" href="https://virtualenv.pypa.io/en/stable/">here</a>.</p>
+<p>Next we create a new <code class="docutils literal"><span class="pre">virtualenv</span></code> called <code class="docutils literal"><span class="pre">atamo</span></code> via:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> virtualenv ~/atamo
+</pre></div>
+</div>
+<p>To activate the <code class="docutils literal"><span class="pre">virtualenv</span></code>, run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> atamo/bin/activate
+</pre></div>
+</div>
+<p>You will see (<code class="docutils literal"><span class="pre">atamo</span></code>) prepended to your command prompt, indicating that you’re in a virtual environment. Install the required version of django using:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip install <span class="nv">django</span><span class="o">==</span><span class="m">1</span>.10.8
+</pre></div>
+</div>
+<p>Verify installation of packages at any time using  <cite>pip freeze</cite>, which now should display:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip freeze
+<span class="nv">Django</span><span class="o">==</span><span class="m">1</span>.10.8
+</pre></div>
+</div>
+<p>Change directories into the project application (downloaded previously - <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">DustyDjango</a>). In this example the directory where the project is currently stored is called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>. To change directory, use:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ <span class="nb">cd</span> atamoapp_demo
+</pre></div>
+</div>
+<p>Your directory (here called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>) should have now have a layout similar to:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>atamoapp_demo/
+ ├ manage.py
+ ├ .db.sqlite3
+ ├ <span class="o">[</span>DIR<span class="o">]</span> mysite
+ ├ <span class="o">[</span>DIR<span class="o">]</span> blog
+</pre></div>
+</div>
+<p>The following dependencies are needed for the proper functioning of the application. Verify the following packages are installed using <cite>pip freeze</cite>. If the following packages are not installed, install them using <a href="#id2"><span class="problematic" id="id3">`</span></a>pip install ` followed by the desired package and version number download.</p>
+<p><a href="#id4"><span class="problematic" id="id5">``</span></a><a href="#id6"><span class="problematic" id="id7">`</span></a>python
+pip freeze
+boto3==1.4.7
+botocore==1.7.33
+certifi==2017.7.27.1
+chardet==3.0.4
+decorator==4.1.2
+Django==1.10.8
+django-allauth==0.33.0
+docutils==0.14
+enum34==1.1.6
+functools32==3.2.3.post2
+futures==3.1.1
+idna==2.6
+ipython-genutils==0.2.0
+jmespath==0.9.3
+jsonschema==2.6.0
+jupyter-core==4.3.0
+nbformat==4.4.0
+oauthlib==2.0.4
+plotly==2.1.0
+python-dateutil==2.6.1
+python-openid==2.2.5
+pytz==2017.2
+requests==2.18.4
+requests-oauthlib==0.8.0
+s3transfer==0.1.11
+six==1.11.0
+traitlets==4.3.2
+urllib3==1.22</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tech_testing/main.html" class="btn btn-neutral float-right" title="Testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="main.html" class="btn btn-neutral" title="Django Web Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

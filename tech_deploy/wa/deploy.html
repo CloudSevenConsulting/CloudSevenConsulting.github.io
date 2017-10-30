@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Deploying the Web Application &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="System Deployment" href="../main.html"/>
+        <link rel="next" title="DynamoDB Deployment" href="../ci/deploy.html"/>
+        <link rel="prev" title="Deploying the Network Manager" href="../networkManager/deploy.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">System Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dp/flash.html">Flashing the Dusty Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Deploying the Web Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deployment">Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ci/deploy.html">DynamoDB Deployment</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../main.html">System Deployment</a> &raquo;</li>
+        
+      <li>Deploying the Web Application</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/tech_deploy/wa/deploy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="deploying-the-web-application">
+<h1>Deploying the Web Application<a class="headerlink" href="#deploying-the-web-application" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>This section pertains to the setup of the Django web application using Elastic Beanstalk and a Linux operating system. A more general guide (including setup using Windows) can be found in
+<a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html">AWS documentation</a>.</p>
+<p>This guide was made using <cite>Python version 2.7.10</cite>. After downloading the DustyDjango code from <a href="#id5"><span class="problematic" id="id6">`here`_</span></a>. Navigate to terminal, and install the  <code class="docutils literal"><span class="pre">virtualenv</span></code> package using:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install virtualenv
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">virtualenv</span></code> is a tool to create isolated Python environments. More information about the package can be found <a class="reference external" href="https://virtualenv.pypa.io/en/stable/">here</a>.</p>
+<p>Next we create a new <code class="docutils literal"><span class="pre">virtualenv</span></code> called <code class="docutils literal"><span class="pre">atamo</span></code> via:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> virtualenv ~/atamo
+</pre></div>
+</div>
+<p>To activate the <code class="docutils literal"><span class="pre">virtualenv</span></code>, run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> atamo/bin/activate
+</pre></div>
+</div>
+<p>You will see (<code class="docutils literal"><span class="pre">atamo</span></code>) prepended to your command prompt, indicating that you’re in a virtual environment. Install the required version of django using:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip install <span class="nv">django</span><span class="o">==</span><span class="m">1</span>.10.8
+</pre></div>
+</div>
+<p>Verify installation of packages at any time using  <cite>pip freeze</cite>, which now should display:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip freeze
+<span class="nv">Django</span><span class="o">==</span><span class="m">1</span>.10.8
+</pre></div>
+</div>
+<p>Change directories into the project application (downloaded previously - <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">DustyDjango</a>). In this example the directory where the project is currently stored is called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>. To change directory, use:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ <span class="nb">cd</span> atamoapp_demo
+</pre></div>
+</div>
+<p>Your directory (here called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>) should have now have a layout similar to:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>atamoapp_demo/
+ ├ manage.py
+ ├ .db.sqlite3
+ ├ <span class="o">[</span>DIR<span class="o">]</span> mysite
+ ├ <span class="o">[</span>DIR<span class="o">]</span> blog
+</pre></div>
+</div>
+<p>The following dependencies are needed for the proper functioning of the application. Verify the following packages are installed using <code class="docutils literal"><span class="pre">pip</span> <span class="pre">freeze</span></code>. If the following packages are not installed, install them using <a href="#id2"><span class="problematic" id="id3">``</span></a>pip install `` followed by the desired package and version number download.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip freeze
+<span class="nv">boto3</span><span class="o">==</span><span class="m">1</span>.4.7
+<span class="nv">botocore</span><span class="o">==</span><span class="m">1</span>.7.33
+<span class="nv">certifi</span><span class="o">==</span><span class="m">2017</span>.7.27.1
+<span class="nv">chardet</span><span class="o">==</span><span class="m">3</span>.0.4
+<span class="nv">decorator</span><span class="o">==</span><span class="m">4</span>.1.2
+<span class="nv">Django</span><span class="o">==</span><span class="m">1</span>.10.8
+django-allauth<span class="o">==</span><span class="m">0</span>.33.0
+<span class="nv">docutils</span><span class="o">==</span><span class="m">0</span>.14
+<span class="nv">enum34</span><span class="o">==</span><span class="m">1</span>.1.6
+<span class="nv">functools32</span><span class="o">==</span><span class="m">3</span>.2.3.post2
+<span class="nv">futures</span><span class="o">==</span><span class="m">3</span>.1.1
+<span class="nv">idna</span><span class="o">==</span><span class="m">2</span>.6
+ipython-genutils<span class="o">==</span><span class="m">0</span>.2.0
+<span class="nv">jmespath</span><span class="o">==</span><span class="m">0</span>.9.3
+<span class="nv">jsonschema</span><span class="o">==</span><span class="m">2</span>.6.0
+jupyter-core<span class="o">==</span><span class="m">4</span>.3.0
+<span class="nv">nbformat</span><span class="o">==</span><span class="m">4</span>.4.0
+<span class="nv">oauthlib</span><span class="o">==</span><span class="m">2</span>.0.4
+<span class="nv">plotly</span><span class="o">==</span><span class="m">2</span>.1.0
+python-dateutil<span class="o">==</span><span class="m">2</span>.6.1
+python-openid<span class="o">==</span><span class="m">2</span>.2.5
+<span class="nv">pytz</span><span class="o">==</span><span class="m">2017</span>.2
+<span class="nv">requests</span><span class="o">==</span><span class="m">2</span>.18.4
+requests-oauthlib<span class="o">==</span><span class="m">0</span>.8.0
+<span class="nv">s3transfer</span><span class="o">==</span><span class="m">0</span>.1.11
+<span class="nv">six</span><span class="o">==</span><span class="m">1</span>.11.0
+<span class="nv">traitlets</span><span class="o">==</span><span class="m">4</span>.3.2
+<span class="nv">urllib3</span><span class="o">==</span><span class="m">1</span>.22
+</pre></div>
+</div>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>This section pertains to the deployment of the Django web application using Elastic Beanstalk and a Linux operating system. A more general guide (including setup using Windows) can be found in
+<a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html">AWS documentation</a>.</p>
+<p>After following the above set-up has been complete, you are now ready to deploy via Elastic Beanstalk. To do so, you will first need to ensure you have <code class="docutils literal"><span class="pre">Git</span></code> installed on your machine.</p>
+<p>Activate your previously created <code class="docutils literal"><span class="pre">virtualenv</span></code> using:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> atamo/bin/activate
+</pre></div>
+</div>
+<p>Change to your project directory:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ <span class="nb">cd</span> atamoapp_demo
+</pre></div>
+</div>
+<p>If this is your first time deploying an application via Elastic Beanstalk, first download the <a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html">command line interface</a>. As in this example we are connecting to an existing app, the deployment instructions differ from a fresh deployment. Please see <a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html">Elastic Beanstalk documentation</a> if you wish to deploy a <strong>_brand new_</strong> application.</p>
+<p>Next run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ eb init -i
+</pre></div>
+</div>
+<p>Which will prompt you to select a default region. Type the number <code class="docutils literal"><span class="pre">7</span></code> (<em>which corresponds to ap-southeast-1</em>). It will then prompt you to select an application: Choose <code class="docutils literal"><span class="pre">ATAMO</span> <span class="pre">Demo</span></code>.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/example1.png"><img alt="../../_images/example1.png" src="../../_images/example1.png" style="width: 487.20000000000005px; height: 397.6px;" /></a>
+</div>
+<p>Once you’ve successfully established the connection, you just need to commit your changes to <code class="docutils literal"><span class="pre">Git</span></code>.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ git init
+<span class="o">(</span>atamo<span class="o">)</span>~$ git add .
+<span class="o">(</span>atamo<span class="o">)</span>~$ git commit -m “First commit”
+</pre></div>
+</div>
+<p>Where “First commit” is any commit message that you desire. Please ensure you include an appropriate <code class="docutils literal"><span class="pre">.gitignore</span></code> file for any additional files you do not wish to deploy live. Finally, run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ eb deploy
+</pre></div>
+</div>
+<p>Which will <strong>deploy your application</strong>. If you are not automatically redirected to the URL, use:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ eb open
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ci/deploy.html" class="btn btn-neutral float-right" title="DynamoDB Deployment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../networkManager/deploy.html" class="btn btn-neutral" title="Deploying the Network Manager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

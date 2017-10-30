@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Firmware Testing Overview &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Firmware Testing Overview &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
         <link rel="up" title="Testing" href="../main.html"/>
         <link rel="next" title="Making Tests" href="firmwareTesting_makingTests.html"/>
         <link rel="prev" title="Testing" href="../main.html"/> 
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -95,8 +99,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">System Design</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../main.html">Testing</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Firmware Testing Overview</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building-test-mode">Building Test Mode</a><ul>
@@ -106,19 +118,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="firmwareTesting_makingTests.html">Making Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../test0003/test0003.html">Test #0003</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Unit/TU_SH_Dusty_AfterFlash_Op.html">TU_SH_Dusty_AfterFlash_Op</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Implementation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
 </ul>
 
             
@@ -133,7 +134,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">C7C.Atamo.Dusty</a>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -191,36 +192,36 @@
 <div class="section" id="building-test-mode">
 <h2>Building Test Mode<a class="headerlink" href="#building-test-mode" title="Permalink to this headline">¶</a></h2>
 <p>In <code class="docutils literal"><span class="pre">main.c</span></code> the following code enables Test mode.</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cm">/* ****************************************************************************</span>
-<span class="cm"> * DEBUG Settings</span>
-<span class="cm"> * ***************************************************************************/</span>
-
-<span class="cm">/*Comment this out to turn off debug*/</span>
-<span class="cp">#define TEST_MODE 1</span>
-
-<span class="cp">#if TEST_MODE</span>
-<span class="cp">#include</span> <span class="cpf">&quot;tester/debug.h&quot;</span><span class="cp"></span>
-<span class="cp">#endif</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cm">/*******************************************************************************</span>
+<span class="cm"> * Build settings</span>
+<span class="cm"> ******************************************************************************/</span>
+<span class="cp">#define DP_BUILD__TEST_MODE 0</span>
 </pre></div>
 </div>
-<p>The <strong>pre-processor</strong> macro <code class="docutils literal"><span class="pre">TEST_MODE</span></code> is a boolean which is checked in source
+<p>The <strong>pre-processor</strong> macro <code class="docutils literal"><span class="pre">DP_BUILD__TEST_MODE</span></code> is a boolean which is checked in source
 code. If it is set, then the compiler will only build the test mode code.
 If instead <code class="docutils literal"><span class="pre">TEST_MODE</span></code> is zero, then the compiler will build into production</p>
 <div class="section" id="testing-configuration">
 <h3>Testing Configuration<a class="headerlink" href="#testing-configuration" title="Permalink to this headline">¶</a></h3>
-<p>Certain tests can be enabled or disabled in <code class="docutils literal"><span class="pre">tester/debug.c</span></code></p>
+<p>Certain tests can be enabled or disabled in <code class="docutils literal"><span class="pre">tester.h</span></code></p>
 <div class="highlight-c"><div class="highlight"><pre><span></span><span class="cm">/* ****************************************************************************</span>
 <span class="cm"> * Test Selection</span>
 <span class="cm"> * ***************************************************************************/</span>
-<span class="cp">#define TEST_SMB_ENABLE 1</span>
-<span class="cp">#define TEST_MEMORY_ENABLE 0</span>
+<span class="cp">#define DP_BUILD__TCTRL_DNJOIN 0</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPUART 0</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPSYS 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPFRAMING 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPSAMPLE 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPSAMPLE_DIAG 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPSAMPLE_TIME 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_DPSAMPLE_SENS 1</span>
+<span class="cp">#define DP_BUILD__TCTRL_PORT 1</span>
 </pre></div>
 </div>
 <p>As seen in the code-block above, similar macros are defined to enable or disable
 certain tests. When the macros are set to 1, then the compiler will build the
 relevant test functions and then run them. If the macros are set to 0, no build
 will occur for the tests in question.</p>
-<p>The example above has SMB testing enables and Memory testing disabled</p>
 </div>
 </div>
 </div>
@@ -269,7 +270,7 @@ will occur for the tests in question.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

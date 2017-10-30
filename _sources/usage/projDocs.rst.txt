@@ -2,24 +2,6 @@
 Project Documentation
 *********************
 
-`Project documentation`_ can be found in the ``gh-pages`` branch.
-
-.. _Project Documentation: https://kjph.github.io/c7c-atamo-dusty/
-
-The ``.rst`` files are shipped to ``./sources``
-
-.. code-block:: bash
-
-   $ git checkout gh-pages
-   $ cd ./_sources
-
-To contribute to the documentation you must:
-
-1. Install Python and Sphinx
-2. Setup your Sphinx project
-3. Building
-
-
 Installing Python Sphinx
 ========================
 
@@ -47,20 +29,84 @@ We will also need the ``sphinx_rtd_theme`` for our docs:
 
    $ python -m pip install sphinx_rtd_theme
 
-Setup your Sphinx Project
-=========================
+Setup
+=====
 
-You will need to setup your sphinx project in a separate directory the git repo:
+.. note::
+
+   This should have been a one-time process setup by the administrator, and is only
+   here for record keeping purposes. If you're reading this, it's setup.
+
+All documentation related files are stored in the repository: ``CloudSevenConsulting.github.io``.
+There are 2 branches of concern;
+
+  - ``master``, which contains the built ``.HTML`` files as served on Github
+  - ``src``, which contains the the source ``.rst`` files required for building
+  - ``doxy``, which contains the DOxygen generated output; hopefully we don't push this up all the time, this is just there to get you started - we will rely on the actual DOxygen build
+
+1. We first make our ``src`` repo
 
 .. code-block:: bash
 
-   $ cd ~
-   $ mkdir someDir
-   $ cd someDir/
-   $ sphinx-quickstart.exe
+    $ mkdir CloudSevenConsulting.github.io
+    $ cd CloudSevenConsulting.github.io
+    $ git init .
+    $ git checkout --orphan src
+    $ echo 'build/' > .gitignore            # this will host the master branch
 
-   # press [enter] to all options
+2. Setup your Sphinx project
 
+.. code-block:: bash
+
+    $ sphinx-quickstart.exe
+
+    # press [enter] to all options
+    # EXCEPT:
+    #   - we want the ``build/`` and ``source/`` directories to be separate.
+    #   - we want MathJAX
+
+    $ git add --all
+    $ git commit -m "init src"
+
+2. Write and Build with ``make html`` (see building below)
+
+4. Now we set up the ``git`` repo for the ``master`` branch
+
+.. code-block:: bash
+
+    $ cd build/html
+    $ touch .nojekyll       # This file is crucial for serving on Github
+    $ git init .
+    $ git add --all
+    $ git commit -m "init"
+
+New Contributors
+================
+
+1. First clone the ``src`` branch
+
+.. code-block:: bash
+
+    $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git
+    $ cd CloudSevenConsulting.github.io
+    $ git checkout src
+
+2. Now clone in the ``master`` branch
+
+.. code-block:: bash
+
+    $ mkdir build/
+    $ cd build/
+    $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git html
+
+3. Clone in your ``doxy`` branch
+
+   .. code-block:: bash
+
+       $ cd ../
+       $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git doxy
+       $ cd doxy
+       $ git checkout doxy
 
 Building
 ========
@@ -73,9 +119,14 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
 1. If the indexes must change (i.e. new files added/files moved) then a clean is required before build
 
-    a) **Do not** use ``make clean``, as this will remove the ``.git`` files
-    b) Manually remove all build files (everything in ``build/html`` excluding the hidden ``.git`` directory)
-    c) Build the ``DOxygen`` ``xml``
+    a) **Do not** use ``make clean``, as this will remove the ``.git`` files. You can use the script ``CleanBuild.py``
+
+      .. code-block:: bash
+
+          $ python CleanBuild.py
+
+    c) Manually remove all build files (everything in ``build/html`` excluding the hidden ``.git`` directory)
+    d) Build the ``DOxygen`` ``xml``
 
 2. ``Make`` the files from source with ``make html``
 3. ``git add --all``

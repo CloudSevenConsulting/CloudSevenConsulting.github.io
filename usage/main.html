@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Project How-To’s &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Project How-To’s &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
         <link rel="next" title="Project Software" href="dependencies/software.html"/>
         <link rel="prev" title="Background" href="../intro/home.html"/> 
 
@@ -56,7 +56,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -64,6 +64,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -95,8 +99,8 @@
 <li class="toctree-l2"><a class="reference internal" href="dependencies/duinoPro.html">DuinoPro and ArduinoIDE integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dependencies/otherPkgs_dustyQSL.html">Dusty Quick Start Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="git/git_basics.html">Git Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git/git_checkout.html">Checkout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git/git_branches.html">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git/git_checkout.html">Git Checkout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git/git_branches.html">Git Branches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developing/as7_building.html">Building with Atmel Studio 7</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developing/sh_flashingTheDust.html">Flashing The Dusty Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="projDocs.html">Project Documentation</a></li>
@@ -107,16 +111,15 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -131,7 +134,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">C7C.Atamo.Dusty</a>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -206,11 +209,11 @@
 <li class="toctree-l2"><a class="reference internal" href="git/git_basics.html#git-theory">Git Theory</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="git/git_checkout.html">Checkout</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="git/git_checkout.html">Git Checkout</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="git/git_checkout.html#going-back-to-an-old-commit">Going back to an old commit</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="git/git_branches.html">Branches</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="git/git_branches.html">Git Branches</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="git/git_branches.html#making-a-new-branch">Making a New Branch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="git/git_branches.html#navigating-branches">Navigating Branches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="git/git_branches.html#example-workflow">Example Workflow</a></li>
@@ -229,6 +232,7 @@
 <li class="toctree-l1"><a class="reference internal" href="developing/sh_flashingTheDust.html">Flashing The Dusty Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="developing/sh_flashingTheDust.html#required-software">Required Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developing/sh_flashingTheDust.html#backing-up-the-existing-flash">Backing-Up the Existing Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developing/sh_flashingTheDust.html#flashing-the-whole-image">Flashing the Whole Image</a></li>
 </ul>
 </li>
 </ul>
@@ -238,7 +242,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="projDocs.html">Project Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="projDocs.html#installing-python-sphinx">Installing Python Sphinx</a></li>
-<li class="toctree-l2"><a class="reference internal" href="projDocs.html#setup-your-sphinx-project">Setup your Sphinx Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projDocs.html#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projDocs.html#new-contributors">New Contributors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="projDocs.html#building">Building</a></li>
 </ul>
 </li>
@@ -290,7 +295,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

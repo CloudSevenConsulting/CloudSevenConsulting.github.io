@@ -1,6 +1,11 @@
-********
-Branches
-********
+************
+Git Branches
+************
+
+.. note::
+
+   This section is only relevant for future developers to the CSC-ATAMO Dusty
+   project.
 
 Making a New Branch
 ===================

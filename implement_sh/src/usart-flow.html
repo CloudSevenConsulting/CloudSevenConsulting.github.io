@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>usart/usart_flow.h &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="Sensor Host Design" href="../main.html"/>
+        <link rel="next" title="usart/usart_vars.h" href="usart-vars.html"/>
+        <link rel="prev" title="usart/ISerial.h" href="usart-ISerial.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Sensor Host Design</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sh_mainRoutine.html">Sensor Host Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sleep/sleep.html">Sleep Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_configurations.html">Sensor Host Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/hardware_dustyDuinoProMap.html">Dusty-to-M7 Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/dustyAvrIF.html">Dusty API UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_codeOrg.html">Code Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib/Modules.html">Sensor Host Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">System Timing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_conf.html">dp_conf.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_port.html">dp_port.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">usart/usart_flow.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-accelMagno.html">sample/0x00_AccelMagno/AccelMagno.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../main.html">Sensor Host Design</a> &raquo;</li>
+        
+      <li>usart/usart_flow.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/implement_sh/src/usart-flow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usart-usart-flow-h">
+<h1>usart/usart_flow.h<a class="headerlink" href="#usart-usart-flow-h" title="Permalink to this headline">¶</a></h1>
+<p>Handles flow control for USART. </p>
+<p><dl class="docutils">
+<dt><strong>Date</strong></dt>
+<dd>2017/10/15 </dd>
+<dt><strong>Author</strong></dt>
+<dd>Jamie K. Phan </dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Defines</p>
+<dl class="macro">
+<dt id="c.USART__DIRECTION_PN">
+<span class="target" id="usart__flow_8h_1a4e45a51c0afffc1a00b0564bc1920e6d"></span><code class="descname">USART__DIRECTION_PN</code><a class="headerlink" href="#c.USART__DIRECTION_PN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="macro">
+<dt id="c.USART__DIRECTION_NP">
+<span class="target" id="usart__flow_8h_1a266327f19a9b5ef1d101af1a2c907f39"></span><code class="descname">USART__DIRECTION_NP</code><a class="headerlink" href="#c.USART__DIRECTION_NP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="macro">
+<dt id="c.USART__FLOWCTRL_ASSERT">
+<span class="target" id="usart__flow_8h_1a86fad73874ecff8969ced22d5f330757"></span><code class="descname">USART__FLOWCTRL_ASSERT</code><a class="headerlink" href="#c.USART__FLOWCTRL_ASSERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="macro">
+<dt id="c.USART__FLOWCTRL_DEASSERT">
+<span class="target" id="usart__flow_8h_1a427a058326b3bc00382cbe87a56c13d5"></span><code class="descname">USART__FLOWCTRL_DEASSERT</code><a class="headerlink" href="#c.USART__FLOWCTRL_DEASSERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Functions</p>
+<dl class="function">
+<dt id="_CPPv216usart_cts_statusv">
+<span id="usart_cts_status__void"></span><span class="target" id="usart__flow_8h_1ace634ee0bdee1b2ba68b62bf62cfd608"></span>int <code class="descname">usart_cts_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv216usart_cts_statusv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Interface into vars (try to keep that private!) </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>1 if clear to send </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv216usart_mode4_flowii">
+<span id="usart_mode4_flow__i.i"></span><span class="target" id="usart__flow_8h_1af0385b143454480e3a2a310cd4677e86"></span>void <code class="descname">usart_mode4_flow</code><span class="sig-paren">(</span>int, int<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv216usart_mode4_flowii" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Implements the necessary flow control for the USART. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>0 on success, 1 on failure </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">direction</span></code>: The direction of the flow (DP to DN) or (DN to DP). Ensure Pre-processor macros are used to ensure portability </li>
+<li><code class="docutils literal"><span class="pre">value</span></code>: The flow to be handled; either (assert) or (deassert)</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv217update_port_usartv">
+<span id="update_port_usart__void"></span><span class="target" id="usart__flow_8h_1a2b48ff339db394e3b9997e396a2f0d44"></span>void <code class="descname">update_port_usart</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv217update_port_usartv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Updates the port values based on the uart_vars. This is to ensure resources are shared correctly. </p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usart-vars.html" class="btn btn-neutral float-right" title="usart/usart_vars.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usart-ISerial.html" class="btn btn-neutral" title="usart/ISerial.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>System Deployment &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>System Deployment &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,9 +35,9 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../index.html"/>
-        <link rel="next" title="Deploying the Network Manager" href="networkManager/deploy.html"/>
-        <link rel="prev" title="TU_SH_Dusty_AfterFlash_Op" href="../tech_testing/Unit/TU_SH_Dusty_AfterFlash_Op.html"/> 
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
+        <link rel="next" title="Deploying the Sensor Host" href="dp/deploy.html"/>
+        <link rel="prev" title="Encapsulation and State Variables" href="../tech_arch/principles/encapsulation.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -56,7 +56,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -64,6 +64,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -96,19 +100,22 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">System Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp/flash.html">Flashing the Dusty Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci/deploy.html">DynamoDB Deployment</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -123,7 +130,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">C7C.Atamo.Dusty</a>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -177,7 +184,11 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Overview</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dp/flash.html">Flashing the Dusty Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ci/deploy.html">DynamoDB Deployment</a></li>
 </ul>
 </div>
 </div>
@@ -192,10 +203,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="networkManager/deploy.html" class="btn btn-neutral float-right" title="Deploying the Network Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="dp/deploy.html" class="btn btn-neutral float-right" title="Deploying the Sensor Host" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../tech_testing/Unit/TU_SH_Dusty_AfterFlash_Op.html" class="btn btn-neutral" title="TU_SH_Dusty_AfterFlash_Op" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../tech_arch/principles/encapsulation.html" class="btn btn-neutral" title="Encapsulation and State Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -226,7 +237,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>TU_SH_Dusty_AfterFlash_Op &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Flashing the Dusty Module &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,10 +35,10 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
-        <link rel="up" title="Testing" href="../main.html"/>
-        <link rel="next" title="System Deployment" href="../../tech_deploy/main.html"/>
-        <link rel="prev" title="Test #0003" href="../test0003/test0003.html"/> 
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="System Deployment" href="../main.html"/>
+        <link rel="next" title="Deploying the Network Manager" href="../networkManager/deploy.html"/>
+        <link rel="prev" title="Deploying the Sensor Host" href="deploy.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -97,27 +101,25 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Testing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../testing/firmwareTesting_overview.html">Firmware Testing Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/firmwareTesting_makingTests.html">Making Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../test0003/test0003.html">Test #0003</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">TU_SH_Dusty_AfterFlash_Op</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#goals">Goals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#procedure">Procedure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#expected">Expected</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">System Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Flashing the Dusty Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ci/deploy.html">DynamoDB Deployment</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -132,7 +134,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">C7C.Atamo.Dusty</a>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -162,15 +164,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main.html">Testing</a> &raquo;</li>
+          <li><a href="../main.html">System Deployment</a> &raquo;</li>
         
-      <li>TU_SH_Dusty_AfterFlash_Op</li>
+      <li>Flashing the Dusty Module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/tech_testing/Unit/TU_SH_Dusty_AfterFlash_Op.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/tech_deploy/dp/flash.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -183,65 +185,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="tu-sh-dusty-afterflash-op">
-<h1>TU_SH_Dusty_AfterFlash_Op<a class="headerlink" href="#tu-sh-dusty-afterflash-op" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
-<p>To verify the Dusty module is operational after flashing.</p>
+  <div class="section" id="flashing-the-dusty-module">
+<h1>Flashing the Dusty Module<a class="headerlink" href="#flashing-the-dusty-module" title="Permalink to this headline">¶</a></h1>
+<p>Please see section: Project-HowTo’s/<a class="reference internal" href="../../usage/developing/sh_flashingTheDust.html#idx-usage-dev-flash"><span class="std std-ref">Required Software</span></a> for the full guide.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The Dusty module must not be connected to anything during this process.</p>
 </div>
-<div class="section" id="procedure">
-<h2>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first">Connect the Dusty module the <code class="docutils literal"><span class="pre">DC9004A</span></code> header using the appropriate ribbon cable.</p>
-</li>
-<li><p class="first">Connect the <code class="docutils literal"><span class="pre">DC9004A</span></code> header to the <code class="docutils literal"><span class="pre">DC9006A</span></code> module</p>
-</li>
-<li><p class="first">Connect the <code class="docutils literal"><span class="pre">DC9006A</span></code> module to a computer (Windows used in example). Ensure only one USB device is connected to the computer.</p>
-</li>
-<li><p class="first">Determine the COM port used:</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li>Open Device Manager (<code class="docutils literal"><span class="pre">Ctrl+x,</span> <span class="pre">m</span></code>)</li>
-<li>Expand the “Ports (COM&amp;LPT)” section.</li>
-<li>There should be 4 listed items with a unique COM port</li>
-<li>Note the third listed COM port number (referenced as [x])</li>
+<ol class="arabic simple">
+<li>Make a backup of the current image loaded on the Dusty Module:</li>
 </ol>
-</div></blockquote>
-</li>
-</ol>
-<ol class="loweralpha" start="6">
-<li><p class="first">Connect to the Dusty module using it’s CLI interface</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li>Use a Serial Terminal Program (such as Putty) to connect to the device</li>
-<li>Use the following settings:<ul>
-<li>Serial line: COM[x]</li>
-<li>Bits per second: 9600</li>
-<li>Data bits: 8</li>
-<li>Parity: None</li>
-<li>Stop bits: 1</li>
-<li>Flow Control: None</li>
-</ul>
-</li>
-</ol>
-</div></blockquote>
-</li>
-<li><p class="first">In the terminal, enter the command <code class="docutils literal"><span class="pre">info</span></code></p>
-</li>
-</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ESP.exe -r IPM_A01_flash.bin
+</pre></div>
 </div>
-<div class="section" id="expected">
-<h2>Expected<a class="headerlink" href="#expected" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>info
-
-IP Mote: <span class="m">1</span>.4.1.8
-Join state: n/a
-Bandwidth Allocated: <span class="m">0</span>
-Serial mode: M4
-Serial Baud Rate: <span class="m">115200</span>
-Radio Test: off
-
-&gt;
+<ol class="arabic simple" start="2">
+<li>Download the Flash images from the <code class="docutils literal"><span class="pre">git</span></code> repository</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/CloudSevenConsulting/DustyFlash.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Navigate to the latest release (in this case <code class="docutils literal"><span class="pre">IPM_B03</span></code>)</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All <code class="docutils literal"><span class="pre">IPM_B</span></code> are currently being withheld from release due to confidentiality
+issues. Please contact Cloud Seven Consulting (<code class="docutils literal"><span class="pre">cloudsevenconsulting&#64;gmail</span></code>) for
+more information.</p>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> DustyFlash/IPM_Release_B03/
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Flash the image</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ESP.exe -P IPM_B03_Fuse.bin <span class="m">0</span>                 <span class="c1"># Fuse Table</span>
+$ ESP.exe -P mote_part_r52074.bin <span class="m">800</span>           <span class="c1"># Partition Table</span>
+$ ESP.exe -P mote_ip_1_4_1_8_oski.bin <span class="m">1000</span>      <span class="c1"># Main Executable</span>
+$ ESP.exe -P loader_1_0_6_4_oski.bin <span class="m">77800</span>      <span class="c1"># Loader</span>
 </pre></div>
 </div>
 </div>
@@ -257,10 +240,10 @@ Radio Test: off
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../tech_deploy/main.html" class="btn btn-neutral float-right" title="System Deployment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../networkManager/deploy.html" class="btn btn-neutral float-right" title="Deploying the Network Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../test0003/test0003.html" class="btn btn-neutral" title="Test #0003" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="deploy.html" class="btn btn-neutral" title="Deploying the Sensor Host" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -291,7 +274,7 @@ Radio Test: off
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

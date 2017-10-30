@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dusty API UART &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Dusty API UART &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,9 +35,9 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
-        <link rel="up" title="Sensor Host" href="../main.html"/>
-        <link rel="next" title="dp_conf.h" href="../src/dp_conf.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="Sensor Host Design" href="../main.html"/>
+        <link rel="next" title="Code Organization" href="../sh_codeOrg.html"/>
         <link rel="prev" title="Dusty-to-M7 Interface" href="../hardware/hardware_dustyDuinoProMap.html"/> 
 
   
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -97,12 +101,11 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Sensor Host</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Sensor Host Design</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../sh_mainRoutine.html">Sensor Host Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sleep/sleep.html">Sleep Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sh_configurations.html">Sensor Host Configurations</a></li>
@@ -116,15 +119,25 @@
 <li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_codeOrg.html">Code Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib/Modules.html">Sensor Host Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">System Timing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../src/dp_conf.html">dp_conf.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../src/dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/dp_port.html">dp_port.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../src/usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/usart-flow.html">usart/usart_flow.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../src/sample-accelMagno.html">sample/0x00_AccelMagno/AccelMagno.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -139,7 +152,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">C7C.Atamo.Dusty</a>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -169,7 +182,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../main.html">Sensor Host</a> &raquo;</li>
+          <li><a href="../main.html">Sensor Host Design</a> &raquo;</li>
         
       <li>Dusty API UART</li>
     
@@ -219,7 +232,7 @@ are accessible in this mode <a class="footnote-reference" href="#ipm01-2" id="id
 </div>
 <div class="section" id="serial-modes">
 <h2>Serial Modes<a class="headerlink" href="#serial-modes" title="Permalink to this headline">¶</a></h2>
-<p>The fuse table for the LTC5800-IPM is normally developed as part of the board level design process. Either mode 2 or mode 4 may be used on the API port, at either baud rate. For modularly certified products such as the LTP5901-IPM, or the Starter Kit mote (DC9003A-B) the fuse table has been pre-programmed for mode 4 at 115.2 Kbps and cannot be changed <a class="footnote-reference" href="#ipm02" id="id3">[3]</a>.</p>
+<p>The fuse table for the LTC5800-IPM is normally developed as part of the board level design process. Either mode 2 or mode 4 may be used on the API port, at either baud rate. For modularly certified products such as the LTP5901-IPM, or the Starter Kit mote (DC9003A-B)</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="8%" />
@@ -269,7 +282,7 @@ are accessible in this mode <a class="footnote-reference" href="#ipm01-2" id="id
 <h2>Power Consumption of the I/F<a class="headerlink" href="#power-consumption-of-the-i-f" title="Permalink to this headline">¶</a></h2>
 <p>Both UART I/Fs (API and CLI) sense activity continuously, consuming virtually no
 power until data is transferred and automatically returning to their lowest
-power state after the conclusion of a transfer <a class="footnote-reference" href="#ipm01" id="id4">[1]</a></p>
+power state after the conclusion of a transfer <a class="footnote-reference" href="#ipm01" id="id3">[1]</a></p>
 <p>Mode 2 is said to be the more energy efficient mode</p>
 </div>
 <div class="section" id="references">
@@ -277,7 +290,7 @@ power state after the conclusion of a transfer <a class="footnote-reference" hre
 <table class="docutils footnote" frame="void" id="ipm01" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[1]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id4">2</a>)</em> IPM01: <a class="reference external" href="https://cds.linear.com/docs/en/datasheet/5800ipmfa.pdf">https://cds.linear.com/docs/en/datasheet/5800ipmfa.pdf</a></td></tr>
+<tr><td class="label">[1]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id3">2</a>)</em> IPM01: <a class="reference external" href="https://cds.linear.com/docs/en/datasheet/5800ipmfa.pdf">https://cds.linear.com/docs/en/datasheet/5800ipmfa.pdf</a></td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="ipm01-2" rules="none">
@@ -289,7 +302,7 @@ power state after the conclusion of a transfer <a class="footnote-reference" hre
 <table class="docutils footnote" frame="void" id="ipm02" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>See section 3 of IPM02: <a class="reference external" href="https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_Serial_API_Guide.pdf">https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_Serial_API_Guide.pdf</a></td></tr>
+<tr><td class="label">[3]</td><td>See section 3 of IPM02: <a class="reference external" href="https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_Serial_API_Guide.pdf">https://cds.linear.com/docs/en/design-note/SmartMesh_IP_Mote_Serial_API_Guide.pdf</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -305,7 +318,7 @@ power state after the conclusion of a transfer <a class="footnote-reference" hre
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../src/dp_conf.html" class="btn btn-neutral float-right" title="dp_conf.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../sh_codeOrg.html" class="btn btn-neutral float-right" title="Code Organization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../hardware/hardware_dustyDuinoProMap.html" class="btn btn-neutral" title="Dusty-to-M7 Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -339,7 +352,7 @@ power state after the conclusion of a transfer <a class="footnote-reference" hre
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

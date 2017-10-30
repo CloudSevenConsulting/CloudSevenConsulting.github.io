@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Code Organization &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
+        <link rel="up" title="Sensor Host Design" href="main.html"/>
+        <link rel="next" title="Sensor Host Modules" href="contrib/Modules.html"/>
+        <link rel="prev" title="Dusty API UART" href="uart/dustyAvrIF.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="main.html">Sensor Host Design</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sh_mainRoutine.html">Sensor Host Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sleep/sleep.html">Sleep Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sh_configurations.html">Sensor Host Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware/hardware_dustyDuinoProMap.html">Dusty-to-M7 Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/dustyAvrIF.html">Dusty API UART</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Code Organization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#entry-point">Entry Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#globals">Globals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contrib/Modules.html">Sensor Host Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time.html">System Timing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/dp_conf.html">dp_conf.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/dp_port.html">dp_port.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/usart-flow.html">usart/usart_flow.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-accelMagno.html">sample/0x00_AccelMagno/AccelMagno.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="main.html">Sensor Host Design</a> &raquo;</li>
+        
+      <li>Code Organization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/implement_sh/sh_codeOrg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="code-organization">
+<h1>Code Organization<a class="headerlink" href="#code-organization" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is crucial in understanding how to contribute to the Sensor-Host code base.</p>
+</div>
+<p>The codebase for the sensor-host is organised as follows:</p>
+<div class="figure" id="id1">
+<img alt="../_images/codeOrganisation.png" src="../_images/codeOrganisation.png" />
+<p class="caption"><span class="caption-text">Code organisation of Sensor Host</span></p>
+</div>
+<p>CSC has developed all files located in <code class="docutils literal"><span class="pre">main/</span></code>, with ATAMO developing the libraries
+in <code class="docutils literal"><span class="pre">DuinoPRO</span></code>.</p>
+<p>The Atmel Studio 7 solution file (<code class="docutils literal"><span class="pre">.atsln</span></code>) loads the code base target at the <code class="docutils literal"><span class="pre">Makefile</span></code>
+at the Top-Level Directory (TLD).</p>
+<div class="section" id="entry-point">
+<h2>Entry Point<a class="headerlink" href="#entry-point" title="Permalink to this headline">¶</a></h2>
+<p>The sensor-host’s program main entry point is at <code class="docutils literal"><span class="pre">main/main.cpp</span></code>; depending on
+the <code class="docutils literal"><span class="pre">DP_BUILD__TEST_MODE</span></code> setting, control of the main loop may be yielded to <code class="docutils literal"><span class="pre">tester.cpp</span></code> for
+testing.</p>
+</div>
+<div class="section" id="globals">
+<h2>Globals<a class="headerlink" href="#globals" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">globals.h</span></code> header file is responsible for ensuring that key system resources are shared
+throughout</p>
+<p>In particular:</p>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cm">/*******************************************************************************</span>
+<span class="cm"> * Singletons/Globals</span>
+<span class="cm"> ******************************************************************************/</span>
+<span class="k">extern</span> <span class="n">duinoPRO</span> <span class="n">Board</span><span class="p">;</span>
+<span class="k">extern</span> <span class="n">sys_state</span> <span class="n">SystemState</span><span class="p">;</span>
+<span class="k">extern</span> <span class="kt">char</span> <span class="n">sys_conf</span><span class="p">[</span><span class="n">DP_LUT__N_PARAM</span><span class="p">];</span>
+<span class="k">extern</span> <span class="n">dp_payload_t</span> <span class="n">dp_payload</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">However, it is crucial that resources are only used where they are permitted. This
+prevents resource deadlock or unexpected behavior</p>
+</div>
+<p>For example, <code class="docutils literal"><span class="pre">sys_conf</span></code> is considered <strong>private</strong> and configurations <strong>must</strong> be accessed
+by external modules through the <code class="docutils literal"><span class="pre">sys/dp_conf</span></code> module.</p>
+<p>In general, the <code class="docutils literal"><span class="pre">sys</span></code> modules (System Core Layer) will expose key resources publicly,
+whilst privately handling key resources to prevent system deadlock.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contrib/Modules.html" class="btn btn-neutral float-right" title="Sensor Host Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="uart/dustyAvrIF.html" class="btn btn-neutral" title="Dusty API UART" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

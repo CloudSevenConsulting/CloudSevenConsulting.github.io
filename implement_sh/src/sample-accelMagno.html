@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sample/0x00_AccelMagno/AccelMagno.h &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="Sensor Host Design" href="../main.html"/>
+        <link rel="next" title="Network Manager" href="../../implement_nm/main.html"/>
+        <link rel="prev" title="sample/sensor.h" href="sample-sensor.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">Sensor Host Design</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sh_mainRoutine.html">Sensor Host Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sleep/sleep.html">Sleep Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_configurations.html">Sensor Host Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hardware/hardware_dustyDuinoProMap.html">Dusty-to-M7 Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uart/dustyAvrIF.html">Dusty API UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sh_codeOrg.html">Code Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib/Modules.html">Sensor Host Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time.html">System Timing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_conf.html">dp_conf.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dp_port.html">dp_port.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usart-flow.html">usart/usart_flow.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">sample/0x00_AccelMagno/AccelMagno.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../main.html">Sensor Host Design</a> &raquo;</li>
+        
+      <li>sample/0x00_AccelMagno/AccelMagno.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/implement_sh/src/sample-accelMagno.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sample-0x00-accelmagno-accelmagno-h">
+<h1>sample/0x00_AccelMagno/AccelMagno.h<a class="headerlink" href="#sample-0x00-accelmagno-accelmagno-h" title="Permalink to this headline">¶</a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Enums</p>
+<dl class="type">
+<dt id="_CPPv218AccelFullScaleEnum">
+<span id="AccelFullScaleEnum"></span><span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0"></span><em class="property">enum </em><code class="descname">AccelFullScaleEnum</code><a class="headerlink" href="#_CPPv218AccelFullScaleEnum" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Values for controlling accelerometer full scale range. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv28ACCEL_2G">
+<span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40a54dfee3582fe431159391121d88cc"></span><code class="descname">ACCEL_2G</code><a class="headerlink" href="#_CPPv28ACCEL_2G" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 2g </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv28ACCEL_4G">
+<span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aa4f0aa9e39378ca8561d3c5c3c34eac7"></span><code class="descname">ACCEL_4G</code><a class="headerlink" href="#_CPPv28ACCEL_4G" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 4g </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv28ACCEL_6G">
+<span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0aca384fc951c7e37084ad181d2657bd7a"></span><code class="descname">ACCEL_6G</code><a class="headerlink" href="#_CPPv28ACCEL_6G" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 6g </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv28ACCEL_8G">
+<span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a9916755163a87b2a70e7ab986d403aaf"></span><code class="descname">ACCEL_8G</code><a class="headerlink" href="#_CPPv28ACCEL_8G" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 8g </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv29ACCEL_16G">
+<span class="target" id="_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0a40fcc5e6816634f083aece7b48b79346"></span><code class="descname">ACCEL_16G</code><a class="headerlink" href="#_CPPv29ACCEL_16G" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 16g </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="type">
+<dt id="_CPPv218MagnoFullScaleEnum">
+<span id="MagnoFullScaleEnum"></span><span class="target" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d"></span><em class="property">enum </em><code class="descname">MagnoFullScaleEnum</code><a class="headerlink" href="#_CPPv218MagnoFullScaleEnum" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Values for controlling magnetometer full scale range. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv212MAGNO_2GAUSS">
+<span class="target" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf4498a24f18f398e3227d9a7a2b849a5"></span><code class="descname">MAGNO_2GAUSS</code><a class="headerlink" href="#_CPPv212MAGNO_2GAUSS" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 2 gauss </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv212MAGNO_4GAUSS">
+<span class="target" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da84401b0c35ace0df16435ec78d87e7ab"></span><code class="descname">MAGNO_4GAUSS</code><a class="headerlink" href="#_CPPv212MAGNO_4GAUSS" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 4 gauss </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv212MAGNO_8GAUSS">
+<span class="target" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67daf48441ee6719673d82bea08b7318e783"></span><code class="descname">MAGNO_8GAUSS</code><a class="headerlink" href="#_CPPv212MAGNO_8GAUSS" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 8 gauss </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv213MAGNO_12GAUSS">
+<span class="target" id="_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67da666eae77f920f2b96eecead92fa17481"></span><code class="descname">MAGNO_12GAUSS</code><a class="headerlink" href="#_CPPv213MAGNO_12GAUSS" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Full scale range of 12 gauss </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv210AccelMagno">
+<span id="AccelMagno"></span><span class="target" id="class_accel_magno"></span><em class="property">class </em><code class="descname">AccelMagno</code><a class="headerlink" href="#_CPPv210AccelMagno" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;AccelMagno.h&gt;</em><p>Class for controlling a duinoPRO Accelerometer/Magnetometer module. </p>
+<p>Inherits from Module</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno10AccelMagnoEi">
+<span id="AccelMagno::AccelMagno__i"></span><span class="target" id="class_accel_magno_1aa084b3409e0d8e9c610c037082c3ee48"></span><code class="descname">AccelMagno</code><span class="sig-paren">(</span>int <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno10AccelMagnoEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructor for <a class="reference internal" href="#class_accel_magno"><span class="std std-ref">AccelMagno</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">id</span></code>: - the location of the <a class="reference internal" href="#class_accel_magno"><span class="std std-ref">AccelMagno</span></a> module on the duinoPRO baseboard. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno5beginEv">
+<span id="AccelMagno::begin__void"></span><span class="target" id="class_accel_magno_1a48d4681fe913a10e04803e1ce71e0ca0"></span>void <code class="descname">begin</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno5beginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Begin using the <a class="reference internal" href="#class_accel_magno"><span class="std std-ref">AccelMagno</span></a> module. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno12lowPowerModeEb">
+<span id="AccelMagno::lowPowerMode__b"></span><span class="target" id="class_accel_magno_1a730951ab3d52b43a097f825443a97110"></span>void <code class="descname">lowPowerMode</code><span class="sig-paren">(</span>bool <em>lowpower</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno12lowPowerModeEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable or disable low-power mode. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">lowpower</span></code>: - true to enable low-power mode, false to disable. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno12readRegisterE7uint8_t">
+<span id="AccelMagno::readRegister__uint8_t"></span><span class="target" id="class_accel_magno_1a8580024f52c8217a4d36f5c71ba392a6"></span>uint8_t <code class="descname">readRegister</code><span class="sig-paren">(</span>uint8_t <em>addr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno12readRegisterE7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read the value of a register in the LDM303D chip. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The register value. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">addr</span></code>: - Address of the register to be read. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno13writeRegisterE7uint8_t7uint8_t">
+<span id="AccelMagno::writeRegister__uint8_t.uint8_t"></span><span class="target" id="class_accel_magno_1a2834a2ac20af6ef18006742e9bf66c80"></span>void <code class="descname">writeRegister</code><span class="sig-paren">(</span>uint8_t <em>addr</em>, uint8_t <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno13writeRegisterE7uint8_t7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write a value to a register in the LDM303D chip. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">addr</span></code>: - Address of the register to be written. </li>
+<li><code class="docutils literal"><span class="pre">data</span></code>: - The value to be written to the register. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno11enableAccelEv">
+<span id="AccelMagno::enableAccel"></span><span class="target" id="class_accel_magno_1a28153270e6869efc7a7c4858937944f6"></span>void <code class="descname">enableAccel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno11enableAccelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable accelerometer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno12disableAccelEv">
+<span id="AccelMagno::disableAccel"></span><span class="target" id="class_accel_magno_1a82ddd1fc92e3bf0e341c93e836e6db34"></span>void <code class="descname">disableAccel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno12disableAccelEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disable accelerometer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno17setAccelFullScaleE7uint8_t">
+<span id="AccelMagno::setAccelFullScale__uint8_t"></span><span class="target" id="class_accel_magno_1a5fdb7b42d1be16c9ea171e5cc83be10e"></span>void <code class="descname">setAccelFullScale</code><span class="sig-paren">(</span>uint8_t <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno17setAccelFullScaleE7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the full-scale range of the accelerometer. The allowable ranges are from +/-2g to +/-16g. Possible values are listed in <a class="reference internal" href="#_accel_magno_8h_1afd186609ad14608e8951fada5e6c0aa0"><span class="std std-ref">AccelFullScaleEnum</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">mode</span></code>: - Value for full-scale range, from AccelFullScaleEnum. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno11enableMagnoEv">
+<span id="AccelMagno::enableMagno"></span><span class="target" id="class_accel_magno_1a1abc3f8a5e76f22a545cd77de9753706"></span>void <code class="descname">enableMagno</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno11enableMagnoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable magnetometer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno12disableMagnoEv">
+<span id="AccelMagno::disableMagno"></span><span class="target" id="class_accel_magno_1a9d2f48d85cfb041197be0fbe36d86758"></span>void <code class="descname">disableMagno</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno12disableMagnoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disable magnetometer. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno17setMagnoFullScaleE7uint8_t">
+<span id="AccelMagno::setMagnoFullScale__uint8_t"></span><span class="target" id="class_accel_magno_1a833649656518a52153425d6ae176ce82"></span>void <code class="descname">setMagnoFullScale</code><span class="sig-paren">(</span>uint8_t <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno17setMagnoFullScaleE7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the full-scale range of the magnetometer. The allowable ranges are from +/-2 Gauss to +/-12 Gauss. Possible values are listed in <a class="reference internal" href="#_accel_magno_8h_1a5fc5d22d6be669ddeacae96fbdcbb67d"><span class="std std-ref">MagnoFullScaleEnum</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">mode</span></code>: - Value for full-scale range, from MagnoFullScaleEnum. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno9rawAccelXEv">
+<span id="AccelMagno::rawAccelX"></span><span class="target" id="class_accel_magno_1a876fe5acf027e62a4c77ed47e71caa8e"></span>int16_t <code class="descname">rawAccelX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno9rawAccelXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Raw X axis accelerometer reading. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The raw reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno9rawAccelYEv">
+<span id="AccelMagno::rawAccelY"></span><span class="target" id="class_accel_magno_1a65d2f9baa70187aca71a0e44317fc01a"></span>int16_t <code class="descname">rawAccelY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno9rawAccelYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Raw Y axis accelerometer reading. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The raw reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno9rawAccelZEv">
+<span id="AccelMagno::rawAccelZ"></span><span class="target" id="class_accel_magno_1abd217251c988d20c0b585360807d7579"></span>int16_t <code class="descname">rawAccelZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno9rawAccelZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Raw Z axis accelerometer reading. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The raw reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6accelXEv">
+<span id="AccelMagno::accelX"></span><span class="target" id="class_accel_magno_1a78f333a1b39863b9c3052b5342e46cce"></span>float <code class="descname">accelX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6accelXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>X axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6accelYEv">
+<span id="AccelMagno::accelY"></span><span class="target" id="class_accel_magno_1adb0fa61d80b92e7e942e6c8c898c0660"></span>float <code class="descname">accelY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6accelYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Y axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6accelZEv">
+<span id="AccelMagno::accelZ"></span><span class="target" id="class_accel_magno_1a2b974efaf20233c65c19b3b1d25b3cdc"></span>float <code class="descname">accelZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6accelZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Z axis accelerometer reading, expressed as a floating point number in mg. This result is scaled correctly to allow for the accelerometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6magnoXEv">
+<span id="AccelMagno::magnoX"></span><span class="target" id="class_accel_magno_1a06811f3898deb90de4333b1e4811822b"></span>float <code class="descname">magnoX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6magnoXEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>X axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6magnoYEv">
+<span id="AccelMagno::magnoY"></span><span class="target" id="class_accel_magno_1a74ffed2db19643da37b4581d5af608a8"></span>float <code class="descname">magnoY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6magnoYEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Y axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno6magnoZEv">
+<span id="AccelMagno::magnoZ"></span><span class="target" id="class_accel_magno_1a20b1e286b09f1886a16ac76295cb2eeb"></span>float <code class="descname">magnoZ</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno6magnoZEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Z axis magnetometer reading, expressed as a floating point number in mgauss. This result is scaled correctly to allow for the magnetometer range in use. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The scaled reading. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno7intReadE7uint8_t">
+<span id="AccelMagno::intRead__uint8_t"></span><span class="target" id="class_accel_magno_1a1d0080c2fb5d0435c9f6c85e3b797506"></span>bool <code class="descname">intRead</code><span class="sig-paren">(</span>uint8_t <em>intNum</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno7intReadE7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read the specified interrupt signal of the LDM303D chip. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The state of the interrupt signal. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">intNum</span></code>: - Number of the interrupt signal (1 or 2) to be read. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="function">
+<dt id="_CPPv2N10AccelMagno9read16BitE7uint8_t7uint8_t">
+<span id="AccelMagno::read16Bit__uint8_t.uint8_t"></span><span class="target" id="class_accel_magno_1a55249284973a9782b0df8e629397b25a"></span>int16_t <code class="descname">read16Bit</code><span class="sig-paren">(</span>uint8_t <em>highAddr</em>, uint8_t <em>lowAddr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N10AccelMagno9read16BitE7uint8_t7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read a signed 16-bit value from two registers in the Accelerometer/Magnetometer chip. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The 16-bit value. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">highAddr</span></code>: - Address of the register to be read containing the most significant bits. </li>
+<li><code class="docutils literal"><span class="pre">lowAddr</span></code>: - Address of the register to be read containing the least significant bits. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="member">
+<dt id="_CPPv2N10AccelMagno14accelFullScaleE">
+<span id="AccelMagno::accelFullScale__uint8_t"></span><span class="target" id="class_accel_magno_1a5636346cc5fe0007e34d940716d38e41"></span>uint8_t <code class="descname">accelFullScale</code><a class="headerlink" href="#_CPPv2N10AccelMagno14accelFullScaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N10AccelMagno8accelLsbE">
+<span id="AccelMagno::accelLsb__float"></span><span class="target" id="class_accel_magno_1af1693d5c283d6479b2dbe21de848cd6d"></span>float <code class="descname">accelLsb</code><a class="headerlink" href="#_CPPv2N10AccelMagno8accelLsbE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N10AccelMagno14magnoFullScaleE">
+<span id="AccelMagno::magnoFullScale__uint8_t"></span><span class="target" id="class_accel_magno_1a18a3412e969a4a95ebc24398285297f5"></span>uint8_t <code class="descname">magnoFullScale</code><a class="headerlink" href="#_CPPv2N10AccelMagno14magnoFullScaleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N10AccelMagno8magnoLsbE">
+<span id="AccelMagno::magnoLsb__float"></span><span class="target" id="class_accel_magno_1ab1b770739f1001df6840ea9a8f17dea3"></span>float <code class="descname">magnoLsb</code><a class="headerlink" href="#_CPPv2N10AccelMagno8magnoLsbE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../implement_nm/main.html" class="btn btn-neutral float-right" title="Network Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sample-sensor.html" class="btn btn-neutral" title="sample/sensor.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

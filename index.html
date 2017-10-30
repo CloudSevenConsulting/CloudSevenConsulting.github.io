@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>C7C ATAMO Dusty Project &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>CSC-ATAMO Dusty Project &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="#"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="#"/>
         <link rel="next" title="Table of Contents" href="toc.html"/> 
 
   
@@ -55,7 +55,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="#" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -63,6 +63,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -95,16 +99,15 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -119,7 +122,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">C7C.Atamo.Dusty</a>
+          <a href="#">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -149,7 +152,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>C7C ATAMO Dusty Project</li>
+      <li>CSC-ATAMO Dusty Project</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,33 +171,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="c7c-atamo-dusty-project">
-<h1>C7C ATAMO Dusty Project<a class="headerlink" href="#c7c-atamo-dusty-project" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="csc-atamo-dusty-project">
+<h1>CSC-ATAMO Dusty Project<a class="headerlink" href="#csc-atamo-dusty-project" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="toc.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro/home.html">Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage/main.html">Project How-To’s</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quickRef/quickRef.html">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toc.html">Table of Contents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toc.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toc.html#system-design">System Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toc.html#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro/home.html">Background</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro/home.html#project-deliverables">Project Deliverables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage/main.html">Project How-To’s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/dependencies/software.html">Project Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/dependencies/duinoPro.html">DuinoPro and ArduinoIDE integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/dependencies/otherPkgs_dustyQSL.html">Dusty Quick Start Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/git/git_basics.html">Git Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/git/git_checkout.html">Git Checkout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/git/git_branches.html">Git Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/developing/as7_building.html">Building with Atmel Studio 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/developing/sh_flashingTheDust.html">Flashing The Dusty Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/projDocs.html">Project Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quickRef/quickRef.html">Quick Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quickRef/quickRef.html#external-documentation">External Documentation</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tech_testing/main.html">Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tech_deploy/main.html">System Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_arch/main.html">System Design</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tech_arch/arch_network.html">Network Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_arch/error_handling.html">Error Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_arch/principles/encapsulation.html">Encapsulation and State Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tech_deploy/main.html">System Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tech_deploy/dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_deploy/dp/flash.html">Flashing the Dusty Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_deploy/networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_deploy/wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tech_deploy/ci/deploy.html">DynamoDB Deployment</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_testing/main.html">Testing</a></li>
 </ul>
 </div>
 </div>
@@ -241,7 +277,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

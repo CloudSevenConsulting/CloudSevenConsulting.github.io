@@ -2,6 +2,11 @@
 Git Basics
 **********
 
+.. note::
+
+   This section is only relevant for future developers to the CSC-ATAMO Dusty
+   project.
+
 This section will **not** go into the details of ``git``, there are better
 tutorials online that can be read.
 

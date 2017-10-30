@@ -1,11 +1,11 @@
 .. C7C.Atamo.Dusty documentation master file, created by Phan, J.
 
 ***********************
-C7C ATAMO Dusty Project
+CSC-ATAMO Dusty Project
 ***********************
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Overview
 
    toc
@@ -17,11 +17,10 @@ C7C ATAMO Dusty Project
    quickRef/quickRef
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: System Design
 
    tech_arch/main
-   tech_testing/main
    tech_deploy/main
 
 .. toctree::
@@ -30,7 +29,6 @@ C7C ATAMO Dusty Project
 
    implement_sh/main
    implement_nm/main
-   implement_ci/main
    implement_db/main
    implement_wa/main
-
+   tech_testing/main

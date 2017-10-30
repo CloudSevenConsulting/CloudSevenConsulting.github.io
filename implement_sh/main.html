@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sensor Host &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Sensor Host Design &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,9 +35,9 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
         <link rel="next" title="Sensor Host Design" href="sh_mainRoutine.html"/>
-        <link rel="prev" title="Deploying the Network Manager" href="../tech_deploy/networkManager/deploy.html"/> 
+        <link rel="prev" title="DynamoDB Deployment" href="../tech_deploy/ci/deploy.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -56,7 +56,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -64,6 +64,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -96,26 +100,35 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sensor Host</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sensor Host Design</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sh_mainRoutine.html">Sensor Host Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sleep/sleep.html">Sleep Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sh_configurations.html">Sensor Host Configurations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hardware/hardware_dustyDuinoProMap.html">Dusty-to-M7 Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uart/dustyAvrIF.html">Dusty API UART</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sh_codeOrg.html">Code Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contrib/Modules.html">Sensor Host Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time.html">System Timing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/dp_conf.html">dp_conf.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/dp_port.html">dp_port.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/usart-flow.html">usart/usart_flow.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sample-accelMagno.html">sample/0x00_AccelMagno/AccelMagno.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -130,7 +143,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">C7C.Atamo.Dusty</a>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -160,7 +173,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Sensor Host</li>
+      <li>Sensor Host Design</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -179,10 +192,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sensor-host">
-<span id="idx-implement-sh"></span><h1>Sensor Host<a class="headerlink" href="#sensor-host" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="sensor-host-design">
+<span id="idx-implement-sh"></span><h1>Sensor Host Design<a class="headerlink" href="#sensor-host-design" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Mote Design</span></p>
+<p class="caption"><span class="caption-text">Sensor-Host Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="sh_mainRoutine.html">Sensor Host Design</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sh_mainRoutine.html#program-logic">Program Logic</a></li>
@@ -217,11 +230,36 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contributing to Source</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sh_codeOrg.html">Code Organization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sh_codeOrg.html#entry-point">Entry Point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sh_codeOrg.html#globals">Globals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contrib/Modules.html">Sensor Host Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contrib/Modules.html#adding-modules">Adding Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="time.html">System Timing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="time.html#watchdog">Watchdog</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Source</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="src/dp_conf.html">dp_conf.h</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src/dp_sm.html">dp_sm.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/dp_port.html">dp_port.h</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src/usart-ISerial.html">usart/ISerial.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/usart-flow.html">usart/usart_flow.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/usart-vars.html">usart/usart_vars.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/sample-sample.html">sample/sample.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/sample-frame.html">sample/frame.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/sample-sensor.html">sample/sensor.h</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/sample-accelMagno.html">sample/0x00_AccelMagno/AccelMagno.h</a></li>
 </ul>
 </div>
 </div>
@@ -239,7 +277,7 @@
         <a href="sh_mainRoutine.html" class="btn btn-neutral float-right" title="Sensor Host Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../tech_deploy/networkManager/deploy.html" class="btn btn-neutral" title="Deploying the Network Manager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../tech_deploy/ci/deploy.html" class="btn btn-neutral" title="DynamoDB Deployment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -270,7 +308,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

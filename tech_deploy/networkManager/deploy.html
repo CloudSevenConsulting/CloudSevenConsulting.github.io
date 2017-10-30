@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Deploying the Network Manager &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Deploying the Network Manager &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,10 +35,10 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
         <link rel="up" title="System Deployment" href="../main.html"/>
-        <link rel="next" title="Sensor Host" href="../../implement_sh/main.html"/>
-        <link rel="prev" title="System Deployment" href="../main.html"/> 
+        <link rel="next" title="Deploying the Web Application" href="../wa/deploy.html"/>
+        <link rel="prev" title="Flashing the Dusty Module" href="../dp/flash.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -97,24 +101,27 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../main.html">System Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dp/flash.html">Flashing the Dusty Module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Deploying the Network Manager</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#required-software">Required Software</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#test">Test</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ci/deploy.html">DynamoDB Deployment</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -129,7 +136,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">C7C.Atamo.Dusty</a>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -201,27 +208,10 @@
 <div class="section" id="setup">
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Install the required Python packages with your <code class="docutils literal"><span class="pre">pip</span></code> utility;</p>
+<li><p class="first">We will store all our Network Manager related software in a <code class="docutils literal"><span class="pre">NetworkManager/</span></code> directory. Note you can store this wherever you like (or name it whatever you like)</p>
 <blockquote>
-<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ python -m pip install boto3
-</pre></div>
-</div>
-</div></blockquote>
-</li>
-<li><p class="first">We will store all our Network Manager related software in a <code class="docutils literal"><span class="pre">NetworkManager/</span></code> directory</p>
-<blockquote>
-<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads        <span class="c1">#temporary storage</span>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads        <span class="c1">#temporary storage, choose where you want this to be</span>
 $ mkdir NetworkManager
-</pre></div>
-</div>
-</div></blockquote>
-</li>
-<li><p class="first">Install the SmartMesh SDK for Python</p>
-<blockquote>
-<div><p>Download the <code class="docutils literal"><span class="pre">smartmesh-sdk</span></code> from <a class="reference external" href="https://github.com/dustcloud/smartmeshsdk">DustCloud Github</a> and extract it into <code class="docutils literal"><span class="pre">NetworkManager/</span></code></p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/NetworkManager/smartmeshsdk-master    <span class="c1"># I.e. to the parent folder of the downloaded item</span>
-$ py -2 setup.py install
-$ py -2 -m pip install -r requirements.txt
 </pre></div>
 </div>
 </div></blockquote>
@@ -230,6 +220,24 @@ $ py -2 -m pip install -r requirements.txt
 <blockquote>
 <div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads/NetworkManager/
 $ git clone https://github.com/CloudSevenConsulting/DustyPyManager.git
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Install the required Python packages with your <code class="docutils literal"><span class="pre">pip</span></code> utility;</p>
+<blockquote>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> DustyPyManager
+$ python -m pip install -r requirements.txt
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Install the SmartMesh SDK for Python</p>
+<blockquote>
+<div><p>Download the <code class="docutils literal"><span class="pre">smartmesh-sdk</span></code> from <a class="reference external" href="https://github.com/dustcloud/smartmeshsdk">DustCloud Github</a> and extract it into <code class="docutils literal"><span class="pre">NetworkManager/</span></code></p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/Downloads/NetworkManager/smartmeshsdk-master    <span class="c1"># I.e. to the parent folder of the downloaded item</span>
+$ py -2 setup.py install
+$ py -2 -m pip install -r requirements.txt
 </pre></div>
 </div>
 </div></blockquote>
@@ -265,10 +273,10 @@ $ py -2 -m DustyPyManager.tests.runner
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../implement_sh/main.html" class="btn btn-neutral float-right" title="Sensor Host" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../wa/deploy.html" class="btn btn-neutral float-right" title="Deploying the Web Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../main.html" class="btn btn-neutral" title="System Deployment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../dp/flash.html" class="btn btn-neutral" title="Flashing the Dusty Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -299,7 +307,7 @@ $ py -2 -m DustyPyManager.tests.runner
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

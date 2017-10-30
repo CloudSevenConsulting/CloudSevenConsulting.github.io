@@ -13,16 +13,16 @@ used in the module (see UNO DuinoPro Schematic).
 GPIO Pinout
 ===========
 
-=================  =========  ====================  =========  =======
-Pin Name           Pin No.    Net                   Purpose    Drive
-=================  =========  ====================  =========  =======
-GPIO1/INT          25         Dusty/UART_TX_RTSn               Dusty
-GPIO2/USART_CTS    7          Dusty/UART_RX_CTSn               Dusty
-GPIO3/USART_RTS    8          Dusty/UART_RX_RTSn               AVR
-GPIO4/USART_RX     9          Dusty/UART_TX                    Dusty
-GPIO5/USART_TX     10         Dusty/UART_RX                    AVR
-GPIO6/USART_SCK    11         Dusty/UART_TX_CTSn               AVR
-=================  =========  ====================  =========  =======
+=================  =========  ====================  =======
+Pin Name           Pin No.    Net                   Drive
+=================  =========  ====================  =======
+GPIO1/INT          25         Dusty/UART_TX_RTSn    Dusty
+GPIO2/USART_CTS    7          Dusty/UART_RX_CTSn    Dusty
+GPIO3/USART_RTS    8          Dusty/UART_RX_RTSn    AVR
+GPIO4/USART_RX     9          Dusty/UART_TX         Dusty
+GPIO5/USART_TX     10         Dusty/UART_RX         AVR
+GPIO6/USART_SCK    11         Dusty/UART_TX_CTSn    AVR
+=================  =========  ====================  =======
 
 External I/O Pinout
 ===================
@@ -42,14 +42,14 @@ Serial Pinout
 ==========  =========  =========  =========
 Pin Name    Pin No.    Net        Purpose
 ==========  =========  =========  =========
-SDA1        12
-SCL1        13
+SDA1        12         ``N/C``
+SCL1        13         ``N/C``
 SDA2        20         ``N/C``
 SCL2        21         ``N/C``
-MOSI        17
-MISO        18
-SCK         14
-SPI_CS      24
+MOSI        17         ``N/C``
+MISO        18         ``N/C``
+SCK         14         ``N/C``
+SPI_CS      24         ``N/C``
 ==========  =========  =========  =========
 
 Common Module Pinout

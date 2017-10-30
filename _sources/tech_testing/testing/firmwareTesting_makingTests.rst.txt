@@ -4,47 +4,88 @@ Making Tests
 
 To make a set of tests, 3 files must be modified/created:
 
-- A separate ``.c`` file must be created in ``tester\``
-- A corresponding ``.h`` file must be created in ``tester\``
-- ``debug.c`` must be modified to include the testing
+- A separate ``.cpp`` file must be created in ``Testing\``
+- A corresponding ``.h`` file must be created in ``Testing\``
+- ``tester.c`` must be modified to include the testing
 
-Ideally, each ``.c`` file should correspond to the testing for one logical
+Ideally, each ``.cpp`` file should correspond to the testing for one logical
 grouping of peripherals/resources/types of tests. However no strict guidelines
 are in place and is *ad-hoc*.
 
-Creating the ``.c`` file
-========================
+Creating the ``.cpp`` file
+==========================
 
-The ``.c`` file contains the functions for testing. Each function should be one
-distinct test.
+The ``.cpp`` file contains the functions for testing. Each file contains one
+`cpp` class inherited from the base class ``Testing/TestCase.cpp``.
 
-The functions must be of ``int`` return type and must return ``1`` if the tests
-succeeds or ``0`` if the test fails.
+Importantly, every ``TestCase`` must override the virtual method ``run()``, in
+which the ``tester.cpp`` will call.
 
 .. note::
-   Test outcome handling is not to be done locally in the tests. The tests **must**
-   return a boolean to represent the test outcome and shift the handling to
-   the caller (``debug.c`` or ``main.c``)
+
+   Currently, the ``tester`` must manually call this ``.run()`` method. However future
+   versions can investigate automating the test suite by using interfaces and dynamic
+   class instantiating.
+
+It is recommended that the ``.run()`` method is only a wrapper of potentially several
+methods which contain the tests.
+
+Every test method should use the standardised ``.t_fail()`` and ``.t_pass()`` inherited
+from the parent class ``TestCase`` as a standardised means for interpreting test results.
+
+.. note::
+
+   Developer will need to modify this methods to suit their needs
+
 
 Creating the ``.h`` file
 ========================
 
-The ``.h`` file is a regular header file with an header include guard
+The ``.h`` file is a regular header file with an header include guard. This is where the
+class should be defined for the ``TestCase``.
+
+As an example:
+
+.. code-block:: c
+
+    #ifndef TESTDPSYS_H_
+    #define TESTDPSYS_H_
+
+    #include "TestCase.h"
+
+    class TestDpSys: public TestCase {
+
+        private:
+
+        protected:
+
+        public:
+            TestDpSys(void);
+            void run(void);
+            void TU_SH_DpSys_FlashBlink_Op(void);   // A test function
+
+            # ...
+    };
+
+    #endif /* TESTDPSYS_H_ */
 
 
-Modifying ``debug.c``
+Modifying ``tester``
 =====================
 
-Three modifications must be made in ``debug.c`` for a new test:
-
+One modification must be made in ``tester.h``:
 - Create a new macro for testing selection
+
+Two modifications must be made in ``tester.cpp`` for a new test:
+
 - Include the ``.h`` file for the test in question (with the necessary conditional build statements)
-- Call the testing functions in the ``tester()`` routine, handling the test outcome accordingly (and with the necessary conditional build statements)
+- Call the testing functions in the ``do_system_test()`` routine, handling the test outcome accordingly (and with the necessary conditional build statements)
+
 
 Macro for Test Selection
 ------------------------
 
-The macro for test selection must be defined in ``debug.c`` as follows (for example,
+The macro for test selection must be defined in ``tester.h`` as follows (for example,
 let's say we are testing 'a new thing');
 
 .. code-block:: c
@@ -52,8 +93,12 @@ let's say we are testing 'a new thing');
    /* ****************************************************************************
     * Test Selection
     * ***************************************************************************/
-   #define TEST_SMB_ENABLE 1
-   #define TEST_MEMORY_ENABLE 0
+
+    # ..
+
+    #define DP_BUILD__TCTRL_DPSAMPLE_SENS 1
+    #define DP_BUILD__TCTRL_PORT 1
+
 
    /* ... */
 
@@ -62,7 +107,7 @@ let's say we are testing 'a new thing');
 Include Testing Header
 ----------------------
 
-The header must be included in ``debug.c`` **if the corresponding macro is set to 1**.
+The header must be included in ``tester.cpp`` **if the corresponding macro is set to 1**.
 This is done in the ``Test Headers`` section of the source code as follows (for example,
 let's say our header was ``test_newthing.h``)
 
@@ -71,20 +116,20 @@ let's say our header was ``test_newthing.h``)
    /* ****************************************************************************
     * Test Headers
     * ***************************************************************************/
-   #if TEST_SMB_ENABLE
-   #include "test_smb.h"
+   #if DP_BUILD__TCTRL_PORT
+        #include "test_smb.h"
    #endif
 
    /* ... */
 
    #if TEST_NEWTHING_ENABLE         /*<-- our new test*/
-   #include "test_newthing.h"
+        #include "test_newthing.h"
    #endif
 
 Calling the Test Functions
 --------------------------
 
-Finally, the ``tester()`` routine must call the relevant test functions
+Finally, the ``do_system_test()`` routine must call the relevant test functions
 from ``test_newthing.c`` (our example).
 
 Note, that the available testing functions for reporting (in this case ``TestFail()``) may
@@ -92,24 +137,19 @@ change.
 
 .. code-block:: c
 
-   void tester(void)
-   {
+    void do_system_test(void)
+    {
 
-   #if TEST_SMB_ENABLE
-       ret = test_smb_eeprom_simple_write_read();
-       if (ret == 0)
-       {
-           TestFail();
-       }
-   #endif/*TEST_SMB*/
+    /*-----------------------------------*/
+    #if DP_BUILD__TCTRL_DPSYS
+        TestDpSys test_dp_sys;
+        test_dp_sys.run();
+    #endif
 
-   /* ... */
+    /*-----------------------------------*/
+    #if TEST_NEWTHING_ENABLE
+        TestNewThing test_new_thing;
+        test_new_thing.run();
+    #endif
 
-   #if TEST_NEWTHING_ENABLE         /*<-- our new test*/
-        ret = test_some_unit_test_for_new_thing();
-        if (ret == 0)
-        {
-            TestFail();
-        }
-    #endif/*TEST_NEWTHING*/
-   }
+    }

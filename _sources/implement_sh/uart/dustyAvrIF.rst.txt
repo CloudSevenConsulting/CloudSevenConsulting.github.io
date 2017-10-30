@@ -31,7 +31,7 @@ There are two interfaces to the Dusty (LTC5800-IPM) module [#IPM01]_:
 Serial Modes
 ============
 
-The fuse table for the LTC5800-IPM is normally developed as part of the board level design process. Either mode 2 or mode 4 may be used on the API port, at either baud rate. For modularly certified products such as the LTP5901-IPM, or the Starter Kit mote (DC9003A-B) the fuse table has been pre-programmed for mode 4 at 115.2 Kbps and cannot be changed [#IPM02]_.
+The fuse table for the LTC5800-IPM is normally developed as part of the board level design process. Either mode 2 or mode 4 may be used on the API port, at either baud rate. For modularly certified products such as the LTP5901-IPM, or the Starter Kit mote (DC9003A-B)
 
 ======  =========================================  ================  =====  =====
 Mode    I/F                                        Baud Rate         API    CLI

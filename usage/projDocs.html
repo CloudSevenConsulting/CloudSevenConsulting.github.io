@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Project Documentation &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Project Documentation &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../index.html"/>
         <link rel="up" title="Project How-To’s" href="main.html"/>
         <link rel="next" title="Quick Reference" href="../quickRef/quickRef.html"/>
         <link rel="prev" title="Flashing The Dusty Module" href="developing/sh_flashingTheDust.html"/> 
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -96,13 +100,14 @@
 <li class="toctree-l2"><a class="reference internal" href="dependencies/duinoPro.html">DuinoPro and ArduinoIDE integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dependencies/otherPkgs_dustyQSL.html">Dusty Quick Start Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="git/git_basics.html">Git Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git/git_checkout.html">Checkout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git/git_branches.html">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git/git_checkout.html">Git Checkout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git/git_branches.html">Git Branches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developing/as7_building.html">Building with Atmel Studio 7</a></li>
 <li class="toctree-l2"><a class="reference internal" href="developing/sh_flashingTheDust.html">Flashing The Dusty Module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Project Documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installing-python-sphinx">Installing Python Sphinx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#setup-your-sphinx-project">Setup your Sphinx Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-contributors">New Contributors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
 </ul>
 </li>
@@ -113,16 +118,15 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -137,7 +141,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">C7C.Atamo.Dusty</a>
+          <a href="../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -190,18 +194,6 @@
             
   <div class="section" id="project-documentation">
 <h1>Project Documentation<a class="headerlink" href="#project-documentation" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://kjph.github.io/c7c-atamo-dusty/">Project documentation</a> can be found in the <code class="docutils literal"><span class="pre">gh-pages</span></code> branch.</p>
-<p>The <code class="docutils literal"><span class="pre">.rst</span></code> files are shipped to <code class="docutils literal"><span class="pre">./sources</span></code></p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git checkout gh-pages
-$ <span class="nb">cd</span> ./_sources
-</pre></div>
-</div>
-<p>To contribute to the documentation you must:</p>
-<ol class="arabic simple">
-<li>Install Python and Sphinx</li>
-<li>Setup your Sphinx project</li>
-<li>Building</li>
-</ol>
 <div class="section" id="installing-python-sphinx">
 <h2>Installing Python Sphinx<a class="headerlink" href="#installing-python-sphinx" title="Permalink to this headline">¶</a></h2>
 <p>Python <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> is a tool that helps build documentation out of reStructured Text (rst)
@@ -220,17 +212,88 @@ pip <span class="m">9</span>.0.1 from C:<span class="se">\.</span>..<span class=
 <blockquote>
 <div>$ python -m pip install sphinx_rtd_theme</div></blockquote>
 </div>
-<div class="section" id="setup-your-sphinx-project">
-<h2>Setup your Sphinx Project<a class="headerlink" href="#setup-your-sphinx-project" title="Permalink to this headline">¶</a></h2>
-<p>You will need to setup your sphinx project in a separate directory the git repo:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~
-$ mkdir someDir
-$ <span class="nb">cd</span> someDir/
-$ sphinx-quickstart.exe
-
-<span class="c1"># press [enter] to all options</span>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This should have been a one-time process setup by the administrator, and is only
+here for record keeping purposes. If you’re reading this, it’s setup.</p>
+</div>
+<p>All documentation related files are stored in the repository: <code class="docutils literal"><span class="pre">CloudSevenConsulting.github.io</span></code>.
+There are 2 branches of concern;</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">master</span></code>, which contains the built <code class="docutils literal"><span class="pre">.HTML</span></code> files as served on Github</li>
+<li><code class="docutils literal"><span class="pre">src</span></code>, which contains the the source <code class="docutils literal"><span class="pre">.rst</span></code> files required for building</li>
+<li><code class="docutils literal"><span class="pre">doxy</span></code>, which contains the DOxygen generated output; hopefully we don’t push this up all the time, this is just there to get you started - we will rely on the actual DOxygen build</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple">
+<li>We first make our <code class="docutils literal"><span class="pre">src</span></code> repo</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ mkdir CloudSevenConsulting.github.io
+$ <span class="nb">cd</span> CloudSevenConsulting.github.io
+$ git init .
+$ git checkout --orphan src
+$ <span class="nb">echo</span> <span class="s1">&#39;build/&#39;</span> &gt; .gitignore            <span class="c1"># this will host the master branch</span>
 </pre></div>
 </div>
+<ol class="arabic simple" start="2">
+<li>Setup your Sphinx project</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sphinx-quickstart.exe
+
+<span class="c1"># press [enter] to all options</span>
+<span class="c1"># EXCEPT:</span>
+<span class="c1">#   - we want the ``build/`` and ``source/`` directories to be separate.</span>
+<span class="c1">#   - we want MathJAX</span>
+
+$ git add --all
+$ git commit -m <span class="s2">&quot;init src&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Write and Build with <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> (see building below)</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>Now we set up the <code class="docutils literal"><span class="pre">git</span></code> repo for the <code class="docutils literal"><span class="pre">master</span></code> branch</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> build/html
+$ touch .nojekyll       <span class="c1"># This file is crucial for serving on Github</span>
+$ git init .
+$ git add --all
+$ git commit -m <span class="s2">&quot;init&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="new-contributors">
+<h2>New Contributors<a class="headerlink" href="#new-contributors" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>First clone the <code class="docutils literal"><span class="pre">src</span></code> branch</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git
+$ <span class="nb">cd</span> CloudSevenConsulting.github.io
+$ git checkout src
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Now clone in the <code class="docutils literal"><span class="pre">master</span></code> branch</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ mkdir build/
+$ <span class="nb">cd</span> build/
+$ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git html
+</pre></div>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">Clone in your <code class="docutils literal"><span class="pre">doxy</span></code> branch</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ../
+$ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git doxy
+$ <span class="nb">cd</span> doxy
+$ git checkout doxy
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 <div class="section" id="building">
 <h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
@@ -243,7 +306,14 @@ $ sphinx-quickstart.exe
 <li><p class="first">If the indexes must change (i.e. new files added/files moved) then a clean is required before build</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><strong>Do not</strong> use <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span></code>, as this will remove the <code class="docutils literal"><span class="pre">.git</span></code> files</li>
+<li><strong>Do not</strong> use <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span></code>, as this will remove the <code class="docutils literal"><span class="pre">.git</span></code> files. You can use the script <code class="docutils literal"><span class="pre">CleanBuild.py</span></code></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash"><div class="highlight"><pre><span></span>$ python CleanBuild.py
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="loweralpha simple" start="3">
 <li>Manually remove all build files (everything in <code class="docutils literal"><span class="pre">build/html</span></code> excluding the hidden <code class="docutils literal"><span class="pre">.git</span></code> directory)</li>
 <li>Build the <code class="docutils literal"><span class="pre">DOxygen</span></code> <code class="docutils literal"><span class="pre">xml</span></code></li>
 </ol>
@@ -305,7 +375,7 @@ $ sphinx-quickstart.exe
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

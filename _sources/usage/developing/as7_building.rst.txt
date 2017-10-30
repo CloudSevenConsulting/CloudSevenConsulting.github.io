@@ -1,3 +1,5 @@
+.. _idx-usage-dev-as7:
+
 ****************************
 Building with Atmel Studio 7
 ****************************

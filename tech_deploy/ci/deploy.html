@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DynamoDB Deployment &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
+        <link rel="up" title="System Deployment" href="../main.html"/>
+        <link rel="next" title="Sensor Host Design" href="../../implement_sh/main.html"/>
+        <link rel="prev" title="Deploying the Web Application" href="../wa/deploy.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../toc.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/home.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/main.html">Project How-To’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickRef/quickRef.html">Quick Reference</a></li>
+</ul>
+<p class="caption"><span class="caption-text">System Design</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../main.html">System Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dp/deploy.html">Deploying the Sensor Host</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dp/flash.html">Flashing the Dusty Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networkManager/deploy.html">Deploying the Network Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wa/deploy.html">Deploying the Web Application</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">DynamoDB Deployment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#set-up-the-environment">Set Up the Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-download-the-required-languages">Step 1: Download the required languages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-create-aws-account-and-setup-the-identity-access-management">Step 2: Create AWS Account and Setup the Identity &amp; Access Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-establish-aws-access">Step 3: Establish AWS Access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-obtain-csc-s-codes">Step 4: Obtain CSC’s codes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-use-csc-s-codes-to-establish-the-dynamodb-cloud-database">Step 5: Use CSC’s codes to establish the DynamoDB Cloud Database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Implementation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../main.html">System Deployment</a> &raquo;</li>
+        
+      <li>DynamoDB Deployment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/tech_deploy/ci/deploy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dynamodb-deployment">
+<h1>DynamoDB Deployment<a class="headerlink" href="#dynamodb-deployment" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="set-up-the-environment">
+<h2>Set Up the Environment<a class="headerlink" href="#set-up-the-environment" title="Permalink to this headline">¶</a></h2>
+<p>To set up AmazonDB it is essential to correctly configure the personal computer correctly. The cloud integration utilises node.js, python 2/3 and the AWS Command Line Interface. Ensure that these programs are downloaded and added to the system’s path. To successfully execute the following scripts, it is paramount to configure the AWS settings with the IAM keys.</p>
+<div class="section" id="step-1-download-the-required-languages">
+<h3>Step 1: Download the required languages<a class="headerlink" href="#step-1-download-the-required-languages" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Download <a class="reference external" href="https://www.python.org/downloads/">Python 3</a></li>
+<li>Download <a class="reference external" href="https://nodejs.org/en/download/">Node.js</a></li>
+<li>Download <a class="reference external" href="http://docs.aws.amazon.com/cli/latest/userguide/installing.html">AWS Command Line Interface</a></li>
+<li>Add these programs to the system’s path</li>
+</ul>
+</div>
+<div class="section" id="step-2-create-aws-account-and-setup-the-identity-access-management">
+<h3>Step 2: Create AWS Account and Setup the Identity &amp; Access Management<a class="headerlink" href="#step-2-create-aws-account-and-setup-the-identity-access-management" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Access the AWS account online and click on IAM in the console</li>
+<li>Create a group and name it. e.g. cloud team</li>
+<li>Under group, add in the required users</li>
+<li>When creating the users, ensure to attach the required policies (<code class="docutils literal"><span class="pre">AmazonS3FullAccess</span></code>, <code class="docutils literal"><span class="pre">AmazonDynamoDBFullAccess</span></code>, <code class="docutils literal"><span class="pre">AWSElasticBeanstalkFullAccess</span></code>)</li>
+<li>During this process Amazon will auto-generate Access Keys. This will allow the users to use the cloud services using the command line</li>
+</ul>
+</div>
+<div class="section" id="step-3-establish-aws-access">
+<h3>Step 3: Establish AWS Access<a class="headerlink" href="#step-3-establish-aws-access" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>In the command line type:</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ aws configure
+</pre></div>
+</div>
+<ul class="simple">
+<li>Use the Access Key generated by Amazon to authenticate the user</li>
+</ul>
+</div>
+<div class="section" id="step-4-obtain-csc-s-codes">
+<h3>Step 4: Obtain CSC’s codes<a class="headerlink" href="#step-4-obtain-csc-s-codes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>After establishing cloud access, the authenticated user can fully utilise S3, EBS and DynamoDB via the command line</li>
+<li>The required codes are taken from the DustyDynamo repository.</li>
+<li>Using Gitbash go to a designated directory and clone the DustyDynamo repository.</li>
+<li>In Gitbash type:</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/CloudSevenConsulting/DustyDynamo.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-5-use-csc-s-codes-to-establish-the-dynamodb-cloud-database">
+<h3>Step 5: Use CSC’s codes to establish the DynamoDB Cloud Database<a class="headerlink" href="#step-5-use-csc-s-codes-to-establish-the-dynamodb-cloud-database" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>All of the required codes are found in the src folder</li>
+<li>A summary has been provided for the codes purpose</li>
+</ul>
+<p><strong>NetworkDataCreation.js</strong></p>
+<p>This script creates the “NetworkData” DynamoDB Table with a composite primary key. This composite key is associated with a MoteID partition key and a Timestamp sort key</p>
+<p><strong>CSVtoJSON.py</strong></p>
+<p>This script converts a csv file into a json file which is used in populating the DynamoDB database</p>
+<p><strong>NetworkDataMockLoad.js</strong></p>
+<p>This script populates the DynamoDB database using json files</p>
+<p><strong>NetworkQuery.py</strong></p>
+<p>This script queries the DynamoDB database in 2017 and orders it from the most recent timestamps. This data is then written into a csv file and stored locally on the computer</p>
+<p><strong>S3Upload.py</strong></p>
+<p>This script requires the user to insert input their IAM key to upload the csv data into an S3 bucket</p>
+<p><strong>NetworkDataDeletion.js</strong></p>
+<p>This script deletes the “NetworkData” DynamoDB Table</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../implement_sh/main.html" class="btn btn-neutral float-right" title="Sensor Host Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../wa/deploy.html" class="btn btn-neutral" title="Deploying the Web Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C7C.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6a (ALPHA)',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

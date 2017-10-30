@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Flashing The Dusty Module &mdash; C7C.Atamo.Dusty  documentation</title>
+  <title>Flashing The Dusty Module &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="C7C.Atamo.Dusty  documentation" href="../../index.html"/>
+    <link rel="top" title="CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation" href="../../index.html"/>
         <link rel="up" title="Project How-To’s" href="../main.html"/>
         <link rel="next" title="Project Documentation" href="../projDocs.html"/>
         <link rel="prev" title="Building with Atmel Studio 7" href="as7_building.html"/> 
@@ -57,7 +57,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> C7C.Atamo.Dusty
+            <a href="../../index.html" class="icon icon-home"> CSC-ATAMO Dusty Project
           
 
           
@@ -65,6 +65,10 @@
 
           
             
+            
+              <div class="version">
+                0.6a
+              </div>
             
           
 
@@ -96,12 +100,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../dependencies/duinoPro.html">DuinoPro and ArduinoIDE integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dependencies/otherPkgs_dustyQSL.html">Dusty Quick Start Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../git/git_basics.html">Git Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../git/git_checkout.html">Checkout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../git/git_branches.html">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../git/git_checkout.html">Git Checkout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../git/git_branches.html">Git Branches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="as7_building.html">Building with Atmel Studio 7</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Flashing The Dusty Module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#required-software">Required Software</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#backing-up-the-existing-flash">Backing-Up the Existing Flash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashing-the-whole-image">Flashing the Whole Image</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../projDocs.html">Project Documentation</a></li>
@@ -112,16 +117,15 @@
 <p class="caption"><span class="caption-text">System Design</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_arch/main.html">System Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_deploy/main.html">System Deployment</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Implementation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../implement_sh/main.html">Sensor Host Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_nm/main.html">Network Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../implement_ci/main.html">Cloud Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../implement_wa/main.html">Django Web Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech_testing/main.html">Testing</a></li>
 </ul>
 
             
@@ -136,7 +140,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">C7C.Atamo.Dusty</a>
+          <a href="../../index.html">CSC-ATAMO Dusty Project</a>
         
       </nav>
 
@@ -189,9 +193,10 @@
             
   <div class="section" id="flashing-the-dusty-module">
 <h1>Flashing The Dusty Module<a class="headerlink" href="#flashing-the-dusty-module" title="Permalink to this headline">¶</a></h1>
+<p>The complete guide can be found at <a class="reference external" href="https://cds.linear.com/docs/en/software-and-simulation/Eterna_Serial_Programmer_Guide.pdf">Linear Technology ESP Guide</a> (ETERNA01).</p>
 <div class="section" id="required-software">
-<h2>Required Software<a class="headerlink" href="#required-software" title="Permalink to this headline">¶</a></h2>
-<p>All software from <a class="reference external" href="http://www.linear.com/solutions/4260">Eterna04</a> is required (exclusing FTDI drivers if you have a normal
+<span id="idx-usage-dev-flash"></span><h2>Required Software<a class="headerlink" href="#required-software" title="Permalink to this headline">¶</a></h2>
+<p>All software from <a class="reference external" href="http://www.linear.com/solutions/4260">Linear Technology ESP</a> (ETERNA04) is required (exclusing FTDI drivers if you have a normal
 laptop…)</p>
 </div>
 <div class="section" id="backing-up-the-existing-flash">
@@ -201,29 +206,72 @@ laptop…)</p>
 <p class="last">Flashing the Dusty module will overwrite the existing flash. Back up the existing
 flash in case things go wrong!</p>
 </div>
-<div class="highlight-bat"><div class="highlight"><pre><span></span>PS C: esp_1.1.1.6<span class="p">&gt;</span> .\ESP.exe -r IPM_Flash_01_Orig.bin
+<p>First a backup of the existing Flash should be created with the following command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ESP.exe -r IPM_Flash_01_Orig.bin
 
-        ESP, Eterna SPI Programmer, version 1.1.1-6
-        cfg.devName = Auto, type = 0, flashID = 0x1f24, locID = 0x0, spiClkHz = 3000000
-        FTCSPI.dll = 2.1.2.2
-        INFO: clkHz set to 3000000
-        Open ok, flash emulation mode enabled, devName = Dust Interface Board B
-        Read: fileName = IPM_Flash_01_Orig.bin, offset = 0, len = 524288
+        ESP, Eterna SPI Programmer, version <span class="m">1</span>.1.1-6
+        cfg.devName <span class="o">=</span> Auto, <span class="nb">type</span> <span class="o">=</span> <span class="m">0</span>, <span class="nv">flashID</span> <span class="o">=</span> 0x1f24, <span class="nv">locID</span> <span class="o">=</span> 0x0, <span class="nv">spiClkHz</span> <span class="o">=</span> <span class="m">3000000</span>
+        FTCSPI.dll <span class="o">=</span> <span class="m">2</span>.1.2.2
+        INFO: clkHz <span class="nb">set</span> to <span class="m">3000000</span>
+        Open ok, flash emulation mode enabled, <span class="nv">devName</span> <span class="o">=</span> Dust Interface Board B
+        Read: <span class="nv">fileName</span> <span class="o">=</span> IPM_Flash_01_Orig.bin, <span class="nv">offset</span> <span class="o">=</span> <span class="m">0</span>, <span class="nv">len</span> <span class="o">=</span> <span class="m">524288</span>
         ................
 
-        setup = 1843 ms, dt = 1625 ms
-        ESP exiting: tries remaining = 0, err = 0
+        <span class="nv">setup</span> <span class="o">=</span> <span class="m">1843</span> ms, <span class="nv">dt</span> <span class="o">=</span> <span class="m">1625</span> ms
+        ESP exiting: tries <span class="nv">remaining</span> <span class="o">=</span> <span class="m">0</span>, <span class="nv">err</span> <span class="o">=</span> <span class="m">0</span>
+</pre></div>
+</div>
+<p>Check to see that the file was</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ls
 
-PS C: esp_1.1.1.6<span class="p">&gt;</span> ls
-
-        Directory: ..\Eterna-Serial-Programmer\esp_1.1.1.6
+        Directory: ..<span class="se">\E</span>terna-Serial-Programmer<span class="se">\e</span>sp_1.1.1.6
 
 
         Mode                LastWriteTime         Length Name
         ----                -------------         ------ ----
-        ------       2015-03-28     12:55         101376 ESP.exe
-        ------       2015-03-28     12:55         102400 ftcspi.dll
-        -a----       2017-09-29     18:27         524288 IPM_Flash_01_Orig.bin
+        ------       <span class="m">2015</span>-03-28     <span class="m">12</span>:55         <span class="m">101376</span> ESP.exe
+        ------       <span class="m">2015</span>-03-28     <span class="m">12</span>:55         <span class="m">102400</span> ftcspi.dll
+        -a----       <span class="m">2017</span>-09-29     <span class="m">18</span>:27         <span class="m">524288</span> IPM_Flash_01_Orig.bin
+</pre></div>
+</div>
+</div>
+<div class="section" id="flashing-the-whole-image">
+<h2>Flashing the Whole Image<a class="headerlink" href="#flashing-the-whole-image" title="Permalink to this headline">¶</a></h2>
+<p>4 image components are required to flash the whole image</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Image Component</th>
+<th class="head">Start Address (Hex)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Fuse Table</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>Partition Table</td>
+<td>800</td>
+</tr>
+<tr class="row-even"><td>Main Executable</td>
+<td>1000</td>
+</tr>
+<tr class="row-odd"><td>Load</td>
+<td>77800</td>
+</tr>
+</tbody>
+</table>
+<p>Each component is flashed onto the Dusty module with the command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ESP.exe -P <span class="o">[</span>Image<span class="o">]</span> <span class="o">[</span>Start Hex-Addr<span class="o">]</span>
+</pre></div>
+</div>
+<p>Thus, with these items located in the current directory:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ESP.exe -P FuseTable.bin <span class="m">0</span>
+$ ESP.exe -P PartitionTable.bin <span class="m">800</span>
+$ ESP.exe -P Main.bin <span class="m">1000</span>
+$ ESP.exe -P Loader.bin <span class="m">77800</span>
 </pre></div>
 </div>
 </div>
@@ -273,7 +321,7 @@ PS C: esp_1.1.1.6<span class="p">&gt;</span> ls
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'',
+            VERSION:'0.6a (ALPHA)',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
