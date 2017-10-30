@@ -140,6 +140,11 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
           $ python CleanBuild.py
 
 4. ``Make`` the files from source with ``make html``
-5. ``git add --all``
-6. ``git commit -m "docs"`` (who cares about commit messages here)
-7. ``git push origin master``
+5. Commit your changes
+
+   .. code-block:: bash
+
+       $ cd build/html/
+       $ git add --all
+       $ git commit -m "docs"   # who cares about commit messages here
+       # git push origin master
