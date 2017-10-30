@@ -8,6 +8,8 @@ CSC-ATAMO Dusty Project
    :maxdepth: 2
    :caption: Overview
 
+   toc
+
    intro/home
 
    usage/main
@@ -26,4 +28,7 @@ CSC-ATAMO Dusty Project
    :caption: Implementation
 
    implement_sh/main
+   implement_nm/main
+   implement_db/main
+   implement_wa/main
    tech_testing/main
