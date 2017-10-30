@@ -126,7 +126,7 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
        $ git commit -m "Update source..."
        $ git push origin src
 
-    Alternatively, use:
+   Alternatively, use:
 
     .. code-block:: bash
 
