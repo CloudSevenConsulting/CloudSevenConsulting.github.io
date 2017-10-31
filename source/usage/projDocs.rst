@@ -149,7 +149,7 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
   This does not clean, so make sure you do that!
 
-4. Commit your changes
+4. Commit your changes in the ``master`` branch
 
      .. code-block:: bash
 
