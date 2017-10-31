@@ -39,13 +39,15 @@ def clean_git_msg(msg, encoding="utf8"):
 
     msg.encode(encoding)
 
-    unsafe = ["\n"]
+    unsafe = ["\n", "rm"]
 
     for ommit in unsafe:
         msg = msg.replace(ommit, "")
+
     return msg
 
 def main():
+
     while (True):
         commit_msg = input("Commit Message >>> ")
         commit_msg = clean_git_msg(commit_msg)
@@ -63,6 +65,11 @@ def main():
     call(["git", "add", "--all"])
     call(["git", "commit", "-m", commit_msg])
     call(["git", "push", "origin",  "src"])
+
+    if len(sys.argv) == 2:
+        if sys.argv[1] == 'commit-only':
+            sys.exit(0)
+
     call([".\make.bat", "html"])
 
 if __name__ == '__main__':
