@@ -46,58 +46,58 @@ There are 2 branches of concern;
 
 1. We first make our ``src`` repo
 
-.. code-block:: bash
+  .. code-block:: bash
 
-    $ mkdir CloudSevenConsulting.github.io
-    $ cd CloudSevenConsulting.github.io
-    $ git init .
-    $ git checkout --orphan src
-    $ echo 'build/' > .gitignore            # this will host the master branch
+      $ mkdir CloudSevenConsulting.github.io
+      $ cd CloudSevenConsulting.github.io
+      $ git init .
+      $ git checkout --orphan src
+      $ echo 'build/' > .gitignore            # this will host the master branch
 
 2. Setup your Sphinx project
 
-.. code-block:: bash
+  .. code-block:: bash
 
-    $ sphinx-quickstart.exe
+      $ sphinx-quickstart.exe
 
-    # press [enter] to all options
-    # EXCEPT:
-    #   - we want the ``build/`` and ``source/`` directories to be separate.
-    #   - we want MathJAX
+      # press [enter] to all options
+      # EXCEPT:
+      #   - we want the ``build/`` and ``source/`` directories to be separate.
+      #   - we want MathJAX
 
-    $ git add --all
-    $ git commit -m "init src"
+      $ git add --all
+      $ git commit -m "init src"
 
 2. Write and Build with ``make html`` (see building below)
 
 4. Now we set up the ``git`` repo for the ``master`` branch
 
-.. code-block:: bash
+  .. code-block:: bash
 
-    $ cd build/html
-    $ touch .nojekyll       # This file is crucial for serving on Github
-    $ git init .
-    $ git add --all
-    $ git commit -m "init"
+      $ cd build/html
+      $ touch .nojekyll       # This file is crucial for serving on Github
+      $ git init .
+      $ git add --all
+      $ git commit -m "init"
 
 New Contributors
 ================
 
 1. First clone the ``src`` branch
 
-.. code-block:: bash
+  .. code-block:: bash
 
-    $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git
-    $ cd CloudSevenConsulting.github.io
-    $ git checkout src
+      $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git
+      $ cd CloudSevenConsulting.github.io
+      $ git checkout src
 
 2. Now clone in the ``master`` branch
 
-.. code-block:: bash
+  .. code-block:: bash
 
-    $ mkdir build/
-    $ cd build/
-    $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git html
+      $ mkdir build/
+      $ cd build/
+      $ git clone https://github.com/CloudSevenConsulting/CloudSevenConsulting.github.io.git html
 
 3. Clone in your ``doxy`` branch
 
@@ -117,24 +117,9 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
    Team to consider automating this with Python tool
 
-1. Make your modifications in the ``src`` branch (you shouldn't need to checkout at all, just ``cd``).
-2. Commit your source changes
+1. Make your modifications in the ``src`` branch (you shouldn't need to use the ``git checkout`` command at all, just ``cd``).
 
-   .. code-block:: bash
-
-       $ git add --all
-       $ git commit -m "Update source..."
-       $ git push origin src
-
-   Alternatively, use:
-
-    .. code-block:: bash
-
-        $ python Build.py
-
-    This does not clean, so make sure you do that!
-
-3. If the indexes in your build must change (i.e. new files added/files moved) then a clean is required before build
+2. If the indexes in your build must change (i.e. new files added/files moved) then a clean is required before build
 
     a) **Do not** use ``make clean``, as this will remove the ``.git`` files.
 
@@ -147,12 +132,28 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
           $ python CleanBuild.py
 
-4. ``Make`` the files from source with ``make html``
-5. Commit your changes
+3. Commit your source changes & build
 
-   .. code-block:: bash
+     .. code-block:: bash
 
-       $ cd build/html/
-       $ git add --all
-       $ git commit -m "docs"   # who cares about commit messages here
-       # git push origin master
+         $ git add --all
+         $ git commit -m "Update source..."
+         $ git push origin src
+         $ make html
+
+  Alternatively, use:
+
+    .. code-block:: bash
+
+        $ python BuildDoc.py
+
+  This does not clean, so make sure you do that!
+
+4. Commit your changes
+
+     .. code-block:: bash
+
+         $ cd build/html/
+         $ git add --all
+         $ git commit -m "docs"   # who cares about commit messages here
+         # git push origin master
