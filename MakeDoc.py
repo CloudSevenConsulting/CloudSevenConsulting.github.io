@@ -45,21 +45,25 @@ def clean_git_msg(msg, encoding="utf8"):
         msg = msg.replace(ommit, "")
     return msg
 
-while (True):
-    commit_msg = input("Commit Message >>> ")
-    commit_msg = clean_git_msg(commit_msg)
-    if len(commit_msg) > 71:
-        ans = query_yes_no("Message is too long (max 72 char.), Re-enter (will truncate if no)?")
-        if (ans):
-            continue
+def main():
+    while (True):
+        commit_msg = input("Commit Message >>> ")
+        commit_msg = clean_git_msg(commit_msg)
+        if len(commit_msg) > 71:
+            ans = query_yes_no("Message is too long (max 72 char.), Re-enter (will truncate if no)?")
+            if (ans):
+                continue
+            else:
+                commit_msg = commit_msg[0:72]
+                break
         else:
-            commit_msg = commit_msg[0:72]
             break
-    else:
-        break
 
-call(["git", "pull"])
-call(["git", "add", "--all"])
-call(["git", "commit", "-m", commit_msg])
-call(["git", "push", "origin",  "src"])
-call([".\make.bat", "html"])
+    call(["git", "pull"])
+    call(["git", "add", "--all"])
+    call(["git", "commit", "-m", commit_msg])
+    call(["git", "push", "origin",  "src"])
+    call([".\make.bat", "html"])
+
+if __name__ == '__main__':
+    main()

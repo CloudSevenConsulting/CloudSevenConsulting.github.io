@@ -1,6 +1,9 @@
 import os, shutil
 import sys
 
+DO_NOT_REMOVE = ['.nojekyll', '.git']
+TARGET_FOLDER_SEL = './build/html'
+
 def query_yes_no(question, default="yes"):
     """Ask a yes/no question via raw_input() and return their answer.
 
@@ -33,30 +36,32 @@ def query_yes_no(question, default="yes"):
             sys.stdout.write("Please respond with 'yes' or 'no' "
                              "(or 'y' or 'n').\n")
 
-do_not_remove = ['.nojekyll', '.git']
+def main():
 
-target_folder = './build/html'
-assert(os.path.isdir(target_folder))
-target_folder = os.path.abspath(os.path.normpath(target_folder))
-assert(os.path.isdir(target_folder))
-ans = query_yes_no("Clean all Sphinx files from: %s" % target_folder, default="no")
+    assert(os.path.isdir(TARGET_FOLDER_SEL))
+    target_folder = os.path.abspath(os.path.normpath(TARGET_FOLDER_SEL))
+    assert(os.path.isdir(target_folder))
+    ans = query_yes_no("Clean all Sphinx files from: %s" % target_folder, default="no")
 
-if not(ans):
-    print("Clean job terminated.")
-    sys.exit(0)
-else:
-    print("Removing...")
+    if not(ans):
+        print("Clean job terminated.")
+        sys.exit(0)
+    else:
+        print("Removing...")
 
-    for the_file in os.listdir(target_folder):
-        file_path = os.path.join(target_folder, the_file)
+        for the_file in os.listdir(target_folder):
+            file_path = os.path.join(target_folder, the_file)
 
-        if the_file in do_not_remove:
-            continue
-        else:
-            print(file_path)
-            try:
-                if os.path.isfile(file_path):
-                    os.unlink(file_path)
-                elif os.path.isdir(file_path): shutil.rmtree(file_path)
-            except Exception as e:
-                print(e)
+            if the_file in DO_NOT_REMOVE:
+                continue
+            else:
+                print(file_path)
+                try:
+                    if os.path.isfile(file_path):
+                        os.unlink(file_path)
+                    elif os.path.isdir(file_path): shutil.rmtree(file_path)
+                except Exception as e:
+                    print(e)
+
+if __name__ == '__main__':
+    main()
