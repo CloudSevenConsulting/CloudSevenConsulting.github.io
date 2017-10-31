@@ -145,7 +145,7 @@ Because of the way the branch ``gh-pages`` is set-up, a funny build process is r
 
     .. code-block:: bash
 
-        $ python BuildDoc.py
+        $ python MakeDocs.py
 
   This does not clean, so make sure you do that!
 
