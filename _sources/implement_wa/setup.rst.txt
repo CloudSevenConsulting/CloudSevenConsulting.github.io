@@ -7,9 +7,7 @@ This section pertains to the setup of the Django web application using Elastic B
 
 .. _AWS documentation: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
 
-This guide was made using `Python version 2.7.10`. After downloading the DustyDjango code from `here`_. Navigate to terminal, and install the  ``virtualenv`` package using:
-
-.. _here: https://github.com/CloudSevenConsulting/DustyDjango.
+This guide was made using `Python version 2.7.10`. After downloading the DustyDjango code from `here <https://github.com/CloudSevenConsulting/DustyDjango>`. Navigate to terminal, and install the  ``virtualenv`` package using:
 
 .. code-block:: bash
 
