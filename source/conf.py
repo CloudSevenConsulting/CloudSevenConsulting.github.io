@@ -21,7 +21,7 @@ import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
 #sys.path.append(os.path.abspath('./exts'))
-sys.path.append(r"C:\Users\kjph\Documents\jFiles\02_work\010_uwa\01_units\ELEC5552_Design2\05_repos\CloudSevenConsulting.github.io\ext\breathe")
+sys.path.append("/Users/Satsu/sdocs/CloudSevenConsulting.github.io/ext.breathe")
 
 
 # -- General configuration ------------------------------------------------
@@ -177,5 +177,5 @@ texinfo_documents = [
 
 
 # -- Options for Breathe --------------------------------------------------
-breathe_projects = { "C7C.Atamo.Dusty.Mote": r"~/sdocs/6_CloudSevenConsulting.github.io/doxy/xml" }
+breathe_projects = { "C7C.Atamo.Dusty.Mote": "/Users/Satsu/sdocs/6_CloudSevenConsulting.github.io/doxy/xml" }
 breathe_default_project = "C7C.Atamo.Dusty.Mote"
