@@ -70,7 +70,7 @@ def main():
         if sys.argv[1] == 'commit-only':
             sys.exit(0)
 
-    call([".\make.bat", "html"])
+    call(["make", "html"])
 
 if __name__ == '__main__':
     main()
