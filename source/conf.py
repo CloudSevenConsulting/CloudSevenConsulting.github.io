@@ -177,5 +177,5 @@ texinfo_documents = [
 
 
 # -- Options for Breathe --------------------------------------------------
-breathe_projects = { "C7C.Atamo.Dusty.Mote": "/Users/Satsu/sdocs/6_CloudSevenConsulting.github.io/doxy/xml" }
+breathe_projects = { "C7C.Atamo.Dusty.Mote": "/Users/Satsu/sdocs/CloudSevenConsulting.github.io/doxy/xml" }
 breathe_default_project = "C7C.Atamo.Dusty.Mote"
