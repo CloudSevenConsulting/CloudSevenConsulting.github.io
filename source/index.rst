@@ -11,6 +11,7 @@ CSC-ATAMO Dusty Project
    toc
 
    intro/home
+   intro/handover
 
    usage/main
 
