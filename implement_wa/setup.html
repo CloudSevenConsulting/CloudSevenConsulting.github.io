@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Setup &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
+  <title>Elastic Beanstalk &mdash; CSC-ATAMO Dusty Project 0.6a (ALPHA) documentation</title>
   
 
   
@@ -110,7 +110,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../implement_nm/main.html">Network Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implement_db/main.html">DynamoDB</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="main.html">Django Web Application</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Setup</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Elastic Beanstalk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../tech_testing/main.html">Testing</a></li>
@@ -160,7 +163,7 @@
         
           <li><a href="main.html">Django Web Application</a> &raquo;</li>
         
-      <li>Setup</li>
+      <li>Elastic Beanstalk</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -179,11 +182,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="setup">
-<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="elastic-beanstalk">
+<h1>Elastic Beanstalk<a class="headerlink" href="#elastic-beanstalk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <p>This section pertains to the setup of the Django web application using Elastic Beanstalk and a Linux operating system. A more general guide (including setup using Windows) can be found in
-<a class="reference external" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html">AWS documentation</a>.</p>
-<p>This guide was made using <cite>Python version 2.7.10</cite>. After downloading the DustyDjango code from <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">here</a>. Navigate to terminal, and install the  <code class="docutils literal"><span class="pre">virtualenv</span></code> package using:</p>
+<a href="#id4"><span class="problematic" id="id5">`AWS documentation&lt;https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html&gt;`_</span></a>. This guide was made using <a href="#id6"><span class="problematic" id="id7">`Python version 2.7.10&lt;https://www.python.org/downloads/release/python-2710/&gt;`_</span></a>.</p>
+<p>First download the DustyDjango code from <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">here</a>. Navigate to terminal, and install the  <code class="docutils literal"><span class="pre">virtualenv</span></code> package using:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>pip install virtualenv
 </pre></div>
 </div>
@@ -196,30 +201,12 @@
 <div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> atamo/bin/activate
 </pre></div>
 </div>
-<p>You will see (<code class="docutils literal"><span class="pre">atamo</span></code>) prepended to your command prompt, indicating that you’re in a virtual environment. Install the required version of django using:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip install <span class="nv">django</span><span class="o">==</span><span class="m">1</span>.10.8
+<p>You will see (<code class="docutils literal"><span class="pre">atamo</span></code>) prepended to your command prompt, indicating that you’re in a virtual environment. Next use the previously downloaded requirement.txt file to install the the required dependencies:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ python -m pip install -r requirements.txt
 </pre></div>
 </div>
-<p>Verify installation of packages at any time using  <cite>pip freeze</cite>, which now should display:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ pip freeze
-<span class="nv">Django</span><span class="o">==</span><span class="m">1</span>.10.8
-</pre></div>
-</div>
-<p>Change directories into the project application (downloaded previously - <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">DustyDjango</a>). In this example the directory where the project is currently stored is called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>. To change directory, use:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ <span class="nb">cd</span> atamoapp_demo
-</pre></div>
-</div>
-<p>Your directory (here called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>) should have now have a layout similar to:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>atamoapp_demo/
- ├ manage.py
- ├ .db.sqlite3
- ├ <span class="o">[</span>DIR<span class="o">]</span> mysite
- ├ <span class="o">[</span>DIR<span class="o">]</span> blog
-</pre></div>
-</div>
-<p>The following dependencies are needed for the proper functioning of the application. Verify the following packages are installed using <cite>pip freeze</cite>. If the following packages are not installed, install them using <a href="#id2"><span class="problematic" id="id3">`</span></a>pip install ` followed by the desired package and version number download.</p>
-<p><a href="#id4"><span class="problematic" id="id5">``</span></a><a href="#id6"><span class="problematic" id="id7">`</span></a>python
-pip freeze
+<p>Verify installation of packages at any time using  <code class="docutils literal"><span class="pre">pip</span> <span class="pre">freeze</span></code>, which now should display:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span>(atamo)~$ pip freeze
 boto3==1.4.7
 botocore==1.7.33
 certifi==2017.7.27.1
@@ -247,7 +234,23 @@ requests-oauthlib==0.8.0
 s3transfer==0.1.11
 six==1.11.0
 traitlets==4.3.2
-urllib3==1.22</p>
+urllib3==1.22
+</pre></div>
+</div>
+<p>Change directories into the project application (downloaded previously - <a class="reference external" href="https://github.com/CloudSevenConsulting/DustyDjango">DustyDjango</a>). In this example the directory where the project is currently stored is called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>. To change directory, use:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="o">(</span>atamo<span class="o">)</span>~$ <span class="nb">cd</span> atamoapp_demo
+</pre></div>
+</div>
+<p>Your directory (here called <code class="docutils literal"><span class="pre">atamoapp_demo</span></code>) should have now have a layout similar to:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span>atamoapp_demo/
+ ├ manage.py
+ ├ .db.sqlite3
+ ├ [DIR] mysite
+ ├ [DIR] blog
+</pre></div>
+</div>
+<p>The following dependencies are needed for the proper functioning of the application. Verify the following packages are installed using <cite>pip freeze</cite>. If the following packages are not installed, install them using <a href="#id2"><span class="problematic" id="id3">`</span></a>pip install ` followed by the desired package and version number download.</p>
+</div>
 </div>
 
 

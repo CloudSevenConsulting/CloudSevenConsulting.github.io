@@ -74,5 +74,3 @@ Implementation
 .. topic:: :ref:`idx-implement-wa`
 
    *Implementation of Web Application*
-
-
