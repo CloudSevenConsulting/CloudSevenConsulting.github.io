@@ -25,7 +25,7 @@ CSC-ATAMO Dusty Project
    tech_deploy/main
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Implementation
 
    implement_sh/main

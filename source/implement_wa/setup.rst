@@ -1,11 +1,14 @@
-*****
+******************
+Elastic Beanstalk
+******************
+
 Setup
-*****
+########
 
 This section pertains to the setup of the Django web application using Elastic Beanstalk and a Linux operating system. A more general guide (including setup using Windows) can be found in
-`AWS documentation<https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html>`_.
+`AWS documentation<https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html>`_. This guide was made using `Python version 2.7.10<https://www.python.org/downloads/release/python-2710/>`_.
 
-This guide was made using `Python version 2.7.10`. After downloading the DustyDjango code from `here <https://github.com/CloudSevenConsulting/DustyDjango>`_. Navigate to terminal, and install the  ``virtualenv`` package using:
+First download the DustyDjango code from `here <https://github.com/CloudSevenConsulting/DustyDjango>`_. Navigate to terminal, and install the  ``virtualenv`` package using:
 
 .. code-block:: bash
 
